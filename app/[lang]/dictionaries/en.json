@@ -19,10 +19,39 @@
       "contact": "Contact"
     }
   },
+  "home": {
+    "hero": {
+      "eyebrow": "Brazzaville · Republic of Congo",
+      "version": "EST. 2023 · V. 26.05",
+      "titleLine1": "Digital",
+      "titleLine2": "transformation",
+      "titleAccent": "for Africa.",
+      "lede": "We build national-scale platforms · fiscal, health, social security · engineered to international standards by a 100% African team in Brazzaville.",
+      "ctaPrimary": "Discover our services",
+      "ctaSecondary": "See our work",
+      "deployingLabel": "Now deploying",
+      "deployingText": "SFEC fiscal infrastructure, CAMU universal health coverage, CNSS biometrics & ePayment.",
+      "stats": {
+        "projects": { "label": "PROJECTS", "value": "12+" },
+        "team": { "label": "TEAM", "value": "45+" },
+        "sectors": { "label": "SECTORS", "value": "4" }
+      }
+    },
+    "marquee": {
+      "items": [
+        "Ministry of Finance · DGID",
+        "Government of Congo · CAMU",
+        "Caisse Nationale de Sécurité Sociale",
+        "National Fiscal Infrastructure",
+        "Universal Health Coverage",
+        "Biometric Identification"
+      ]
+    }
+  },
   "footer": {
     "ariaBrand": "Akieni home",
     "tagline": "Digital transformation for Africa. Brazzaville, Republic of Congo.",
-    "email": "CONTACT@AKIENI.TECH",
+    "email": "CONTACT@AKIENI.COM",
     "columns": {
       "company": {
         "heading": "Company",

@@ -221,3 +221,23 @@
     scroll-behavior: auto;
   }
 }
+
+/* ============================================
+   Hero peak motif — decorative
+   Sized via inline --w / --h custom properties.
+   Wrapped in @layer components so Tailwind 4
+   preserves the rule in the compiled output.
+   ============================================ */
+@layer components {
+  .peak {
+    display: block;
+    flex-shrink: 0;
+    height: var(--h, 9vh);
+    width: var(--w, 6vw);
+    background-image: url("/images/akieni-icon-white.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    opacity: 0.18;
+  }
+}
