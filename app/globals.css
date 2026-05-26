@@ -169,6 +169,7 @@
     text-rendering: optimizeLegibility;
   }
 
+  html:has(body.menu-open),
   body.menu-open {
     overflow: hidden;
   }

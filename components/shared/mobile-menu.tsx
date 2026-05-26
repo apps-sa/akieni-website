@@ -97,9 +97,12 @@ export function MobileMenu({
         aria-hidden={!open}
         data-state={open ? "open" : "closed"}
         className={[
-          "fixed inset-0 z-60 flex-col overflow-y-auto bg-black text-white px-gutter pb-s6",
+          "fixed inset-0 z-60 flex flex-col overflow-y-auto bg-black text-white px-gutter pb-s6 lg:hidden",
           "pt-[calc(var(--nav-h)+1.5rem)]",
-          open ? "flex" : "hidden",
+          "transition-[opacity,transform] duration-2 ease-akieni",
+          open
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none",
         ].join(" ")}
       >
         <nav className="flex flex-col" aria-label={strings.ariaPrimary}>
@@ -123,11 +126,11 @@ export function MobileMenu({
 
         <div className="mt-auto flex flex-col gap-s4 pt-s6">
           <div className="flex items-center justify-between gap-s3 font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
-            <span>Brazzaville · Republic of Congo</span>
-            <span>EST. 2023</span>
+            <span>{strings.location}</span>
+            <span>{strings.est}</span>
           </div>
           <div className="flex items-center justify-between gap-s3 font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
-            <span>{lang === "fr" ? "Langue" : "Language"}</span>
+            <span>{strings.languageLabel}</span>
             <LanguageSwitcher size="md" className="text-white" />
           </div>
           <Link
