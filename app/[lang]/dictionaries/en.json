@@ -22,7 +22,7 @@
   "footer": {
     "ariaBrand": "Akieni home",
     "tagline": "Digital transformation for Africa. Brazzaville, Republic of Congo.",
-    "email": "contact@akieni.com",
+    "email": "CONTACT@AKIENI.TECH",
     "columns": {
       "company": {
         "heading": "Company",
@@ -36,8 +36,14 @@
       "services": {
         "heading": "Services",
         "items": [
-          { "label": "Digital Transformation", "href": "/services/digital-transformation" },
-          { "label": "Software Development", "href": "/services/software-development" },
+          {
+            "label": "Digital Transformation",
+            "href": "/services/digital-transformation"
+          },
+          {
+            "label": "Software Development",
+            "href": "/services/software-development"
+          },
           { "label": "Integration", "href": "/services/integration" },
           { "label": "Consulting", "href": "/services/consulting" }
         ]
