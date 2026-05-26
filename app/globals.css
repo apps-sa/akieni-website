@@ -1,26 +1,223 @@
 @import "tailwindcss";
 
+/* ============================================
+   Akieni — Design tokens (legacy variables.css)
+   Copied verbatim from the legacy site so any CSS
+   using var(--cyan-teal), var(--s-5), var(--nav-h),
+   etc. keeps working unchanged.
+   ============================================ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core palette */
+  --black: #000000;
+  --off-black: #0c0c0b;
+  --ink: #242423;
+  --ink-2: #1a1a19;
+  --line: #2a2a28;
+  --line-light: #e7e7e4;
+  --white: #ffffff;
+  --paper: #fafaf7;
+  --muted: #6b6b67;
+  --muted-2: #9a9a95;
+
+  /* Accents */
+  --cyan-teal: #12ebd6;
+  --green: #38f073;
+  --blue: #0f40f8;
+
+  /* Semantic */
+  --bg: var(--white);
+  --fg: var(--black);
+  --bg-dark: var(--black);
+  --fg-dark: var(--white);
+
+  /* Typography */
+  --font-primary: "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular,
+    Menlo, monospace;
+
+  /* Type scale (fluid) */
+  --fs-xs: 0.75rem; /* 12 */
+  --fs-sm: 0.875rem; /* 14 */
+  --fs-base: 1rem; /* 16 */
+  --fs-md: 1.125rem; /* 18 */
+  --fs-lg: 1.25rem; /* 20 */
+  --fs-xl: 1.5rem; /* 24 */
+  --fs-2xl: 2rem; /* 32 */
+  --fs-3xl: 2.5rem; /* 40 */
+  --fs-4xl: 3.5rem; /* 56 */
+  --fs-5xl: clamp(3rem, 7vw, 6.5rem);
+  --fs-display: clamp(3.5rem, 10vw, 9rem);
+
+  /* Spacing */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+
+  /* Layout */
+  --container: 1360px;
+  --gutter: 1.5rem;
+  --section-y: clamp(4rem, 9vw, 8rem);
+  --nav-h: 72px;
+
+  /* Borders, motion */
+  --hair: 1px;
+  --r-sm: 4px;
+  --r-md: 8px;
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --dur-1: 180ms;
+  --dur-2: 320ms;
+  --dur-3: 600ms;
 }
 
+/* ============================================
+   Tailwind 4 @theme — same tokens, exposed as
+   utility classes (bg-ink, text-cyan-teal,
+   font-mono, max-w-page, py-section-y,
+   ease-akieni, duration-2, etc.).
+   ============================================ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-black: var(--black);
+  --color-off-black: var(--off-black);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-line-light: var(--line-light);
+  --color-white: var(--white);
+  --color-paper: var(--paper);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-cyan-teal: var(--cyan-teal);
+  --color-green: var(--green);
+  --color-blue: var(--blue);
+
+  --font-sans: var(--font-primary);
+  --font-mono: var(--font-mono);
+
+  --text-xs: var(--fs-xs);
+  --text-sm: var(--fs-sm);
+  --text-base: var(--fs-base);
+  --text-md: var(--fs-md);
+  --text-lg: var(--fs-lg);
+  --text-xl: var(--fs-xl);
+  --text-2xl: var(--fs-2xl);
+  --text-3xl: var(--fs-3xl);
+  --text-4xl: var(--fs-4xl);
+  --text-5xl: var(--fs-5xl);
+  --text-display: var(--fs-display);
+
+  --spacing-s1: var(--s-1);
+  --spacing-s2: var(--s-2);
+  --spacing-s3: var(--s-3);
+  --spacing-s4: var(--s-4);
+  --spacing-s5: var(--s-5);
+  --spacing-s6: var(--s-6);
+  --spacing-s7: var(--s-7);
+  --spacing-s8: var(--s-8);
+  --spacing-s9: var(--s-9);
+  --spacing-s10: var(--s-10);
+  --spacing-gutter: var(--gutter);
+  --spacing-nav-h: var(--nav-h);
+  --spacing-section-y: var(--section-y);
+
+  --container-page: var(--container);
+
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+
+  --ease-akieni: var(--ease);
+  --duration-1: var(--dur-1);
+  --duration-2: var(--dur-2);
+  --duration-3: var(--dur-3);
+
+  --animate-marquee: marquee 38s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================================
+   Base layer (element-level rules from main.css)
+   ============================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  html:has(body.menu-open),
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  ::selection {
+    background: var(--cyan-teal);
+    color: var(--black);
+  }
+}
+
+/* ============================================
+   Reveal-on-scroll (paired with InteractiveLayer)
+   ============================================ */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 700ms var(--ease),
+    transform 700ms var(--ease);
+}
+[data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: none;
+}
+[data-reveal][data-delay="1"] { transition-delay: 80ms; }
+[data-reveal][data-delay="2"] { transition-delay: 160ms; }
+[data-reveal][data-delay="3"] { transition-delay: 240ms; }
+[data-reveal][data-delay="4"] { transition-delay: 320ms; }
+[data-reveal][data-delay="5"] { transition-delay: 400ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

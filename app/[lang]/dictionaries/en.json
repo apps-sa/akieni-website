@@ -1,0 +1,92 @@
+{
+  "header": {
+    "ariaPrimary": "Primary",
+    "ariaBrand": "Akieni home",
+    "ariaOpenMenu": "Open menu",
+    "ariaCloseMenu": "Close menu",
+    "cta": "Get in touch",
+    "location": "Brazzaville · Republic of Congo",
+    "est": "EST. 2023",
+    "languageLabel": "Language",
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "products": "Products",
+      "projects": "Projects",
+      "about": "About",
+      "academy": "Academy",
+      "careers": "Careers",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "ariaBrand": "Akieni home",
+    "tagline": "Digital transformation for Africa. Brazzaville, Republic of Congo.",
+    "email": "CONTACT@AKIENI.TECH",
+    "columns": {
+      "company": {
+        "heading": "Company",
+        "items": [
+          { "label": "About", "href": "/about" },
+          { "label": "Team", "href": "/team" },
+          { "label": "Careers", "href": "/careers" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      },
+      "services": {
+        "heading": "Services",
+        "items": [
+          {
+            "label": "Digital Transformation",
+            "href": "/services/digital-transformation"
+          },
+          {
+            "label": "Software Development",
+            "href": "/services/software-development"
+          },
+          { "label": "Integration", "href": "/services/integration" },
+          { "label": "Consulting", "href": "/services/consulting" }
+        ]
+      },
+      "projects": {
+        "heading": "Projects",
+        "items": [
+          { "label": "SFEC", "href": "/projects/sfec" },
+          { "label": "CAMU", "href": "/projects/camu" },
+          { "label": "CNSS", "href": "/projects/cnss" },
+          { "label": "All projects", "href": "/projects" }
+        ]
+      },
+      "products": {
+        "heading": "Products",
+        "items": [
+          { "label": "AkieniPay", "href": "/products/akienipay" },
+          { "label": "CarTracking", "href": "/products/cartracking" },
+          { "label": "Biometrie", "href": "/products/biometrie" },
+          { "label": "All products", "href": "/products" }
+        ]
+      },
+      "resources": {
+        "heading": "Resources",
+        "items": [
+          { "label": "Academy", "href": "/academy" },
+          { "label": "Insights", "href": "#" },
+          { "label": "Press kit", "href": "#" }
+        ]
+      }
+    },
+    "bottom": {
+      "copyright": "© {year} Akieni. Digital Transformation for Africa.",
+      "legal": [
+        { "label": "Privacy", "href": "/privacy" },
+        { "label": "Terms", "href": "/terms" },
+        { "label": "Cookies", "href": "/cookies" }
+      ],
+      "social": [
+        { "label": "LinkedIn", "href": "#" },
+        { "label": "Twitter", "href": "#" },
+        { "label": "GitHub", "href": "#" }
+      ]
+    }
+  }
+}
