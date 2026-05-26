@@ -1,0 +1,89 @@
+{
+  "header": {
+    "ariaPrimary": "Principale",
+    "ariaBrand": "Akieni accueil",
+    "ariaOpenMenu": "Ouvrir le menu",
+    "ariaCloseMenu": "Fermer le menu",
+    "cta": "Nous contacter",
+    "nav": {
+      "home": "Accueil",
+      "services": "Services",
+      "products": "Produits",
+      "projects": "Projets",
+      "about": "À propos",
+      "academy": "Académie",
+      "careers": "Carrières",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "ariaBrand": "Akieni accueil",
+    "tagline": "Transformation numérique pour l'Afrique. Brazzaville, République du Congo.",
+    "email": "contact@akieni.tech",
+    "columns": {
+      "company": {
+        "heading": "Société",
+        "items": [
+          { "label": "À propos", "href": "/about" },
+          { "label": "Équipe", "href": "/team" },
+          { "label": "Carrières", "href": "/careers" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      },
+      "services": {
+        "heading": "Services",
+        "items": [
+          {
+            "label": "Transformation numérique",
+            "href": "/services/digital-transformation"
+          },
+          {
+            "label": "Développement logiciel",
+            "href": "/services/software-development"
+          },
+          { "label": "Intégration", "href": "/services/integration" },
+          { "label": "Conseil", "href": "/services/consulting" }
+        ]
+      },
+      "projects": {
+        "heading": "Projets",
+        "items": [
+          { "label": "SFEC", "href": "/projects/sfec" },
+          { "label": "CAMU", "href": "/projects/camu" },
+          { "label": "CNSS", "href": "/projects/cnss" },
+          { "label": "Tous les projets", "href": "/projects" }
+        ]
+      },
+      "products": {
+        "heading": "Produits",
+        "items": [
+          { "label": "AkieniPay", "href": "/products/akienipay" },
+          { "label": "CarTracking", "href": "/products/cartracking" },
+          { "label": "Biometrie", "href": "/products/biometrie" },
+          { "label": "Tous les produits", "href": "/products" }
+        ]
+      },
+      "resources": {
+        "heading": "Ressources",
+        "items": [
+          { "label": "Académie", "href": "/academy" },
+          { "label": "Analyses", "href": "#" },
+          { "label": "Kit presse", "href": "#" }
+        ]
+      }
+    },
+    "bottom": {
+      "copyright": "© {year} Akieni. Transformation numérique pour l'Afrique.",
+      "legal": [
+        { "label": "Confidentialité", "href": "/privacy" },
+        { "label": "Conditions", "href": "/terms" },
+        { "label": "Cookies", "href": "/cookies" }
+      ],
+      "social": [
+        { "label": "LinkedIn", "href": "#" },
+        { "label": "Twitter", "href": "#" },
+        { "label": "GitHub", "href": "#" }
+      ]
+    }
+  }
+}
