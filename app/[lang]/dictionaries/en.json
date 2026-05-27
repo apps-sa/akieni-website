@@ -20,6 +20,10 @@
     }
   },
   "home": {
+    "meta": {
+      "title": "Tr",
+      "description": ""
+    },
     "hero": {
       "eyebrow": "Brazzaville · Republic of Congo",
       "version": "EST. 2023 · V. 26.05",

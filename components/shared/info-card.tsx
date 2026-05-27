@@ -19,17 +19,16 @@ export function InfoCard({
           : "bg-white border-line-light",
       ].join(" ")}
     >
-      <span className="font-mono text-sm tracking-[0.1em] text-cyan-teal">
+      <span className="font-mono text-sm tracking-widest text-cyan-teal">
         {number}
       </span>
       <h3 className="text-xl font-bold leading-[1.15] tracking-[-0.02em]">
         {title}
       </h3>
       <p
-        className={[
-          "text-md",
-          isDark ? "text-muted-2" : "text-muted",
-        ].join(" ")}
+        className={["text-md", isDark ? "text-muted-2" : "text-muted"].join(
+          " ",
+        )}
       >
         {desc}
       </p>
