@@ -20,6 +20,10 @@
     }
   },
   "home": {
+    "meta": {
+      "title": "Tr",
+      "description": ""
+    },
     "hero": {
       "eyebrow": "Brazzaville · République du Congo",
       "version": "EST. 2023 · V. 26.05",
@@ -333,6 +337,149 @@
       "primary": "Démarrer votre projet",
       "secondary": "Voir nos projets",
       "secondaryHref": "/projects"
+    }
+  },
+  "products": {
+    "meta": {
+      "title": "Produits · Akieni",
+      "description": "AkieniPay, CarTracking et Biometrie · les produits conçus et opérés par Akieni pour les organisations africaines."
+    },
+    "hero": {
+      "eyebrow": "Nos produits",
+      "caption": "09 / PRODUITS",
+      "backgroundMark": "AK·",
+      "titleLine1": "Des logiciels que",
+      "titleLine2": "nous opérons ",
+      "titleAccent": "nous-mêmes.",
+      "lede": "Trois produits Akieni · paiements, suivi de flotte, identification biométrique · livrés en SaaS ou déployés sur votre infrastructure.",
+      "ctaPrimary": "Explorer les produits",
+      "ctaSecondary": "Demander une démo"
+    },
+    "summary": {
+      "eyebrow": "Catalogue",
+      "titleLine1": "Trois produits.",
+      "titleLine2": "Une même rigueur de livraison.",
+      "lede": "Chaque produit Akieni est construit par la même équipe sénior, sur le même socle PKI et opéré avec la même discipline que nos plateformes nationales.",
+      "items": [
+        {
+          "slug": "akienipay",
+          "number": "01 / Produit",
+          "name": "AkieniPay",
+          "version": "v2",
+          "desc": "Plateforme de paiement et de collecte · agrège Mobile Money, cartes, virements et points cash avec rapprochement automatique.",
+          "features": [
+            "API REST + webhooks idempotents",
+            "Console marchand & tableaux de bord",
+            "Conforme PCI-DSS / BEAC"
+          ],
+          "model": "SaaS · 2024 →",
+          "chip": "En production",
+          "chipVariant": "default",
+          "mark": "A·PAY",
+          "mediaLabel": "AkieniPay · Console",
+          "learnMore": "En savoir plus →"
+        },
+        {
+          "slug": "cartracking",
+          "number": "02 / Produit",
+          "name": "CarTracking",
+          "version": "",
+          "desc": "Suivi de flotte en temps réel pour entreprises et flottes publiques · GPS, géorepérage, comportement conducteur, alertes vol.",
+          "features": [
+            "Boîtier OBD-II & traceur GPS dédié",
+            "Géorepérages illimités & alertes SMS",
+            "Rapports carburant & conduite"
+          ],
+          "model": "SaaS · 2023 →",
+          "chip": "En production",
+          "chipVariant": "green",
+          "mark": "CAR·",
+          "mediaLabel": "CarTracking · Vue carte",
+          "learnMore": "En savoir plus →"
+        },
+        {
+          "slug": "biometrie",
+          "number": "03 / Produit",
+          "name": "Biometrie",
+          "version": "",
+          "desc": "Plateforme d'identification biométrique multimodale · empreintes, visage et iris, conforme OACI, soutenue par un ABIS de niveau ANSSI.",
+          "features": [
+            "Capture mobile & kiosques fixes",
+            "Correspondance 1:1 & 1:N à grande échelle",
+            "On-prem · données souveraines"
+          ],
+          "model": "On-prem · 2025 →",
+          "chip": "Aperçu",
+          "chipVariant": "blue",
+          "mark": "BIO·",
+          "mediaLabel": "Biometrie · Capture",
+          "learnMore": "En savoir plus →"
+        }
+      ]
+    },
+    "details": [
+      {
+        "slug": "akienipay",
+        "variant": "paper",
+        "mediaSide": "right",
+        "number": "01 / Produit · AkieniPay",
+        "titleAccent": "Paiements et collecte, pour l'Afrique centrale.",
+        "lede": "AkieniPay agrège les canaux de paiement (Mobile Money, cartes, virements bancaires, espèces) derrière une API et une console uniques · avec rapprochement automatique, webhooks idempotents et conformité PCI-DSS / BEAC.",
+        "features": [
+          { "key": "Canaux",       "value": "MTN MoMo · Airtel · Visa / MC · Banque · Cash" },
+          { "key": "Devises",      "value": "XAF · USD · EUR" },
+          { "key": "Latence API",  "value": "< 250 ms p95" },
+          { "key": "SLA",          "value": "99,95 %" },
+          { "key": "Conformité",   "value": "PCI-DSS · BEAC · COBAC" },
+          { "key": "Déploiement",  "value": "SaaS · option on-prem" }
+        ],
+        "ctaLabel": "Demander une démo AkieniPay →",
+        "mock": { "chip": "Console marchand", "mark": "A·PAY", "label": "UI · Dashboard · placeholder" }
+      },
+      {
+        "slug": "cartracking",
+        "variant": "dark",
+        "mediaSide": "left",
+        "number": "02 / Produit · CarTracking",
+        "titleAccent": "Visibilité totale, à chaque kilomètre.",
+        "lede": "CarTracking équipe les flottes d'entreprise et publiques avec un boîtier GPS / OBD-II, une console temps-réel et un moteur d'alertes (vitesse, géofence, vol, comportement). Déjà déployé sur 2 400+ véhicules dans la région.",
+        "features": [
+          { "key": "Véhicules suivis", "value": "2 400+" },
+          { "key": "Fréquence GPS",    "value": "5 s" },
+          { "key": "Géofences",        "value": "Illimitées par véhicule" },
+          { "key": "Alertes",          "value": "SMS · Email · Webhook" },
+          { "key": "Rapports",         "value": "Carburant · conduite · arrêts" },
+          { "key": "Déploiement",      "value": "SaaS · API REST" }
+        ],
+        "ctaLabel": "Demander une démo CarTracking →",
+        "mock": { "chip": "Carte temps-réel", "mark": "CAR·", "label": "UI · Carte · placeholder" }
+      },
+      {
+        "slug": "biometrie",
+        "variant": "paper",
+        "mediaSide": "right",
+        "number": "03 / Produit · Biometrie",
+        "titleAccent": "Identité, prouvée à grande échelle.",
+        "lede": "Biometrie est notre plateforme d'identification multimodale · empreintes, visage et iris, conforme OACI, adossée à un moteur ABIS et à une PKI souveraine. Conçue pour les opérateurs publics et les régulateurs.",
+        "features": [
+          { "key": "Modalités",    "value": "Empreintes · Visage · Iris" },
+          { "key": "Standards",    "value": "OACI 9303 · ISO 19794 · NIST" },
+          { "key": "Matching",     "value": "1:1 · 1:N · clustering" },
+          { "key": "Capture",      "value": "Mobile · kiosque · agence" },
+          { "key": "Sécurité",     "value": "mTLS · HSM · PKI" },
+          { "key": "Déploiement",  "value": "On-prem · données souveraines" }
+        ],
+        "ctaLabel": "Demander une démo Biometrie →",
+        "mock": { "chip": "Module de capture", "mark": "BIO·", "label": "UI · Enrôlement · placeholder" }
+      }
+    ],
+    "cta": {
+      "eyebrow": "Une démo ?",
+      "title": "Voir un produit Akieni en conditions réelles.",
+      "lede": "Nous opérons chacun de ces produits nous-mêmes. Une démo, c'est l'outil réel, pas du slideware.",
+      "primary": "Demander une démo",
+      "email": "products@akieni.com",
+      "wordmark": "AKIENI"
     }
   },
   "footer": {

@@ -10,6 +10,7 @@ const CHIP_DOT: Record<ChipVariant, string> = {
 
 export function PlaceholderMedia({
   label,
+  labelPosition = "center",
   chip,
   chipVariant = "default",
   mark,
@@ -17,6 +18,7 @@ export function PlaceholderMedia({
   className = "",
 }: Readonly<{
   label?: string;
+  labelPosition?: "center" | "bottom-right";
   chip?: string;
   chipVariant?: ChipVariant;
   mark?: ReactNode;
@@ -52,7 +54,14 @@ export function PlaceholderMedia({
         </span>
       )}
       {label && (
-        <span className="relative inline-block border border-white/[0.18] bg-black/35 px-[0.7rem] py-[0.4rem] font-mono text-[0.7rem] uppercase tracking-[0.16em] text-white/55 backdrop-blur-[6px]">
+        <span
+          className={[
+            "border border-white/[0.18] bg-black/35 px-[0.7rem] py-[0.4rem] font-mono text-[0.7rem] uppercase tracking-[0.16em] text-white/55 backdrop-blur-[6px]",
+            labelPosition === "bottom-right"
+              ? "absolute bottom-4 right-4"
+              : "relative inline-block",
+          ].join(" ")}
+        >
           {label}
         </span>
       )}

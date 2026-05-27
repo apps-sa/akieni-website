@@ -25,7 +25,11 @@ export default async function Home({
       <Marquee strings={dict.home.marquee} />
       <Services lang={lang} strings={dict.home.services} />
       <FeaturedProjects lang={lang} strings={dict.home.featuredProjects} />
-      <Products lang={lang} strings={dict.home.products} />
+      <Products
+        lang={lang}
+        strings={dict.home.products}
+        link={{ label: dict.home.products.all, href: `/${lang}/products` }}
+      />
       <Stats strings={dict.home.stats} />
       <Credo strings={dict.home.credo} />
       <Approach strings={dict.home.approach} />

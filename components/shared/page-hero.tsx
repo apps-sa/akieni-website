@@ -18,6 +18,7 @@ export function PageHero({
   eyebrow,
   eyebrowAccent = true,
   caption,
+  backgroundMark,
   titleLine1,
   titleLine2,
   titleAccent,
@@ -28,6 +29,7 @@ export function PageHero({
   eyebrow: string;
   eyebrowAccent?: boolean;
   caption?: string;
+  backgroundMark?: string;
   titleLine1: string;
   titleLine2?: string;
   titleAccent?: string;
@@ -48,6 +50,16 @@ export function PageHero({
         aria-hidden
         className="pointer-events-none absolute top-[-20vmax] right-[-20vmax] h-[60vmax] w-[60vmax] rounded-full opacity-35 blur-[120px] [background:radial-gradient(circle,var(--cyan-teal)_0%,transparent_60%)]"
       />
+      {backgroundMark && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden"
+        >
+          <span className="font-mono text-[clamp(8rem,22vw,22rem)] font-bold tracking-[-0.05em] text-white/[0.04]">
+            {backgroundMark}
+          </span>
+        </div>
+      )}
 
       <Container className="relative z-2 grid w-full grid-cols-1 gap-s7">
         <div className="flex flex-wrap items-start justify-between gap-s4">

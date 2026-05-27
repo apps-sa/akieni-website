@@ -1,20 +1,58 @@
 import Link from "next/link";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 
-type ProductsStrings = Dictionary["home"]["products"];
 type ChipVariant = "default" | "green" | "blue";
+
+export type ProductsStrings = {
+  eyebrow: string;
+  titleLine1: string;
+  titleLine2: string;
+  lede: string;
+  items: ReadonlyArray<{
+    slug: string;
+    number: string;
+    name: string;
+    version: string;
+    desc: string;
+    features: ReadonlyArray<string>;
+    model: string;
+    chip: string;
+    chipVariant: string;
+    mark: string;
+    mediaLabel: string;
+    learnMore: string;
+  }>;
+};
 
 export function Products({
   lang,
   strings,
-}: Readonly<{ lang: string; strings: ProductsStrings }>) {
+  surface = "light",
+  link,
+}: Readonly<{
+  lang: string;
+  strings: ProductsStrings;
+  surface?: "light" | "dark";
+  link?: { label: string; href: string };
+}>) {
+  const isDark = surface === "dark";
+
+  const sectionVariant = isDark ? "dark" : "paper";
+  const cardCls = isDark
+    ? "border-line bg-ink-2 text-white"
+    : "border-line-light bg-white";
+  const descCls = isDark ? "text-md text-muted-2" : "text-md text-muted";
+  const featCls = isDark ? "text-sm text-muted-2" : "text-sm text-muted";
+  const footBorder = isDark ? "border-line" : "border-line-light";
+  const footText = isDark ? "text-muted-2" : "text-muted";
+
   return (
-    <Section variant="paper">
+    <Section variant={sectionVariant}>
       <SectionHead
         eyebrow={strings.eyebrow}
+        eyebrowAccent={isDark}
         title={
           <>
             {strings.titleLine1}
@@ -23,15 +61,19 @@ export function Products({
           </>
         }
         lede={strings.lede}
-        link={{ label: strings.all, href: `/${lang}/products` }}
+        link={link}
+        variant={isDark ? "dark" : "light"}
       />
       <div className="grid grid-cols-1 gap-s5 min-[721px]:grid-cols-2 lg:grid-cols-3">
         {strings.items.map((item) => (
           <article
             key={item.slug}
-            className="relative flex flex-col overflow-hidden border border-line-light bg-white transition-all duration-2 ease-akieni hover:border-black"
+            className={[
+              "relative flex flex-col overflow-hidden border transition-all duration-2 ease-akieni",
+              cardCls,
+            ].join(" ")}
           >
-            <div className="border-b border-line-light">
+            <div className={["border-b", footBorder].join(" ")}>
               <PlaceholderMedia
                 aspect="16/10"
                 chip={item.chip}
@@ -52,8 +94,8 @@ export function Products({
                   </small>
                 )}
               </h3>
-              <p className="flex-1 text-md text-muted">{item.desc}</p>
-              <ul className="flex flex-col gap-[0.4rem] text-sm text-muted">
+              <p className={["flex-1", descCls].join(" ")}>{item.desc}</p>
+              <ul className={["flex flex-col gap-[0.4rem]", featCls].join(" ")}>
                 {item.features.map((f) => (
                   <li key={f} className="flex items-baseline gap-[0.55rem]">
                     <span
@@ -67,7 +109,13 @@ export function Products({
                 ))}
               </ul>
             </div>
-            <div className="flex items-center justify-between border-t border-line-light px-[1.6rem] py-[1rem] font-mono text-xs uppercase tracking-[0.12em] text-muted">
+            <div
+              className={[
+                "flex items-center justify-between border-t px-[1.6rem] py-[1rem] font-mono text-xs uppercase tracking-[0.12em]",
+                footBorder,
+                footText,
+              ].join(" ")}
+            >
               <Link
                 href={`/${lang}/products/${item.slug}`}
                 className="transition-colors duration-1 ease-akieni hover:text-cyan-teal"

@@ -339,6 +339,149 @@
       "secondaryHref": "/projects"
     }
   },
+  "products": {
+    "meta": {
+      "title": "Products · Akieni",
+      "description": "AkieniPay, CarTracking and Biometrie · the products built and operated by Akieni for African organisations."
+    },
+    "hero": {
+      "eyebrow": "Our products",
+      "caption": "09 / PRODUCTS",
+      "backgroundMark": "AK·",
+      "titleLine1": "Software we",
+      "titleLine2": "operate ",
+      "titleAccent": "ourselves.",
+      "lede": "Three Akieni products · payments, fleet tracking, biometric identification · delivered as SaaS or deployed on your infrastructure.",
+      "ctaPrimary": "Explore products",
+      "ctaSecondary": "Request a demo"
+    },
+    "summary": {
+      "eyebrow": "Catalogue",
+      "titleLine1": "Three products.",
+      "titleLine2": "One delivery standard.",
+      "lede": "Every Akieni product is built by the same senior team, on the same PKI backbone, and operated with the same discipline as our national platforms.",
+      "items": [
+        {
+          "slug": "akienipay",
+          "number": "01 / Product",
+          "name": "AkieniPay",
+          "version": "v2",
+          "desc": "Payments & collection platform · aggregates Mobile Money, cards, bank transfers and cash points with automatic reconciliation.",
+          "features": [
+            "REST API + idempotent webhooks",
+            "Merchant console & dashboards",
+            "PCI-DSS / BEAC compliant"
+          ],
+          "model": "SaaS · 2024 →",
+          "chip": "Live",
+          "chipVariant": "default",
+          "mark": "A·PAY",
+          "mediaLabel": "AkieniPay · Console",
+          "learnMore": "Learn more →"
+        },
+        {
+          "slug": "cartracking",
+          "number": "02 / Product",
+          "name": "CarTracking",
+          "version": "",
+          "desc": "Real-time fleet tracking for corporate and public fleets · GPS, geofencing, driver behaviour, theft alerts.",
+          "features": [
+            "OBD-II box & dedicated GPS tracker",
+            "Unlimited geofences & SMS alerts",
+            "Fuel & driving reports"
+          ],
+          "model": "SaaS · 2023 →",
+          "chip": "Live",
+          "chipVariant": "green",
+          "mark": "CAR·",
+          "mediaLabel": "CarTracking · Map view",
+          "learnMore": "Learn more →"
+        },
+        {
+          "slug": "biometrie",
+          "number": "03 / Product",
+          "name": "Biometrie",
+          "version": "",
+          "desc": "Multi-modal biometric identification platform · fingerprint, face and iris, ICAO-compliant, backed by an ANSSI-grade ABIS.",
+          "features": [
+            "Mobile capture & fixed kiosks",
+            "1:1 & 1:N matching at scale",
+            "On-prem · sovereign data"
+          ],
+          "model": "On-prem · 2025 →",
+          "chip": "Preview",
+          "chipVariant": "blue",
+          "mark": "BIO·",
+          "mediaLabel": "Biometrie · Capture",
+          "learnMore": "Learn more →"
+        }
+      ]
+    },
+    "details": [
+      {
+        "slug": "akienipay",
+        "variant": "paper",
+        "mediaSide": "right",
+        "number": "01 / Product · AkieniPay",
+        "titleAccent": "Payments & collection, for Central Africa.",
+        "lede": "AkieniPay aggregates payment channels (Mobile Money, cards, bank transfers, cash points) behind a single API and console · with automatic reconciliation, idempotent webhooks and PCI-DSS / BEAC compliance.",
+        "features": [
+          { "key": "Channels",    "value": "MTN MoMo · Airtel · Visa / MC · Bank · Cash" },
+          { "key": "Currencies",  "value": "XAF · USD · EUR" },
+          { "key": "API latency", "value": "< 250 ms p95" },
+          { "key": "SLA",         "value": "99.95 %" },
+          { "key": "Compliance",  "value": "PCI-DSS · BEAC · COBAC" },
+          { "key": "Deployment",  "value": "SaaS · on-prem option" }
+        ],
+        "ctaLabel": "Request an AkieniPay demo →",
+        "mock": { "chip": "Merchant console", "mark": "A·PAY", "label": "UI · Dashboard · placeholder" }
+      },
+      {
+        "slug": "cartracking",
+        "variant": "dark",
+        "mediaSide": "left",
+        "number": "02 / Product · CarTracking",
+        "titleAccent": "Total visibility, every kilometre.",
+        "lede": "CarTracking equips corporate and public fleets with a GPS / OBD-II box, a real-time console and an alerting engine (speed, geofence, theft, behaviour). Already running on 2,400+ vehicles in the region.",
+        "features": [
+          { "key": "Vehicles tracked", "value": "2,400+" },
+          { "key": "GPS frequency",    "value": "5 s" },
+          { "key": "Geofences",        "value": "Unlimited per vehicle" },
+          { "key": "Alerts",           "value": "SMS · Email · Webhook" },
+          { "key": "Reports",          "value": "Fuel · driving · stops" },
+          { "key": "Deployment",       "value": "SaaS · API REST" }
+        ],
+        "ctaLabel": "Request a CarTracking demo →",
+        "mock": { "chip": "Live map", "mark": "CAR·", "label": "UI · Map · placeholder" }
+      },
+      {
+        "slug": "biometrie",
+        "variant": "paper",
+        "mediaSide": "right",
+        "number": "03 / Product · Biometrie",
+        "titleAccent": "Identity, proven at scale.",
+        "lede": "Biometrie is our multi-modal identification platform · fingerprint, face and iris, ICAO-compliant, backed by an ABIS engine and a sovereign PKI. Built for state operators and regulators.",
+        "features": [
+          { "key": "Modalities", "value": "Fingerprint · Face · Iris" },
+          { "key": "Standards",  "value": "ICAO 9303 · ISO 19794 · NIST" },
+          { "key": "Matching",   "value": "1:1 · 1:N · clustering" },
+          { "key": "Capture",    "value": "Mobile · kiosk · branch" },
+          { "key": "Security",   "value": "mTLS · HSM · PKI" },
+          { "key": "Deployment", "value": "On-prem · sovereign data" }
+        ],
+        "ctaLabel": "Request a Biometrie demo →",
+        "mock": { "chip": "Capture module", "mark": "BIO·", "label": "UI · Enrolment · placeholder" }
+      }
+    ],
+    "cta": {
+      "eyebrow": "A demo?",
+      "title": "See an Akieni product in real conditions.",
+      "lede": "We operate each of these products ourselves. A demo is the real tool · not slideware.",
+      "primary": "Request a demo",
+      "email": "products@akieni.com",
+      "wordmark": "AKIENI"
+    }
+  },
   "footer": {
     "ariaBrand": "Akieni home",
     "tagline": "Digital transformation for Africa. Brazzaville, Republic of Congo.",
