@@ -118,7 +118,7 @@ export function Header({
 
           <Link
             href={withLang("/contact")}
-            className="ml-s3 inline-flex items-center gap-[0.65rem] border border-current px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] transition-all duration-2 ease-akieni hover:-translate-y-0.5 hover:border-white hover:bg-white hover:text-black"
+            className="ml-s3 inline-flex items-center gap-[0.65rem] border border-current px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] transition-all duration-2 ease-akieni hover:border-white hover:bg-white hover:text-black"
           >
             {strings.cta}{" "}
             <span

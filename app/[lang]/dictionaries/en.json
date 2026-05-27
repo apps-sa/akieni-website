@@ -46,6 +46,293 @@
         "Universal Health Coverage",
         "Biometric Identification"
       ]
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "titleLine1": "Four practices,",
+      "titleLine2": "one mandate.",
+      "lede": "From strategy to deployment, we deliver software that runs at national scale. Each practice is anchored by senior local talent and international standards.",
+      "all": "All services",
+      "items": [
+        {
+          "id": "digital-transformation",
+          "number": "01 / Practice",
+          "title": "Digital Transformation",
+          "desc": "End-to-end strategy, implementation, and change management for organisations modernising at scale.",
+          "tags": ["Strategy", "Implementation", "Change"]
+        },
+        {
+          "id": "software-development",
+          "number": "02 / Practice",
+          "title": "Software Development",
+          "desc": "Custom platforms engineered to international standards by senior teams operating from Brazzaville.",
+          "tags": ["Backend", "Frontend", "Platforms"]
+        },
+        {
+          "id": "integration",
+          "number": "03 / Practice",
+          "title": "Software Integration",
+          "desc": "Connecting fragmented systems into unified, observable data flows · biometrics, payments, ERPs, GED.",
+          "tags": ["Systems", "APIs", "ETL"]
+        },
+        {
+          "id": "consulting",
+          "number": "04 / Practice",
+          "title": "Consulting & PM",
+          "desc": "Strategic advisory, programme management, and technical expertise embedded with your team.",
+          "tags": ["Advisory", "PMO", "Audit"]
+        }
+      ]
+    },
+    "featuredProjects": {
+      "eyebrow": "Selected work",
+      "titleLine1": "Building the",
+      "titleLine2": "national stack.",
+      "lede": "Three flagship programmes spanning finance, health, and social security · each shipping into production across the country.",
+      "all": "All projects",
+      "items": [
+        {
+          "slug": "sfec",
+          "size": "lg",
+          "client": "Ministry of Finance · DGID",
+          "title": "SFEC · Système de Facturation Électronique Certifié",
+          "tags": ["Government", "PKI", "Go", "Kubernetes"],
+          "years": "2024 · 2026",
+          "statusLabel": "In deployment",
+          "mediaLabel": "SFEC · Fiscal Platform · Screenshot"
+        },
+        {
+          "slug": "camu",
+          "size": "sm",
+          "client": "Government of Congo",
+          "title": "CAMU · Universal Health Coverage",
+          "tags": ["Health", "Laravel", "React"],
+          "years": "2024 · 2026",
+          "statusLabel": "Advanced delivery",
+          "mediaLabel": "CAMU · Health Platform · Screenshot"
+        },
+        {
+          "slug": "cnss",
+          "size": "full",
+          "client": "CNSS · Caisse Nationale de Sécurité Sociale",
+          "title": "Document management, biometrics & ePayment for social security.",
+          "tags": ["GED", "ABIS", "Odoo", "Kubernetes"],
+          "years": "",
+          "statusLabel": "Nearing completion",
+          "mediaLabel": "CNSS · Social Security · Wide visual"
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "Our products",
+      "titleLine1": "Software we",
+      "titleLine2": "operate ourselves.",
+      "lede": "Three Akieni products · payments, fleet tracking, biometric identification · delivered as SaaS or on your own infrastructure.",
+      "all": "All products",
+      "items": [
+        {
+          "slug": "akienipay",
+          "number": "01 / Product",
+          "name": "AkieniPay",
+          "version": "v2",
+          "desc": "Payments & collection platform · aggregates Mobile Money, cards, transfers and cash points with automatic reconciliation.",
+          "features": [
+            "REST API + idempotent webhooks",
+            "Merchant console & dashboards",
+            "PCI-DSS / BEAC compliant"
+          ],
+          "model": "SaaS · 2024 →",
+          "chip": "Live",
+          "chipVariant": "default",
+          "mark": "A·PAY",
+          "mediaLabel": "AkieniPay · Console",
+          "learnMore": "Learn more →"
+        },
+        {
+          "slug": "cartracking",
+          "number": "02 / Product",
+          "name": "CarTracking",
+          "version": "",
+          "desc": "Real-time fleet tracking for corporate and public fleets · GPS, geofencing, driver behaviour, theft alerts.",
+          "features": [
+            "OBD-II box & dedicated GPS tracker",
+            "Unlimited geofences & SMS alerts",
+            "Fuel & driving reports"
+          ],
+          "model": "SaaS · 2023 →",
+          "chip": "Live",
+          "chipVariant": "green",
+          "mark": "CAR·",
+          "mediaLabel": "CarTracking · Map view",
+          "learnMore": "Learn more →"
+        },
+        {
+          "slug": "biometrie",
+          "number": "03 / Product",
+          "name": "Biometrie",
+          "version": "",
+          "desc": "Multi-modal biometric identification · fingerprint, face and iris, ICAO-compliant, backed by an ANSSI-grade ABIS.",
+          "features": [
+            "Mobile capture & fixed kiosks",
+            "1:1 & 1:N matching at scale",
+            "On-prem · sovereign data"
+          ],
+          "model": "On-prem · 2025 →",
+          "chip": "Preview",
+          "chipVariant": "blue",
+          "mark": "BIO·",
+          "mediaLabel": "Biometrie · Capture",
+          "learnMore": "Learn more →"
+        }
+      ]
+    },
+    "stats": {
+      "title": "A young firm with national footprint.",
+      "eyebrow": "Snapshot · 2026",
+      "items": [
+        { "label": "Since 2023",   "value": 2,   "suffix": "",  "accent": "/yrs" },
+        { "label": "Employees",    "value": 45,  "suffix": "+", "accent": "" },
+        { "label": "African team", "value": 100, "suffix": "%", "accent": "" },
+        { "label": "Departments",  "value": 4,   "suffix": "",  "accent": "" }
+      ]
+    },
+    "credo": {
+      "eyebrow": "Our credo",
+      "attribution": "Frédéric Nzé, CEO",
+      "quoteLine1": "We deliver high-impact solutions that drive",
+      "quoteAccent": "economic value",
+      "quoteLine2": ", not just software."
+    },
+    "approach": {
+      "eyebrow": "How we work",
+      "titleLine1": "From mandate",
+      "titleLine2": "to deployment.",
+      "lede": "A repeatable, four-stage process refined across three national-scale programmes. No surprises, no theatrics · just disciplined delivery.",
+      "steps": [
+        { "number": "01 / Discover", "title": "Audit & scope.",       "desc": "We map the existing system, regulatory context, and constraints. Outcome: a precise problem statement." },
+        { "number": "02 / Design",   "title": "Architect & specify.", "desc": "Senior engineers and PMs co-author the architecture, with technology choices defended against alternatives." },
+        { "number": "03 / Deliver",  "title": "Build in sprints.",    "desc": "Incremental delivery in short cycles, with weekly reviews and a production-grade CI pipeline from day one." },
+        { "number": "04 / Deploy",   "title": "Run in production.",   "desc": "On-prem or cloud, we operate what we build · SLAs, observability, training, and handover." }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Start a project",
+      "title": "Have a programme that matters?",
+      "lede": "Tell us about your mandate · ministries, regulators, operators and growth-stage organisations across the region trust us with their critical platforms.",
+      "primary": "Talk to us",
+      "email": "contact@akieni.com",
+      "wordmark": "AKIENI"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services · Akieni",
+      "description": "Four practices — Digital Transformation, Software Development, Integration, Consulting & PM — engineered to international standards."
+    },
+    "hero": {
+      "eyebrow": "Our services",
+      "caption": "03 / Practices",
+      "titleLine1": "Four practices,",
+      "titleLine2": "built to ",
+      "titleAccent": "ship.",
+      "lede": "From strategy to deployment, Akieni delivers systems that move organisations forward · and stay running long after we hand them over.",
+      "ctaPrimary": "Start your project"
+    },
+    "detail": {
+      "eyebrow": "Capabilities",
+      "title": "What we offer.",
+      "lede": "Each practice is staffed by senior leads, supported by Academy-trained engineers, and runs against the same delivery playbook proven on SFEC, CAMU and CNSS.",
+      "items": [
+        {
+          "slug": "digital-transformation",
+          "number": "01 / Practice",
+          "title": "Digital Transformation",
+          "desc": "End-to-end programmes for organisations modernising at scale · from operating-model design to platform rollout and change adoption.",
+          "bullets": [
+            "Strategy & operating-model design",
+            "Implementation roadmaps",
+            "Change management & adoption",
+            "Capability building"
+          ]
+        },
+        {
+          "slug": "software-development",
+          "number": "02 / Practice",
+          "title": "Software Development",
+          "desc": "Bespoke platforms built to international standards · from backend services and APIs to React front-ends, on Kubernetes-grade infrastructure.",
+          "bullets": [
+            "Backend systems (Go, Laravel, Node)",
+            "Front-ends (React, TypeScript)",
+            "Platform engineering & DevOps",
+            "Security & PKI"
+          ]
+        },
+        {
+          "slug": "integration",
+          "number": "03 / Practice",
+          "title": "Software Integration",
+          "desc": "We turn fragmented systems into unified data flows · payments, biometrics, GED, ERPs · with the observability operators need.",
+          "bullets": [
+            "Systems unification",
+            "APIs, ETL & data pipelines",
+            "Identity & payments",
+            "Observability & SLOs"
+          ]
+        },
+        {
+          "slug": "consulting",
+          "number": "04 / Practice",
+          "title": "Consulting & PM",
+          "desc": "Senior advisory and programme management embedded with your team · for the high-stakes, multi-stakeholder mandates that need a steady hand.",
+          "bullets": [
+            "Strategic advisory",
+            "Programme & project management",
+            "Technical audits",
+            "Vendor & RFP support"
+          ]
+        }
+      ],
+      "readMore": "Read more"
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "titleLine1": "Discover, design,",
+      "titleLine2": "deliver, deploy.",
+      "lede": "A repeatable four-stage process. Each stage produces a tangible artefact · and a binary go / no-go decision.",
+      "steps": [
+        { "number": "01 / Discover", "title": "Audit the system.",       "desc": "Stakeholder interviews, technical inventory, regulatory and operational mapping. Outcome: a precise problem statement and constraints sheet." },
+        { "number": "02 / Design",   "title": "Architect & specify.",    "desc": "Senior engineers and PMs co-author the architecture. Trade-offs and alternatives are documented and defended." },
+        { "number": "03 / Deliver",  "title": "Build in sprints.",       "desc": "Two-week increments against a production-grade pipeline. Weekly demos, monthly steering. No surprises at the end." },
+        { "number": "04 / Deploy",   "title": "Run in production.",      "desc": "On-prem or cloud, we operate what we build · SLAs, observability, runbooks, training, and a clean handover when ready." }
+      ]
+    },
+    "stack": {
+      "eyebrow": "Tech stack",
+      "title": "A focused toolbox.",
+      "lede": "We standardise on a small set of high-leverage technologies · chosen for longevity, security, and operability · and we go deep on each.",
+      "groups": [
+        { "heading": "Languages",            "items": ["Go", "TypeScript", "PHP / Laravel", "Python", "SQL"] },
+        { "heading": "Platform",             "items": ["Kubernetes", "PostgreSQL", "Redis", "AWS", "On-prem"] },
+        { "heading": "Security & specialty", "items": ["PKI / mTLS", "HSM", "ABIS", "OpenKM / GED", "Odoo"] }
+      ]
+    },
+    "industries": {
+      "eyebrow": "Industries",
+      "title": "Where we work.",
+      "lede": "Four sectors where we hold senior, named experience · each anchored by a live national-scale programme.",
+      "items": [
+        { "number": "01", "title": "Government", "desc": "Fiscal infrastructure, identity, regulators." },
+        { "number": "02", "title": "Finance",    "desc": "Payments, compliance, ePayment rails." },
+        { "number": "03", "title": "Health",     "desc": "Universal coverage platforms, provider networks." },
+        { "number": "04", "title": "Education",  "desc": "Workforce platforms, the Akieni Academy." }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Start a project",
+      "title": "Have a mandate that fits?",
+      "primary": "Start your project",
+      "secondary": "See our work",
+      "secondaryHref": "/projects"
     }
   },
   "footer": {

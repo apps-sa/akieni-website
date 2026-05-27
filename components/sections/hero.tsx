@@ -1,7 +1,8 @@
-import type { CSSProperties, ReactNode } from "react";
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { Container } from "@/components/shared/container";
+import { Eyebrow } from "@/components/shared/eyebrow";
 
 type HeroStrings = Dictionary["home"]["hero"];
 
@@ -102,23 +103,6 @@ const MOTIF_ROWS: ReadonlyArray<MotifRow> = [
   },
 ];
 
-function Eyebrow({
-  children,
-  accent = false,
-}: Readonly<{ children: ReactNode; accent?: boolean }>) {
-  return (
-    <span
-      className={[
-        "inline-flex items-center gap-[0.6rem] font-mono text-xs font-medium uppercase tracking-[0.14em]",
-        "before:block before:h-px before:w-[18px] before:bg-current before:opacity-60",
-        accent ? "text-cyan-teal" : "text-muted",
-      ].join(" ")}
-    >
-      {children}
-    </span>
-  );
-}
-
 function peakStyle(p: Peak) {
   return { "--w": p.w, "--h": p.h } as CSSProperties;
 }
@@ -194,7 +178,7 @@ export function Hero({
           <div className="flex flex-wrap gap-s3">
             <Link
               href={`/${lang}/services`}
-              className="group inline-flex items-center gap-[0.65rem] border border-cyan-teal bg-cyan-teal px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] text-black shadow-[0_0_0_rgba(56,240,115,0)] transition-[background-color,border-color,color,transform,box-shadow] duration-3 ease-akieni hover:-translate-y-px hover:border-green hover:bg-green hover:shadow-[0_10px_24px_-12px_rgba(56,240,115,0.55)]"
+              className="group inline-flex items-center gap-[0.65rem] border border-cyan-teal bg-cyan-teal px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] text-black transition-[background-color,border-color,color] duration-3 ease-akieni hover:border-green hover:bg-green"
             >
               {strings.ctaPrimary}
               <span className="inline-block transition-transform duration-3 ease-akieni group-hover:translate-x-1">
@@ -203,7 +187,7 @@ export function Hero({
             </Link>
             <Link
               href={`/${lang}/projects`}
-              className="inline-flex items-center gap-[0.65rem] border border-current bg-transparent px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] shadow-[0_0_0_rgba(255,255,255,0)] transition-[background-color,border-color,color,transform,box-shadow] duration-3 ease-akieni hover:-translate-y-px hover:border-white hover:bg-white hover:text-black hover:shadow-[0_10px_24px_-12px_rgba(255,255,255,0.35)]"
+              className="inline-flex items-center gap-[0.65rem] border border-current bg-transparent px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] transition-[background-color,border-color,color] duration-3 ease-akieni hover:border-white hover:bg-white hover:text-black"
             >
               {strings.ctaSecondary}
             </Link>
