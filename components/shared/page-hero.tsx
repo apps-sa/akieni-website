@@ -67,9 +67,7 @@ export function PageHero({
               {titleLine2}
             </>
           )}
-          {titleAccent && (
-            <span className="text-cyan-teal">{titleAccent}</span>
-          )}
+          {titleAccent && <span className="text-cyan-teal">{titleAccent}</span>}
         </h1>
 
         {(lede || (actions && actions.length > 0)) && (
