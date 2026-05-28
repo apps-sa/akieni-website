@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import { RevealGroup, RevealItem } from "@/components/motion/primitives";
 import { Container } from "@/components/shared/container";
 import { Eyebrow } from "@/components/shared/eyebrow";
 
@@ -157,23 +158,27 @@ export function Hero({
         ))}
       </div>
 
-      <Container className="relative z-2 grid w-full grid-cols-1 gap-s7">
-        <div className="flex flex-wrap items-start justify-between gap-s4">
+      <Container className="relative z-2 w-full">
+        <RevealGroup className="grid grid-cols-1 gap-s7" stagger={0.12}>
+        <RevealItem className="flex flex-wrap items-start justify-between gap-s4">
           <Eyebrow accent>{strings.eyebrow}</Eyebrow>
           <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
             {strings.version}
           </span>
-        </div>
+        </RevealItem>
 
-        <h1 className="max-w-[14ch] text-display font-bold leading-[0.92] tracking-[-0.045em] wrap-break-word max-[720px]:max-w-full max-[720px]:text-[clamp(2.25rem,11vw,4rem)]">
+        <RevealItem
+          as="h1"
+          className="max-w-[14ch] text-display font-bold leading-[0.92] tracking-[-0.045em] wrap-break-word max-[720px]:max-w-full max-[720px]:text-[clamp(2.25rem,11vw,4rem)]"
+        >
           {strings.titleLine1}
           <br />
           {strings.titleLine2}
           <br />
           <span className="text-cyan-teal">{strings.titleAccent}</span>
-        </h1>
+        </RevealItem>
 
-        <div className="flex flex-wrap items-end justify-between gap-s5">
+        <RevealItem className="flex flex-wrap items-end justify-between gap-s5">
           <p className="max-w-[48ch] text-lg text-muted-2">{strings.lede}</p>
           <div className="flex flex-wrap gap-s3">
             <Link
@@ -192,9 +197,9 @@ export function Hero({
               {strings.ctaSecondary}
             </Link>
           </div>
-        </div>
+        </RevealItem>
 
-        <div className="flex flex-wrap items-end justify-between gap-s5 border-t border-line pt-s5 max-[720px]:gap-s4">
+        <RevealItem className="flex flex-wrap items-end justify-between gap-s5 border-t border-line pt-s5 max-[720px]:gap-s4">
           <div>
             <Eyebrow>{strings.deployingLabel}</Eyebrow>
             <div className="mt-2 max-w-[36ch] text-lg">
@@ -213,7 +218,8 @@ export function Hero({
               </div>
             ))}
           </div>
-        </div>
+        </RevealItem>
+        </RevealGroup>
       </Container>
     </section>
   );

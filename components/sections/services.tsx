@@ -1,4 +1,5 @@
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import { MotionCard } from "@/components/motion/primitives";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 import { Tag } from "@/components/shared/tag";
@@ -25,9 +26,9 @@ export function Services({
       />
       <div className="grid grid-cols-1 gap-s6 min-[721px]:grid-cols-2 lg:grid-cols-4">
         {strings.items.map((item) => (
-          <article
+          <MotionCard
             key={item.id}
-            className="relative flex min-h-[320px] flex-col gap-s4 border border-line border-l-[3px] border-l-cyan-teal bg-ink-2 p-[2rem_1.8rem_2.2rem] text-white transition-all duration-2 ease-akieni hover:border-l-green hover:bg-black"
+            className="relative flex min-h-[320px] flex-col gap-s4 border border-line border-l-[3px] border-l-cyan-teal bg-ink-2 p-[2rem_1.8rem_2.2rem] text-white transition-colors duration-2 ease-akieni hover:border-l-green hover:bg-black"
           >
             <div className="flex items-center justify-between">
               <span className="font-mono text-sm tracking-[0.1em] text-muted-2">
@@ -48,7 +49,7 @@ export function Services({
                 </Tag>
               ))}
             </div>
-          </article>
+          </MotionCard>
         ))}
       </div>
     </Section>

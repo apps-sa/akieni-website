@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Reveal } from "@/components/motion/primitives";
 import { Container } from "./container";
 
 type Variant = "default" | "paper" | "dark" | "ink";
@@ -14,6 +15,7 @@ export function Section({
   variant = "default",
   flushTop = false,
   flushBot = false,
+  reveal = true,
   id,
   className = "",
   innerClassName = "",
@@ -22,6 +24,7 @@ export function Section({
   variant?: Variant;
   flushTop?: boolean;
   flushBot?: boolean;
+  reveal?: boolean;
   id?: string;
   className?: string;
   innerClassName?: string;
@@ -41,7 +44,9 @@ export function Section({
         .filter(Boolean)
         .join(" ")}
     >
-      <Container className={innerClassName}>{children}</Container>
+      <Container className={innerClassName}>
+        {reveal ? <Reveal>{children}</Reveal> : children}
+      </Container>
     </section>
   );
 }

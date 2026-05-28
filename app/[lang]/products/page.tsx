@@ -4,6 +4,7 @@ import { Cta } from "@/components/sections/cta";
 import { ProductDetail } from "@/components/sections/product-detail";
 import { Products } from "@/components/sections/products";
 import { PageHero } from "@/components/shared/page-hero";
+import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
 
 export async function generateMetadata({
@@ -12,10 +13,12 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return {
+  return buildMetadata({
+    lang,
+    pathWithoutLocale: "/products",
     title: dict.products.meta.title,
     description: dict.products.meta.description,
-  };
+  });
 }
 
 export default async function ProductsPage({

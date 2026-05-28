@@ -1,3 +1,5 @@
+import { MotionCard } from "@/components/motion/primitives";
+
 export function InfoCard({
   number,
   title,
@@ -11,9 +13,9 @@ export function InfoCard({
 }>) {
   const isDark = surface === "dark";
   return (
-    <article
+    <MotionCard
       className={[
-        "flex flex-col gap-s3 overflow-hidden border p-[1.6rem] transition-all duration-2 ease-akieni",
+        "flex flex-col gap-s3 overflow-hidden border p-[1.6rem] transition-colors duration-2 ease-akieni",
         isDark
           ? "bg-ink-2 border-line text-white"
           : "bg-white border-line-light",
@@ -32,6 +34,6 @@ export function InfoCard({
       >
         {desc}
       </p>
-    </article>
+    </MotionCard>
   );
 }

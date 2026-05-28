@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RevealGroup, RevealItem } from "@/components/motion/primitives";
 import { Container } from "./container";
 import { Eyebrow } from "./eyebrow";
 
@@ -19,9 +20,11 @@ export function PageHero({
   eyebrowAccent = true,
   caption,
   backgroundMark,
+  secondGlow = false,
   titleLine1,
   titleLine2,
   titleAccent,
+  titleLine3,
   lede,
   actions,
   minHeight = "74vh",
@@ -30,9 +33,11 @@ export function PageHero({
   eyebrowAccent?: boolean;
   caption?: string;
   backgroundMark?: string;
+  secondGlow?: boolean;
   titleLine1: string;
   titleLine2?: string;
   titleAccent?: string;
+  titleLine3?: string;
   lede?: string;
   actions?: PageHeroAction[];
   minHeight?: string;
@@ -50,6 +55,12 @@ export function PageHero({
         aria-hidden
         className="pointer-events-none absolute top-[-20vmax] right-[-20vmax] h-[60vmax] w-[60vmax] rounded-full opacity-35 blur-[120px] [background:radial-gradient(circle,var(--cyan-teal)_0%,transparent_60%)]"
       />
+      {secondGlow && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute bottom-[-25vmax] left-[-20vmax] h-[60vmax] w-[60vmax] rounded-full opacity-[0.18] blur-[120px] [background:radial-gradient(circle,var(--blue)_0%,transparent_60%)]"
+        />
+      )}
       {backgroundMark && (
         <div
           aria-hidden
@@ -61,17 +72,21 @@ export function PageHero({
         </div>
       )}
 
-      <Container className="relative z-2 grid w-full grid-cols-1 gap-s7">
-        <div className="flex flex-wrap items-start justify-between gap-s4">
+      <Container className="relative z-2 w-full">
+        <RevealGroup className="grid grid-cols-1 gap-s7" stagger={0.12}>
+        <RevealItem className="flex flex-wrap items-start justify-between gap-s4">
           <Eyebrow accent={eyebrowAccent}>{eyebrow}</Eyebrow>
           {caption && (
             <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
               {caption}
             </span>
           )}
-        </div>
+        </RevealItem>
 
-        <h1 className="max-w-[16ch] text-display font-bold leading-[0.92] tracking-[-0.045em] text-balance max-[720px]:text-[clamp(2.25rem,11vw,4rem)]">
+        <RevealItem
+          as="h1"
+          className="max-w-[16ch] text-display font-bold leading-[0.92] tracking-[-0.045em] text-balance max-[720px]:text-[clamp(2.25rem,11vw,4rem)]"
+        >
           {titleLine1}
           {titleLine2 && (
             <>
@@ -80,10 +95,16 @@ export function PageHero({
             </>
           )}
           {titleAccent && <span className="text-cyan-teal">{titleAccent}</span>}
-        </h1>
+          {titleLine3 && (
+            <>
+              <br />
+              {titleLine3}
+            </>
+          )}
+        </RevealItem>
 
         {(lede || (actions && actions.length > 0)) && (
-          <div className="flex flex-wrap items-end justify-between gap-s5">
+          <RevealItem className="flex flex-wrap items-end justify-between gap-s5">
             {lede && (
               <p className="max-w-[48ch] text-lg text-muted-2">{lede}</p>
             )}
@@ -108,8 +129,9 @@ export function PageHero({
                 ))}
               </div>
             )}
-          </div>
+          </RevealItem>
         )}
+        </RevealGroup>
       </Container>
     </section>
   );

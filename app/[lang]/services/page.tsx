@@ -6,6 +6,7 @@ import { Industries } from "@/components/sections/industries";
 import { ServicesDetail } from "@/components/sections/services-detail";
 import { TechStack } from "@/components/sections/tech-stack";
 import { PageHero } from "@/components/shared/page-hero";
+import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
 
 export async function generateMetadata({
@@ -14,11 +15,12 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
-
-  return {
+  return buildMetadata({
+    lang,
+    pathWithoutLocale: "/services",
     title: dict.services.meta.title,
     description: dict.services.meta.description,
-  };
+  });
 }
 
 export default async function ServicesPage({

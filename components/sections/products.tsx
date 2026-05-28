@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MotionCard } from "@/components/motion/primitives";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
@@ -66,10 +67,10 @@ export function Products({
       />
       <div className="grid grid-cols-1 gap-s5 min-[721px]:grid-cols-2 lg:grid-cols-3">
         {strings.items.map((item) => (
-          <article
+          <MotionCard
             key={item.slug}
             className={[
-              "relative flex flex-col overflow-hidden border transition-all duration-2 ease-akieni",
+              "relative flex flex-col overflow-hidden border transition-colors duration-2 ease-akieni",
               cardCls,
             ].join(" ")}
           >
@@ -124,7 +125,7 @@ export function Products({
               </Link>
               <span>{item.model}</span>
             </div>
-          </article>
+          </MotionCard>
         ))}
       </div>
     </Section>
