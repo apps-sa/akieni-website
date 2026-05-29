@@ -35,6 +35,42 @@ pnpm lint         # ESLint
 
 Visiting `/` redirects to `/en` (or `/fr` if your browser prefers French).
 
+## Environment variables
+
+Copy [`.env.example`](.env.example) to `.env.local` and fill in the values. All variables are `NEXT_PUBLIC_*`, so they are inlined at build time — rebuild after changing them.
+
+| Variable                             | Required | Purpose                                                                                   |
+| ------------------------------------ | -------- | ----------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`               | No       | Canonical production origin (no trailing slash). Used for canonical URLs, sitemap, robots, OpenGraph and JSON-LD. Defaults to `https://www.akieni.com`. |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No     | Google Search Console ownership-verification token. Renders the `<meta name="google-site-verification">` tag. |
+| `NEXT_PUBLIC_BING_SITE_VERIFICATION`   | No     | Bing Webmaster Tools ownership-verification token. Renders the `<meta name="msvalidate.01">` tag. |
+
+The verification tokens are optional — leave them blank for local development. They only matter for the production deployment when you want to prove domain ownership to each search engine. Paste **only the token value**, not the surrounding `<meta ...>` tag.
+
+### Getting `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`
+
+1. Go to [Google Search Console](https://search.google.com/search-console) and sign in with the account that should own the property.
+2. Click **Add property** → choose the **URL prefix** type → enter `https://www.akieni.com` (must match `NEXT_PUBLIC_SITE_URL`).
+3. In the verification dialog, expand the **HTML tag** method. Google shows a tag like:
+   ```html
+   <meta name="google-site-verification" content="AbC123_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+   ```
+4. Copy **only the `content` value** (`AbC123_xxx…`) into `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
+5. Deploy (or rebuild) so the tag is live, then click **Verify** in Search Console.
+
+### Getting `NEXT_PUBLIC_BING_SITE_VERIFICATION`
+
+1. Go to [Bing Webmaster Tools](https://www.bing.com/webmasters) and sign in.
+2. Add the site `https://www.akieni.com`. (You can also **Import from Google Search Console** to skip re-verification — if you do that, this token is unnecessary.)
+3. Choose the **HTML Meta Tag** verification option. Bing shows a tag like:
+   ```html
+   <meta name="msvalidate.01" content="0123456789ABCDEF0123456789ABCDEF" />
+   ```
+4. Copy **only the `content` value** into `NEXT_PUBLIC_BING_SITE_VERIFICATION`.
+5. Deploy (or rebuild), then click **Verify** in Bing Webmaster Tools.
+
+The tags are wired up in [`app/[lang]/layout.tsx`](app/%5Blang%5D/layout.tsx) via the Next.js `metadata.verification` field — when a token env var is empty, the corresponding tag is simply omitted.
+
 ## Directory layout
 
 ```

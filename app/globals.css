@@ -138,6 +138,17 @@
   --duration-3: var(--dur-3);
 
   --animate-marquee: marquee 38s linear infinite;
+  --animate-mappin: mappin 2.4s ease-in-out infinite;
+}
+
+@keyframes mappin {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
 }
 
 @keyframes marquee {
@@ -219,5 +230,25 @@
   }
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* ============================================
+   Hero peak motif — decorative
+   Sized via inline --w / --h custom properties.
+   Wrapped in @layer components so Tailwind 4
+   preserves the rule in the compiled output.
+   ============================================ */
+@layer components {
+  .peak {
+    display: block;
+    flex-shrink: 0;
+    height: var(--h, 9vh);
+    width: var(--w, 6vw);
+    background-image: url("/images/akieni-icon-white.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    opacity: 0.18;
   }
 }
