@@ -25,8 +25,8 @@ export function Footer({
               <Image
                 src="/images/akieni-logo-white.png"
                 alt="Akieni"
-                width={1065}
-                height={201}
+                width={600}
+                height={113}
                 sizes="170px"
                 quality={95}
                 style={{ height: 32, width: "auto", display: "block" }}
