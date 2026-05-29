@@ -121,9 +121,9 @@ export function RoleDetail({
 
           <aside className="flex flex-col gap-s5 border border-line-light bg-white p-s6">
             <div id="stack" className="scroll-mt-[calc(var(--nav-h)+4rem)]">
-              <h4 className="mb-s3 font-mono text-xs uppercase tracking-[0.14em] text-muted">
+              <p className="mb-s3 font-mono text-xs uppercase tracking-[0.14em] text-muted">
                 {shared.stackLabel}
-              </h4>
+              </p>
               <div className="flex flex-wrap gap-[0.6rem]">
                 {role.stack.map((s) => (
                   <Badge key={s}>{s}</Badge>
@@ -132,9 +132,9 @@ export function RoleDetail({
             </div>
             <hr className="border-line-light" />
             <div id="benefits" className="scroll-mt-[calc(var(--nav-h)+4rem)]">
-              <h4 className="mb-s3 font-mono text-xs uppercase tracking-[0.14em] text-muted">
+              <p className="mb-s3 font-mono text-xs uppercase tracking-[0.14em] text-muted">
                 {shared.benefitsLabel}
-              </h4>
+              </p>
               <ul className="flex flex-col gap-[0.6rem] text-md text-muted">
                 {shared.benefits.map((b) => (
                   <li key={b} className="flex items-baseline gap-[0.55rem]">

@@ -18,9 +18,9 @@ export function TechStack({
       <div className="grid grid-cols-1 gap-s5 min-[721px]:grid-cols-2 lg:grid-cols-3">
         {strings.groups.map((group) => (
           <div key={group.heading} className="flex flex-col gap-4">
-            <h4 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
+            <h3 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
               {group.heading}
-            </h4>
+            </h3>
             <div className="flex flex-wrap gap-[0.6rem]">
               {group.items.map((item) => (
                 <Badge key={item}>{item}</Badge>

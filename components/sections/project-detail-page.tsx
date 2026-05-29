@@ -140,9 +140,9 @@ export function ProjectDetailPage({
           <div className="flex flex-col gap-s5">
             {strings.stack.groups.map((group) => (
               <div key={group.heading}>
-                <h4 className="mb-[0.8rem] font-mono text-xs uppercase tracking-[0.16em] text-muted">
+                <p className="mb-[0.8rem] font-mono text-xs uppercase tracking-[0.16em] text-muted">
                   {group.heading}
-                </h4>
+                </p>
                 <div className="flex flex-wrap gap-[0.6rem]">
                   {group.items.map((b) => (
                     <Badge key={b}>{b}</Badge>

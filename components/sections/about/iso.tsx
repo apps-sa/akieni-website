@@ -16,9 +16,9 @@ function IsoCol({
   const isNot = variant === "isNot";
   return (
     <div className="flex flex-col gap-s3 p-8 min-[721px]:[&:not(:first-child)]:border-l border-line-light">
-      <h4 className="mb-2 font-mono text-xs uppercase tracking-[0.14em] text-muted">
+      <p className="mb-2 font-mono text-xs uppercase tracking-[0.14em] text-muted">
         {heading}
-      </h4>
+      </p>
       <ul className="flex flex-col gap-[0.6rem]">
         {items.map((item) => (
           <li

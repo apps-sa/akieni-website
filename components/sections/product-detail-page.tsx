@@ -88,9 +88,9 @@ export function ProductDetailPage({
             aria-label={strings.hero.glanceLabel}
             className="flex flex-col gap-s3 border border-line bg-ink-2 p-s5"
           >
-            <h4 className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-cyan-teal">
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-cyan-teal">
               {strings.hero.glanceLabel}
-            </h4>
+            </p>
             <div className="grid grid-cols-2 gap-x-[0.8rem] gap-y-4">
               {strings.hero.kv.map((kv) => (
                 <div key={kv.k} className="flex flex-col gap-[0.2rem]">
