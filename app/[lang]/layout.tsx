@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import { LazyMotionProvider } from "@/components/motion/lazy-motion-provider";
 import { PageTransition } from "@/components/motion/page-transition";
 import { Footer } from "@/components/shared/footer";
 import { Header } from "@/components/shared/header";
 import { MobileMenu } from "@/components/shared/mobile-menu";
+import { ScrollBehavior } from "@/components/shared/scroll-behavior";
 import { SiteJsonLd } from "@/components/shared/site-json-ld";
 import { SITE } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "./dictionaries";
@@ -59,11 +61,14 @@ export default async function LangLayout({
   return (
     <html lang={lang} className="h-full antialiased">
       <body className="flex min-h-full flex-col bg-white text-black font-sans">
+        <ScrollBehavior />
         <SiteJsonLd lang={lang} />
-        <Header strings={dict.header} />
-        <MobileMenu strings={dict.header} />
-        <PageTransition>{children}</PageTransition>
-        <Footer lang={lang} strings={dict.footer} />
+        <LazyMotionProvider>
+          <Header strings={dict.header} />
+          <MobileMenu strings={dict.header} />
+          <PageTransition>{children}</PageTransition>
+          <Footer lang={lang} strings={dict.footer} />
+        </LazyMotionProvider>
       </body>
     </html>
   );

@@ -35,9 +35,9 @@ export function LegalPage({
 
       <Container className="grid grid-cols-1 gap-s7 pb-s10 min-[901px]:[grid-template-columns:minmax(220px,280px)_1fr]">
         <aside className="self-start border-t border-line-light pt-4 min-[901px]:sticky min-[901px]:top-[calc(var(--nav-h)+1rem)]">
-          <h4 className="mb-[0.8rem] font-mono text-xs font-medium uppercase tracking-[0.14em] text-muted">
+          <p className="mb-[0.8rem] font-mono text-xs font-medium uppercase tracking-[0.14em] text-muted">
             {strings.contentsLabel}
-          </h4>
+          </p>
           <ol className="flex flex-col gap-[0.55rem]">
             {strings.sections.map((s, i) => (
               <li key={s.id}>

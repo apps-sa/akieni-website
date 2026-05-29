@@ -1,6 +1,6 @@
 "use client";
 
-import { type HTMLMotionProps, motion, useReducedMotion } from "motion/react";
+import { type HTMLMotionProps, m as motion, useReducedMotion } from "motion/react";
 import type { ElementType, ReactNode } from "react";
 
 const EASE = [0.2, 0.7, 0.1, 1] as const; // matches --ease-akieni
