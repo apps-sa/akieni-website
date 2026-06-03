@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContactForm } from "@/components/forms/contact-form";
-import { Reveal, RevealGroup, RevealItem } from "@/components/motion/primitives";
+import {
+  Reveal,
+  RevealGroup,
+  RevealItem,
+} from "@/components/motion/primitives";
 import { Container } from "@/components/shared/container";
 import { Eyebrow } from "@/components/shared/eyebrow";
 import { Section } from "@/components/shared/section";
@@ -87,24 +91,17 @@ export default async function ContactPage({
             ))}
           </dl>
 
-          <div
-            aria-hidden
-            className="relative mt-s5 aspect-[16/10] overflow-hidden border border-line [background:linear-gradient(180deg,#0a0a09_0%,#15161a_100%)]"
-          >
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[40px_40px]" />
-            <div className="absolute inset-x-0 bottom-0 top-[60%] border-t border-cyan-teal/30 [background:linear-gradient(180deg,rgba(15,64,248,0.18),rgba(18,235,214,0.08))]" />
-            <div className="absolute left-[38%] top-[45%] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-[0.4rem]">
-              <div className="h-[14px] w-[14px] animate-mappin rounded-full bg-cyan-teal shadow-[0_0_0_6px_rgba(18,235,214,0.2),0_0_0_14px_rgba(18,235,214,0.08)]" />
-              <div className="border border-line bg-black/60 px-[0.55rem] py-[0.3rem] font-mono text-xs tracking-[0.16em] text-white">
-                {t.info.mapLabel}
-              </div>
-            </div>
-            <div className="absolute right-[0.8rem] top-[0.8rem] font-mono text-xs tracking-[0.14em] text-muted-2">
-              {t.info.mapCompass}
-            </div>
-            <div className="absolute bottom-[0.8rem] left-[0.8rem] font-mono text-xs tracking-[0.14em] text-muted-2">
-              {t.info.mapLegend}
-            </div>
+          <div className="relative mt-s5 aspect-16/10 overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8558222494758!2d15.300780375902349!3d-4.24830144603977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a336c1e9d0ecd%3A0xfbe7944fc656d5d3!2sLes%20tours%20jumelles!5e0!3m2!1sfr!2scg!4v1780485649811!5m2!1sfr!2scg"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={t.info.mapLabel}
+            ></iframe>
           </div>
         </Reveal>
       </Container>

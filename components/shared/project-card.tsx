@@ -1,3 +1,4 @@
+import { BlurImage } from "@/components/shared/blur-image";
 import Link from "next/link";
 import { MotionCard } from "@/components/motion/primitives";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
@@ -11,6 +12,7 @@ export type Project = {
   years?: string;
   statusLabel: string;
   mediaLabel?: string;
+  image?: string;
   desc?: string;
 };
 
@@ -72,10 +74,22 @@ export function ProjectCard({
 
   const body = (
     <>
-      <PlaceholderMedia
-        aspect={SIZE_ASPECT[size]}
-        label={project.mediaLabel}
-      />
+      {project.image ? (
+        <div className="relative min-h-[420px] flex-1 overflow-hidden">
+          <BlurImage
+            src={project.image}
+            alt={project.mediaLabel ?? project.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+        </div>
+      ) : (
+        <PlaceholderMedia
+          aspect={SIZE_ASPECT[size]}
+          label={project.mediaLabel}
+        />
+      )}
       <div className="flex flex-1 flex-col gap-s3 p-[1.6rem_1.6rem_1.8rem]">
         {isFullSize ? (
           <div className="flex flex-wrap items-start justify-between gap-s4">
@@ -93,9 +107,9 @@ export function ProjectCard({
                   </Tag>
                 ))}
               </div>
-              <Tag variant="status" surface={isDark ? "dark" : "light"}>
+              {/* <Tag variant="status" surface={isDark ? "dark" : "light"}>
                 {project.statusLabel}
-              </Tag>
+              </Tag> */}
             </div>
           </div>
         ) : (
@@ -124,9 +138,9 @@ export function ProjectCard({
           ].join(" ")}
         >
           <span>{project.years ?? ""}</span>
-          <Tag variant="status" surface={isDark ? "dark" : "light"}>
+          {/* <Tag variant="status" surface={isDark ? "dark" : "light"}>
             {project.statusLabel}
-          </Tag>
+          </Tag> */}
         </div>
       )}
     </>

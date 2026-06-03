@@ -37,6 +37,7 @@ export function FeaturedProjects({
               years: item.years || undefined,
               statusLabel: item.statusLabel,
               mediaLabel: item.mediaLabel,
+              image: item.image,
             }}
             lang={lang}
             surface="dark"
