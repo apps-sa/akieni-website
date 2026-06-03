@@ -103,7 +103,8 @@
           "tags": ["Gouvernement", "PKI", "Go", "Kubernetes"],
           "years": "2024 · 2026",
           "statusLabel": "En déploiement",
-          "mediaLabel": "SFEC · Plateforme fiscale · Capture"
+          "mediaLabel": "SFEC · Plateforme fiscale · Capture",
+          "image": "/images/afro-american-man-suit-holding-documents-talking-female-boss.jpg"
         },
         {
           "slug": "camu",
@@ -113,7 +114,8 @@
           "tags": ["Santé", "Laravel", "React"],
           "years": "2024 · 2026",
           "statusLabel": "Livraison avancée",
-          "mediaLabel": "CAMU · Plateforme santé · Capture"
+          "mediaLabel": "CAMU · Plateforme santé · Capture",
+          "image": "/images/medic-looking-tablet-screen-healthcare-system.jpg"
         },
         {
           "slug": "cnss",
@@ -123,7 +125,8 @@
           "tags": ["GED", "ABIS", "Odoo", "Kubernetes"],
           "years": "",
           "statusLabel": "Bientôt terminé",
-          "mediaLabel": "CNSS · Sécurité sociale · Visuel large"
+          "mediaLabel": "CNSS · Sécurité sociale · Visuel large",
+          "image": "/images/woman-scanning-fingerprint-with-futuristic-interface-smart-technology.jpg"
         }
       ]
     },
@@ -150,6 +153,7 @@
           "chipVariant": "default",
           "mark": "A·PAY",
           "mediaLabel": "AkieniPay · Console",
+          "image": "/images/woman-wearing-suit-leads-visionary-business-pitch-event-showing-performance-metrics-screen.jpg",
           "learnMore": "En savoir plus →"
         },
         {
@@ -168,6 +172,7 @@
           "chipVariant": "green",
           "mark": "CAR·",
           "mediaLabel": "CarTracking · Vue carte",
+          "image": "/images/Screenshot from 2026-03-04 09-32-23.png",
           "learnMore": "En savoir plus →"
         },
         {
@@ -186,6 +191,7 @@
           "chipVariant": "blue",
           "mark": "BIO·",
           "mediaLabel": "Biometrie · Capture",
+          "image": "/images/biometric-face-recognition-id-verification.jpg",
           "learnMore": "En savoir plus →"
         }
       ]
@@ -194,10 +200,15 @@
       "title": "Une jeune entreprise à l’empreinte nationale.",
       "eyebrow": "Instantané · 2026",
       "items": [
-        { "label": "Depuis 2023",      "value": 2,   "suffix": "",  "accent": "/ans" },
-        { "label": "Employés",         "value": 45,  "suffix": "+", "accent": "" },
-        { "label": "Équipe africaine", "value": 100, "suffix": "%", "accent": "" },
-        { "label": "Départements",     "value": 4,   "suffix": "",  "accent": "" }
+        { "label": "Depuis 2023", "value": 2, "suffix": "", "accent": "/ans" },
+        { "label": "Employés", "value": 45, "suffix": "+", "accent": "" },
+        {
+          "label": "Équipe africaine",
+          "value": 100,
+          "suffix": "%",
+          "accent": ""
+        },
+        { "label": "Départements", "value": 4, "suffix": "", "accent": "" }
       ]
     },
     "credo": {
@@ -213,10 +224,26 @@
       "titleLine2": "au déploiement.",
       "lede": "Un processus reproductible en quatre étapes, affiné sur trois programmes d’envergure nationale. Pas de surprises, pas d’effets de manche · une livraison disciplinée.",
       "steps": [
-        { "number": "01 / Découvrir", "title": "Audit & cadrage.",        "desc": "Nous cartographions le système existant, le contexte réglementaire et les contraintes. Résultat : une problématique précise." },
-        { "number": "02 / Concevoir", "title": "Architecturer & spécifier.", "desc": "Ingénieurs seniors et PMs co-écrivent l’architecture, avec des choix technologiques défendus face aux alternatives." },
-        { "number": "03 / Livrer",    "title": "Construire par sprints.",  "desc": "Livraison incrémentale par cycles courts, avec revues hebdomadaires et un pipeline CI de production dès le premier jour." },
-        { "number": "04 / Déployer",  "title": "Exploiter en production.", "desc": "On-prem ou cloud, nous opérons ce que nous construisons · SLA, observabilité, formation et transfert." }
+        {
+          "number": "01 / Découvrir",
+          "title": "Audit & cadrage.",
+          "desc": "Nous cartographions le système existant, le contexte réglementaire et les contraintes. Résultat : une problématique précise."
+        },
+        {
+          "number": "02 / Concevoir",
+          "title": "Architecturer & spécifier.",
+          "desc": "Ingénieurs seniors et PMs co-écrivent l’architecture, avec des choix technologiques défendus face aux alternatives."
+        },
+        {
+          "number": "03 / Livrer",
+          "title": "Construire par sprints.",
+          "desc": "Livraison incrémentale par cycles courts, avec revues hebdomadaires et un pipeline CI de production dès le premier jour."
+        },
+        {
+          "number": "04 / Déployer",
+          "title": "Exploiter en production.",
+          "desc": "On-prem ou cloud, nous opérons ce que nous construisons · SLA, observabilité, formation et transfert."
+        }
       ]
     },
     "cta": {
@@ -304,10 +331,26 @@
       "titleLine2": "livrer, déployer.",
       "lede": "Un processus reproductible en quatre étapes. Chaque étape produit un livrable tangible · et une décision go / no-go binaire.",
       "steps": [
-        { "number": "01 / Découvrir", "title": "Auditer le système.",        "desc": "Entretiens des parties prenantes, inventaire technique, cartographie réglementaire et opérationnelle. Résultat : une problématique précise et une feuille de contraintes." },
-        { "number": "02 / Concevoir", "title": "Architecturer & spécifier.", "desc": "Ingénieurs seniors et PMs co-écrivent l’architecture. Les compromis et alternatives sont documentés et défendus." },
-        { "number": "03 / Livrer",    "title": "Construire par sprints.",    "desc": "Incréments de deux semaines sur un pipeline de production. Démos hebdomadaires, pilotage mensuel. Pas de surprise à la fin." },
-        { "number": "04 / Déployer",  "title": "Exploiter en production.",   "desc": "On-prem ou cloud, nous opérons ce que nous construisons · SLA, observabilité, runbooks, formation et transfert propre une fois prêt." }
+        {
+          "number": "01 / Découvrir",
+          "title": "Auditer le système.",
+          "desc": "Entretiens des parties prenantes, inventaire technique, cartographie réglementaire et opérationnelle. Résultat : une problématique précise et une feuille de contraintes."
+        },
+        {
+          "number": "02 / Concevoir",
+          "title": "Architecturer & spécifier.",
+          "desc": "Ingénieurs seniors et PMs co-écrivent l’architecture. Les compromis et alternatives sont documentés et défendus."
+        },
+        {
+          "number": "03 / Livrer",
+          "title": "Construire par sprints.",
+          "desc": "Incréments de deux semaines sur un pipeline de production. Démos hebdomadaires, pilotage mensuel. Pas de surprise à la fin."
+        },
+        {
+          "number": "04 / Déployer",
+          "title": "Exploiter en production.",
+          "desc": "On-prem ou cloud, nous opérons ce que nous construisons · SLA, observabilité, runbooks, formation et transfert propre une fois prêt."
+        }
       ]
     },
     "stack": {
@@ -315,9 +358,18 @@
       "title": "Une boîte à outils ciblée.",
       "lede": "Nous standardisons sur un petit ensemble de technologies à fort effet de levier · choisies pour leur longévité, leur sécurité et leur exploitabilité · et nous allons en profondeur sur chacune.",
       "groups": [
-        { "heading": "Langages",            "items": ["Go", "TypeScript", "PHP / Laravel", "Python", "SQL"] },
-        { "heading": "Plateforme",          "items": ["Kubernetes", "PostgreSQL", "Redis", "AWS", "On-prem"] },
-        { "heading": "Sécurité & spécialité", "items": ["PKI / mTLS", "HSM", "ABIS", "OpenKM / GED", "Odoo"] }
+        {
+          "heading": "Langages",
+          "items": ["Go", "TypeScript", "PHP / Laravel", "Python", "SQL"]
+        },
+        {
+          "heading": "Plateforme",
+          "items": ["Kubernetes", "PostgreSQL", "Redis", "AWS", "On-prem"]
+        },
+        {
+          "heading": "Sécurité & spécialité",
+          "items": ["PKI / mTLS", "HSM", "ABIS", "OpenKM / GED", "Odoo"]
+        }
       ]
     },
     "industries": {
@@ -325,10 +377,26 @@
       "title": "Où nous travaillons.",
       "lede": "Quatre secteurs où nous avons une expérience senior et nommée · chacun ancré par un programme national en production.",
       "items": [
-        { "number": "01", "title": "Gouvernement", "desc": "Infrastructure fiscale, identité, régulateurs." },
-        { "number": "02", "title": "Finance",      "desc": "Paiements, conformité, rails ePaiement." },
-        { "number": "03", "title": "Santé",        "desc": "Plateformes de couverture universelle, réseaux de prestataires." },
-        { "number": "04", "title": "Éducation",    "desc": "Plateformes de main-d’œuvre, l’Académie Akieni." }
+        {
+          "number": "01",
+          "title": "Gouvernement",
+          "desc": "Infrastructure fiscale, identité, régulateurs."
+        },
+        {
+          "number": "02",
+          "title": "Finance",
+          "desc": "Paiements, conformité, rails ePaiement."
+        },
+        {
+          "number": "03",
+          "title": "Santé",
+          "desc": "Plateformes de couverture universelle, réseaux de prestataires."
+        },
+        {
+          "number": "04",
+          "title": "Éducation",
+          "desc": "Plateformes de main-d’œuvre, l’Académie Akieni."
+        }
       ]
     },
     "cta": {
@@ -426,15 +494,22 @@
         "titleAccent": "Paiements et collecte, pour l'Afrique centrale.",
         "lede": "AkieniPay agrège les canaux de paiement (Mobile Money, cartes, virements bancaires, espèces) derrière une API et une console uniques · avec rapprochement automatique, webhooks idempotents et conformité PCI-DSS / BEAC.",
         "features": [
-          { "key": "Canaux",       "value": "MTN MoMo · Airtel · Visa / MC · Banque · Cash" },
-          { "key": "Devises",      "value": "XAF · USD · EUR" },
-          { "key": "Latence API",  "value": "< 250 ms p95" },
-          { "key": "SLA",          "value": "99,95 %" },
-          { "key": "Conformité",   "value": "PCI-DSS · BEAC · COBAC" },
-          { "key": "Déploiement",  "value": "SaaS · option on-prem" }
+          {
+            "key": "Canaux",
+            "value": "MTN MoMo · Airtel · Visa / MC · Banque · Cash"
+          },
+          { "key": "Devises", "value": "XAF · USD · EUR" },
+          { "key": "Latence API", "value": "< 250 ms p95" },
+          { "key": "SLA", "value": "99,95 %" },
+          { "key": "Conformité", "value": "PCI-DSS · BEAC · COBAC" },
+          { "key": "Déploiement", "value": "SaaS · option on-prem" }
         ],
         "ctaLabel": "Demander une démo AkieniPay →",
-        "mock": { "chip": "Console marchand", "mark": "A·PAY", "label": "UI · Dashboard · placeholder" }
+        "mock": {
+          "chip": "Console marchand",
+          "mark": "A·PAY",
+          "label": "UI · Dashboard · placeholder"
+        }
       },
       {
         "slug": "cartracking",
@@ -445,14 +520,18 @@
         "lede": "CarTracking équipe les flottes d'entreprise et publiques avec un boîtier GPS / OBD-II, une console temps-réel et un moteur d'alertes (vitesse, géofence, vol, comportement). Déjà déployé sur 2 400+ véhicules dans la région.",
         "features": [
           { "key": "Véhicules suivis", "value": "2 400+" },
-          { "key": "Fréquence GPS",    "value": "5 s" },
-          { "key": "Géofences",        "value": "Illimitées par véhicule" },
-          { "key": "Alertes",          "value": "SMS · Email · Webhook" },
-          { "key": "Rapports",         "value": "Carburant · conduite · arrêts" },
-          { "key": "Déploiement",      "value": "SaaS · API REST" }
+          { "key": "Fréquence GPS", "value": "5 s" },
+          { "key": "Géofences", "value": "Illimitées par véhicule" },
+          { "key": "Alertes", "value": "SMS · Email · Webhook" },
+          { "key": "Rapports", "value": "Carburant · conduite · arrêts" },
+          { "key": "Déploiement", "value": "SaaS · API REST" }
         ],
         "ctaLabel": "Demander une démo CarTracking →",
-        "mock": { "chip": "Carte temps-réel", "mark": "CAR·", "label": "UI · Carte · placeholder" }
+        "mock": {
+          "chip": "Carte temps-réel",
+          "mark": "CAR·",
+          "label": "UI · Carte · placeholder"
+        }
       },
       {
         "slug": "biometrie",
@@ -462,15 +541,19 @@
         "titleAccent": "Identité, prouvée à grande échelle.",
         "lede": "Biometrie est notre plateforme d'identification multimodale · empreintes, visage et iris, conforme OACI, adossée à un moteur ABIS et à une PKI souveraine. Conçue pour les opérateurs publics et les régulateurs.",
         "features": [
-          { "key": "Modalités",    "value": "Empreintes · Visage · Iris" },
-          { "key": "Standards",    "value": "OACI 9303 · ISO 19794 · NIST" },
-          { "key": "Matching",     "value": "1:1 · 1:N · clustering" },
-          { "key": "Capture",      "value": "Mobile · kiosque · agence" },
-          { "key": "Sécurité",     "value": "mTLS · HSM · PKI" },
-          { "key": "Déploiement",  "value": "On-prem · données souveraines" }
+          { "key": "Modalités", "value": "Empreintes · Visage · Iris" },
+          { "key": "Standards", "value": "OACI 9303 · ISO 19794 · NIST" },
+          { "key": "Matching", "value": "1:1 · 1:N · clustering" },
+          { "key": "Capture", "value": "Mobile · kiosque · agence" },
+          { "key": "Sécurité", "value": "mTLS · HSM · PKI" },
+          { "key": "Déploiement", "value": "On-prem · données souveraines" }
         ],
         "ctaLabel": "Demander une démo Biometrie →",
-        "mock": { "chip": "Module de capture", "mark": "BIO·", "label": "UI · Enrôlement · placeholder" }
+        "mock": {
+          "chip": "Module de capture",
+          "mark": "BIO·",
+          "label": "UI · Enrôlement · placeholder"
+        }
       }
     ],
     "cta": {
@@ -498,11 +581,11 @@
     "explorer": {
       "counterSuffix": "PROJETS · 2024 · 2026",
       "filters": [
-        { "id": "all",        "label": "Tous" },
+        { "id": "all", "label": "Tous" },
         { "id": "government", "label": "Gouvernement" },
-        { "id": "finance",    "label": "Finance" },
-        { "id": "health",     "label": "Santé" },
-        { "id": "social",     "label": "Social" }
+        { "id": "finance", "label": "Finance" },
+        { "id": "health", "label": "Santé" },
+        { "id": "social", "label": "Social" }
       ],
       "items": [
         {
@@ -601,9 +684,21 @@
       "titleLine2": "répétées chaque jour.",
       "lede": "Les outils, frameworks et clients changent · pas elles. Chaque recrutement, chaque revue d'architecture, chaque feuille de route est filtré à travers elles.",
       "items": [
-        { "number": "01", "title": "Dynamique & innovante",   "desc": "Nous choisissons la bonne technologie pour le problème, pas la confortable · et nous livrons." },
-        { "number": "02", "title": "Tournée vers l'avenir",   "desc": "Chaque système que nous construisons est conçu pour durer une décennie · pas un cycle de démo." },
-        { "number": "03", "title": "Tech-savvy, portée humain", "desc": "Le logiciel est le levier. Les personnes · clients, citoyens, coéquipiers · sont la finalité." }
+        {
+          "number": "01",
+          "title": "Dynamique & innovante",
+          "desc": "Nous choisissons la bonne technologie pour le problème, pas la confortable · et nous livrons."
+        },
+        {
+          "number": "02",
+          "title": "Tournée vers l'avenir",
+          "desc": "Chaque système que nous construisons est conçu pour durer une décennie · pas un cycle de démo."
+        },
+        {
+          "number": "03",
+          "title": "Tech-savvy, portée humain",
+          "desc": "Le logiciel est le levier. Les personnes · clients, citoyens, coéquipiers · sont la finalité."
+        }
       ]
     },
     "iso": {
@@ -612,11 +707,25 @@
       "lede": "Une liste franche et utile · pour que clients, candidats et partenaires sachent à quoi s'attendre.",
       "is": {
         "heading": "Est",
-        "items": ["Dynamique & innovante", "Tournée vers l'avenir", "Tech-savvy / digital-native", "Propre & sophistiquée", "Équilibre humain + technologie", "Ancrée dans le réel"]
+        "items": [
+          "Dynamique & innovante",
+          "Tournée vers l'avenir",
+          "Tech-savvy / digital-native",
+          "Propre & sophistiquée",
+          "Équilibre humain + technologie",
+          "Ancrée dans le réel"
+        ]
       },
       "isNot": {
         "heading": "N'est pas",
-        "items": ["Suiveuse de tendances", "Robotique ou froide", "Sur-animée", "Tape-à-l'œil sans substance", "« Startup mignonne »", "Déconnectée du contexte local"]
+        "items": [
+          "Suiveuse de tendances",
+          "Robotique ou froide",
+          "Sur-animée",
+          "Tape-à-l'œil sans substance",
+          "« Startup mignonne »",
+          "Déconnectée du contexte local"
+        ]
       }
     },
     "timeline": {
@@ -625,10 +734,26 @@
       "titleLine2": "quatre jalons.",
       "lede": "De la fondation au déploiement à l'échelle nationale · sans perdre la discipline qui nous a menés ici.",
       "items": [
-        { "year": "2023", "title": "Fondation à Brazzaville", "desc": "Premiers contrats signés. Pratiques Ingénierie et Livraison établies." },
-        { "year": "2024", "title": "Mandats nationaux",       "desc": "Les programmes SFEC, CAMU et CNSS démarrent en parallèle. L'équipe dépasse 25 personnes." },
-        { "year": "2025", "title": "Académie, Cohorte 1",     "desc": "11 diplômés intégrés comme ingénieurs à temps plein. L'équipe atteint 45+." },
-        { "year": "2026", "title": "Expansion régionale",     "desc": "Déploiements en production à l'échelle nationale. Académie Cohorte 2 lancée." }
+        {
+          "year": "2023",
+          "title": "Fondation à Brazzaville",
+          "desc": "Premiers contrats signés. Pratiques Ingénierie et Livraison établies."
+        },
+        {
+          "year": "2024",
+          "title": "Mandats nationaux",
+          "desc": "Les programmes SFEC, CAMU et CNSS démarrent en parallèle. L'équipe dépasse 25 personnes."
+        },
+        {
+          "year": "2025",
+          "title": "Académie, Cohorte 1",
+          "desc": "11 diplômés intégrés comme ingénieurs à temps plein. L'équipe atteint 45+."
+        },
+        {
+          "year": "2026",
+          "title": "Expansion régionale",
+          "desc": "Déploiements en production à l'échelle nationale. Académie Cohorte 2 lancée."
+        }
       ]
     },
     "teamCta": {
@@ -657,11 +782,36 @@
       "title": "Les personnes qui font tourner Akieni.",
       "lede": "Cinq leaders directement responsables de chaque programme, chaque recrutement et chaque ligne de code qui part de Brazzaville.",
       "items": [
-        { "name": "Frédéric Nzé",     "role": "Directeur Général",                  "bio": "Fondateur et CEO. Fixe la stratégie, signe les mandats et préside chaque comité de pilotage.",  "photoLabel": "Frédéric Nzé · portrait" },
-        { "name": "Olga Koutabongo",  "role": "Directrice Admin & Finance",         "bio": "Pilote les opérations, la finance, les contrats et les achats sur les quatre départements.",      "photoLabel": "Olga Koutabongo · portrait" },
-        { "name": "Sonia Nzimbou",    "role": "Directrice des Ressources Humaines", "bio": "Possède le tunnel de recrutement, l'entrée à l'Académie, et la culture qui soude l'équipe.",   "photoLabel": "Sonia Nzimbou · portrait" },
-        { "name": "Serge Kpossou",    "role": "Directeur de la Livraison",          "bio": "Responsable de chaque livrable client. Gestion de programmes, pilotage et livraison à l'heure.",  "photoLabel": "Serge Kpossou · portrait" },
-        { "name": "Lepres Kikounga",  "role": "Directeur de l'Ingénierie",          "bio": "Pilote l'organisation ingénierie · architecture, qualité du code, sécurité et astreintes.",       "photoLabel": "Lepres Kikounga · portrait" }
+        {
+          "name": "Frédéric Nzé",
+          "role": "Directeur Général",
+          "bio": "Fondateur et CEO. Fixe la stratégie, signe les mandats et préside chaque comité de pilotage.",
+          "photoLabel": "Frédéric Nzé · portrait"
+        },
+        {
+          "name": "Olga Koutabongo",
+          "role": "Directrice Admin & Finance",
+          "bio": "Pilote les opérations, la finance, les contrats et les achats sur les quatre départements.",
+          "photoLabel": "Olga Koutabongo · portrait"
+        },
+        {
+          "name": "Sonia Nzimbou",
+          "role": "Directrice des Ressources Humaines",
+          "bio": "Possède le tunnel de recrutement, l'entrée à l'Académie, et la culture qui soude l'équipe.",
+          "photoLabel": "Sonia Nzimbou · portrait"
+        },
+        {
+          "name": "Serge Kpossou",
+          "role": "Directeur de la Livraison",
+          "bio": "Responsable de chaque livrable client. Gestion de programmes, pilotage et livraison à l'heure.",
+          "photoLabel": "Serge Kpossou · portrait"
+        },
+        {
+          "name": "Lepres Kikounga",
+          "role": "Directeur de l'Ingénierie",
+          "bio": "Pilote l'organisation ingénierie · architecture, qualité du code, sécurité et astreintes.",
+          "photoLabel": "Lepres Kikounga · portrait"
+        }
       ]
     },
     "departments": {
@@ -670,18 +820,42 @@
       "titleLine2": "une seule équipe.",
       "lede": "Légère, à dominante sénior, et conçue pour la livraison en parallèle sur des mandats à l'échelle nationale.",
       "items": [
-        { "number": "DÉPT · 01", "name": "Ingénierie",       "lead": "Lepres Kikounga", "size": "~25", "desc": "Backend, frontend, plateforme, sécurité." },
-        { "number": "DÉPT · 02", "name": "Livraison",        "lead": "Serge Kpossou",   "size": "~10", "desc": "PMs, BAs, QA, gestion client." },
-        { "number": "DÉPT · 03", "name": "Admin & Finance",  "lead": "Olga Koutabongo", "size": "~6",  "desc": "Finance, ops, contrats, achats." },
-        { "number": "DÉPT · 04", "name": "RH & Académie",    "lead": "Sonia Nzimbou",   "size": "~4",  "desc": "Recrutement, people ops, programme Académie." }
+        {
+          "number": "DÉPT · 01",
+          "name": "Ingénierie",
+          "lead": "Lepres Kikounga",
+          "size": "~25",
+          "desc": "Backend, frontend, plateforme, sécurité."
+        },
+        {
+          "number": "DÉPT · 02",
+          "name": "Livraison",
+          "lead": "Serge Kpossou",
+          "size": "~10",
+          "desc": "PMs, BAs, QA, gestion client."
+        },
+        {
+          "number": "DÉPT · 03",
+          "name": "Admin & Finance",
+          "lead": "Olga Koutabongo",
+          "size": "~6",
+          "desc": "Finance, ops, contrats, achats."
+        },
+        {
+          "number": "DÉPT · 04",
+          "name": "RH & Académie",
+          "lead": "Sonia Nzimbou",
+          "size": "~4",
+          "desc": "Recrutement, people ops, programme Académie."
+        }
       ],
       "org": {
         "root": { "name": "Frédéric Nzé", "role": "Directeur Général" },
         "nodes": [
           { "name": "Lepres Kikounga", "role": "Ingénierie" },
-          { "name": "Serge Kpossou",   "role": "Livraison" },
+          { "name": "Serge Kpossou", "role": "Livraison" },
           { "name": "Olga Koutabongo", "role": "Admin & Finance" },
-          { "name": "Sonia Nzimbou",   "role": "RH & Académie" }
+          { "name": "Sonia Nzimbou", "role": "RH & Académie" }
         ]
       }
     },
@@ -727,9 +901,24 @@
         "desc": "talents intégrés à Akieni à temps plein."
       },
       "cells": [
-        { "label": "PROGRAMME",         "value": "9 mois", "accent": false, "desc": "Intensif, à temps plein, rémunéré." },
-        { "label": "COHORTE 2 · 2026",  "value": "Mars",   "accent": true,  "desc": "Candidatures ouvertes." },
-        { "label": "VISION",            "value": "→ Intl.", "accent": false, "desc": "Talent-as-a-Service · exporter les ingénieurs africains dans le monde." }
+        {
+          "label": "PROGRAMME",
+          "value": "9 mois",
+          "accent": false,
+          "desc": "Intensif, à temps plein, rémunéré."
+        },
+        {
+          "label": "COHORTE 2 · 2026",
+          "value": "Mars",
+          "accent": true,
+          "desc": "Candidatures ouvertes."
+        },
+        {
+          "label": "VISION",
+          "value": "→ Intl.",
+          "accent": false,
+          "desc": "Talent-as-a-Service · exporter les ingénieurs africains dans le monde."
+        }
       ]
     },
     "curriculum": {
@@ -738,9 +927,39 @@
       "titleLine2": "trois phases.",
       "lede": "Chaque phase est ancrée par un vrai projet livré à un vrai client. Pas d'exercices jouets, pas de capstone théorique · de la production dès la première semaine.",
       "phases": [
-        { "phase": "PHASE 01 · MOIS 1–3", "title": "Fondations", "items": ["Remise à niveau fondamentaux info", "Git, CI / CD, revue de code", "Go, TypeScript, SQL", "Tests & observabilité", "Bases de sécurité"] },
-        { "phase": "PHASE 02 · MOIS 4–6", "title": "Pratique",   "items": ["Observation de bases de code en prod", "Pair-programming avec des séniors", "Vrais tickets, vraies PRs", "Astreinte (lecture seule)", "Séminaires d'architecture"] },
-        { "phase": "PHASE 03 · MOIS 7–9", "title": "Livraison",  "items": ["Fonctionnalité livrée en prod", "Démos face client", "Exposition à la gestion de programme", "Transfert de mentorat", "Intégration à Akieni à temps plein"] }
+        {
+          "phase": "PHASE 01 · MOIS 1–3",
+          "title": "Fondations",
+          "items": [
+            "Remise à niveau fondamentaux info",
+            "Git, CI / CD, revue de code",
+            "Go, TypeScript, SQL",
+            "Tests & observabilité",
+            "Bases de sécurité"
+          ]
+        },
+        {
+          "phase": "PHASE 02 · MOIS 4–6",
+          "title": "Pratique",
+          "items": [
+            "Observation de bases de code en prod",
+            "Pair-programming avec des séniors",
+            "Vrais tickets, vraies PRs",
+            "Astreinte (lecture seule)",
+            "Séminaires d'architecture"
+          ]
+        },
+        {
+          "phase": "PHASE 03 · MOIS 7–9",
+          "title": "Livraison",
+          "items": [
+            "Fonctionnalité livrée en prod",
+            "Démos face client",
+            "Exposition à la gestion de programme",
+            "Transfert de mentorat",
+            "Intégration à Akieni à temps plein"
+          ]
+        }
       ]
     },
     "cohorts": {
@@ -748,8 +967,22 @@
       "title": "Un vivier qui s'élargit.",
       "lede": "De onze ingénieurs en 2025 à un recrutement régional élargi en 2026 · au même standard.",
       "items": [
-        { "year": "COHORTE 01 · 2025 · CLÔTURÉE", "num": "11 / 11", "numAccent": false, "title": "Intégrés avec succès.", "desc": "Onze ingénieurs ont terminé le programme de 9 mois et rejoint Akieni à temps plein sur les équipes SFEC, CAMU et CNSS.", "link": "" },
-        { "year": "COHORTE 02 · LANCEMENT MARS 2026", "num": "Ouvert", "numAccent": true, "title": "Élargir le recrutement & la portée.", "desc": "Une cohorte plus large avec des placements internationaux sélectionnés via notre modèle Talent-as-a-Service. Candidatures ouvertes jusqu'en janvier 2026.", "link": "Postuler" }
+        {
+          "year": "COHORTE 01 · 2025 · CLÔTURÉE",
+          "num": "11 / 11",
+          "numAccent": false,
+          "title": "Intégrés avec succès.",
+          "desc": "Onze ingénieurs ont terminé le programme de 9 mois et rejoint Akieni à temps plein sur les équipes SFEC, CAMU et CNSS.",
+          "link": ""
+        },
+        {
+          "year": "COHORTE 02 · LANCEMENT MARS 2026",
+          "num": "Ouvert",
+          "numAccent": true,
+          "title": "Élargir le recrutement & la portée.",
+          "desc": "Une cohorte plus large avec des placements internationaux sélectionnés via notre modèle Talent-as-a-Service. Candidatures ouvertes jusqu'en janvier 2026.",
+          "link": "Postuler"
+        }
       ]
     },
     "taas": {
@@ -785,12 +1018,36 @@
       "title": "Trois raisons de rester.",
       "lede": "Une petite équipe à dominante sénior, travaillant sur des programmes à impact national, depuis une ville dont la plupart de nos collaborateurs sont originaires.",
       "items": [
-        { "number": "01 / IMPACT",      "title": "Un travail qui compte.",       "desc": "Chaque système que nous construisons affecte la façon dont des millions de citoyens interagissent avec leur État · fiscal, santé, sécurité sociale." },
-        { "number": "02 / MÉTIER",      "title": "Équipe à dominante sénior.",   "desc": "Des PRs revues par des gens qui ont livré des plateformes nationales. De vraies revues de code. De vraies discussions d'architecture." },
-        { "number": "03 / CROISSANCE",  "title": "L'Académie, offerte.",         "desc": "Chaque ingénieur chez Akieni a un budget formation et des droits de rotation entre équipes. L'Académie n'est pas que pour les juniors." },
-        { "number": "04 / RÉMU",        "title": "Rémunération compétitive.",    "desc": "Rémunération locale au top du marché, grilles transparentes, et equity pour les collaborateurs confirmés." },
-        { "number": "05 / LIEU",        "title": "Construit à Brazzaville.",     "desc": "Un bureau d'ingénierie moderne sur les rives du Congo. Pas de théâtre de relocalisation · la plupart de nos collaborateurs sont d'ici." },
-        { "number": "06 / PORTÉE",      "title": "Régional & international.",    "desc": "Le Talent-as-a-Service place des ingénieurs séniors sur des missions internationales sans les déraciner." }
+        {
+          "number": "01 / IMPACT",
+          "title": "Un travail qui compte.",
+          "desc": "Chaque système que nous construisons affecte la façon dont des millions de citoyens interagissent avec leur État · fiscal, santé, sécurité sociale."
+        },
+        {
+          "number": "02 / MÉTIER",
+          "title": "Équipe à dominante sénior.",
+          "desc": "Des PRs revues par des gens qui ont livré des plateformes nationales. De vraies revues de code. De vraies discussions d'architecture."
+        },
+        {
+          "number": "03 / CROISSANCE",
+          "title": "L'Académie, offerte.",
+          "desc": "Chaque ingénieur chez Akieni a un budget formation et des droits de rotation entre équipes. L'Académie n'est pas que pour les juniors."
+        },
+        {
+          "number": "04 / RÉMU",
+          "title": "Rémunération compétitive.",
+          "desc": "Rémunération locale au top du marché, grilles transparentes, et equity pour les collaborateurs confirmés."
+        },
+        {
+          "number": "05 / LIEU",
+          "title": "Construit à Brazzaville.",
+          "desc": "Un bureau d'ingénierie moderne sur les rives du Congo. Pas de théâtre de relocalisation · la plupart de nos collaborateurs sont d'ici."
+        },
+        {
+          "number": "06 / PORTÉE",
+          "title": "Régional & international.",
+          "desc": "Le Talent-as-a-Service place des ingénieurs séniors sur des missions internationales sans les déraciner."
+        }
       ]
     },
     "openings": {
@@ -798,13 +1055,55 @@
       "title": "Nous recrutons.",
       "lede": "Six postes ouverts en Ingénierie, Livraison et Opérations. Vous ne voyez pas votre poste ? Envoyez quand même un CV · il y a toujours de la place pour les gens sérieux.",
       "items": [
-        { "dept": "INGÉNIERIE", "title": "Ingénieur Backend Sénior · Go",          "loc": "Brazzaville · Sur site", "type": "Temps plein",       "href": "/careers/senior-backend-go" },
-        { "dept": "INGÉNIERIE", "title": "Ingénieur Frontend Sénior · React / TS", "loc": "Brazzaville · Hybride",  "type": "Temps plein",       "href": "/careers/senior-frontend-react" },
-        { "dept": "INGÉNIERIE", "title": "Ingénieur Plateforme · Kubernetes",      "loc": "Brazzaville · Sur site", "type": "Temps plein",       "href": "/careers/platform-engineer" },
-        { "dept": "INGÉNIERIE", "title": "Ingénieur Sécurité · PKI / mTLS",        "loc": "Brazzaville · Sur site", "type": "Temps plein",       "href": "/careers/security-engineer" },
-        { "dept": "LIVRAISON",  "title": "Chef de Programme Sénior",               "loc": "Brazzaville · Sur site", "type": "Temps plein",       "href": "/careers/programme-manager" },
-        { "dept": "LIVRAISON",  "title": "Responsable QA",                         "loc": "Brazzaville · Hybride",  "type": "Temps plein",       "href": "/careers/qa-lead" },
-        { "dept": "ACADÉMIE",   "title": "Cohorte 2 · Candidature générale",       "loc": "Brazzaville · Sur site", "type": "Programme 9 mois",   "href": "/academy" }
+        {
+          "dept": "INGÉNIERIE",
+          "title": "Ingénieur Backend Sénior · Go",
+          "loc": "Brazzaville · Sur site",
+          "type": "Temps plein",
+          "href": "/careers/senior-backend-go"
+        },
+        {
+          "dept": "INGÉNIERIE",
+          "title": "Ingénieur Frontend Sénior · React / TS",
+          "loc": "Brazzaville · Hybride",
+          "type": "Temps plein",
+          "href": "/careers/senior-frontend-react"
+        },
+        {
+          "dept": "INGÉNIERIE",
+          "title": "Ingénieur Plateforme · Kubernetes",
+          "loc": "Brazzaville · Sur site",
+          "type": "Temps plein",
+          "href": "/careers/platform-engineer"
+        },
+        {
+          "dept": "INGÉNIERIE",
+          "title": "Ingénieur Sécurité · PKI / mTLS",
+          "loc": "Brazzaville · Sur site",
+          "type": "Temps plein",
+          "href": "/careers/security-engineer"
+        },
+        {
+          "dept": "LIVRAISON",
+          "title": "Chef de Programme Sénior",
+          "loc": "Brazzaville · Sur site",
+          "type": "Temps plein",
+          "href": "/careers/programme-manager"
+        },
+        {
+          "dept": "LIVRAISON",
+          "title": "Responsable QA",
+          "loc": "Brazzaville · Hybride",
+          "type": "Temps plein",
+          "href": "/careers/qa-lead"
+        },
+        {
+          "dept": "ACADÉMIE",
+          "title": "Cohorte 2 · Candidature générale",
+          "loc": "Brazzaville · Sur site",
+          "type": "Programme 9 mois",
+          "href": "/academy"
+        }
       ]
     },
     "process": {
@@ -813,10 +1112,26 @@
       "titleLine2": "Deux à quatre semaines.",
       "lede": "Clair, cadré dans le temps, et respectueux de votre temps. Nous nous engageons à un oui / non après chaque étape.",
       "steps": [
-        { "number": "01 / POSTULER", "title": "Envoyez un CV & une note.", "desc": "Pourquoi nous, pourquoi maintenant, ce que vous voulez construire." },
-        { "number": "02 / ÉCHANGER", "title": "Appel intro · 30 min",      "desc": "Adéquation mutuelle, détails du poste, vos questions." },
-        { "number": "03 / PRATIQUE", "title": "Take-home + pairing",       "desc": "Un petit exercice rémunéré · puis on pair dessus." },
-        { "number": "04 / OFFRE",    "title": "Décision en 5 jours.",      "desc": "Références, offre, date de début." }
+        {
+          "number": "01 / POSTULER",
+          "title": "Envoyez un CV & une note.",
+          "desc": "Pourquoi nous, pourquoi maintenant, ce que vous voulez construire."
+        },
+        {
+          "number": "02 / ÉCHANGER",
+          "title": "Appel intro · 30 min",
+          "desc": "Adéquation mutuelle, détails du poste, vos questions."
+        },
+        {
+          "number": "03 / PRATIQUE",
+          "title": "Take-home + pairing",
+          "desc": "Un petit exercice rémunéré · puis on pair dessus."
+        },
+        {
+          "number": "04 / OFFRE",
+          "title": "Décision en 5 jours.",
+          "desc": "Références, offre, date de début."
+        }
       ]
     },
     "cta": {
@@ -874,17 +1189,27 @@
       "cover": "Note de motivation",
       "coverPlaceholder": "Pourquoi nous, pourquoi maintenant, ce que vous voulez construire.",
       "source": "Comment nous avez-vous trouvés ?",
-      "sourceOptions": ["Recommandation", "Académie Akieni", "Recherche web", "Autre"],
+      "sourceOptions": [
+        "Recommandation",
+        "Académie Akieni",
+        "Recherche web",
+        "Autre"
+      ],
       "legal": "J'accepte qu'Akieni traite mes données dans le cadre du recrutement (voir notre politique de confidentialité).",
       "submit": "Envoyer ma candidature →",
       "sent": "Envoyé ✓"
     },
     "items": {
       "senior-backend-go": {
-        "dept": "Ingénierie", "type": "Temps plein", "status": "Recrutement actif",
+        "dept": "Ingénierie",
+        "type": "Temps plein",
+        "status": "Recrutement actif",
         "title": "Ingénieur Backend Sénior · Go",
         "tagline": "Concevez les systèmes qui font tourner les plateformes nationales (fiscalité, santé, sécurité sociale) · en Go, à l'échelle, avec des pairs séniors.",
-        "team": "Ingénierie · Backend", "loc": "Brazzaville · Sur site", "contract": "Temps plein · CDI", "start": "ASAP · 2026",
+        "team": "Ingénierie · Backend",
+        "loc": "Brazzaville · Sur site",
+        "contract": "Temps plein · CDI",
+        "start": "ASAP · 2026",
         "mission": "Vous rejoindrez l'équipe qui construit les backends nationaux d'Akieni · les systèmes qui servent déjà le Ministère des Finances, la couverture santé universelle et la sécurité sociale. Stack : Go, Kubernetes, mTLS et PKI partout où ça compte.",
         "responsibilities": [
           "Concevoir, livrer et opérer des services Go en production pour les opérateurs publics.",
@@ -900,13 +1225,27 @@
           "Bilingue français / anglais · à l'écrit technique dans les deux.",
           "Basé à Brazzaville ou prêt à vous y installer."
         ],
-        "stack": ["Go", "PostgreSQL", "Redis", "Kafka", "Kubernetes", "mTLS / PKI", "OpenTelemetry", "GitLab CI"]
+        "stack": [
+          "Go",
+          "PostgreSQL",
+          "Redis",
+          "Kafka",
+          "Kubernetes",
+          "mTLS / PKI",
+          "OpenTelemetry",
+          "GitLab CI"
+        ]
       },
       "senior-frontend-react": {
-        "dept": "Ingénierie", "type": "Temps plein", "status": "Recrutement actif",
+        "dept": "Ingénierie",
+        "type": "Temps plein",
+        "status": "Recrutement actif",
         "title": "Ingénieur Frontend Sénior · React / TS",
         "tagline": "Concevez et livrez les front-ends React utilisés par les ministères, régulateurs et des millions de citoyens.",
-        "team": "Ingénierie · Frontend", "loc": "Brazzaville · Hybride", "contract": "Temps plein · CDI", "start": "ASAP · 2026",
+        "team": "Ingénierie · Frontend",
+        "loc": "Brazzaville · Hybride",
+        "contract": "Temps plein · CDI",
+        "start": "ASAP · 2026",
         "mission": "Vous posséderez les surfaces visibles des plateformes qui servent de vrais workflows institutionnels et citoyens · consoles d'admin, portails citoyens, tableaux de bord opérateurs. Vous fixez le niveau en accessibilité, performance et soin.",
         "responsibilities": [
           "Construire et posséder des front-ends React / TypeScript en production.",
@@ -922,13 +1261,27 @@
           "Bilingue français / anglais.",
           "Basé à Brazzaville ou prêt à vous y installer."
         ],
-        "stack": ["React 18", "TypeScript", "Vite", "TanStack Query", "Playwright", "Storybook", "Tailwind", "Figma"]
+        "stack": [
+          "React 18",
+          "TypeScript",
+          "Vite",
+          "TanStack Query",
+          "Playwright",
+          "Storybook",
+          "Tailwind",
+          "Figma"
+        ]
       },
       "platform-engineer": {
-        "dept": "Ingénierie", "type": "Temps plein", "status": "Recrutement actif",
+        "dept": "Ingénierie",
+        "type": "Temps plein",
+        "status": "Recrutement actif",
         "title": "Ingénieur Plateforme · Kubernetes",
         "tagline": "Opérez la plateforme Kubernetes qui héberge SFEC, CAMU et CNSS · auto-hébergée, multi-tenant, durcie.",
-        "team": "Ingénierie · Plateforme", "loc": "Brazzaville · Sur site", "contract": "Temps plein · CDI", "start": "ASAP · 2026",
+        "team": "Ingénierie · Plateforme",
+        "loc": "Brazzaville · Sur site",
+        "contract": "Temps plein · CDI",
+        "start": "ASAP · 2026",
         "mission": "Nous opérons notre propre Kubernetes sur bare metal et sur cloud · avec PKI, GitOps, observabilité et sécurité intégrées. Vous posséderez la plateforme sur laquelle tourne chaque service Akieni.",
         "responsibilities": [
           "Opérer et durcir des clusters Kubernetes auto-hébergés en production.",
@@ -944,13 +1297,27 @@
           "Bilingue français / anglais.",
           "Basé à Brazzaville ou prêt à vous y installer."
         ],
-        "stack": ["Kubernetes", "Argo CD", "Helm", "Terraform", "Cilium", "Vault", "Prometheus", "Loki"]
+        "stack": [
+          "Kubernetes",
+          "Argo CD",
+          "Helm",
+          "Terraform",
+          "Cilium",
+          "Vault",
+          "Prometheus",
+          "Loki"
+        ]
       },
       "security-engineer": {
-        "dept": "Ingénierie", "type": "Temps plein", "status": "Recrutement actif",
+        "dept": "Ingénierie",
+        "type": "Temps plein",
+        "status": "Recrutement actif",
         "title": "Ingénieur Sécurité · PKI / mTLS",
         "tagline": "Possédez le socle cryptographique des plateformes nationales · autorité de certification, mTLS, sécurité du code et de l'infra.",
-        "team": "Ingénierie · Sécurité", "loc": "Brazzaville · Sur site", "contract": "Temps plein · CDI", "start": "ASAP · 2026",
+        "team": "Ingénierie · Sécurité",
+        "loc": "Brazzaville · Sur site",
+        "contract": "Temps plein · CDI",
+        "start": "ASAP · 2026",
         "mission": "Akieni exploite une PKI en production pour les opérateurs publics. Vous posséderez les hiérarchies de CA, le déploiement mTLS, la gestion des clés et la posture de sécurité de plateformes qui traitent les données fiscales, de santé et d'identité d'un pays.",
         "responsibilities": [
           "Posséder la hiérarchie d'autorité de certification et le mTLS sur tous les services.",
@@ -966,13 +1333,26 @@
           "Bilingue français / anglais.",
           "Basé à Brazzaville ou prêt à vous y installer."
         ],
-        "stack": ["smallstep CA", "Vault PKI", "cert-manager", "SPIFFE / SPIRE", "OpenSSL", "Cilium", "OWASP ASVS"]
+        "stack": [
+          "smallstep CA",
+          "Vault PKI",
+          "cert-manager",
+          "SPIFFE / SPIRE",
+          "OpenSSL",
+          "Cilium",
+          "OWASP ASVS"
+        ]
       },
       "programme-manager": {
-        "dept": "Livraison", "type": "Temps plein", "status": "Recrutement actif",
+        "dept": "Livraison",
+        "type": "Temps plein",
+        "status": "Recrutement actif",
         "title": "Chef de Programme Sénior",
         "tagline": "Pilotez des programmes à l'échelle nationale du kick-off au transfert · avec des ingénieurs séniors et des parties prenantes ministérielles.",
-        "team": "Livraison", "loc": "Brazzaville · Sur site", "contract": "Temps plein · CDI", "start": "ASAP · 2026",
+        "team": "Livraison",
+        "loc": "Brazzaville · Sur site",
+        "contract": "Temps plein · CDI",
+        "start": "ASAP · 2026",
         "mission": "Les programmes d'Akieni ont des parties prenantes ministérielles, des budgets fixes et des échéances immuables. Vous posséderez la livraison de bout en bout · comités de pilotage, fournisseurs, risques et la vérité hebdomadaire qui fait avancer tout le monde.",
         "responsibilities": [
           "Piloter les programmes du kick-off jusqu'au go-live et au transfert.",
@@ -988,13 +1368,25 @@
           "Bilingue français / anglais.",
           "Basé à Brazzaville ou prêt à vous y installer."
         ],
-        "stack": ["Notion", "Jira", "Confluence", "Lucidchart", "MS Project", "Slack"]
+        "stack": [
+          "Notion",
+          "Jira",
+          "Confluence",
+          "Lucidchart",
+          "MS Project",
+          "Slack"
+        ]
       },
       "qa-lead": {
-        "dept": "Livraison", "type": "Temps plein", "status": "Recrutement actif",
+        "dept": "Livraison",
+        "type": "Temps plein",
+        "status": "Recrutement actif",
         "title": "Responsable QA",
         "tagline": "Fixez le niveau de qualité sur les plateformes nationales d'Akieni · automatisation, performance et process.",
-        "team": "Livraison · QA", "loc": "Brazzaville · Hybride", "contract": "Temps plein · CDI", "start": "ASAP · 2026",
+        "team": "Livraison · QA",
+        "loc": "Brazzaville · Hybride",
+        "contract": "Temps plein · CDI",
+        "start": "ASAP · 2026",
         "mission": "La qualité n'est pas une phase chez Akieni · c'est une pratique continue. Vous la piloterez sur les plateformes · stratégie d'automatisation, tests de performance, et le process qualité auquel chaque équipe travaille.",
         "responsibilities": [
           "Définir et posséder la stratégie qualité sur tous les programmes.",
@@ -1010,19 +1402,31 @@
           "Bilingue français / anglais.",
           "Basé à Brazzaville ou prêt à vous y installer."
         ],
-        "stack": ["Playwright", "Postman", "k6", "JMeter", "Jira Xray", "Allure", "TestRail"]
+        "stack": [
+          "Playwright",
+          "Postman",
+          "k6",
+          "JMeter",
+          "Jira Xray",
+          "Allure",
+          "TestRail"
+        ]
       }
     }
   },
   "projectDetails": {
     "sfec": {
-      "meta": { "title": "SFEC · Akieni", "description": "Système de Facturation Électronique Certifié · la plateforme nationale modernisant la collecte de l'impôt et la facturation certifiée en République du Congo." },
+      "meta": {
+        "title": "SFEC · Akieni",
+        "description": "Système de Facturation Électronique Certifié · la plateforme nationale modernisant la collecte de l'impôt et la facturation certifiée en République du Congo."
+      },
       "hero": {
         "backLabel": "Tous les projets",
         "caption": "ÉTUDE DE CAS · 01 / 03",
         "title": "SFEC.",
         "lede": "Système de Facturation Électronique Certifié · la plateforme nationale modernisant la collecte de l'impôt, la facturation certifiée et la conformité fiscale en temps réel en République du Congo.",
-        "mediaLabel": "SFEC · capture du tableau de bord admin"
+        "mediaLabel": "SFEC · capture du tableau de bord admin",
+        "image": "/images/afro-american-man-suit-holding-documents-talking-female-boss.jpg"
       },
       "overview": [
         { "label": "Client", "value": "Ministère des Finances · DGID" },
@@ -1050,7 +1454,20 @@
           "Reporting de conformité et pistes d'audit pour la DGID",
           "Tableaux de bord opérationnels pour les administrateurs de zones fiscales"
         ],
-        "gallery": ["Console SFEC · vue principale", "Gestion des terminaux", "Détail PKI / certificat"]
+        "gallery": [
+          {
+            "label": "Console SFEC · vue principale",
+            "image": "/images/focused-coworkers-checking-reports.jpg"
+          },
+          {
+            "label": "Gestion des terminaux",
+            "image": "/images/professional-team-analyzing-archived-data-financial-file-meeting.jpg"
+          },
+          {
+            "label": "Détail PKI / certificat",
+            "image": "/images/young-black-businessman-woman-going-through-some-paperwork-together.jpg"
+          }
+        ]
       },
       "stack": {
         "eyebrow": "Stack technique",
@@ -1058,9 +1475,15 @@
         "titleLine2": "d'exploitation.",
         "lede": "Les choix technologiques ont été faits sur l'exploitabilité et la longévité · Go pour les chemins chauds backend, Postgres pour l'état, Kubernetes pour l'orchestration, clés matérielles pour la PKI.",
         "groups": [
-          { "heading": "Backend & données", "items": ["Go", "PostgreSQL", "Redis", "NATS"] },
+          {
+            "heading": "Backend & données",
+            "items": ["Go", "PostgreSQL", "Redis", "NATS"]
+          },
           { "heading": "Frontend", "items": ["React", "TypeScript"] },
-          { "heading": "Plateforme & sécurité", "items": ["Kubernetes", "PKI", "mTLS", "HSM"] }
+          {
+            "heading": "Plateforme & sécurité",
+            "items": ["Kubernetes", "PKI", "mTLS", "HSM"]
+          }
         ]
       },
       "impact": {
@@ -1069,22 +1492,44 @@
         "titleLine2": "pas des livrables.",
         "lede": "Des résultats mesurés pour le Ministère des Finances et, indirectement, chaque contribuable et opérateur du pays.",
         "cells": [
-          { "num": "100%", "desc": "Déploiement national dans chaque zone fiscale du pays." },
-          { "num": "Temps réel", "desc": "Surveillance de conformité en direct de chaque transaction certifiée." },
-          { "num": "↓ fraude", "desc": "Réductions matérielles de la fraude et des fuites de recettes." }
+          {
+            "num": "100%",
+            "desc": "Déploiement national dans chaque zone fiscale du pays."
+          },
+          {
+            "num": "Temps réel",
+            "desc": "Surveillance de conformité en direct de chaque transaction certifiée."
+          },
+          {
+            "num": "↓ fraude",
+            "desc": "Réductions matérielles de la fraude et des fuites de recettes."
+          }
         ]
       },
-      "nav": { "allLabel": "← TOUS LES PROJETS", "allTitle": "Retour au portfolio", "nextLabel": "ÉTUDE DE CAS SUIVANTE →", "nextTitle": "CAMU · Couverture santé universelle", "nextSlug": "camu" },
-      "cta": { "title": "Un programme de poids similaire ?", "primary": "Discutons" }
+      "nav": {
+        "allLabel": "← TOUS LES PROJETS",
+        "allTitle": "Retour au portfolio",
+        "nextLabel": "ÉTUDE DE CAS SUIVANTE →",
+        "nextTitle": "CAMU · Couverture santé universelle",
+        "nextSlug": "camu"
+      },
+      "cta": {
+        "title": "Un programme de poids similaire ?",
+        "primary": "Discutons"
+      }
     },
     "camu": {
-      "meta": { "title": "CAMU · Akieni", "description": "Caisse d'Assurance Maladie Universelle · la plateforme nationale étendant la couverture santé à des millions de citoyens en République du Congo." },
+      "meta": {
+        "title": "CAMU · Akieni",
+        "description": "Caisse d'Assurance Maladie Universelle · la plateforme nationale étendant la couverture santé à des millions de citoyens en République du Congo."
+      },
       "hero": {
         "backLabel": "Tous les projets",
         "caption": "ÉTUDE DE CAS · 02 / 03",
         "title": "CAMU.",
         "lede": "Caisse d'Assurance Maladie Universelle · la plateforme nationale étendant la couverture santé à des millions de citoyens en République du Congo.",
-        "mediaLabel": "CAMU · capture du portail citoyen"
+        "mediaLabel": "CAMU · capture du portail citoyen",
+        "image": "/images/medic-looking-tablet-screen-healthcare-system.jpg"
       },
       "overview": [
         { "label": "Client", "value": "Gouvernement du Congo" },
@@ -1111,7 +1556,20 @@
           "Systèmes de paiement & rapprochement",
           "Reporting, analytics & signaux de fraude"
         ],
-        "gallery": ["Enrôlement citoyen", "Réseau de prestataires", "Pipeline de sinistres"]
+        "gallery": [
+          {
+            "label": "Enrôlement citoyen",
+            "image": "/images/african-american-nurse-holding-digital-tablet-checkup-visit-doctors-office-black-woman-working-as-medical-assistant-using-device-with-touch-screen-healthcare-medicine.jpg"
+          },
+          {
+            "label": "Réseau de prestataires",
+            "image": "/images/afro-american-man-suit-holding-documents-talking-female-boss.jpg"
+          },
+          {
+            "label": "Pipeline de sinistres",
+            "image": "/images/young-black-businessman-woman-going-through-some-paperwork-together.jpg"
+          }
+        ]
       },
       "stack": {
         "eyebrow": "Stack technique",
@@ -1119,9 +1577,15 @@
         "titleLine2": "pour l'échelle.",
         "lede": "Laravel et React pour la vélocité, Postgres pour l'état, AWS pour l'échelle élastique, le tout derrière la même discipline de sécurité et d'observabilité que nos autres plateformes nationales.",
         "groups": [
-          { "heading": "Backend & données", "items": ["Laravel", "PostgreSQL", "Redis"] },
+          {
+            "heading": "Backend & données",
+            "items": ["Laravel", "PostgreSQL", "Redis"]
+          },
           { "heading": "Frontend", "items": ["React", "TypeScript"] },
-          { "heading": "Plateforme & sécurité", "items": ["AWS", "Kubernetes", "mTLS"] }
+          {
+            "heading": "Plateforme & sécurité",
+            "items": ["AWS", "Kubernetes", "mTLS"]
+          }
         ]
       },
       "impact": {
@@ -1130,25 +1594,50 @@
         "titleLine2": "à grande échelle.",
         "lede": "Des résultats mesurés pour le gouvernement et, directement, les citoyens désormais couverts.",
         "cells": [
-          { "num": "Millions", "desc": "Citoyens intégrés à la couverture santé universelle." },
-          { "num": "Temps réel", "desc": "Arbitrage des sinistres et règlement des prestataires." },
-          { "num": "↓ fraude", "desc": "Signaux de fraude intégrés au pipeline de sinistres dès le départ." }
+          {
+            "num": "Millions",
+            "desc": "Citoyens intégrés à la couverture santé universelle."
+          },
+          {
+            "num": "Temps réel",
+            "desc": "Arbitrage des sinistres et règlement des prestataires."
+          },
+          {
+            "num": "↓ fraude",
+            "desc": "Signaux de fraude intégrés au pipeline de sinistres dès le départ."
+          }
         ]
       },
-      "nav": { "allLabel": "← TOUS LES PROJETS", "allTitle": "Retour au portfolio", "nextLabel": "ÉTUDE DE CAS SUIVANTE →", "nextTitle": "CNSS · Sécurité sociale", "nextSlug": "cnss" },
-      "cta": { "title": "Une plateforme santé de portée similaire ?", "primary": "Discutons" }
+      "nav": {
+        "allLabel": "← TOUS LES PROJETS",
+        "allTitle": "Retour au portfolio",
+        "nextLabel": "ÉTUDE DE CAS SUIVANTE →",
+        "nextTitle": "CNSS · Sécurité sociale",
+        "nextSlug": "cnss"
+      },
+      "cta": {
+        "title": "Une plateforme santé de portée similaire ?",
+        "primary": "Discutons"
+      }
     },
     "cnss": {
-      "meta": { "title": "CNSS · Akieni", "description": "Une modernisation complète de l'opérateur de sécurité sociale de la République du Congo · gestion documentaire, biométrie, ePaiement et ERP sous un seul programme." },
+      "meta": {
+        "title": "CNSS · Akieni",
+        "description": "Une modernisation complète de l'opérateur de sécurité sociale de la République du Congo · gestion documentaire, biométrie, ePaiement et ERP sous un seul programme."
+      },
       "hero": {
         "backLabel": "Tous les projets",
         "caption": "ÉTUDE DE CAS · 03 / 03",
         "title": "CNSS.",
         "lede": "Une modernisation complète de l'opérateur de sécurité sociale de la République du Congo · gestion documentaire, identification biométrique, ePaiement et ERP · sous un seul programme.",
-        "mediaLabel": "CNSS · capture du tableau de bord opérateur"
+        "mediaLabel": "CNSS · capture du tableau de bord opérateur",
+        "image": "/images/ged.png"
       },
       "overview": [
-        { "label": "Client", "value": "CNSS · Caisse Nationale de Sécurité Sociale" },
+        {
+          "label": "Client",
+          "value": "CNSS · Caisse Nationale de Sécurité Sociale"
+        },
         { "label": "Secteur", "value": "Sécurité sociale" },
         { "label": "Calendrier", "value": "2024 · 2026" },
         { "label": "Statut", "value": "Bientôt terminé", "accent": true }
@@ -1172,7 +1661,20 @@
           "Gestion et cycle de vie des cotisants",
           "Traitement des prestations et socle ERP basé sur Odoo"
         ],
-        "gallery": ["GED · recherche", "ABIS · capture", "ePaiement · flux"]
+        "gallery": [
+          {
+            "label": "GED · recherche",
+            "image": "/images/ged.png"
+          },
+          {
+            "label": "ABIS · capture",
+            "image": "/images/biometric-face-recognition-id-verification.jpg"
+          },
+          {
+            "label": "ePaiement · flux",
+            "image": "/images/woman-wearing-suit-leads-visionary-business-pitch-event-showing-performance-metrics-screen.jpg"
+          }
+        ]
       },
       "stack": {
         "eyebrow": "Stack technique",
@@ -1180,9 +1682,18 @@
         "titleLine2": "intégré.",
         "lede": "Là où des produits matures battent le sur-mesure, nous avons intégré · GED, un ABIS, des rails ePaiement et Odoo · derrière un seul socle observable et sécurisé.",
         "groups": [
-          { "heading": "Intégration & données", "items": ["OpenKM / GED", "Odoo", "PostgreSQL"] },
-          { "heading": "Identité & paiements", "items": ["ABIS", "ePaiement", "mTLS"] },
-          { "heading": "Plateforme & sécurité", "items": ["Kubernetes", "PKI", "HSM"] }
+          {
+            "heading": "Intégration & données",
+            "items": ["OpenKM / GED", "Odoo", "PostgreSQL"]
+          },
+          {
+            "heading": "Identité & paiements",
+            "items": ["ABIS", "ePaiement", "mTLS"]
+          },
+          {
+            "heading": "Plateforme & sécurité",
+            "items": ["Kubernetes", "PKI", "HSM"]
+          }
         ]
       },
       "impact": {
@@ -1191,18 +1702,39 @@
         "titleLine2": "moderne.",
         "lede": "Des résultats mesurés pour la CNSS et les cotisants et bénéficiaires qu'elle sert.",
         "cells": [
-          { "num": "Biométrique", "desc": "Identité des cotisants unifiée sur un ABIS souverain." },
-          { "num": "↑ livraison", "desc": "Traitement des prestations plus rapide dans toute l'institution." },
-          { "num": "Auditable", "desc": "Chaque document et paiement traçable de bout en bout." }
+          {
+            "num": "Biométrique",
+            "desc": "Identité des cotisants unifiée sur un ABIS souverain."
+          },
+          {
+            "num": "↑ livraison",
+            "desc": "Traitement des prestations plus rapide dans toute l'institution."
+          },
+          {
+            "num": "Auditable",
+            "desc": "Chaque document et paiement traçable de bout en bout."
+          }
         ]
       },
-      "nav": { "allLabel": "← TOUS LES PROJETS", "allTitle": "Retour au portfolio", "nextLabel": "ÉTUDE DE CAS SUIVANTE →", "nextTitle": "SFEC · Infrastructure fiscale nationale", "nextSlug": "sfec" },
-      "cta": { "title": "Une modernisation institutionnelle en tête ?", "primary": "Discutons" }
+      "nav": {
+        "allLabel": "← TOUS LES PROJETS",
+        "allTitle": "Retour au portfolio",
+        "nextLabel": "ÉTUDE DE CAS SUIVANTE →",
+        "nextTitle": "SFEC · Infrastructure fiscale nationale",
+        "nextSlug": "sfec"
+      },
+      "cta": {
+        "title": "Une modernisation institutionnelle en tête ?",
+        "primary": "Discutons"
+      }
     }
   },
   "productDetails": {
     "akienipay": {
-      "meta": { "title": "AkieniPay · Akieni", "description": "Plateforme de paiement et de collecte agrégeant Mobile Money, cartes, virements et caisses derrière une API unique." },
+      "meta": {
+        "title": "AkieniPay · Akieni",
+        "description": "Plateforme de paiement et de collecte agrégeant Mobile Money, cartes, virements et caisses derrière une API unique."
+      },
       "hero": {
         "backLabel": "Tous les produits",
         "title": "AkieniPay.",
@@ -1238,7 +1770,10 @@
         "title": "Un seul connecteur. Tous les canaux.",
         "lede": "Dans la région, encaisser veut dire intégrer 6 à 10 fournisseurs (MTN, Airtel, Visa, MasterCard, virements XAF, caisses physiques…). AkieniPay vous donne une API, un dashboard et une équipe support unique.",
         "feats": [
-          { "key": "Canaux Mobile Money", "value": "MTN MoMo · Airtel Money · Orange Money" },
+          {
+            "key": "Canaux Mobile Money",
+            "value": "MTN MoMo · Airtel Money · Orange Money"
+          },
           { "key": "Cartes", "value": "Visa · Mastercard · GIM-UEMOA" },
           { "key": "Virements", "value": "XAF · SWIFT · banques locales" },
           { "key": "Caisses", "value": "Agences partenaires" },
@@ -1251,12 +1786,36 @@
         "title": "Ce qui est inclus dans la box.",
         "lede": "Pas seulement un agrégateur : tout ce qu'il faut pour piloter, rapprocher et auditer vos encaissements à grande échelle.",
         "items": [
-          { "num": "01 / API", "title": "API REST + Webhooks", "desc": "Endpoints idempotents, signature HMAC, retries exponentiels, mode sandbox illimité." },
-          { "num": "02 / CONSOLE", "title": "Console marchand", "desc": "Tableaux de bord temps-réel, exports CSV/PDF, rôles fins, audit log." },
-          { "num": "03 / RECON", "title": "Rapprochement auto", "desc": "Match T+0 entre canaux, comptes bancaires et back-office · alertes sur écarts." },
-          { "num": "04 / PAYOUTS", "title": "Payouts & remboursements", "desc": "Reversements vers Mobile Money et comptes bancaires, en lot ou unitaires." },
-          { "num": "05 / FRAUD", "title": "Anti-fraude", "desc": "Règles, velocity checks, listes négatives, scoring · ajustables sans déploiement." },
-          { "num": "06 / LEDGER", "title": "Ledger comptable", "desc": "Double-entrée, multi-devise, exports OHADA prêts pour vos auditeurs." }
+          {
+            "num": "01 / API",
+            "title": "API REST + Webhooks",
+            "desc": "Endpoints idempotents, signature HMAC, retries exponentiels, mode sandbox illimité."
+          },
+          {
+            "num": "02 / CONSOLE",
+            "title": "Console marchand",
+            "desc": "Tableaux de bord temps-réel, exports CSV/PDF, rôles fins, audit log."
+          },
+          {
+            "num": "03 / RECON",
+            "title": "Rapprochement auto",
+            "desc": "Match T+0 entre canaux, comptes bancaires et back-office · alertes sur écarts."
+          },
+          {
+            "num": "04 / PAYOUTS",
+            "title": "Payouts & remboursements",
+            "desc": "Reversements vers Mobile Money et comptes bancaires, en lot ou unitaires."
+          },
+          {
+            "num": "05 / FRAUD",
+            "title": "Anti-fraude",
+            "desc": "Règles, velocity checks, listes négatives, scoring · ajustables sans déploiement."
+          },
+          {
+            "num": "06 / LEDGER",
+            "title": "Ledger comptable",
+            "desc": "Double-entrée, multi-devise, exports OHADA prêts pour vos auditeurs."
+          }
         ]
       },
       "flow": {
@@ -1264,10 +1823,26 @@
         "title": "Du checkout au rapprochement.",
         "lede": "Une seule intégration vous donne accès à tous les canaux. Nous gérons la complexité côté opérateurs, banques et régulateurs.",
         "steps": [
-          { "num": "01 / INIT", "title": "Initier le paiement", "desc": "Votre back-end appelle POST /payments avec montant, canal et clé d'idempotence." },
-          { "num": "02 / ROUTE", "title": "Routage intelligent", "desc": "Le moteur sélectionne l'opérateur, applique vos règles et envoie la requête." },
-          { "num": "03 / NOTIFY", "title": "Webhook signé", "desc": "Réception du statut (success / fail) en webhook signé HMAC · retries automatiques." },
-          { "num": "04 / SETTLE", "title": "Versement & recon", "desc": "Reversement vers votre compte, rapprochement automatique, écritures comptables." }
+          {
+            "num": "01 / INIT",
+            "title": "Initier le paiement",
+            "desc": "Votre back-end appelle POST /payments avec montant, canal et clé d'idempotence."
+          },
+          {
+            "num": "02 / ROUTE",
+            "title": "Routage intelligent",
+            "desc": "Le moteur sélectionne l'opérateur, applique vos règles et envoie la requête."
+          },
+          {
+            "num": "03 / NOTIFY",
+            "title": "Webhook signé",
+            "desc": "Réception du statut (success / fail) en webhook signé HMAC · retries automatiques."
+          },
+          {
+            "num": "04 / SETTLE",
+            "title": "Versement & recon",
+            "desc": "Reversement vers votre compte, rapprochement automatique, écritures comptables."
+          }
         ]
       },
       "cases": {
@@ -1275,17 +1850,42 @@
         "title": "Qui l'utilise déjà.",
         "lede": "Marchands en ligne, opérateurs publics, ONG et services régaliens · AkieniPay encaisse pour tous, à la même qualité d'API.",
         "items": [
-          { "icon": "$", "title": "Recettes fiscales", "desc": "Encaissement de l'impôt, de la TVA et des droits de douane via Mobile Money, carte ou agence · intégré au backbone fiscal national." },
-          { "icon": "⌂", "title": "Factures utilities", "desc": "Eau, électricité, télécom · paiement de factures en agence, sur web ou par USSD, avec rapprochement bancaire automatique." },
-          { "icon": "⌑", "title": "E-commerce", "desc": "Checkout drop-in, support 3DS, paiement en plusieurs fois, payouts marchands en T+1." }
+          {
+            "icon": "$",
+            "title": "Recettes fiscales",
+            "desc": "Encaissement de l'impôt, de la TVA et des droits de douane via Mobile Money, carte ou agence · intégré au backbone fiscal national."
+          },
+          {
+            "icon": "⌂",
+            "title": "Factures utilities",
+            "desc": "Eau, électricité, télécom · paiement de factures en agence, sur web ou par USSD, avec rapprochement bancaire automatique."
+          },
+          {
+            "icon": "⌑",
+            "title": "E-commerce",
+            "desc": "Checkout drop-in, support 3DS, paiement en plusieurs fois, payouts marchands en T+1."
+          }
         ]
       },
       "api": {
         "eyebrow": "Documentation",
         "title": "Conçu pour les développeurs.",
         "lede": "API REST documentée OpenAPI, SDKs PHP / Node / Go / Python, sandbox illimitée, paire de clés en 30 secondes après inscription.",
-        "badges": ["REST · JSON", "OpenAPI 3.1", "HMAC SHA-256", "PHP SDK", "Node SDK", "Go SDK", "Python SDK"],
-        "points": ["Sandbox illimitée & clés instantanées", "Webhook signé HMAC · vérification d'horodatage", "Idempotence native sur tous les endpoints d'écriture", "Versionnage explicite · pas de breaking change non annoncé"],
+        "badges": [
+          "REST · JSON",
+          "OpenAPI 3.1",
+          "HMAC SHA-256",
+          "PHP SDK",
+          "Node SDK",
+          "Go SDK",
+          "Python SDK"
+        ],
+        "points": [
+          "Sandbox illimitée & clés instantanées",
+          "Webhook signé HMAC · vérification d'horodatage",
+          "Idempotence native sur tous les endpoints d'écriture",
+          "Versionnage explicite · pas de breaking change non annoncé"
+        ],
         "cta": "Demander un accès API →",
         "code": "// Initiate a Mobile Money charge\nPOST https://api.akienipay.com/v1/payments\nAuthorization: Bearer ak_live_…\nIdempotency-Key: ord_8421-2026-05-15\n\n{\n  \"amount\":    25000,\n  \"currency\":  \"XAF\",\n  \"channel\":   \"mtn_momo\",\n  \"customer\":  { \"msisdn\": \"+242066123456\" },\n  \"reference\": \"INV-2026-00482\",\n  \"webhook\":   \"https://acme.cg/hooks/akienipay\"\n}\n\n→ 202 Accepted\n{\n  \"id\":     \"pay_01HX0…\",\n  \"status\": \"pending\",\n  \"hint\":   \"Approve on the customer's handset\"\n}"
       },
@@ -1294,14 +1894,35 @@
         "title": "Explorez le catalogue Akieni.",
         "lede": "AkieniPay s'intègre naturellement avec les autres produits Akieni, par les mêmes APIs et le même SSO.",
         "items": [
-          { "slug": "cartracking", "tag": "02 / Produit · CarTracking", "title": "CarTracking", "desc": "Suivi de flotte temps-réel · GPS, géofencing, comportement de conduite, alertes vol.", "cta": "Voir CarTracking →" },
-          { "slug": "biometrie", "tag": "03 / Produit · Biometrie", "title": "Biometrie", "desc": "Identification multi-modale · empreintes, visage, iris, conforme ICAO et adossée à un ABIS.", "cta": "Voir Biometrie →" }
+          {
+            "slug": "cartracking",
+            "tag": "02 / Produit · CarTracking",
+            "title": "CarTracking",
+            "desc": "Suivi de flotte temps-réel · GPS, géofencing, comportement de conduite, alertes vol.",
+            "cta": "Voir CarTracking →"
+          },
+          {
+            "slug": "biometrie",
+            "tag": "03 / Produit · Biometrie",
+            "title": "Biometrie",
+            "desc": "Identification multi-modale · empreintes, visage, iris, conforme ICAO et adossée à un ABIS.",
+            "cta": "Voir Biometrie →"
+          }
         ]
       },
-      "cta": { "eyebrow": "On en parle ?", "title": "Voir AkieniPay en conditions réelles.", "lede": "Démo guidée, clés sandbox immédiates, support technique direct par l'équipe qui a construit le produit.", "primary": "Demander une démo →", "email": "akienipay@akieni.com" }
+      "cta": {
+        "eyebrow": "On en parle ?",
+        "title": "Voir AkieniPay en conditions réelles.",
+        "lede": "Démo guidée, clés sandbox immédiates, support technique direct par l'équipe qui a construit le produit.",
+        "primary": "Demander une démo →",
+        "email": "akienipay@akieni.com"
+      }
     },
     "cartracking": {
-      "meta": { "title": "CarTracking · Akieni", "description": "Suivi de flotte en temps réel pour entreprises et flottes publiques · GPS, géofencing, comportement conducteur et alertes vol." },
+      "meta": {
+        "title": "CarTracking · Akieni",
+        "description": "Suivi de flotte en temps réel pour entreprises et flottes publiques · GPS, géofencing, comportement conducteur et alertes vol."
+      },
       "hero": {
         "backLabel": "Tous les produits",
         "title": "CarTracking.",
@@ -1350,12 +1971,36 @@
         "title": "Ce qui est inclus dans la box.",
         "lede": "Pas juste des points sur une carte : la boîte à outils complète pour gérer une flotte en sécurité, à moindre coût et de façon responsable.",
         "items": [
-          { "num": "01 / LIVE", "title": "Suivi temps-réel", "desc": "Position en direct toutes les 5 secondes, précision < 3 m, rejeu de trajet." },
-          { "num": "02 / FENCE", "title": "Géofencing", "desc": "Zones illimitées par véhicule avec alertes d'entrée/sortie en temps réel." },
-          { "num": "03 / DRIVER", "title": "Comportement conducteur", "desc": "Vitesse, freinages brusques et ralenti notés par conducteur et par trajet." },
-          { "num": "04 / THEFT", "title": "Vol & immobilisation", "desc": "Alertes de mouvement hors horaires, immobilisation à distance sur boîtiers compatibles." },
-          { "num": "05 / FUEL", "title": "Carburant & coûts", "desc": "Suivi de consommation, détection d'anomalies et rapports de coût par véhicule." },
-          { "num": "06 / API", "title": "API REST + Webhooks", "desc": "Diffusez positions et événements vers vos systèmes avec webhooks signés." }
+          {
+            "num": "01 / LIVE",
+            "title": "Suivi temps-réel",
+            "desc": "Position en direct toutes les 5 secondes, précision < 3 m, rejeu de trajet."
+          },
+          {
+            "num": "02 / FENCE",
+            "title": "Géofencing",
+            "desc": "Zones illimitées par véhicule avec alertes d'entrée/sortie en temps réel."
+          },
+          {
+            "num": "03 / DRIVER",
+            "title": "Comportement conducteur",
+            "desc": "Vitesse, freinages brusques et ralenti notés par conducteur et par trajet."
+          },
+          {
+            "num": "04 / THEFT",
+            "title": "Vol & immobilisation",
+            "desc": "Alertes de mouvement hors horaires, immobilisation à distance sur boîtiers compatibles."
+          },
+          {
+            "num": "05 / FUEL",
+            "title": "Carburant & coûts",
+            "desc": "Suivi de consommation, détection d'anomalies et rapports de coût par véhicule."
+          },
+          {
+            "num": "06 / API",
+            "title": "API REST + Webhooks",
+            "desc": "Diffusez positions et événements vers vos systèmes avec webhooks signés."
+          }
         ]
       },
       "flow": {
@@ -1363,10 +2008,26 @@
         "title": "De l'installation à l'analyse.",
         "lede": "Nous posons le matériel, vous regardez la console. Tout est diffusé en direct et atterrit dans vos rapports.",
         "steps": [
-          { "num": "01 / POSE", "title": "Installer le boîtier", "desc": "Prise OBD-II ou traceur câblé posé en quelques minutes par véhicule." },
-          { "num": "02 / STREAM", "title": "Diffuser les positions", "desc": "Chaque boîtier remonte GPS, contact et capteurs toutes les 5 secondes." },
-          { "num": "03 / ALERT", "title": "Déclencher les alertes", "desc": "Les règles se déclenchent sur vitesse, géofence, vol et comportement." },
-          { "num": "04 / REPORT", "title": "Rapporter & facturer", "desc": "Rapports quotidiens, hebdomadaires et mensuels sur carburant, conduite et utilisation." }
+          {
+            "num": "01 / POSE",
+            "title": "Installer le boîtier",
+            "desc": "Prise OBD-II ou traceur câblé posé en quelques minutes par véhicule."
+          },
+          {
+            "num": "02 / STREAM",
+            "title": "Diffuser les positions",
+            "desc": "Chaque boîtier remonte GPS, contact et capteurs toutes les 5 secondes."
+          },
+          {
+            "num": "03 / ALERT",
+            "title": "Déclencher les alertes",
+            "desc": "Les règles se déclenchent sur vitesse, géofence, vol et comportement."
+          },
+          {
+            "num": "04 / REPORT",
+            "title": "Rapporter & facturer",
+            "desc": "Rapports quotidiens, hebdomadaires et mensuels sur carburant, conduite et utilisation."
+          }
         ]
       },
       "cases": {
@@ -1374,17 +2035,42 @@
         "title": "Qui l'utilise déjà.",
         "lede": "Opérateurs logistiques, flottes publiques et loueurs · la même console, adaptée à chacun.",
         "items": [
-          { "icon": "▣", "title": "Logistique", "desc": "Respect d'itinéraire, preuve de livraison et précision des ETA pour flottes de distribution." },
-          { "icon": "▲", "title": "Flottes publiques", "desc": "Utilisation, planification de maintenance et redevabilité pour véhicules d'État." },
-          { "icon": "◇", "title": "Location & leasing", "desc": "Limites kilométriques, retours géofencés et récupération de vol pour voitures de location." }
+          {
+            "icon": "▣",
+            "title": "Logistique",
+            "desc": "Respect d'itinéraire, preuve de livraison et précision des ETA pour flottes de distribution."
+          },
+          {
+            "icon": "▲",
+            "title": "Flottes publiques",
+            "desc": "Utilisation, planification de maintenance et redevabilité pour véhicules d'État."
+          },
+          {
+            "icon": "◇",
+            "title": "Location & leasing",
+            "desc": "Limites kilométriques, retours géofencés et récupération de vol pour voitures de location."
+          }
         ]
       },
       "api": {
         "eyebrow": "Documentation",
         "title": "Conçu pour les intégrateurs.",
         "lede": "Diffusez positions et événements dans vos propres dashboards. API REST documentée OpenAPI, webhooks signés, sandbox immédiate.",
-        "badges": ["REST · JSON", "OpenAPI 3.1", "HMAC SHA-256", "WebSocket", "Node SDK", "Go SDK", "Python SDK"],
-        "points": ["Flux de position en direct via WebSocket ou webhook", "Événements signés HMAC · vérification d'horodatage", "API de requête historique trajets & géofences", "Versionnage explicite · pas de breaking change non annoncé"],
+        "badges": [
+          "REST · JSON",
+          "OpenAPI 3.1",
+          "HMAC SHA-256",
+          "WebSocket",
+          "Node SDK",
+          "Go SDK",
+          "Python SDK"
+        ],
+        "points": [
+          "Flux de position en direct via WebSocket ou webhook",
+          "Événements signés HMAC · vérification d'horodatage",
+          "API de requête historique trajets & géofences",
+          "Versionnage explicite · pas de breaking change non annoncé"
+        ],
         "cta": "Demander un accès API →",
         "code": "// Subscribe to live vehicle events\nPOST https://api.cartracking.akieni.com/v1/webhooks\nAuthorization: Bearer ct_live_…\n\n{\n  \"url\":     \"https://acme.cg/hooks/fleet\",\n  \"events\":  [\"position\", \"geofence\", \"theft\"],\n  \"vehicles\": [\"veh_01HX0…\"]\n}\n\n→ 201 Created\n{\n  \"id\":     \"whk_01HX0…\",\n  \"status\": \"active\",\n  \"secret\": \"whsec_…\"\n}"
       },
@@ -1393,14 +2079,35 @@
         "title": "Explorez le catalogue Akieni.",
         "lede": "CarTracking partage les mêmes APIs, le même SSO et la même coque de console que le reste du catalogue.",
         "items": [
-          { "slug": "akienipay", "tag": "01 / Produit · AkieniPay", "title": "AkieniPay", "desc": "Paiements & collecte · Mobile Money, cartes, virements et caisses derrière une API unique.", "cta": "Voir AkieniPay →" },
-          { "slug": "biometrie", "tag": "03 / Produit · Biometrie", "title": "Biometrie", "desc": "Identification multi-modale · empreintes, visage, iris, conforme ICAO et adossée à un ABIS.", "cta": "Voir Biometrie →" }
+          {
+            "slug": "akienipay",
+            "tag": "01 / Produit · AkieniPay",
+            "title": "AkieniPay",
+            "desc": "Paiements & collecte · Mobile Money, cartes, virements et caisses derrière une API unique.",
+            "cta": "Voir AkieniPay →"
+          },
+          {
+            "slug": "biometrie",
+            "tag": "03 / Produit · Biometrie",
+            "title": "Biometrie",
+            "desc": "Identification multi-modale · empreintes, visage, iris, conforme ICAO et adossée à un ABIS.",
+            "cta": "Voir Biometrie →"
+          }
         ]
       },
-      "cta": { "eyebrow": "On en parle ?", "title": "Voir CarTracking en conditions réelles.", "lede": "Démo guidée sur véhicules réels, accès sandbox, support direct par l'équipe qui a construit le produit.", "primary": "Demander une démo →", "email": "cartracking@akieni.com" }
+      "cta": {
+        "eyebrow": "On en parle ?",
+        "title": "Voir CarTracking en conditions réelles.",
+        "lede": "Démo guidée sur véhicules réels, accès sandbox, support direct par l'équipe qui a construit le produit.",
+        "primary": "Demander une démo →",
+        "email": "cartracking@akieni.com"
+      }
     },
     "biometrie": {
-      "meta": { "title": "Biometrie · Akieni", "description": "Identification biométrique multi-modale · empreintes, visage et iris, conforme ICAO, adossée à un ABIS souverain." },
+      "meta": {
+        "title": "Biometrie · Akieni",
+        "description": "Identification biométrique multi-modale · empreintes, visage et iris, conforme ICAO, adossée à un ABIS souverain."
+      },
       "hero": {
         "backLabel": "Tous les produits",
         "title": "Biometrie.",
@@ -1449,12 +2156,36 @@
         "title": "Ce qui est inclus dans la box.",
         "lede": "Une pile d'identité de bout en bout · capturer, matcher, stocker et auditer · conçue pour des déploiements réglementés et souverains.",
         "items": [
-          { "num": "01 / CAPTURE", "title": "Capture multi-modale", "desc": "Empreinte, visage et iris depuis mobile, kiosque ou matériel d'agence." },
-          { "num": "02 / ABIS", "title": "ABIS souverain", "desc": "Moteur de matching 1:1 et 1:N dépassant 50M d'identités." },
-          { "num": "03 / DEDUP", "title": "Déduplication", "desc": "Regroupe et résout les identités en double sur toute la population." },
-          { "num": "04 / DOC", "title": "Vérification documentaire", "desc": "Lecture et authentification de passeports e-MRTD ICAO 9303 et pièces d'identité." },
-          { "num": "05 / PKI", "title": "PKI souveraine", "desc": "Clés, HSM et piste d'audit que vous possédez et opérez · sans dépendance externe." },
-          { "num": "06 / AUDIT", "title": "Piste d'audit complète", "desc": "Chaque enrôlement et match journalisé, signé et exportable pour les régulateurs." }
+          {
+            "num": "01 / CAPTURE",
+            "title": "Capture multi-modale",
+            "desc": "Empreinte, visage et iris depuis mobile, kiosque ou matériel d'agence."
+          },
+          {
+            "num": "02 / ABIS",
+            "title": "ABIS souverain",
+            "desc": "Moteur de matching 1:1 et 1:N dépassant 50M d'identités."
+          },
+          {
+            "num": "03 / DEDUP",
+            "title": "Déduplication",
+            "desc": "Regroupe et résout les identités en double sur toute la population."
+          },
+          {
+            "num": "04 / DOC",
+            "title": "Vérification documentaire",
+            "desc": "Lecture et authentification de passeports e-MRTD ICAO 9303 et pièces d'identité."
+          },
+          {
+            "num": "05 / PKI",
+            "title": "PKI souveraine",
+            "desc": "Clés, HSM et piste d'audit que vous possédez et opérez · sans dépendance externe."
+          },
+          {
+            "num": "06 / AUDIT",
+            "title": "Piste d'audit complète",
+            "desc": "Chaque enrôlement et match journalisé, signé et exportable pour les régulateurs."
+          }
         ]
       },
       "flow": {
@@ -1462,10 +2193,26 @@
         "title": "De l'enrôlement au matching.",
         "lede": "Un seul pipeline de la capture à une décision d'identité signée et auditable · le tout sur votre infrastructure.",
         "steps": [
-          { "num": "01 / ENROL", "title": "Capturer l'identité", "desc": "Biométrie multi-modale capturée et contrôlée en qualité au point d'enrôlement." },
-          { "num": "02 / DEDUP", "title": "Vérifier l'unicité", "desc": "Une recherche 1:N dans l'ABIS confirme que l'identité est nouvelle." },
-          { "num": "03 / STORE", "title": "Stocker en sécurité", "desc": "Templates chiffrés au repos sous clés souveraines, jamais la biométrie brute." },
-          { "num": "04 / VERIFY", "title": "Vérifier à la demande", "desc": "La vérification 1:1 retourne un oui/non signé et auditable en millisecondes." }
+          {
+            "num": "01 / ENROL",
+            "title": "Capturer l'identité",
+            "desc": "Biométrie multi-modale capturée et contrôlée en qualité au point d'enrôlement."
+          },
+          {
+            "num": "02 / DEDUP",
+            "title": "Vérifier l'unicité",
+            "desc": "Une recherche 1:N dans l'ABIS confirme que l'identité est nouvelle."
+          },
+          {
+            "num": "03 / STORE",
+            "title": "Stocker en sécurité",
+            "desc": "Templates chiffrés au repos sous clés souveraines, jamais la biométrie brute."
+          },
+          {
+            "num": "04 / VERIFY",
+            "title": "Vérifier à la demande",
+            "desc": "La vérification 1:1 retourne un oui/non signé et auditable en millisecondes."
+          }
         ]
       },
       "cases": {
@@ -1473,17 +2220,42 @@
         "title": "Pour qui c'est conçu.",
         "lede": "Registres d'État, régulateurs et institutions financières · partout où l'identité doit être prouvée et souveraine.",
         "items": [
-          { "icon": "⊕", "title": "Identité nationale", "desc": "Enrôlement au registre civil et déduplication pour les programmes d'identité nationale." },
-          { "icon": "⛉", "title": "Frontières & voyage", "desc": "Vérification de passeport e-MRTD ICAO et filtrage de listes aux frontières." },
-          { "icon": "₳", "title": "KYC & finance", "desc": "Onboarding et prévention de la fraude pour banques et opérateurs Mobile Money." }
+          {
+            "icon": "⊕",
+            "title": "Identité nationale",
+            "desc": "Enrôlement au registre civil et déduplication pour les programmes d'identité nationale."
+          },
+          {
+            "icon": "⛉",
+            "title": "Frontières & voyage",
+            "desc": "Vérification de passeport e-MRTD ICAO et filtrage de listes aux frontières."
+          },
+          {
+            "icon": "₳",
+            "title": "KYC & finance",
+            "desc": "Onboarding et prévention de la fraude pour banques et opérateurs Mobile Money."
+          }
         ]
       },
       "api": {
         "eyebrow": "Normes",
         "title": "Conçu aux normes internationales.",
         "lede": "Conforme ICAO, ISO et NIST, déployé on-prem sous vos clés. Intégration via une API REST documentée et des callbacks signés.",
-        "badges": ["ICAO 9303", "ISO 19794", "NIST MINEX", "REST · JSON", "mTLS", "HSM", "On-prem"],
-        "points": ["APIs de matching 1:1 et 1:N avec scoring de qualité", "Templates chiffrés au repos sous clés souveraines", "Piste d'audit signée et exportable pour les régulateurs", "Déploiement on-prem · aucune donnée ne quitte votre infrastructure"],
+        "badges": [
+          "ICAO 9303",
+          "ISO 19794",
+          "NIST MINEX",
+          "REST · JSON",
+          "mTLS",
+          "HSM",
+          "On-prem"
+        ],
+        "points": [
+          "APIs de matching 1:1 et 1:N avec scoring de qualité",
+          "Templates chiffrés au repos sous clés souveraines",
+          "Piste d'audit signée et exportable pour les régulateurs",
+          "Déploiement on-prem · aucune donnée ne quitte votre infrastructure"
+        ],
         "cta": "Demander un accès →",
         "code": "// Verify an identity (1:1)\nPOST https://abis.internal/v1/verify\nAuthorization: Bearer bio_…\n\n{\n  \"subject_id\": \"id_01HX0…\",\n  \"modality\":   \"fingerprint\",\n  \"template\":   \"<base64 ISO 19794 template>\"\n}\n\n→ 200 OK\n{\n  \"match\":      true,\n  \"score\":      0.987,\n  \"audit_ref\":  \"aud_01HX0…\"\n}"
       },
@@ -1492,23 +2264,47 @@
         "title": "Explorez le catalogue Akieni.",
         "lede": "Biometrie partage la même PKI souveraine, la même couche d'audit et le même SSO que le reste du catalogue.",
         "items": [
-          { "slug": "akienipay", "tag": "01 / Produit · AkieniPay", "title": "AkieniPay", "desc": "Paiements & collecte · Mobile Money, cartes, virements et caisses derrière une API unique.", "cta": "Voir AkieniPay →" },
-          { "slug": "cartracking", "tag": "02 / Produit · CarTracking", "title": "CarTracking", "desc": "Suivi de flotte temps-réel · GPS, géofencing, comportement de conduite, alertes vol.", "cta": "Voir CarTracking →" }
+          {
+            "slug": "akienipay",
+            "tag": "01 / Produit · AkieniPay",
+            "title": "AkieniPay",
+            "desc": "Paiements & collecte · Mobile Money, cartes, virements et caisses derrière une API unique.",
+            "cta": "Voir AkieniPay →"
+          },
+          {
+            "slug": "cartracking",
+            "tag": "02 / Produit · CarTracking",
+            "title": "CarTracking",
+            "desc": "Suivi de flotte temps-réel · GPS, géofencing, comportement de conduite, alertes vol.",
+            "cta": "Voir CarTracking →"
+          }
         ]
       },
-      "cta": { "eyebrow": "On en parle ?", "title": "Voir Biometrie en conditions réelles.", "lede": "Déploiement souverain, revue de conformité aux normes, support direct par l'équipe qui a construit la plateforme.", "primary": "Demander un accès →", "email": "biometrie@akieni.com" }
+      "cta": {
+        "eyebrow": "On en parle ?",
+        "title": "Voir Biometrie en conditions réelles.",
+        "lede": "Déploiement souverain, revue de conformité aux normes, support direct par l'équipe qui a construit la plateforme.",
+        "primary": "Demander un accès →",
+        "email": "biometrie@akieni.com"
+      }
     }
   },
   "serviceDetails": {
     "digital-transformation": {
-      "meta": { "title": "Transformation numérique · Akieni", "description": "Programmes de transformation de bout en bout pour les organisations qui se modernisent à grande échelle · stratégie, mise en œuvre, changement." },
+      "meta": {
+        "title": "Transformation numérique · Akieni",
+        "description": "Programmes de transformation de bout en bout pour les organisations qui se modernisent à grande échelle · stratégie, mise en œuvre, changement."
+      },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 01 / 04",
       "title": "Transformation numérique.",
       "lede": "Programmes de transformation de bout en bout pour les organisations qui se modernisent à grande échelle · stratégie, mise en œuvre, changement, et la discipline pour réussir les trois.",
       "overview": [
         { "label": "Pratique", "value": "01 sur 04" },
-        { "label": "Modèle de livraison", "value": "Intégré · Piloté par des séniors" },
+        {
+          "label": "Modèle de livraison",
+          "value": "Intégré · Piloté par des séniors"
+        },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
       "what": {
@@ -1523,10 +2319,26 @@
         "title": "Quatre raisons pour lesquelles les clients reviennent.",
         "lede": "Pas de langage marketing · juste ce que nos clients nous disent avoir compté, à la sortie.",
         "items": [
-          { "num": "01", "title": "Le modèle opérationnel d'abord", "desc": "Nous concevons le modèle opérationnel cible avant de toucher à la plateforme · pour que la technologie serve le travail." },
-          { "num": "02", "title": "Continuité sénior", "desc": "Les consultants leads rencontrés au jour un sont les mêmes au jour 365." },
-          { "num": "03", "title": "L'adoption est le livrable", "desc": "Nous livrons un système qui est utilisé, pas seulement déployé." },
-          { "num": "04", "title": "Décisions défendables", "desc": "Chaque choix · fournisseur, architecture, séquencement · vient avec les alternatives écartées et pourquoi." }
+          {
+            "num": "01",
+            "title": "Le modèle opérationnel d'abord",
+            "desc": "Nous concevons le modèle opérationnel cible avant de toucher à la plateforme · pour que la technologie serve le travail."
+          },
+          {
+            "num": "02",
+            "title": "Continuité sénior",
+            "desc": "Les consultants leads rencontrés au jour un sont les mêmes au jour 365."
+          },
+          {
+            "num": "03",
+            "title": "L'adoption est le livrable",
+            "desc": "Nous livrons un système qui est utilisé, pas seulement déployé."
+          },
+          {
+            "num": "04",
+            "title": "Décisions défendables",
+            "desc": "Chaque choix · fournisseur, architecture, séquencement · vient avec les alternatives écartées et pourquoi."
+          }
         ]
       },
       "approach": {
@@ -1535,10 +2347,26 @@
         "titleLine2": "Un playbook.",
         "lede": "La même séquence disciplinée, adaptée à votre mandat · éprouvée sur trois programmes à l'échelle nationale.",
         "steps": [
-          { "num": "01 / Audit", "title": "Audit.", "desc": "Où vous en êtes, en chiffres et en processus. Sans politique." },
-          { "num": "02 / Modèle cible", "title": "Modèle cible.", "desc": "Modèle opérationnel et architecture de plateforme, co-écrits avec vous." },
-          { "num": "03 / Feuille de route", "title": "Feuille de route.", "desc": "Séquencée, chiffrée et liée à des résultats mesurables." },
-          { "num": "04 / Rodage", "title": "Rodage.", "desc": "Nous restons jusqu'au go-live, la formation et la stabilisation." }
+          {
+            "num": "01 / Audit",
+            "title": "Audit.",
+            "desc": "Où vous en êtes, en chiffres et en processus. Sans politique."
+          },
+          {
+            "num": "02 / Modèle cible",
+            "title": "Modèle cible.",
+            "desc": "Modèle opérationnel et architecture de plateforme, co-écrits avec vous."
+          },
+          {
+            "num": "03 / Feuille de route",
+            "title": "Feuille de route.",
+            "desc": "Séquencée, chiffrée et liée à des résultats mesurables."
+          },
+          {
+            "num": "04 / Rodage",
+            "title": "Rodage.",
+            "desc": "Nous restons jusqu'au go-live, la formation et la stabilisation."
+          }
         ]
       },
       "related": {
@@ -1546,21 +2374,42 @@
         "title": "Où vous verrez cette pratique à l'œuvre.",
         "all": "Tous les projets",
         "items": [
-          { "slug": "camu", "client": "CAMU", "title": "Couverture santé universelle", "mediaLabel": "CAMU · visuel" },
-          { "slug": "cnss", "client": "CNSS", "title": "Modernisation de la sécurité sociale", "mediaLabel": "CNSS · visuel" }
+          {
+            "slug": "camu",
+            "client": "CAMU",
+            "title": "Couverture santé universelle",
+            "mediaLabel": "CAMU · visuel"
+          },
+          {
+            "slug": "cnss",
+            "client": "CNSS",
+            "title": "Modernisation de la sécurité sociale",
+            "mediaLabel": "CNSS · visuel"
+          }
         ]
       },
-      "cta": { "title": "Discutons de vos besoins.", "primary": "Démarrer une conversation", "secondary": "Suivant : Développement logiciel", "secondaryHref": "/services/software-development" }
+      "cta": {
+        "title": "Discutons de vos besoins.",
+        "primary": "Démarrer une conversation",
+        "secondary": "Suivant : Développement logiciel",
+        "secondaryHref": "/services/software-development"
+      }
     },
     "software-development": {
-      "meta": { "title": "Développement logiciel · Akieni", "description": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs séniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes." },
+      "meta": {
+        "title": "Développement logiciel · Akieni",
+        "description": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs séniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes."
+      },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 02 / 04",
       "title": "Développement logiciel.",
       "lede": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs séniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes · pour des systèmes qui doivent tourner.",
       "overview": [
         { "label": "Pratique", "value": "02 sur 04" },
-        { "label": "Modèle de livraison", "value": "Intégré · Piloté par des séniors" },
+        {
+          "label": "Modèle de livraison",
+          "value": "Intégré · Piloté par des séniors"
+        },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
       "what": {
@@ -1575,10 +2424,26 @@
         "title": "Quatre raisons pour lesquelles les clients reviennent.",
         "lede": "Pas de langage marketing · juste ce que nos clients nous disent avoir compté, à la sortie.",
         "items": [
-          { "num": "01", "title": "Production dès le jour un", "desc": "CI, observabilité, SLO et contrôles de sécurité font partie du sprint un · pas de la checklist de lancement." },
-          { "num": "02", "title": "Ingénierie sénior", "desc": "La plupart des missions comptent au moins un sénior Akieni sur l'architecture et un sur les opérations." },
-          { "num": "03", "title": "Normes internationales", "desc": "PKI, mTLS, HSM, logs structurés, OpenAPI, traçabilité · ce sont des défauts, pas des extras." },
-          { "num": "04", "title": "Contexte local, savoir-faire global", "desc": "Du code qui tourne aussi bien dans un datacenter de Brazzaville que sur AWS." }
+          {
+            "num": "01",
+            "title": "Production dès le jour un",
+            "desc": "CI, observabilité, SLO et contrôles de sécurité font partie du sprint un · pas de la checklist de lancement."
+          },
+          {
+            "num": "02",
+            "title": "Ingénierie sénior",
+            "desc": "La plupart des missions comptent au moins un sénior Akieni sur l'architecture et un sur les opérations."
+          },
+          {
+            "num": "03",
+            "title": "Normes internationales",
+            "desc": "PKI, mTLS, HSM, logs structurés, OpenAPI, traçabilité · ce sont des défauts, pas des extras."
+          },
+          {
+            "num": "04",
+            "title": "Contexte local, savoir-faire global",
+            "desc": "Du code qui tourne aussi bien dans un datacenter de Brazzaville que sur AWS."
+          }
         ]
       },
       "approach": {
@@ -1587,10 +2452,26 @@
         "titleLine2": "Un playbook.",
         "lede": "La même séquence disciplinée, adaptée à votre mandat · éprouvée sur trois programmes à l'échelle nationale.",
         "steps": [
-          { "num": "01 / Architecture", "title": "Architecture.", "desc": "Nous documentons l'architecture et les compromis avant tout code." },
-          { "num": "02 / Sprints", "title": "Sprints.", "desc": "Cycles de deux semaines, démos hebdomadaires, comité de pilotage mensuel." },
-          { "num": "03 / Durcissement", "title": "Durcissement.", "desc": "Revue de sécurité, test de charge, répétition du go-live." },
-          { "num": "04 / Exploiter", "title": "Exploiter.", "desc": "Nous opérons ce que nous construisons jusqu'à ce que votre équipe le reprenne." }
+          {
+            "num": "01 / Architecture",
+            "title": "Architecture.",
+            "desc": "Nous documentons l'architecture et les compromis avant tout code."
+          },
+          {
+            "num": "02 / Sprints",
+            "title": "Sprints.",
+            "desc": "Cycles de deux semaines, démos hebdomadaires, comité de pilotage mensuel."
+          },
+          {
+            "num": "03 / Durcissement",
+            "title": "Durcissement.",
+            "desc": "Revue de sécurité, test de charge, répétition du go-live."
+          },
+          {
+            "num": "04 / Exploiter",
+            "title": "Exploiter.",
+            "desc": "Nous opérons ce que nous construisons jusqu'à ce que votre équipe le reprenne."
+          }
         ]
       },
       "related": {
@@ -1598,21 +2479,42 @@
         "title": "Où vous verrez cette pratique à l'œuvre.",
         "all": "Tous les projets",
         "items": [
-          { "slug": "sfec", "client": "SFEC", "title": "Infrastructure fiscale nationale", "mediaLabel": "SFEC · visuel" },
-          { "slug": "cnss", "client": "CNSS", "title": "Modernisation de la sécurité sociale", "mediaLabel": "CNSS · visuel" }
+          {
+            "slug": "sfec",
+            "client": "SFEC",
+            "title": "Infrastructure fiscale nationale",
+            "mediaLabel": "SFEC · visuel"
+          },
+          {
+            "slug": "cnss",
+            "client": "CNSS",
+            "title": "Modernisation de la sécurité sociale",
+            "mediaLabel": "CNSS · visuel"
+          }
         ]
       },
-      "cta": { "title": "Discutons de vos besoins.", "primary": "Démarrer une conversation", "secondary": "Suivant : Intégration logicielle", "secondaryHref": "/services/integration" }
+      "cta": {
+        "title": "Discutons de vos besoins.",
+        "primary": "Démarrer une conversation",
+        "secondary": "Suivant : Intégration logicielle",
+        "secondaryHref": "/services/integration"
+      }
     },
     "integration": {
-      "meta": { "title": "Intégration logicielle · Akieni", "description": "Nous transformons des systèmes fragmentés en flux de données unifiés · paiements, biométrie, GED, ERP · avec l'observabilité dont les opérateurs ont besoin." },
+      "meta": {
+        "title": "Intégration logicielle · Akieni",
+        "description": "Nous transformons des systèmes fragmentés en flux de données unifiés · paiements, biométrie, GED, ERP · avec l'observabilité dont les opérateurs ont besoin."
+      },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 03 / 04",
       "title": "Intégration logicielle.",
       "lede": "Nous transformons des systèmes fragmentés en flux de données unifiés · paiements, biométrie, GED, ERP · avec l'observabilité et la fiabilité dont les opérateurs ont réellement besoin.",
       "overview": [
         { "label": "Pratique", "value": "03 sur 04" },
-        { "label": "Modèle de livraison", "value": "Intégré · Piloté par des séniors" },
+        {
+          "label": "Modèle de livraison",
+          "value": "Intégré · Piloté par des séniors"
+        },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
       "what": {
@@ -1628,10 +2530,26 @@
         "title": "Quatre raisons pour lesquelles les clients reviennent.",
         "lede": "Pas de langage marketing · juste ce que nos clients nous disent avoir compté, à la sortie.",
         "items": [
-          { "num": "01", "title": "Observabilité de bout en bout", "desc": "Chaque intégration est livrée avec logs, métriques et traces · pour qu'en cas de panne, vous sachiez où." },
-          { "num": "02", "title": "Idempotence par défaut", "desc": "Replays, retries et rapprochements font partie du contrat, pas d'une réflexion après coup." },
-          { "num": "03", "title": "Indépendance fournisseur", "desc": "Nous ne vendons pas de licences logicielles. Nos recommandations sont honnêtes." },
-          { "num": "04", "title": "Qualité réglementaire", "desc": "Sécurité, audit et traçabilité pour des secteurs qui ne tolèrent pas le « à peu près »." }
+          {
+            "num": "01",
+            "title": "Observabilité de bout en bout",
+            "desc": "Chaque intégration est livrée avec logs, métriques et traces · pour qu'en cas de panne, vous sachiez où."
+          },
+          {
+            "num": "02",
+            "title": "Idempotence par défaut",
+            "desc": "Replays, retries et rapprochements font partie du contrat, pas d'une réflexion après coup."
+          },
+          {
+            "num": "03",
+            "title": "Indépendance fournisseur",
+            "desc": "Nous ne vendons pas de licences logicielles. Nos recommandations sont honnêtes."
+          },
+          {
+            "num": "04",
+            "title": "Qualité réglementaire",
+            "desc": "Sécurité, audit et traçabilité pour des secteurs qui ne tolèrent pas le « à peu près »."
+          }
         ]
       },
       "approach": {
@@ -1640,10 +2558,26 @@
         "titleLine2": "Un playbook.",
         "lede": "La même séquence disciplinée, adaptée à votre mandat · éprouvée sur trois programmes à l'échelle nationale.",
         "steps": [
-          { "num": "01 / Inventaire", "title": "Inventaire.", "desc": "Chaque système, contrat, propriétaire et contrainte · cartographié sur une page." },
-          { "num": "02 / Contrats", "title": "Contrats.", "desc": "Contrats d'API, SLO, modes de défaillance · convenus avant tout code." },
-          { "num": "03 / Pipelines", "title": "Pipelines.", "desc": "Construits, testés et observables dès le sprint un." },
-          { "num": "04 / Bascule", "title": "Bascule.", "desc": "Déploiement progressif en double exécution, puis retrait gracieux du legacy." }
+          {
+            "num": "01 / Inventaire",
+            "title": "Inventaire.",
+            "desc": "Chaque système, contrat, propriétaire et contrainte · cartographié sur une page."
+          },
+          {
+            "num": "02 / Contrats",
+            "title": "Contrats.",
+            "desc": "Contrats d'API, SLO, modes de défaillance · convenus avant tout code."
+          },
+          {
+            "num": "03 / Pipelines",
+            "title": "Pipelines.",
+            "desc": "Construits, testés et observables dès le sprint un."
+          },
+          {
+            "num": "04 / Bascule",
+            "title": "Bascule.",
+            "desc": "Déploiement progressif en double exécution, puis retrait gracieux du legacy."
+          }
         ]
       },
       "related": {
@@ -1651,21 +2585,42 @@
         "title": "Où vous verrez cette pratique à l'œuvre.",
         "all": "Tous les projets",
         "items": [
-          { "slug": "cnss", "client": "CNSS", "title": "GED + ABIS + ePaiement + Odoo", "mediaLabel": "CNSS · visuel" },
-          { "slug": "sfec", "client": "SFEC", "title": "PKI + terminaux + pipelines fiscaux", "mediaLabel": "SFEC · visuel" }
+          {
+            "slug": "cnss",
+            "client": "CNSS",
+            "title": "GED + ABIS + ePaiement + Odoo",
+            "mediaLabel": "CNSS · visuel"
+          },
+          {
+            "slug": "sfec",
+            "client": "SFEC",
+            "title": "PKI + terminaux + pipelines fiscaux",
+            "mediaLabel": "SFEC · visuel"
+          }
         ]
       },
-      "cta": { "title": "Discutons de vos besoins.", "primary": "Démarrer une conversation", "secondary": "Suivant : Conseil & PM", "secondaryHref": "/services/consulting" }
+      "cta": {
+        "title": "Discutons de vos besoins.",
+        "primary": "Démarrer une conversation",
+        "secondary": "Suivant : Conseil & PM",
+        "secondaryHref": "/services/consulting"
+      }
     },
     "consulting": {
-      "meta": { "title": "Conseil & PM · Akieni", "description": "Conseil sénior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu et multi-parties prenantes." },
+      "meta": {
+        "title": "Conseil & PM · Akieni",
+        "description": "Conseil sénior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu et multi-parties prenantes."
+      },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 04 / 04",
       "title": "Conseil & PM.",
       "lede": "Conseil sénior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu, multi-parties prenantes, qui demandent une main ferme.",
       "overview": [
         { "label": "Pratique", "value": "04 sur 04" },
-        { "label": "Modèle de livraison", "value": "Intégré · Piloté par des séniors" },
+        {
+          "label": "Modèle de livraison",
+          "value": "Intégré · Piloté par des séniors"
+        },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
       "what": {
@@ -1680,10 +2635,26 @@
         "title": "Quatre raisons pour lesquelles les clients reviennent.",
         "lede": "Pas de langage marketing · juste ce que nos clients nous disent avoir compté, à la sortie.",
         "items": [
-          { "num": "01", "title": "Séniors uniquement", "desc": "Pas de consultants juniors. Le lead nommé est celui présent en réunion." },
-          { "num": "02", "title": "Neutre vis-à-vis des fournisseurs", "desc": "Nous n'avons aucun intérêt à vous vendre un produit particulier." },
-          { "num": "03", "title": "Ancré sur les résultats", "desc": "Chaque mission a un résultat mesurable dès le jour zéro." },
-          { "num": "04", "title": "Bilingue", "desc": "Français et anglais, avec une aisance culturelle pour les contextes d'Afrique centrale." }
+          {
+            "num": "01",
+            "title": "Séniors uniquement",
+            "desc": "Pas de consultants juniors. Le lead nommé est celui présent en réunion."
+          },
+          {
+            "num": "02",
+            "title": "Neutre vis-à-vis des fournisseurs",
+            "desc": "Nous n'avons aucun intérêt à vous vendre un produit particulier."
+          },
+          {
+            "num": "03",
+            "title": "Ancré sur les résultats",
+            "desc": "Chaque mission a un résultat mesurable dès le jour zéro."
+          },
+          {
+            "num": "04",
+            "title": "Bilingue",
+            "desc": "Français et anglais, avec une aisance culturelle pour les contextes d'Afrique centrale."
+          }
         ]
       },
       "approach": {
@@ -1692,10 +2663,26 @@
         "titleLine2": "Un playbook.",
         "lede": "La même séquence disciplinée, adaptée à votre mandat · éprouvée sur trois programmes à l'échelle nationale.",
         "steps": [
-          { "num": "01 / Cadrer", "title": "Cadrer.", "desc": "Quel problème, le problème de qui, à quoi ressemble le succès." },
-          { "num": "02 / Planifier", "title": "Planifier.", "desc": "RACI, séquencement, budget, registre des risques." },
-          { "num": "03 / Piloter", "title": "Piloter.", "desc": "Présidence du comité de pilotage, gestion des fournisseurs, comm hebdomadaire." },
-          { "num": "04 / Transférer", "title": "Transférer.", "desc": "Modèle opérationnel documenté, prêt à être repris par votre équipe." }
+          {
+            "num": "01 / Cadrer",
+            "title": "Cadrer.",
+            "desc": "Quel problème, le problème de qui, à quoi ressemble le succès."
+          },
+          {
+            "num": "02 / Planifier",
+            "title": "Planifier.",
+            "desc": "RACI, séquencement, budget, registre des risques."
+          },
+          {
+            "num": "03 / Piloter",
+            "title": "Piloter.",
+            "desc": "Présidence du comité de pilotage, gestion des fournisseurs, comm hebdomadaire."
+          },
+          {
+            "num": "04 / Transférer",
+            "title": "Transférer.",
+            "desc": "Modèle opérationnel documenté, prêt à être repris par votre équipe."
+          }
         ]
       },
       "related": {
@@ -1703,11 +2690,26 @@
         "title": "Où vous verrez cette pratique à l'œuvre.",
         "all": "Tous les projets",
         "items": [
-          { "slug": "sfec", "client": "SFEC", "title": "Co-direction de programme avec la DGID", "mediaLabel": "SFEC · visuel" },
-          { "slug": "camu", "client": "CAMU", "title": "Livraison de plateforme santé multi-fournisseurs", "mediaLabel": "CAMU · visuel" }
+          {
+            "slug": "sfec",
+            "client": "SFEC",
+            "title": "Co-direction de programme avec la DGID",
+            "mediaLabel": "SFEC · visuel"
+          },
+          {
+            "slug": "camu",
+            "client": "CAMU",
+            "title": "Livraison de plateforme santé multi-fournisseurs",
+            "mediaLabel": "CAMU · visuel"
+          }
         ]
       },
-      "cta": { "title": "Discutons de vos besoins.", "primary": "Démarrer une conversation", "secondary": "Suivant : Transformation numérique", "secondaryHref": "/services/digital-transformation" }
+      "cta": {
+        "title": "Discutons de vos besoins.",
+        "primary": "Démarrer une conversation",
+        "secondary": "Suivant : Transformation numérique",
+        "secondaryHref": "/services/digital-transformation"
+      }
     }
   },
   "contact": {
@@ -1728,7 +2730,14 @@
       "company": "Organisation",
       "companyPlaceholder": "Ministère, entreprise, ONG…",
       "subject": "Sujet",
-      "subjectOptions": ["Nouveau projet", "Partenariat", "Académie & talent", "Carrières", "Presse", "Autre"],
+      "subjectOptions": [
+        "Nouveau projet",
+        "Partenariat",
+        "Académie & talent",
+        "Carrières",
+        "Presse",
+        "Autre"
+      ],
       "message": "Message",
       "messagePlaceholder": "Quelques lignes sur le mandat, le calendrier et les parties prenantes.",
       "note": "RÉPONSE SOUS 2 JOURS OUVRÉS",
@@ -1737,7 +2746,11 @@
     },
     "info": {
       "items": [
-        { "label": "E-mail", "value": "contact@akieni.com", "href": "mailto:contact@akieni.com" },
+        {
+          "label": "E-mail",
+          "value": "contact@akieni.com",
+          "href": "mailto:contact@akieni.com"
+        },
         { "label": "Site web", "value": "www.akieni.com" },
         { "label": "Bureau", "value": "Brazzaville, République du Congo" },
         { "label": "Horaires", "value": "Lun · Ven · 08:00 · 18:00 WAT" }
@@ -1752,64 +2765,191 @@
       "titleLine2": "bonne porte.",
       "lede": "La plupart des demandes arrivent à contact@akieni.com, mais certaines sont mieux orientées directement.",
       "items": [
-        { "number": "01", "title": "Nouveaux programmes", "desc": "Appels d'offres, conversations de cadrage et mandats directs.", "linkLabel": "contact@akieni.com", "href": "mailto:contact@akieni.com" },
-        { "number": "02", "title": "Académie & talent", "desc": "Candidatures aux cohortes et Talent-as-a-Service.", "linkLabel": "académie", "href": "/academy" },
-        { "number": "03", "title": "Carrières", "desc": "Postes en ingénierie, livraison et opérations.", "linkLabel": "carrières", "href": "/careers" }
+        {
+          "number": "01",
+          "title": "Nouveaux programmes",
+          "desc": "Appels d'offres, conversations de cadrage et mandats directs.",
+          "linkLabel": "contact@akieni.com",
+          "href": "mailto:contact@akieni.com"
+        },
+        {
+          "number": "02",
+          "title": "Académie & talent",
+          "desc": "Candidatures aux cohortes et Talent-as-a-Service.",
+          "linkLabel": "académie",
+          "href": "/academy"
+        },
+        {
+          "number": "03",
+          "title": "Carrières",
+          "desc": "Postes en ingénierie, livraison et opérations.",
+          "linkLabel": "carrières",
+          "href": "/careers"
+        }
       ]
     }
   },
   "legal": {
     "contentsLabel": "Sommaire",
     "privacy": {
-      "meta": { "title": "Politique de confidentialité · Akieni", "description": "Comment Akieni collecte, utilise et protège les informations personnelles sur notre site et nos missions." },
+      "meta": {
+        "title": "Politique de confidentialité · Akieni",
+        "description": "Comment Akieni collecte, utilise et protège les informations personnelles sur notre site et nos missions."
+      },
       "eyebrow": "Légal",
       "caption": "09 / LÉGAL · MISE À JOUR MAI 2026",
       "title": "Politique de confidentialité.",
       "lede": "Comment Akieni collecte, utilise et protège les informations personnelles sur notre site et nos missions.",
       "sections": [
-        { "id": "s1", "heading": "Qui nous sommes", "body": "Akieni est une entreprise de transformation numérique enregistrée en République du Congo, avec son bureau principal à Brazzaville. Nous sommes le responsable du traitement des données personnelles collectées via ce site (akieni.com) et via les contrats que nous signons avec nos clients." },
-        { "id": "s2", "heading": "Ce que nous collectons", "body": "Via ce site, nous ne collectons que ce que vous nous donnez. Lorsque vous nous contactez, nous stockons votre nom, e-mail, organisation et message · rien de plus. Nous journalisons des diagnostics serveur standards (IP anonymisée, user agent, chemin de requête) pendant 30 jours pour nous défendre contre les abus et maintenir le site. Nous n'utilisons ni analytics tiers ni traceurs publicitaires." },
-        { "id": "s3", "heading": "Comment nous l'utilisons", "body": "Nous utilisons les informations de contact que vous fournissez pour répondre à votre demande et, le cas échéant, faire un suivi sur le programme décrit. Nous ne vendons, ne louons et ne partageons pas vos informations personnelles avec des tiers à des fins marketing. Nous ne vous inscrivons à aucune liste de diffusion sans votre consentement explicite." },
-        { "id": "s4", "heading": "Base légale", "body": "Notre traitement repose soit sur votre consentement (lorsque vous nous contactez), sur l'exécution d'un contrat (lorsque nous collaborons), ou sur notre intérêt légitime à exploiter un site web sécurisé." },
-        { "id": "s5", "heading": "Durée de conservation", "body": "Les demandes de contact sont conservées jusqu'à 24 mois après notre dernier échange, puis supprimées. Les données client sont régies par le contrat d'engagement applicable, qui définit toujours la conservation, la propriété et la suppression." },
-        { "id": "s6", "heading": "Vos droits", "body": "Vous pouvez demander à tout moment l'accès, la rectification ou la suppression de vos données personnelles en écrivant à contact@akieni.com. Nous répondons sous 30 jours. Vous pouvez aussi déposer une plainte auprès de l'autorité nationale compétente." },
-        { "id": "s7", "heading": "Sécurité", "body": "Nous hébergeons notre site et les systèmes clients sur une infrastructure dotée de contrôles de sécurité aux normes du secteur · TLS en transit, chiffrement au repos, journalisation des accès, moindre privilège. Les environnements de production traitant des données sensibles sont protégés par des couches d'identité et d'audit dédiées." },
-        { "id": "s8", "heading": "Modifications de cette politique", "body": "Nous réviserons cette page si nos pratiques changent. La date de « Dernière mise à jour » en haut de cette page indique la version actuelle." },
-        { "id": "s9", "heading": "Contact", "body": "Toute question sur cette politique, ou sur les données personnelles que nous détenons, doit être adressée à contact@akieni.com." }
+        {
+          "id": "s1",
+          "heading": "Qui nous sommes",
+          "body": "Akieni est une entreprise de transformation numérique enregistrée en République du Congo, avec son bureau principal à Brazzaville. Nous sommes le responsable du traitement des données personnelles collectées via ce site (akieni.com) et via les contrats que nous signons avec nos clients."
+        },
+        {
+          "id": "s2",
+          "heading": "Ce que nous collectons",
+          "body": "Via ce site, nous ne collectons que ce que vous nous donnez. Lorsque vous nous contactez, nous stockons votre nom, e-mail, organisation et message · rien de plus. Nous journalisons des diagnostics serveur standards (IP anonymisée, user agent, chemin de requête) pendant 30 jours pour nous défendre contre les abus et maintenir le site. Nous n'utilisons ni analytics tiers ni traceurs publicitaires."
+        },
+        {
+          "id": "s3",
+          "heading": "Comment nous l'utilisons",
+          "body": "Nous utilisons les informations de contact que vous fournissez pour répondre à votre demande et, le cas échéant, faire un suivi sur le programme décrit. Nous ne vendons, ne louons et ne partageons pas vos informations personnelles avec des tiers à des fins marketing. Nous ne vous inscrivons à aucune liste de diffusion sans votre consentement explicite."
+        },
+        {
+          "id": "s4",
+          "heading": "Base légale",
+          "body": "Notre traitement repose soit sur votre consentement (lorsque vous nous contactez), sur l'exécution d'un contrat (lorsque nous collaborons), ou sur notre intérêt légitime à exploiter un site web sécurisé."
+        },
+        {
+          "id": "s5",
+          "heading": "Durée de conservation",
+          "body": "Les demandes de contact sont conservées jusqu'à 24 mois après notre dernier échange, puis supprimées. Les données client sont régies par le contrat d'engagement applicable, qui définit toujours la conservation, la propriété et la suppression."
+        },
+        {
+          "id": "s6",
+          "heading": "Vos droits",
+          "body": "Vous pouvez demander à tout moment l'accès, la rectification ou la suppression de vos données personnelles en écrivant à contact@akieni.com. Nous répondons sous 30 jours. Vous pouvez aussi déposer une plainte auprès de l'autorité nationale compétente."
+        },
+        {
+          "id": "s7",
+          "heading": "Sécurité",
+          "body": "Nous hébergeons notre site et les systèmes clients sur une infrastructure dotée de contrôles de sécurité aux normes du secteur · TLS en transit, chiffrement au repos, journalisation des accès, moindre privilège. Les environnements de production traitant des données sensibles sont protégés par des couches d'identité et d'audit dédiées."
+        },
+        {
+          "id": "s8",
+          "heading": "Modifications de cette politique",
+          "body": "Nous réviserons cette page si nos pratiques changent. La date de « Dernière mise à jour » en haut de cette page indique la version actuelle."
+        },
+        {
+          "id": "s9",
+          "heading": "Contact",
+          "body": "Toute question sur cette politique, ou sur les données personnelles que nous détenons, doit être adressée à contact@akieni.com."
+        }
       ]
     },
     "terms": {
-      "meta": { "title": "Conditions d'utilisation · Akieni", "description": "Les conditions selon lesquelles Akieni fournit ce site. Les conditions de mission sont régies par le contrat signé pour chaque programme." },
+      "meta": {
+        "title": "Conditions d'utilisation · Akieni",
+        "description": "Les conditions selon lesquelles Akieni fournit ce site. Les conditions de mission sont régies par le contrat signé pour chaque programme."
+      },
       "eyebrow": "Légal",
       "caption": "10 / LÉGAL · MISE À JOUR MAI 2026",
       "title": "Conditions d'utilisation.",
       "lede": "Les conditions selon lesquelles Akieni fournit ce site. Les conditions de mission sont régies par le contrat signé pour chaque programme.",
       "sections": [
-        { "id": "s1", "heading": "Acceptation", "body": "En accédant à akieni.com ou en l'utilisant, vous acceptez ces conditions. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site." },
-        { "id": "s2", "heading": "Le site web", "body": "Ce site fournit des informations générales sur Akieni, nos services, nos réalisations et notre équipe. Le contenu est fourni de bonne foi. Les engagements spécifiques ne sont pris que via des contrats de mission signés · pas via ce site." },
-        { "id": "s3", "heading": "Missions", "body": "Toute mission commerciale entre Akieni et un client est régie par un contrat écrit distinct. Ce contrat · et non ce site · définit les livrables, délais, honoraires, propriété intellectuelle, confidentialité et responsabilité pour le travail concerné." },
-        { "id": "s4", "heading": "Propriété intellectuelle", "body": "Tout le contenu de ce site · textes, logos, marques, images, le nom « Akieni », le symbole Λ · est la propriété d'Akieni ou de ses concédants. Vous ne pouvez pas le copier, le reproduire ou le republier sans consentement écrit, sauf citation courte et attribuée dans un contexte professionnel ou journalistique." },
-        { "id": "s5", "heading": "Usage acceptable", "body": "Vous acceptez de ne pas utiliser le site pour envoyer du contenu illégal, tenter de perturber son fonctionnement, le scraper à des volumes abusifs, ou usurper une identité. Nous pouvons bloquer l'accès à quiconque le ferait." },
-        { "id": "s6", "heading": "Liens tiers", "body": "Le site renvoie occasionnellement vers des sites tiers. Nous ne sommes pas responsables du contenu, des politiques ou des pratiques de ces sites." },
-        { "id": "s7", "heading": "Avertissement", "body": "Le site est fourni « en l'état ». Dans la mesure maximale permise par la loi, Akieni exclut toute garantie de disponibilité, d'exactitude ou d'adéquation à un usage particulier du contenu de ce site." },
-        { "id": "s8", "heading": "Droit applicable", "body": "Ces conditions sont régies par les lois de la République du Congo. Tout litige issu de ce site relève de la compétence exclusive des tribunaux compétents de Brazzaville." },
-        { "id": "s9", "heading": "Modifications", "body": "Nous pouvons mettre à jour ces conditions périodiquement. Les changements importants seront reflétés dans la date de « Dernière mise à jour » ci-dessus." }
+        {
+          "id": "s1",
+          "heading": "Acceptation",
+          "body": "En accédant à akieni.com ou en l'utilisant, vous acceptez ces conditions. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site."
+        },
+        {
+          "id": "s2",
+          "heading": "Le site web",
+          "body": "Ce site fournit des informations générales sur Akieni, nos services, nos réalisations et notre équipe. Le contenu est fourni de bonne foi. Les engagements spécifiques ne sont pris que via des contrats de mission signés · pas via ce site."
+        },
+        {
+          "id": "s3",
+          "heading": "Missions",
+          "body": "Toute mission commerciale entre Akieni et un client est régie par un contrat écrit distinct. Ce contrat · et non ce site · définit les livrables, délais, honoraires, propriété intellectuelle, confidentialité et responsabilité pour le travail concerné."
+        },
+        {
+          "id": "s4",
+          "heading": "Propriété intellectuelle",
+          "body": "Tout le contenu de ce site · textes, logos, marques, images, le nom « Akieni », le symbole Λ · est la propriété d'Akieni ou de ses concédants. Vous ne pouvez pas le copier, le reproduire ou le republier sans consentement écrit, sauf citation courte et attribuée dans un contexte professionnel ou journalistique."
+        },
+        {
+          "id": "s5",
+          "heading": "Usage acceptable",
+          "body": "Vous acceptez de ne pas utiliser le site pour envoyer du contenu illégal, tenter de perturber son fonctionnement, le scraper à des volumes abusifs, ou usurper une identité. Nous pouvons bloquer l'accès à quiconque le ferait."
+        },
+        {
+          "id": "s6",
+          "heading": "Liens tiers",
+          "body": "Le site renvoie occasionnellement vers des sites tiers. Nous ne sommes pas responsables du contenu, des politiques ou des pratiques de ces sites."
+        },
+        {
+          "id": "s7",
+          "heading": "Avertissement",
+          "body": "Le site est fourni « en l'état ». Dans la mesure maximale permise par la loi, Akieni exclut toute garantie de disponibilité, d'exactitude ou d'adéquation à un usage particulier du contenu de ce site."
+        },
+        {
+          "id": "s8",
+          "heading": "Droit applicable",
+          "body": "Ces conditions sont régies par les lois de la République du Congo. Tout litige issu de ce site relève de la compétence exclusive des tribunaux compétents de Brazzaville."
+        },
+        {
+          "id": "s9",
+          "heading": "Modifications",
+          "body": "Nous pouvons mettre à jour ces conditions périodiquement. Les changements importants seront reflétés dans la date de « Dernière mise à jour » ci-dessus."
+        }
       ]
     },
     "cookies": {
-      "meta": { "title": "Politique de cookies · Akieni", "description": "Akieni utilise les cookies avec parcimonie. Cette page décrit lesquels, pourquoi, et comment les contrôler." },
+      "meta": {
+        "title": "Politique de cookies · Akieni",
+        "description": "Akieni utilise les cookies avec parcimonie. Cette page décrit lesquels, pourquoi, et comment les contrôler."
+      },
       "eyebrow": "Légal",
       "caption": "11 / LÉGAL · MISE À JOUR MAI 2026",
       "title": "Politique de cookies.",
       "lede": "Akieni utilise les cookies avec parcimonie. Cette page décrit lesquels, pourquoi, et comment les contrôler.",
       "sections": [
-        { "id": "s1", "heading": "À propos des cookies", "body": "Les cookies sont de petits fichiers texte déposés sur votre appareil par les sites que vous visitez. Ils servent à faire fonctionner les sites, mémoriser les préférences ou mesurer l'usage. Cette page explique comment Akieni utilise les cookies sur akieni.com." },
-        { "id": "s2", "heading": "Ce que nous utilisons", "body": "Nous utilisons une seule catégorie de cookies strictement nécessaires · servant à mémoriser vos préférences de cookies et à maintenir les fonctionnalités de base (par exemple, fermer une bannière). Nous n'utilisons pas de cookies publicitaires. Nous n'utilisons pas de cookies d'analytics tiers." },
-        { "id": "s3", "heading": "Ce que nous n'utilisons pas", "body": "Nous ne plaçons pas de pixels de suivi de réseaux publicitaires. Nous ne chargeons pas de widgets de réseaux sociaux qui posent leurs propres cookies. Nous ne partageons pas votre comportement de navigation avec des tiers." },
-        { "id": "s4", "heading": "Vos choix", "body": "Comme nous ne posons que des cookies strictement nécessaires, aucun consentement n'est requis. Vous pouvez tout de même effacer ou bloquer les cookies via les paramètres de votre navigateur. La plupart des navigateurs permettent un contrôle des cookies par site." },
-        { "id": "s5", "heading": "Journaux serveur", "body": "Distincts des cookies, nos serveurs conservent des journaux d'accès à courte durée (30 jours) contenant IP anonymisée, user agent et chemin de requête. Ils servent exclusivement à la sécurité et au monitoring opérationnel." },
-        { "id": "s6", "heading": "Modifications", "body": "Si notre usage des cookies change, cette page sera mise à jour. La date de « Dernière mise à jour » ci-dessus indique la version actuelle." },
-        { "id": "s7", "heading": "Contact", "body": "Toute question sur les cookies doit être adressée à contact@akieni.com." }
+        {
+          "id": "s1",
+          "heading": "À propos des cookies",
+          "body": "Les cookies sont de petits fichiers texte déposés sur votre appareil par les sites que vous visitez. Ils servent à faire fonctionner les sites, mémoriser les préférences ou mesurer l'usage. Cette page explique comment Akieni utilise les cookies sur akieni.com."
+        },
+        {
+          "id": "s2",
+          "heading": "Ce que nous utilisons",
+          "body": "Nous utilisons une seule catégorie de cookies strictement nécessaires · servant à mémoriser vos préférences de cookies et à maintenir les fonctionnalités de base (par exemple, fermer une bannière). Nous n'utilisons pas de cookies publicitaires. Nous n'utilisons pas de cookies d'analytics tiers."
+        },
+        {
+          "id": "s3",
+          "heading": "Ce que nous n'utilisons pas",
+          "body": "Nous ne plaçons pas de pixels de suivi de réseaux publicitaires. Nous ne chargeons pas de widgets de réseaux sociaux qui posent leurs propres cookies. Nous ne partageons pas votre comportement de navigation avec des tiers."
+        },
+        {
+          "id": "s4",
+          "heading": "Vos choix",
+          "body": "Comme nous ne posons que des cookies strictement nécessaires, aucun consentement n'est requis. Vous pouvez tout de même effacer ou bloquer les cookies via les paramètres de votre navigateur. La plupart des navigateurs permettent un contrôle des cookies par site."
+        },
+        {
+          "id": "s5",
+          "heading": "Journaux serveur",
+          "body": "Distincts des cookies, nos serveurs conservent des journaux d'accès à courte durée (30 jours) contenant IP anonymisée, user agent et chemin de requête. Ils servent exclusivement à la sécurité et au monitoring opérationnel."
+        },
+        {
+          "id": "s6",
+          "heading": "Modifications",
+          "body": "Si notre usage des cookies change, cette page sera mise à jour. La date de « Dernière mise à jour » ci-dessus indique la version actuelle."
+        },
+        {
+          "id": "s7",
+          "heading": "Contact",
+          "body": "Toute question sur les cookies doit être adressée à contact@akieni.com."
+        }
       ]
     }
   },

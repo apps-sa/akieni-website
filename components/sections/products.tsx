@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MotionCard } from "@/components/motion/primitives";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
@@ -23,6 +24,7 @@ export type ProductsStrings = {
     chipVariant: string;
     mark: string;
     mediaLabel: string;
+    image?: string;
     learnMore: string;
   }>;
 };
@@ -74,14 +76,46 @@ export function Products({
               cardCls,
             ].join(" ")}
           >
-            <div className={["border-b", footBorder].join(" ")}>
-              <PlaceholderMedia
-                aspect="16/10"
-                chip={item.chip}
-                chipVariant={item.chipVariant as ChipVariant}
-                mark={item.mark}
-                label={item.mediaLabel}
-              />
+            <div
+              className={["relative border-b overflow-hidden", footBorder].join(
+                " ",
+              )}
+            >
+              {item.image ? (
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.mediaLabel}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 720px) 100vw, 33vw"
+                  />
+                  {item.chip && (
+                    <span className="absolute left-4 top-4 inline-flex items-center gap-[0.4rem] border border-white/[0.18] bg-black/35 px-[0.55rem] py-[0.35rem] font-mono text-xs uppercase tracking-[0.14em] text-white backdrop-blur-[6px]">
+                      <span
+                        aria-hidden
+                        className={[
+                          "h-1.5 w-1.5 rounded-full",
+                          item.chipVariant === "green"
+                            ? "bg-green shadow-[0_0_0_3px_rgba(56,240,115,0.18)]"
+                            : item.chipVariant === "blue"
+                              ? "bg-blue shadow-[0_0_0_3px_rgba(15,64,248,0.18)]"
+                              : "bg-cyan-teal shadow-[0_0_0_3px_rgba(18,235,214,0.18)]",
+                        ].join(" ")}
+                      />
+                      {item.chip}
+                    </span>
+                  )}
+                </div>
+              ) : (
+                <PlaceholderMedia
+                  aspect="16/10"
+                  chip={item.chip}
+                  chipVariant={item.chipVariant as ChipVariant}
+                  mark={item.mark}
+                  label={item.mediaLabel}
+                />
+              )}
             </div>
             <div className="flex flex-1 flex-col gap-s3 p-[1.6rem]">
               <span className="font-mono text-xs uppercase tracking-[0.14em] text-cyan-teal">

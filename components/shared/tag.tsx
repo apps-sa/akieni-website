@@ -25,10 +25,7 @@ export function Tag({
     accent: "border border-cyan-teal text-cyan-teal bg-transparent",
     solid: "border border-cyan-teal bg-cyan-teal text-black",
     status:
-      (surface === "dark"
-        ? "border border-line text-muted-2 "
-        : "border border-line-light text-muted ") +
-      "bg-transparent",
+      surface === "dark" ? "text-muted-2 bg-transparent" : "text-muted bg-transparent",
   };
 
   return (

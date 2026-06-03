@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { Badge } from "@/components/shared/badge";
@@ -40,11 +41,24 @@ export function ProjectDetailPage({
             {strings.hero.lede}
           </p>
           <div className="mt-s5 aspect-[21/8] w-full overflow-hidden border border-line">
-            <PlaceholderMedia
-              aspect="21/8"
-              className="h-full"
-              label={strings.hero.mediaLabel}
-            />
+            {strings.hero.image ? (
+              <div className="relative h-full w-full">
+                <Image
+                  src={strings.hero.image}
+                  alt={strings.hero.mediaLabel}
+                  fill
+                  className="object-cover object-top"
+                  sizes="100vw"
+                  priority
+                />
+              </div>
+            ) : (
+              <PlaceholderMedia
+                aspect="21/8"
+                className="h-full"
+                label={strings.hero.mediaLabel}
+              />
+            )}
           </div>
         </Container>
       </section>
@@ -115,9 +129,21 @@ export function ProjectDetailPage({
           </div>
         </div>
         <div className="mt-s7 grid grid-cols-1 gap-s4 min-[721px]:grid-cols-3">
-          {strings.solution.gallery.map((label, i) => (
-            <div key={label} className={i === 0 ? "min-[721px]:col-span-1" : ""}>
-              <PlaceholderMedia aspect="4/3" label={label} />
+          {strings.solution.gallery.map((item, i) => (
+            <div key={item.label} className={i === 0 ? "min-[721px]:col-span-1" : ""}>
+              {item.image ? (
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.label}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 720px) 100vw, 33vw"
+                  />
+                </div>
+              ) : (
+                <PlaceholderMedia aspect="4/3" label={item.label} />
+              )}
             </div>
           ))}
         </div>
