@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BlurImage } from "@/components/shared/blur-image";
 import { FeatureGrid } from "@/components/shared/feature-grid";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
@@ -13,7 +14,7 @@ export type ProductDetailProps = {
   features: ReadonlyArray<{ key: string; value: string }>;
   ctaLabel: string;
   ctaHref: string;
-  mock: { chip: string; mark: string; label: string };
+  mock: { chip: string; mark: string; label: string; image?: string };
 };
 
 export function ProductDetail({
@@ -58,16 +59,26 @@ export function ProductDetail({
             {ctaLabel}
           </Link>
         </div>
-        <div
-          className={mediaSide === "left" ? "lg:order-1" : "lg:order-2"}
-        >
-          <PlaceholderMedia
-            aspect="4/3"
-            chip={mock.chip}
-            mark={mock.mark}
-            label={mock.label}
-            labelPosition="bottom-right"
-          />
+        <div className={mediaSide === "left" ? "lg:order-1" : "lg:order-2"}>
+          {mock.image ? (
+            <div className="relative aspect-4/3 w-full overflow-hidden">
+              <BlurImage
+                src={mock.image}
+                alt={mock.label}
+                fill
+                className="object-cover"
+                sizes="(max-width: 980px) 100vw, 50vw"
+              />
+            </div>
+          ) : (
+            <PlaceholderMedia
+              aspect="4/3"
+              chip={mock.chip}
+              mark={mock.mark}
+              label={mock.label}
+              labelPosition="bottom-right"
+            />
+          )}
         </div>
       </div>
     </Section>

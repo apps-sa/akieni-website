@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage } from "@/components/shared/blur-image";
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { Badge } from "@/components/shared/badge";
@@ -40,10 +40,10 @@ export function ProjectDetailPage({
           <p className="max-w-[46ch] text-lg text-muted-2">
             {strings.hero.lede}
           </p>
-          <div className="mt-s5 aspect-[21/8] w-full overflow-hidden border border-line">
+          <div className="mt-s5 aspect-21/10 w-full overflow-hidden border border-line">
             {strings.hero.image ? (
               <div className="relative h-full w-full">
-                <Image
+                <BlurImage
                   src={strings.hero.image}
                   alt={strings.hero.mediaLabel}
                   fill
@@ -133,7 +133,7 @@ export function ProjectDetailPage({
             <div key={item.label} className={i === 0 ? "min-[721px]:col-span-1" : ""}>
               {item.image ? (
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
-                  <Image
+                  <BlurImage
                     src={item.image}
                     alt={item.label}
                     fill

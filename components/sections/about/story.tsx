@@ -1,7 +1,12 @@
+import { BlurImage } from "@/components/shared/blur-image";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { Eyebrow } from "@/components/shared/eyebrow";
-import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
+
+const STORY_IMAGES = [
+  "/images/IMG_2918.jpeg",
+  "/images/PGSFEC Formation 7.jpeg",
+];
 
 type StoryStrings = Dictionary["about"]["story"];
 
@@ -31,12 +36,14 @@ export function AboutStory({
             </p>
           ))}
           <div className="mt-s3 flex flex-col gap-s4 min-[721px]:flex-row">
-            {strings.tiles.map((t) => (
-              <div key={t.label} className="flex-1">
-                <PlaceholderMedia
-                  aspect="4/3"
-                  surface="light"
-                  label={t.label}
+            {strings.tiles.map((t, i) => (
+              <div key={t.label} className="relative flex-1 aspect-4/3 overflow-hidden">
+                <BlurImage
+                  src={STORY_IMAGES[i]}
+                  alt={t.label}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 720px) 100vw, 50vw"
                 />
               </div>
             ))}

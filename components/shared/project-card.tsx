@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage } from "@/components/shared/blur-image";
 import Link from "next/link";
 import { MotionCard } from "@/components/motion/primitives";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
@@ -76,7 +76,7 @@ export function ProjectCard({
     <>
       {project.image ? (
         <div className="relative min-h-[420px] flex-1 overflow-hidden">
-          <Image
+          <BlurImage
             src={project.image}
             alt={project.mediaLabel ?? project.title}
             fill

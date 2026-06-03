@@ -115,7 +115,7 @@
           "years": "2024 · 2026",
           "statusLabel": "Advanced delivery",
           "mediaLabel": "CAMU · Health Platform · Screenshot",
-          "image": "/images/medic-looking-tablet-screen-healthcare-system.jpg"
+          "image": "/images/portrait-african-american-pediatrician-doctor-sitting-desk-table-hospital-office.jpg"
         },
         {
           "slug": "cnss",
@@ -126,7 +126,7 @@
           "years": "",
           "statusLabel": "Nearing completion",
           "mediaLabel": "CNSS · Social Security · Wide visual",
-          "image": "/images/woman-scanning-fingerprint-with-futuristic-interface-smart-technology.jpg"
+          "image": "/images/medium-shot-students-library.jpg"
         }
       ]
     },
@@ -440,6 +440,7 @@
           "chipVariant": "default",
           "mark": "A·PAY",
           "mediaLabel": "AkieniPay · Console",
+          "image": "/images/woman-wearing-suit-leads-visionary-business-pitch-event-showing-performance-metrics-screen.jpg",
           "learnMore": "Learn more →"
         },
         {
@@ -458,6 +459,7 @@
           "chipVariant": "green",
           "mark": "CAR·",
           "mediaLabel": "CarTracking · Map view",
+          "image": "/images/Screenshot from 2026-03-04 09-32-23.png",
           "learnMore": "Learn more →"
         },
         {
@@ -476,6 +478,7 @@
           "chipVariant": "blue",
           "mark": "BIO·",
           "mediaLabel": "Biometrie · Capture",
+          "image": "/images/biometric-face-recognition-id-verification.jpg",
           "learnMore": "Learn more →"
         }
       ]
@@ -503,7 +506,8 @@
         "mock": {
           "chip": "Merchant console",
           "mark": "A·PAY",
-          "label": "UI · Dashboard · placeholder"
+          "label": "UI · Dashboard · placeholder",
+          "image": "/images/woman-wearing-suit-leads-visionary-business-pitch-event-showing-performance-metrics-screen.jpg"
         }
       },
       {
@@ -525,7 +529,8 @@
         "mock": {
           "chip": "Live map",
           "mark": "CAR·",
-          "label": "UI · Map · placeholder"
+          "label": "UI · Map · placeholder",
+          "image": "/images/Screenshot from 2026-03-04 09-32-23.png"
         }
       },
       {
@@ -547,7 +552,8 @@
         "mock": {
           "chip": "Capture module",
           "mark": "BIO·",
-          "label": "UI · Enrolment · placeholder"
+          "label": "UI · Enrolment · placeholder",
+          "image": "/images/biometric-face-recognition-id-verification.jpg"
         }
       }
     ],
@@ -592,7 +598,8 @@
           "tags": ["Government", "PKI", "Go", "Kubernetes"],
           "years": "2024 · 2026",
           "statusLabel": "In deployment",
-          "mediaLabel": "SFEC · Fiscal · visual"
+          "mediaLabel": "SFEC · Fiscal · visual",
+          "image": "/images/PGSFEC Formation 7.jpeg"
         },
         {
           "slug": "camu",
@@ -603,7 +610,8 @@
           "tags": ["Health", "Laravel", "React", "AWS"],
           "years": "2024 · 2026",
           "statusLabel": "Advanced delivery",
-          "mediaLabel": "CAMU · Health · visual"
+          "mediaLabel": "CAMU · Health · visual",
+          "image": "/images/Déploiement Clinique Fondation Matete_3.jpeg"
         },
         {
           "slug": "cnss",
@@ -614,7 +622,8 @@
           "tags": ["Social", "GED", "ABIS", "Odoo"],
           "years": "2024 · 2026",
           "statusLabel": "Nearing completion",
-          "mediaLabel": "CNSS · Social Security · visual"
+          "mediaLabel": "CNSS · Social Security · visual",
+          "image": "/images/PHOTO-2025-04-03-10-25-30.jpg"
         },
         {
           "slug": "",
@@ -625,7 +634,8 @@
           "tags": ["Coming soon"],
           "years": "2026 →",
           "statusLabel": "In scoping",
-          "mediaLabel": "Upcoming · under NDA"
+          "mediaLabel": "Upcoming · under NDA",
+          "image": "/images/worker-uses-digital-device-data-center-ensuring-rigs-are-functioning.jpg"
         }
       ]
     },
@@ -1519,7 +1529,7 @@
         "title": "CAMU.",
         "lede": "Caisse d'Assurance Maladie Universelle · the national platform extending health coverage to millions of citizens across the Republic of Congo.",
         "mediaLabel": "CAMU · citizen portal screenshot",
-        "image": "/images/medic-looking-tablet-screen-healthcare-system.jpg"
+        "image": "/images/black-physician-looking-clinical-records-find-treatment-her-cabinet.jpg"
       },
       "overview": [
         { "label": "Client", "value": "Government of Congo" },
@@ -1549,15 +1559,15 @@
         "gallery": [
           {
             "label": "Citizen enrolment",
-            "image": "/images/african-american-nurse-holding-digital-tablet-checkup-visit-doctors-office-black-woman-working-as-medical-assistant-using-device-with-touch-screen-healthcare-medicine.jpg"
+            "image": "/images/african-american-doctor-giving-medical-report-assistant-discussing-patient-symptoms-working-together-medication-treatment-hospital-waiting-area-medicine-service-concept.jpg"
           },
           {
             "label": "Provider network",
-            "image": "/images/afro-american-man-suit-holding-documents-talking-female-boss.jpg"
+            "image": "/images/african-american-nurse-using-digital-tablet-treatment-black-medical-assistant-looking-screen-device-while-wearing-uniform-stethoscope-doctors-office-healthcare.jpg"
           },
           {
             "label": "Claims pipeline",
-            "image": "/images/young-black-businessman-woman-going-through-some-paperwork-together.jpg"
+            "image": "/images/african-nurse-surgeon-doctor-medical-uniform-analyzing-illness-symptom-working-hospital-ward.jpg"
           }
         ]
       },
@@ -1621,7 +1631,7 @@
         "title": "CNSS.",
         "lede": "A full modernisation of the Republic of Congo's social-security operator · document management, biometric identification, ePayment and ERP · under one programme.",
         "mediaLabel": "CNSS · operator dashboard screenshot",
-        "image": "/images/ged.png"
+        "image": "/images/officer-reviewing-criminal-records.jpg"
       },
       "overview": [
         {

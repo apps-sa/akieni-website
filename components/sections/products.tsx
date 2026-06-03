@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage } from "@/components/shared/blur-image";
 import Link from "next/link";
 import { MotionCard } from "@/components/motion/primitives";
 import { PlaceholderMedia } from "@/components/shared/placeholder-media";
@@ -83,7 +83,7 @@ export function Products({
             >
               {item.image ? (
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
-                  <Image
+                  <BlurImage
                     src={item.image}
                     alt={item.mediaLabel}
                     fill
