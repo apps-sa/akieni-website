@@ -5,6 +5,7 @@ import { CareersProcess } from "@/components/sections/careers/process";
 import { CareersWhy } from "@/components/sections/careers/why";
 import { Cta } from "@/components/sections/cta";
 import { PageHero } from "@/components/shared/page-hero";
+import { getJobOpenings } from "@/lib/queries/careers";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
 
@@ -27,7 +28,10 @@ export default async function CareersPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, openings] = await Promise.all([
+    getDictionary(lang),
+    getJobOpenings(lang),
+  ]);
   const t = dict.careers;
 
   return (
@@ -47,7 +51,7 @@ export default async function CareersPage({
         ]}
       />
       <CareersWhy strings={t.why} />
-      <CareersOpenings lang={lang} strings={t.openings} />
+      <CareersOpenings lang={lang} strings={t.openings} items={openings} />
       <CareersProcess strings={t.process} />
       <Cta
         lang={lang}

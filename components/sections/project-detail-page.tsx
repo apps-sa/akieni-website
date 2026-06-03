@@ -8,12 +8,63 @@ import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 
-type ProjectDetailStrings = Dictionary["projectDetails"]["sfec"];
+type DictStrings = Dictionary["projectDetails"]["sfec"];
+
+export type ProjectDetailStrings = {
+  meta: { title: string; description: string };
+  hero: {
+    backLabel: string;
+    caption: string;
+    title: string;
+    lede: string;
+    mediaLabel: string;
+    image?: string | null | { asset: { _ref: string } };
+  };
+  overview: ReadonlyArray<{ label: string; value: string; accent?: boolean }>;
+  challenge: { eyebrow: string; title: string; paragraphs: string[] };
+  solution: {
+    eyebrow: string;
+    title: string;
+    lede: string;
+    items: string[];
+    gallery: Array<{ label: string; image?: string | null | { asset: { _ref: string } } }>;
+  };
+  stack: {
+    eyebrow: string;
+    titleLine1: string;
+    titleLine2: string;
+    lede: string;
+    groups: Array<{ heading: string; items: string[] }>;
+  };
+  impact: {
+    eyebrow: string;
+    titleLine1: string;
+    titleLine2: string;
+    lede: string;
+    cells: Array<{ num: string; desc: string }>;
+  };
+  nav: {
+    allLabel: string;
+    allTitle: string;
+    nextLabel: string;
+    nextSlug: string;
+    nextTitle: string;
+  };
+  cta: { title: string; primary: string };
+};
+
+function getImageSrc(image: ProjectDetailStrings["hero"]["image"]): string | null {
+  if (!image) return null;
+  if (typeof image === "string") return image;
+  return null;
+}
 
 export function ProjectDetailPage({
   lang,
   strings,
-}: Readonly<{ lang: string; strings: ProjectDetailStrings }>) {
+  dict,
+}: Readonly<{ lang: string; strings: ProjectDetailStrings | DictStrings; dict?: Dictionary }>) {
+  const s = strings as ProjectDetailStrings;
   return (
     <>
       {/* Hero */}
@@ -28,24 +79,24 @@ export function ProjectDetailPage({
               href={`/${lang}/projects`}
               className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.05em] text-cyan-teal transition-all duration-2 ease-akieni hover:gap-[0.85rem]"
             >
-              <span aria-hidden>←</span> {strings.hero.backLabel}
+              <span aria-hidden>←</span> {s.hero.backLabel}
             </Link>
             <span className="font-mono text-xs tracking-[0.14em]">
-              {strings.hero.caption}
+              {s.hero.caption}
             </span>
           </div>
           <h1 className="text-display font-bold leading-[0.92] tracking-[-0.045em] max-[720px]:text-[clamp(2.25rem,11vw,4rem)]">
-            {strings.hero.title}
+            {s.hero.title}
           </h1>
           <p className="max-w-[46ch] text-lg text-muted-2">
-            {strings.hero.lede}
+            {s.hero.lede}
           </p>
           <div className="mt-s5 aspect-21/10 w-full overflow-hidden border border-line">
-            {strings.hero.image ? (
+            {getImageSrc(s.hero.image) ? (
               <div className="relative h-full w-full">
                 <BlurImage
-                  src={strings.hero.image}
-                  alt={strings.hero.mediaLabel}
+                  src={getImageSrc(s.hero.image)!}
+                  alt={s.hero.mediaLabel}
                   fill
                   className="object-cover object-top"
                   sizes="100vw"
@@ -56,7 +107,7 @@ export function ProjectDetailPage({
               <PlaceholderMedia
                 aspect="21/8"
                 className="h-full"
-                label={strings.hero.mediaLabel}
+                label={s.hero.mediaLabel}
               />
             )}
           </div>
@@ -67,7 +118,7 @@ export function ProjectDetailPage({
       <section className="bg-black text-white">
         <Container>
           <dl className="grid grid-cols-2 gap-s6 border-y border-line py-s6 lg:grid-cols-4">
-            {strings.overview.map((row) => (
+            {s.overview.map((row) => (
               <div key={row.label}>
                 <dt className="mb-[0.3rem] font-mono text-xs uppercase tracking-[0.14em] text-muted-2">
                   {row.label}
@@ -90,13 +141,13 @@ export function ProjectDetailPage({
       <Section variant="paper">
         <div className="grid grid-cols-1 gap-s7 lg:[grid-template-columns:1fr_1.4fr]">
           <div>
-            <Eyebrow>{strings.challenge.eyebrow}</Eyebrow>
+            <Eyebrow>{s.challenge.eyebrow}</Eyebrow>
             <h2 className="mt-4 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-none tracking-[-0.03em]">
-              {strings.challenge.title}
+              {s.challenge.title}
             </h2>
           </div>
           <div className="flex flex-col gap-s4">
-            {strings.challenge.paragraphs.map((p, i) => (
+            {s.challenge.paragraphs.map((p, i) => (
               <p key={p} className={i === 0 ? "text-lg" : "text-md text-muted"}>
                 {p}
               </p>
@@ -109,15 +160,15 @@ export function ProjectDetailPage({
       <Section variant="dark">
         <div className="grid grid-cols-1 gap-s7 lg:[grid-template-columns:1fr_1.4fr]">
           <div>
-            <Eyebrow accent>{strings.solution.eyebrow}</Eyebrow>
+            <Eyebrow accent>{s.solution.eyebrow}</Eyebrow>
             <h2 className="mt-4 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-none tracking-[-0.03em]">
-              {strings.solution.title}
+              {s.solution.title}
             </h2>
           </div>
           <div className="flex flex-col gap-s4">
-            <p className="text-lg">{strings.solution.lede}</p>
+            <p className="text-lg">{s.solution.lede}</p>
             <ul className="flex flex-col gap-[0.6rem] text-md text-muted-2">
-              {strings.solution.items.map((item) => (
+              {s.solution.items.map((item) => (
                 <li key={item} className="flex items-baseline gap-[0.55rem]">
                   <span aria-hidden className="text-cyan-teal">
                     ·
@@ -129,12 +180,12 @@ export function ProjectDetailPage({
           </div>
         </div>
         <div className="mt-s7 grid grid-cols-1 gap-s4 min-[721px]:grid-cols-3">
-          {strings.solution.gallery.map((item, i) => (
+          {s.solution.gallery.map((item, i) => (
             <div key={item.label} className={i === 0 ? "min-[721px]:col-span-1" : ""}>
-              {item.image ? (
+              {getImageSrc(item.image) ? (
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <BlurImage
-                    src={item.image}
+                    src={getImageSrc(item.image)!}
                     alt={item.label}
                     fill
                     className="object-cover"
@@ -153,18 +204,18 @@ export function ProjectDetailPage({
       <Section variant="paper">
         <div className="grid grid-cols-1 gap-s7 lg:grid-cols-2">
           <div>
-            <Eyebrow>{strings.stack.eyebrow}</Eyebrow>
+            <Eyebrow>{s.stack.eyebrow}</Eyebrow>
             <h2 className="mt-4 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-none tracking-[-0.03em]">
-              {strings.stack.titleLine1}
+              {s.stack.titleLine1}
               <br />
-              {strings.stack.titleLine2}
+              {s.stack.titleLine2}
             </h2>
             <p className="mt-s6 max-w-[60ch] text-lg text-muted">
-              {strings.stack.lede}
+              {s.stack.lede}
             </p>
           </div>
           <div className="flex flex-col gap-s5">
-            {strings.stack.groups.map((group) => (
+            {s.stack.groups.map((group) => (
               <div key={group.heading}>
                 <p className="mb-[0.8rem] font-mono text-xs uppercase tracking-[0.16em] text-muted">
                   {group.heading}
@@ -183,20 +234,20 @@ export function ProjectDetailPage({
       {/* Impact */}
       <Section variant="dark">
         <SectionHead
-          eyebrow={strings.impact.eyebrow}
+          eyebrow={s.impact.eyebrow}
           eyebrowAccent
           title={
             <>
-              {strings.impact.titleLine1}
+              {s.impact.titleLine1}
               <br />
-              {strings.impact.titleLine2}
+              {s.impact.titleLine2}
             </>
           }
-          lede={strings.impact.lede}
+          lede={s.impact.lede}
           variant="dark"
         />
         <div className="grid grid-cols-1 gap-s5 min-[721px]:grid-cols-3">
-          {strings.impact.cells.map((cell) => (
+          {s.impact.cells.map((cell) => (
             <div
               key={cell.desc}
               className="border border-line bg-ink-2 p-[1.6rem]"
@@ -219,21 +270,21 @@ export function ProjectDetailPage({
               className="flex flex-col gap-[0.5rem] border-line p-[2rem_1.5rem] transition-colors duration-2 ease-akieni hover:bg-ink-2 hover:text-cyan-teal min-[721px]:border-r"
             >
               <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
-                {strings.nav.allLabel}
+                {s.nav.allLabel}
               </span>
               <span className="mt-[0.4rem] text-xl leading-[1.15] tracking-[-0.02em] font-bold">
-                {strings.nav.allTitle}
+                {s.nav.allTitle}
               </span>
             </Link>
             <Link
-              href={`/${lang}/projects/${strings.nav.nextSlug}`}
+              href={`/${lang}/projects/${s.nav.nextSlug}`}
               className="flex flex-col gap-[0.5rem] p-[2rem_1.5rem] transition-colors duration-2 ease-akieni hover:bg-ink-2 hover:text-cyan-teal min-[721px]:items-end min-[721px]:text-right"
             >
               <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
-                {strings.nav.nextLabel}
+                {s.nav.nextLabel}
               </span>
               <span className="mt-[0.4rem] text-xl leading-[1.15] tracking-[-0.02em] font-bold">
-                {strings.nav.nextTitle}
+                {s.nav.nextTitle}
               </span>
             </Link>
           </div>
@@ -244,13 +295,13 @@ export function ProjectDetailPage({
       <Section variant="ink">
         <div className="flex flex-wrap items-end justify-between gap-s7">
           <h2 className="max-w-[18ch] text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-none tracking-[-0.03em]">
-            {strings.cta.title}
+            {s.cta.title}
           </h2>
           <Link
             href={`/${lang}/contact`}
             className="group inline-flex items-center gap-[0.65rem] border border-cyan-teal bg-cyan-teal px-[1.4rem] py-[0.95rem] text-sm font-semibold uppercase tracking-[0.02em] text-black transition-[background-color,border-color,color] duration-3 ease-akieni hover:border-green hover:bg-green"
           >
-            {strings.cta.primary}
+            {s.cta.primary}
             <span
               aria-hidden
               className="inline-block transition-transform duration-3 ease-akieni group-hover:translate-x-1"

@@ -5,10 +5,24 @@ import { SectionHead } from "@/components/shared/section-head";
 
 type OpeningsStrings = Dictionary["careers"]["openings"];
 
+export type JobOpeningRow = {
+  slug?: string;
+  href?: string;
+  dept: string;
+  title: string;
+  loc: string;
+  type: string;
+};
+
 export function CareersOpenings({
   lang,
   strings,
-}: Readonly<{ lang: string; strings: OpeningsStrings }>) {
+  items,
+}: Readonly<{ lang: string; strings: OpeningsStrings; items?: JobOpeningRow[] }>) {
+  const jobs: JobOpeningRow[] = items && items.length > 0
+    ? items
+    : strings.items.map((j) => ({ ...j, slug: j.href?.replace("/careers/", "") }));
+
   return (
     <Section variant="dark" id="openings">
       <SectionHead
@@ -19,10 +33,10 @@ export function CareersOpenings({
         variant="dark"
       />
       <div className="flex flex-col border-t border-line">
-        {strings.items.map((job) => (
+        {jobs.map((job) => (
           <Link
             key={job.title}
-            href={`/${lang}${job.href}`}
+            href={job.slug ? `/${lang}/careers/${job.slug}` : `/${lang}${job.href ?? ""}`}
             className="group grid items-center gap-s4 border-b border-line px-s3 py-[1.4rem] text-white transition-[background-color,padding] duration-2 ease-akieni hover:bg-ink-2 hover:pl-s5 max-[760px]:grid-cols-[1fr_auto] min-[761px]:grid-cols-[minmax(220px,1fr)_1.4fr_auto_auto_auto]"
           >
             <span className="font-mono text-xs uppercase tracking-[0.14em] text-muted-2 max-[760px]:col-start-1">

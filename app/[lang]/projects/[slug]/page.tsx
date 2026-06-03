@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProjectDetailPage } from "@/components/sections/project-detail-page";
+import { getAllProjectSlugs, getProjectBySlug } from "@/lib/queries/projects";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "../../dictionaries";
 
-const SLUGS = ["sfec", "camu", "cnss"] as const;
-type Slug = (typeof SLUGS)[number];
-
-const isSlug = (s: string): s is Slug => (SLUGS as readonly string[]).includes(s);
-
-export function generateStaticParams() {
-  return LOCALES.flatMap((lang) => SLUGS.map((slug) => ({ lang, slug })));
+export async function generateStaticParams() {
+  const slugs = await getAllProjectSlugs();
+  return LOCALES.flatMap((lang) => slugs.map((slug) => ({ lang, slug })));
 }
 
 export async function generateMetadata({
@@ -19,14 +16,14 @@ export async function generateMetadata({
   params: Promise<{ lang: string; slug: string }>;
 }>): Promise<Metadata> {
   const { lang, slug } = await params;
-  if (!hasLocale(lang) || !isSlug(slug)) return {};
-  const dict = await getDictionary(lang);
-  const t = dict.projectDetails[slug];
+  if (!hasLocale(lang)) return {};
+  const project = await getProjectBySlug(slug, lang);
+  if (!project) return {};
   return buildMetadata({
     lang,
     pathWithoutLocale: `/projects/${slug}`,
-    title: t.meta.title,
-    description: t.meta.description,
+    title: project.meta.title,
+    description: project.meta.description,
   });
 }
 
@@ -34,7 +31,11 @@ export default async function ProjectDetailRoute({
   params,
 }: Readonly<{ params: Promise<{ lang: string; slug: string }> }>) {
   const { lang, slug } = await params;
-  if (!hasLocale(lang) || !isSlug(slug)) notFound();
-  const dict = await getDictionary(lang);
-  return <ProjectDetailPage lang={lang} strings={dict.projectDetails[slug]} />;
+  if (!hasLocale(lang)) notFound();
+  const [dict, project] = await Promise.all([
+    getDictionary(lang),
+    getProjectBySlug(slug, lang),
+  ]);
+  if (!project) notFound();
+  return <ProjectDetailPage lang={lang} strings={project} dict={dict} />;
 }
