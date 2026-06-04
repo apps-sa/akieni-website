@@ -8,8 +8,11 @@ import { Header } from "@/components/shared/header";
 import { MobileMenu } from "@/components/shared/mobile-menu";
 import { ScrollBehavior } from "@/components/shared/scroll-behavior";
 import { SiteJsonLd } from "@/components/shared/site-json-ld";
+import { getSiteSettings } from "@/lib/queries/siteSettings";
 import { SITE } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "./dictionaries";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -56,7 +59,10 @@ export default async function LangLayout({
 }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, siteSettings] = await Promise.all([
+    getDictionary(lang),
+    getSiteSettings(lang),
+  ]);
 
   return (
     <html lang={lang} className="h-full antialiased">
@@ -67,7 +73,7 @@ export default async function LangLayout({
           <Header strings={dict.header} />
           <MobileMenu strings={dict.header} />
           <PageTransition>{children}</PageTransition>
-          <Footer lang={lang} strings={dict.footer} />
+          <Footer lang={lang} strings={dict.footer} siteSettings={siteSettings} />
         </LazyMotionProvider>
       </body>
     </html>

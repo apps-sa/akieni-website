@@ -8,7 +8,7 @@ import { getLeadership } from "@/lib/queries/team";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../../dictionaries";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
