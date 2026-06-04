@@ -5,6 +5,9 @@ import { getAllRoleSlugs, getRoleBySlug } from "@/lib/queries/careers";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "../../dictionaries";
 
+// Re-render at most every 60 s; new job slugs added in Sanity are served on first request.
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   const slugs = await getAllRoleSlugs();
   return LOCALES.flatMap((lang) => slugs.map((slug) => ({ lang, slug })));

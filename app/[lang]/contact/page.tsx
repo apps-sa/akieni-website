@@ -93,7 +93,7 @@ export default async function ContactPage({
 
           <div className="relative mt-s5 aspect-16/10 overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8558222494758!2d15.300780375902349!3d-4.24830144603977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a336c1e9d0ecd%3A0xfbe7944fc656d5d3!2sLes%20tours%20jumelles!5e0!3m2!1sfr!2scg!4v1780485649811!5m2!1sfr!2scg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8563123034637!2d15.300872175894856!3d-4.248206446039178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3300014c6cb1%3A0x3746c27680954617!2sAkieni!5e0!3m2!1sfr!2scg!4v1780512408444!5m2!1sfr!2scg"
               width="600"
               height="450"
               style={{ border: 0 }}

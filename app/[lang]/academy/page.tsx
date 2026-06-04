@@ -10,6 +10,8 @@ import { getCohorts } from "@/lib/queries/academy";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
 
+export const revalidate = 60;
+
 export async function generateMetadata({
   params,
 }: Readonly<{ params: Promise<{ lang: string }> }>): Promise<Metadata> {

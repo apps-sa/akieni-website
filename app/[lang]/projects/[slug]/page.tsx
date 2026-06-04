@@ -5,6 +5,9 @@ import { getAllProjectSlugs, getProjectBySlug } from "@/lib/queries/projects";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "../../dictionaries";
 
+// Re-render at most every 60 s; new slugs added in Sanity are served on first request.
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   const slugs = await getAllProjectSlugs();
   return LOCALES.flatMap((lang) => slugs.map((slug) => ({ lang, slug })));
