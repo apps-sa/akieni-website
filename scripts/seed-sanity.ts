@@ -299,6 +299,190 @@ async function seedProjects() {
   }
 }
 
+// ── 5. Products ───────────────────────────────────────────────────────────────
+
+async function seedProducts() {
+  console.log("\n📦 Seeding products...");
+
+  const enCards: Array<{
+    slug: string; number: string; name: string; version: string;
+    desc: string; features: string[]; model: string; chip: string;
+    chipVariant: string; mark: string; mediaLabel: string; image?: string; learnMore: string;
+  }> = en.home?.products?.items ?? [];
+  const frCards: typeof enCards = fr.home?.products?.items ?? [];
+  const enDetails = en.productDetails ?? {};
+  const frDetails = fr.productDetails ?? {};
+  const slugs = enCards.map((c) => c.slug).filter(Boolean);
+
+  for (let i = 0; i < slugs.length; i++) {
+    const slug = slugs[i];
+    const eCard = enCards[i];
+    const fCard = frCards[i] ?? {};
+    const eD = enDetails[slug] ?? {};
+    const fD = frDetails[slug] ?? {};
+
+    let imageRef = null;
+    if (eCard.image) imageRef = await uploadImage(eCard.image);
+
+    const mapItems = (items: Array<{ num: string; title: string; desc: string }>, fItems: typeof items) =>
+      items.map((x, xi) => ({
+        _key: `${x.num.replace(/[^a-z0-9]/gi, "-").toLowerCase()}-${xi}`,
+        num: x.num,
+        title: localeStr(x.title, fItems[xi]?.title ?? x.title),
+        desc: localeStr(x.desc, fItems[xi]?.desc ?? x.desc),
+      }));
+
+    const mapCases = (items: Array<{ icon: string; title: string; desc: string }>, fItems: typeof items) =>
+      items.map((x, xi) => ({
+        _key: `case-${xi}`,
+        icon: x.icon,
+        title: localeStr(x.title, fItems[xi]?.title ?? x.title),
+        desc: localeStr(x.desc, fItems[xi]?.desc ?? x.desc),
+      }));
+
+    const mapRelated = (items: Array<{ slug: string; tag: string; title: string; desc: string; cta: string }>, fItems: typeof items) =>
+      items.map((x, xi) => ({
+        _key: `related-${xi}`,
+        slug: x.slug,
+        tag: x.tag,
+        title: localeStr(x.title, fItems[xi]?.title ?? x.title),
+        desc: localeStr(x.desc, fItems[xi]?.desc ?? x.desc),
+        cta: localeStr(x.cta, fItems[xi]?.cta ?? x.cta),
+      }));
+
+    const doc = {
+      _id: `product-${slug}`,
+      _type: "product",
+      slug: { _type: "slug", current: slug },
+      name: eCard.name,
+      version: eCard.version ?? "",
+      desc: localeStr(eCard.desc, (fCard as typeof eCard).desc ?? eCard.desc),
+      features: localeArr(eCard.features ?? [], (fCard as typeof eCard).features ?? eCard.features ?? []),
+      model: eCard.model ?? "",
+      chip: eCard.chip ?? "",
+      chipVariant: eCard.chipVariant ?? "default",
+      mark: eCard.mark ?? "",
+      mediaLabel: eCard.mediaLabel ?? eCard.name,
+      image: imageRef ? { _type: "image", asset: imageRef, alt: eCard.mediaLabel } : undefined,
+
+      // Hero
+      heroTitle: localeStr(eD.hero?.title ?? eCard.name, fD.hero?.title ?? eCard.name),
+      heroTitleAccent: localeStr(eD.hero?.titleAccent ?? "", fD.hero?.titleAccent ?? ""),
+      heroLede: localeStr(eD.hero?.lede ?? "", fD.hero?.lede ?? ""),
+      heroPills: (eD.hero?.pills ?? []).map((p: { label: string; variant: string }, pi: number) => ({
+        _key: `pill-${pi}`, label: p.label, variant: p.variant,
+      })),
+      heroCtaPrimary: localeStr(eD.hero?.ctaPrimary ?? "", fD.hero?.ctaPrimary ?? ""),
+      heroCtaSecondary: localeStr(eD.hero?.ctaSecondary ?? "", fD.hero?.ctaSecondary ?? ""),
+      heroGlanceLabel: localeStr(eD.hero?.glanceLabel ?? "", fD.hero?.glanceLabel ?? ""),
+      heroKv: (eD.hero?.kv ?? []).map((kv: { k: string; v: string }, ki: number) => ({ _key: `kv-${ki}`, k: kv.k, v: kv.v })),
+
+      // Overview
+      overviewEyebrow: localeStr(eD.overview?.eyebrow ?? "", fD.overview?.eyebrow ?? ""),
+      overviewTitle: localeStr(eD.overview?.title ?? "", fD.overview?.title ?? ""),
+      overviewLede: localeStr(eD.overview?.lede ?? "", fD.overview?.lede ?? ""),
+      overviewFeats: (eD.overview?.feats ?? []).map((f: { key: string; value: string }, fi: number) => ({ _key: `feat-${fi}`, key: f.key, value: f.value })),
+
+      // Features
+      featuresEyebrow: localeStr(eD.features?.eyebrow ?? "", fD.features?.eyebrow ?? ""),
+      featuresTitle: localeStr(eD.features?.title ?? "", fD.features?.title ?? ""),
+      featuresLede: localeStr(eD.features?.lede ?? "", fD.features?.lede ?? ""),
+      featuresItems: mapItems(eD.features?.items ?? [], fD.features?.items ?? []),
+
+      // Flow
+      flowEyebrow: localeStr(eD.flow?.eyebrow ?? "", fD.flow?.eyebrow ?? ""),
+      flowTitle: localeStr(eD.flow?.title ?? "", fD.flow?.title ?? ""),
+      flowLede: localeStr(eD.flow?.lede ?? "", fD.flow?.lede ?? ""),
+      flowSteps: mapItems(eD.flow?.steps ?? [], fD.flow?.steps ?? []),
+
+      // Cases
+      casesEyebrow: localeStr(eD.cases?.eyebrow ?? "", fD.cases?.eyebrow ?? ""),
+      casesTitle: localeStr(eD.cases?.title ?? "", fD.cases?.title ?? ""),
+      casesLede: localeStr(eD.cases?.lede ?? "", fD.cases?.lede ?? ""),
+      casesItems: mapCases(eD.cases?.items ?? [], fD.cases?.items ?? []),
+
+      // API / Standards
+      apiEyebrow: localeStr(eD.api?.eyebrow ?? "", fD.api?.eyebrow ?? ""),
+      apiTitle: localeStr(eD.api?.title ?? "", fD.api?.title ?? ""),
+      apiLede: localeStr(eD.api?.lede ?? "", fD.api?.lede ?? ""),
+      apiBadges: eD.api?.badges ?? [],
+      apiPoints: localeArr(eD.api?.points ?? [], fD.api?.points ?? eD.api?.points ?? []),
+      apiCta: localeStr(eD.api?.cta ?? "", fD.api?.cta ?? ""),
+      apiCode: eD.api?.code ?? "",
+
+      // Related
+      relatedEyebrow: localeStr(eD.related?.eyebrow ?? "", fD.related?.eyebrow ?? ""),
+      relatedTitle: localeStr(eD.related?.title ?? "", fD.related?.title ?? ""),
+      relatedLede: localeStr(eD.related?.lede ?? "", fD.related?.lede ?? ""),
+      relatedItems: mapRelated(eD.related?.items ?? [], fD.related?.items ?? []),
+
+      // CTA
+      ctaEyebrow: localeStr(eD.cta?.eyebrow ?? "", fD.cta?.eyebrow ?? ""),
+      ctaTitle: localeStr(eD.cta?.title ?? "", fD.cta?.title ?? ""),
+      ctaLede: localeStr(eD.cta?.lede ?? "", fD.cta?.lede ?? ""),
+      ctaPrimary: localeStr(eD.cta?.primary ?? "", fD.cta?.primary ?? ""),
+      ctaEmail: eD.cta?.email ?? "",
+
+      // Meta
+      meta: {
+        en: { title: eD.meta?.title ?? "", description: eD.meta?.description ?? "" },
+        fr: { title: fD.meta?.title ?? "", description: fD.meta?.description ?? "" },
+      },
+
+      isPublished: true,
+      order: i + 1,
+    };
+
+    await client.createOrReplace(doc);
+    console.log(`  ✓ ${slug}`);
+  }
+}
+
+// ── 6. Site Settings ──────────────────────────────────────────────────────────
+
+async function seedSiteSettings() {
+  console.log("\n⚙️  Seeding site settings...");
+  const enContact = en.contact;
+  const frContact = fr.contact;
+  // Pull the info items from the contact page dictionary
+  const enItems: Array<{ label: string; value: string }> = enContact?.info?.items ?? [];
+  const frItems: Array<{ label: string; value: string }> = frContact?.info?.items ?? [];
+  const get = (label: string) => enItems.find((i) => i.label === label)?.value ?? "";
+  const getFr = (label: string) => frItems.find((i) => i.label === label)?.value ?? "";
+  const doc = {
+    _id: "siteSettings-singleton",
+    _type: "siteSettings",
+    email: get("Email"),
+    website: get("Website"),
+    office: localeStr(get("Office"), getFr("Bureau") || get("Office")),
+    hours: localeStr(get("Hours"), getFr("Horaires") || get("Hours")),
+  };
+  await client.createOrReplace(doc);
+  console.log(`  ✓ siteSettings (${doc.email})`);
+}
+
+// ── 6. Home Credo ─────────────────────────────────────────────────────────────
+
+async function seedHomeCredo() {
+  console.log("\n💬 Seeding home credo...");
+  const enCredo = en.home?.credo;
+  const frCredo = fr.home?.credo;
+  if (!enCredo) {
+    console.log("  ⏭ No home.credo in en.json — skipping");
+    return;
+  }
+  const doc = {
+    _id: "homeCredo-singleton",
+    _type: "homeCredo",
+    attribution: enCredo.attribution,
+    quoteLine1: localeStr(enCredo.quoteLine1, frCredo?.quoteLine1 ?? enCredo.quoteLine1),
+    quoteAccent: localeStr(enCredo.quoteAccent, frCredo?.quoteAccent ?? enCredo.quoteAccent),
+    quoteLine2: localeStr(enCredo.quoteLine2, frCredo?.quoteLine2 ?? enCredo.quoteLine2),
+  };
+  await client.createOrReplace(doc);
+  console.log(`  ✓ homeCredo (${enCredo.attribution})`);
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -319,6 +503,9 @@ async function main() {
   await seedTeamMembers();
   await seedCohorts();
   await seedProjects();
+  await seedProducts();
+  await seedSiteSettings();
+  await seedHomeCredo();
 
   console.log("\n✅ Seed complete! Open your Sanity studio to verify the data.");
   console.log("   Remember to remove SANITY_API_WRITE_TOKEN from .env.local after seeding.");

@@ -626,7 +626,7 @@
           "image": "/images/PHOTO-2025-04-03-10-25-30.jpg"
         },
         {
-          "slug": "",
+          "slug": "programmes-2026",
           "categories": ["future"],
           "client": "Confidential · 2026",
           "title": "Two further national programmes",
@@ -1720,11 +1720,102 @@
         "allLabel": "← ALL PROJECTS",
         "allTitle": "Back to portfolio",
         "nextLabel": "NEXT CASE STUDY →",
+        "nextTitle": "Two further national programmes",
+        "nextSlug": "programmes-2026"
+      },
+      "cta": {
+        "title": "An institutional modernisation in mind?",
+        "primary": "Talk to us"
+      }
+    },
+    "programmes-2026": {
+      "meta": {
+        "title": "Programmes 2026 · Akieni",
+        "description": "Two new national mandates launching Q3 2026 · details to follow once contracts are public."
+      },
+      "hero": {
+        "backLabel": "All projects",
+        "caption": "CASE STUDY · 04 / 04",
+        "title": "Programmes 2026.",
+        "lede": "Two additional national mandates launching in Q3 2026. Sector and client details will be published once contracts are signed.",
+        "mediaLabel": "Programmes 2026 · data-centre operations",
+        "image": "/images/worker-uses-digital-device-data-center-ensuring-rigs-are-functioning.jpg"
+      },
+      "overview": [
+        { "label": "Client", "value": "Confidential · 2026" },
+        { "label": "Sector", "value": "Government" },
+        { "label": "Timeline", "value": "2026 →" },
+        { "label": "Status", "value": "In scoping", "accent": true }
+      ],
+      "challenge": {
+        "eyebrow": "The mandate",
+        "title": "Two more national-scale digital transformations.",
+        "paragraphs": [
+          "Akieni has been mandated to deliver two further national programmes starting Q3 2026. Both involve complex government data systems, citizen-facing services, and interoperability with existing infrastructure.",
+          "Client identities and technical scope are under NDA until contract publication. Full case studies will follow at go-live."
+        ]
+      },
+      "solution": {
+        "eyebrow": "Our approach",
+        "title": "Proven playbook, new domains.",
+        "lede": "We will apply the same four-phase delivery model — discover, design, build, deploy — refined across SFEC, CAMU, and CNSS.",
+        "items": [
+          "Audit & requirements workshop with government stakeholders",
+          "Architecture co-designed with senior engineers and PMs",
+          "Iterative sprint delivery with weekly demos",
+          "Nationwide rollout with embedded operations support"
+        ],
+        "gallery": [
+          {
+            "label": "Data centre operations",
+            "image": "/images/worker-uses-digital-device-data-center-ensuring-rigs-are-functioning.jpg"
+          },
+          {
+            "label": "Engineering team at work",
+            "image": "/images/server-hub-it-staff-members-debugging-optimizing-code.jpg"
+          },
+          {
+            "label": "Systems integration",
+            "image": "/images/it-specialist-looking-network-issues-affecting-rigs-performance-using-tablet.jpg"
+          }
+        ]
+      },
+      "stack": {
+        "eyebrow": "Technology",
+        "titleLine1": "Stack TBD —",
+        "titleLine2": "fit for purpose.",
+        "lede": "Technology choices will be finalised during the discovery phase. Akieni selects and defends every architecture decision against realistic alternatives.",
+        "groups": [
+          {
+            "heading": "Core platforms",
+            "items": ["To be confirmed at discovery"]
+          },
+          {
+            "heading": "Infrastructure",
+            "items": ["Kubernetes", "AWS / On-prem hybrid"]
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "Expected outcomes",
+        "titleLine1": "National scale,",
+        "titleLine2": "measurable results.",
+        "lede": "Both programmes target the same rigour of impact measurement Akieni applies to all its national mandates.",
+        "cells": [
+          { "num": "2", "desc": "New national programmes launching Q3 2026." },
+          { "num": "TBD", "desc": "Citizens served once both programmes go live." },
+          { "num": "100%", "desc": "Delivery transparency with weekly client demos." }
+        ]
+      },
+      "nav": {
+        "allLabel": "← ALL PROJECTS",
+        "allTitle": "Back to portfolio",
+        "nextLabel": "NEXT CASE STUDY →",
         "nextTitle": "SFEC · National Fiscal Infrastructure",
         "nextSlug": "sfec"
       },
       "cta": {
-        "title": "An institutional modernisation in mind?",
+        "title": "A national programme to deliver?",
         "primary": "Talk to us"
       }
     }

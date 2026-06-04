@@ -631,7 +631,7 @@
           "image": "/images/PHOTO-2025-04-03-10-25-30.jpg"
         },
         {
-          "slug": "",
+          "slug": "programmes-2026",
           "categories": ["future"],
           "client": "Confidentiel · 2026",
           "title": "Deux autres programmes nationaux",
@@ -1730,11 +1730,102 @@
         "allLabel": "← TOUS LES PROJETS",
         "allTitle": "Retour au portfolio",
         "nextLabel": "ÉTUDE DE CAS SUIVANTE →",
+        "nextTitle": "Deux autres programmes nationaux",
+        "nextSlug": "programmes-2026"
+      },
+      "cta": {
+        "title": "Une modernisation institutionnelle en tête ?",
+        "primary": "Discutons"
+      }
+    },
+    "programmes-2026": {
+      "meta": {
+        "title": "Programmes 2026 · Akieni",
+        "description": "Deux nouveaux mandats nationaux lancés au T3 2026 — détails à venir à la publication des contrats."
+      },
+      "hero": {
+        "backLabel": "Tous les projets",
+        "caption": "ÉTUDE DE CAS · 04 / 04",
+        "title": "Programmes 2026.",
+        "lede": "Deux mandats nationaux supplémentaires démarrent au T3 2026. Les détails sur le secteur et le client seront publiés à la signature des contrats.",
+        "mediaLabel": "Programmes 2026 · opérations data-centre",
+        "image": "/images/worker-uses-digital-device-data-center-ensuring-rigs-are-functioning.jpg"
+      },
+      "overview": [
+        { "label": "Client", "value": "Confidentiel · 2026" },
+        { "label": "Secteur", "value": "Gouvernement" },
+        { "label": "Calendrier", "value": "2026 →" },
+        { "label": "Statut", "value": "En cadrage", "accent": true }
+      ],
+      "challenge": {
+        "eyebrow": "Le mandat",
+        "title": "Deux nouvelles transformations numériques à l'échelle nationale.",
+        "paragraphs": [
+          "Akieni a reçu le mandat de livrer deux programmes nationaux supplémentaires à partir du T3 2026. Les deux impliquent des systèmes de données gouvernementaux complexes, des services aux citoyens et une interopérabilité avec l'infrastructure existante.",
+          "Les identités des clients et le périmètre technique sont sous NDA jusqu'à la publication des contrats. Les études de cas complètes suivront à la mise en production."
+        ]
+      },
+      "solution": {
+        "eyebrow": "Notre approche",
+        "title": "Un playbook éprouvé, de nouveaux domaines.",
+        "lede": "Nous appliquerons le même modèle de livraison en quatre phases — découvrir, concevoir, construire, déployer — affiné sur SFEC, CAMU et CNSS.",
+        "items": [
+          "Audit et atelier de cadrage avec les parties prenantes gouvernementales",
+          "Architecture co-conçue avec ingénieurs seniors et PMs",
+          "Livraison itérative en sprints avec démos hebdomadaires",
+          "Déploiement national avec support opérationnel intégré"
+        ],
+        "gallery": [
+          {
+            "label": "Opérations data-centre",
+            "image": "/images/worker-uses-digital-device-data-center-ensuring-rigs-are-functioning.jpg"
+          },
+          {
+            "label": "Équipe d'ingénierie au travail",
+            "image": "/images/server-hub-it-staff-members-debugging-optimizing-code.jpg"
+          },
+          {
+            "label": "Intégration des systèmes",
+            "image": "/images/it-specialist-looking-network-issues-affecting-rigs-performance-using-tablet.jpg"
+          }
+        ]
+      },
+      "stack": {
+        "eyebrow": "Technologie",
+        "titleLine1": "Stack à définir —",
+        "titleLine2": "adapté au besoin.",
+        "lede": "Les choix technologiques seront finalisés lors de la phase de découverte. Akieni sélectionne et défend chaque décision d'architecture face aux alternatives réalistes.",
+        "groups": [
+          {
+            "heading": "Plateformes principales",
+            "items": ["À confirmer lors de la découverte"]
+          },
+          {
+            "heading": "Infrastructure",
+            "items": ["Kubernetes", "AWS / Hybride on-prem"]
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "Résultats attendus",
+        "titleLine1": "Échelle nationale,",
+        "titleLine2": "résultats mesurables.",
+        "lede": "Les deux programmes ciblent la même rigueur de mesure d'impact qu'Akieni applique à tous ses mandats nationaux.",
+        "cells": [
+          { "num": "2", "desc": "Nouveaux programmes nationaux lancés au T3 2026." },
+          { "num": "TBD", "desc": "Citoyens desservis une fois les deux programmes en production." },
+          { "num": "100%", "desc": "Transparence de livraison avec démos clients hebdomadaires." }
+        ]
+      },
+      "nav": {
+        "allLabel": "← TOUS LES PROJETS",
+        "allTitle": "Retour au portfolio",
+        "nextLabel": "ÉTUDE DE CAS SUIVANTE →",
         "nextTitle": "SFEC · Infrastructure fiscale nationale",
         "nextSlug": "sfec"
       },
       "cta": {
-        "title": "Une modernisation institutionnelle en tête ?",
+        "title": "Un programme national à livrer ?",
         "primary": "Discutons"
       }
     }

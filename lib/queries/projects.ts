@@ -54,20 +54,22 @@ export async function getAllProjectSlugs(): Promise<string[]> {
   }
 }
 
+type RawProjectDetail = {
+  meta: { title: string; description: string };
+  hero: { title: string; lede: string; image: { asset: { _ref: string } } | null; mediaLabel: string; caption: string; backLabel: string };
+  overview: Array<{ label: string; value: string; accent: boolean }>;
+  challenge: { eyebrow: string; title: string; paragraphs: string[] };
+  solution: { eyebrow: string; title: string; lede: string; items: string[]; gallery: Array<{ label: string; image: { asset: { _ref: string } } | null }> };
+  stack: { eyebrow: string; titleLine1: string; titleLine2: string; lede: string; groups: Array<{ heading: string; items: string[] }> };
+  impact: { eyebrow: string; titleLine1: string; titleLine2: string; lede: string; cells: Array<{ num: string; desc: string }> };
+  nav: { allLabel: string; allTitle: string; nextLabel: string; nextSlug: string; nextTitle: string };
+  cta: { title: string; primary: string };
+};
+
 export async function getProjectBySlug(slug: string, lang: Locale) {
   if (!isSanityConfigured) return null;
   try {
-    const project = await sanityClient.fetch<{
-      meta: { title: string; description: string };
-      hero: { title: string; lede: string; image: { asset: { _ref: string } } | null; mediaLabel: string; caption: string; backLabel: string };
-      overview: Array<{ label: string; value: string; accent: boolean }>;
-      challenge: { eyebrow: string; title: string; paragraphs: string[] };
-      solution: { eyebrow: string; title: string; lede: string; items: string[]; gallery: Array<{ label: string; image: { asset: { _ref: string } } | null }> };
-      stack: { eyebrow: string; titleLine1: string; titleLine2: string; lede: string; groups: Array<{ heading: string; items: string[] }> };
-      impact: { eyebrow: string; titleLine1: string; titleLine2: string; lede: string; cells: Array<{ num: string; desc: string }> };
-      nav: { allLabel: string; allTitle: string; nextLabel: string; nextSlug: string; nextTitle: string };
-      cta: { title: string; primary: string };
-    } | null>(
+    const project = await sanityClient.fetch<RawProjectDetail | null>(
       `*[_type == "project" && slug.current == $slug][0] {
         "meta": {
           "title": coalesce(meta[$lang].title, meta.en.title),
@@ -135,7 +137,23 @@ export async function getProjectBySlug(slug: string, lang: Locale) {
       }`,
       { slug, lang }
     );
-    return project;
+    if (!project) return null;
+
+    // Resolve Sanity image references to CDN URLs
+    return {
+      ...project,
+      hero: {
+        ...project.hero,
+        image: project.hero.image ? urlFor(project.hero.image).width(1400).url() : null,
+      },
+      solution: {
+        ...project.solution,
+        gallery: project.solution.gallery.map((g) => ({
+          ...g,
+          image: g.image ? urlFor(g.image).width(900).url() : null,
+        })),
+      },
+    };
   } catch {
     return null;
   }

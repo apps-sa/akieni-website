@@ -18,7 +18,7 @@ export type ProjectDetailStrings = {
     title: string;
     lede: string;
     mediaLabel: string;
-    image?: string | null | { asset: { _ref: string } };
+    image?: string | null;
   };
   overview: ReadonlyArray<{ label: string; value: string; accent?: boolean }>;
   challenge: { eyebrow: string; title: string; paragraphs: string[] };
@@ -27,7 +27,7 @@ export type ProjectDetailStrings = {
     title: string;
     lede: string;
     items: string[];
-    gallery: Array<{ label: string; image?: string | null | { asset: { _ref: string } } }>;
+    gallery: Array<{ label: string; image?: string | null }>;
   };
   stack: {
     eyebrow: string;
@@ -53,10 +53,8 @@ export type ProjectDetailStrings = {
   cta: { title: string; primary: string };
 };
 
-function getImageSrc(image: ProjectDetailStrings["hero"]["image"]): string | null {
-  if (!image) return null;
-  if (typeof image === "string") return image;
-  return null;
+function getImageSrc(image: string | null | undefined): string | null {
+  return image ?? null;
 }
 
 export function ProjectDetailPage({
