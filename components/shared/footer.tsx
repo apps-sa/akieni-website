@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { SiteSettings } from "@/lib/queries/siteSettings";
 import { Container } from "./container";
 
 type FooterStrings = Dictionary["footer"];
@@ -8,7 +9,8 @@ type FooterStrings = Dictionary["footer"];
 export function Footer({
   lang,
   strings,
-}: Readonly<{ lang: string; strings: FooterStrings }>) {
+  siteSettings,
+}: Readonly<{ lang: string; strings: FooterStrings; siteSettings?: SiteSettings | null }>) {
   const withLang = (href: string) =>
     href.startsWith("/") ? `/${lang}${href === "/" ? "" : href}` : href;
 
@@ -33,9 +35,12 @@ export function Footer({
               />
             </Link>
             <p className="text-muted-2 max-w-[30ch]">{strings.tagline}</p>
-            <p className="font-mono text-xs tracking-[0.16em] text-muted-2">
-              {strings.email}
-            </p>
+            <a
+              href={`mailto:${siteSettings?.email ?? strings.email}`}
+              className="font-mono text-xs tracking-[0.16em] text-muted-2 transition-colors duration-1 ease-akieni hover:text-cyan-teal"
+            >
+              {(siteSettings?.email ?? strings.email).toUpperCase()}
+            </a>
           </div>
 
           {Object.values(strings.columns).map((col) => (

@@ -11,6 +11,7 @@ import { Container } from "@/components/shared/container";
 import { Eyebrow } from "@/components/shared/eyebrow";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
+import { getSiteSettings } from "@/lib/queries/siteSettings";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
 
@@ -33,8 +34,40 @@ export default async function ContactPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, siteSettings] = await Promise.all([
+    getDictionary(lang),
+    getSiteSettings(lang),
+  ]);
   const t = dict.contact;
+
+  // Override info items with live Sanity data when available
+  const infoItems = siteSettings
+    ? t.info.items.map((item) => {
+        if (item.label === "Email" || item.label === "Courriel") {
+          return { ...item, value: siteSettings.email, href: `mailto:${siteSettings.email}` };
+        }
+        if (item.label === "Website" || item.label === "Site web") {
+          return { ...item, value: siteSettings.website, href: undefined };
+        }
+        if (item.label === "Office" || item.label === "Bureau") {
+          return { ...item, value: siteSettings.office };
+        }
+        if (item.label === "Hours" || item.label === "Horaires") {
+          return { ...item, value: siteSettings.hours };
+        }
+        return item;
+      })
+    : t.info.items;
+
+  // Override channels lede + first channel link with live email
+  const channelsLede = siteSettings
+    ? t.channels.lede.replaceAll("contact@akieni.com", siteSettings.email)
+    : t.channels.lede;
+  const channelItems = siteSettings
+    ? t.channels.items.map((c) =>
+        c.href?.startsWith("mailto:") ? { ...c, linkLabel: siteSettings.email, href: `mailto:${siteSettings.email}` } : c
+      )
+    : t.channels.items;
   const withLang = (href: string) =>
     href.startsWith("/") ? `/${lang}${href}` : href;
 
@@ -73,7 +106,7 @@ export default async function ContactPage({
 
         <Reveal as="aside" delay={0.1}>
           <dl className="flex flex-col gap-s5 border border-line bg-ink-2 p-8 text-white">
-            {t.info.items.map((item) => (
+            {infoItems.map((item) => (
               <div key={item.label}>
                 <dt className="mb-[0.3rem] font-mono text-xs uppercase tracking-[0.14em] text-muted-2">
                   {item.label}
@@ -118,11 +151,11 @@ export default async function ContactPage({
               {t.channels.titleLine2}
             </>
           }
-          lede={t.channels.lede}
+          lede={channelsLede}
           variant="dark"
         />
         <div className="grid grid-cols-1 gap-s5 min-[721px]:grid-cols-3">
-          {t.channels.items.map((c) => (
+          {channelItems.map((c) => (
             <article
               key={c.number}
               className="flex flex-col gap-s3 border border-line bg-ink-2 p-[1.6rem] text-white"
