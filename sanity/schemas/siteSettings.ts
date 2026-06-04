@@ -34,6 +34,15 @@ export const siteSettings = defineType({
         defineField({ name: "fr", title: "French", type: "string" }),
       ],
     }),
+    defineField({ name: "orgRootName", title: "Org chart – CEO name", type: "string" }),
+    defineField({
+      name: "orgRootRole", title: "Org chart – CEO role",
+      type: "object",
+      fields: [
+        defineField({ name: "en", title: "English", type: "string" }),
+        defineField({ name: "fr", title: "French", type: "string" }),
+      ],
+    }),
   ],
   preview: {
     select: { title: "email" },

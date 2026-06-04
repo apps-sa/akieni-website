@@ -438,7 +438,33 @@ async function seedProducts() {
   }
 }
 
-// ── 6. Site Settings ──────────────────────────────────────────────────────────
+// ── 6. Departments ────────────────────────────────────────────────────────────
+
+async function seedDepartments() {
+  console.log("\n🏢 Seeding departments...");
+  const enItems: Array<{ number: string; name: string; lead: string; size: string; desc: string }> =
+    en.team?.departments?.items ?? [];
+  const frItems: typeof enItems = fr.team?.departments?.items ?? [];
+
+  for (let i = 0; i < enItems.length; i++) {
+    const e = enItems[i];
+    const f = frItems[i] ?? {};
+    const doc = {
+      _id: `department-${i + 1}`,
+      _type: "department",
+      number: e.number,
+      name: localeStr(e.name, (f as typeof e).name ?? e.name),
+      lead: e.lead,
+      size: e.size,
+      desc: localeStr(e.desc, (f as typeof e).desc ?? e.desc),
+      order: i + 1,
+    };
+    await client.createOrReplace(doc);
+    console.log(`  ✓ ${e.number} – ${e.name}`);
+  }
+}
+
+// ── 7. Site Settings ──────────────────────────────────────────────────────────
 
 async function seedSiteSettings() {
   console.log("\n⚙️  Seeding site settings...");
@@ -449,6 +475,8 @@ async function seedSiteSettings() {
   const frItems: Array<{ label: string; value: string }> = frContact?.info?.items ?? [];
   const get = (label: string) => enItems.find((i) => i.label === label)?.value ?? "";
   const getFr = (label: string) => frItems.find((i) => i.label === label)?.value ?? "";
+  const enOrg = en.team?.departments?.org?.root;
+  const frOrg = fr.team?.departments?.org?.root;
   const doc = {
     _id: "siteSettings-singleton",
     _type: "siteSettings",
@@ -456,6 +484,8 @@ async function seedSiteSettings() {
     website: get("Website"),
     office: localeStr(get("Office"), getFr("Bureau") || get("Office")),
     hours: localeStr(get("Hours"), getFr("Horaires") || get("Hours")),
+    orgRootName: enOrg?.name ?? "",
+    orgRootRole: localeStr(enOrg?.role ?? "", frOrg?.role ?? enOrg?.role ?? ""),
   };
   await client.createOrReplace(doc);
   console.log(`  ✓ siteSettings (${doc.email})`);
@@ -504,6 +534,7 @@ async function main() {
   await seedCohorts();
   await seedProjects();
   await seedProducts();
+  await seedDepartments();
   await seedSiteSettings();
   await seedHomeCredo();
 

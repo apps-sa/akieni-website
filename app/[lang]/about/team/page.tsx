@@ -5,6 +5,7 @@ import { TeamJoinCta } from "@/components/sections/team/join-cta";
 import { TeamLeadership } from "@/components/sections/team/leadership";
 import { PageHero } from "@/components/shared/page-hero";
 import { getLeadership } from "@/lib/queries/team";
+import { getDepartments, getSiteSettings } from "@/lib/queries/siteSettings";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../../dictionaries";
 
@@ -29,9 +30,11 @@ export default async function TeamPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const [dict, leaders] = await Promise.all([
+  const [dict, leaders, departments, siteSettings] = await Promise.all([
     getDictionary(lang),
     getLeadership(lang),
+    getDepartments(lang),
+    getSiteSettings(lang),
   ]);
   const t = dict.team;
 
@@ -48,7 +51,11 @@ export default async function TeamPage({
         minHeight="70vh"
       />
       <TeamLeadership strings={t.leadership} members={leaders} />
-      <TeamDepartments strings={t.departments} />
+      <TeamDepartments
+        strings={t.departments}
+        departments={departments.length > 0 ? departments : undefined}
+        orgRoot={siteSettings?.orgRootName ? { name: siteSettings.orgRootName, role: siteSettings.orgRootRole } : undefined}
+      />
       <TeamJoinCta lang={lang} strings={t.joinCta} />
     </>
   );
