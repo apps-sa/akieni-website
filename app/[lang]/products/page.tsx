@@ -4,8 +4,11 @@ import { Cta } from "@/components/sections/cta";
 import { ProductDetail } from "@/components/sections/product-detail";
 import { Products } from "@/components/sections/products";
 import { PageHero } from "@/components/shared/page-hero";
+import { getAllProducts } from "@/lib/queries/products";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
+
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,
@@ -26,8 +29,12 @@ export default async function ProductsPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, sanityProducts] = await Promise.all([
+    getDictionary(lang),
+    getAllProducts(lang),
+  ]);
   const t = dict.products;
+  const summaryItems = sanityProducts.length > 0 ? sanityProducts : t.summary.items;
 
   return (
     <>
@@ -53,7 +60,7 @@ export default async function ProductsPage({
           },
         ]}
       />
-      <Products lang={lang} strings={t.summary} surface="dark" />
+      <Products lang={lang} strings={{ ...t.summary, items: summaryItems }} surface="dark" />
       {t.details.map((d) => (
         <ProductDetail
           key={d.slug}
