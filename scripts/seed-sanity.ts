@@ -41,7 +41,6 @@ function localeArr(enVal: string[], frVal: string[]) {
 
 async function uploadImage(imagePath: string): Promise<{ _type: "reference"; _ref: string } | null> {
   if (!imagePath) return null;
-  // imagePath is like "/images/foo.jpg"
   const localPath = path.join(publicDir, imagePath);
   if (!fs.existsSync(localPath)) {
     console.warn(`  ⚠ Image not found locally: ${localPath}`);
@@ -49,20 +48,29 @@ async function uploadImage(imagePath: string): Promise<{ _type: "reference"; _re
   }
   const ext = path.extname(imagePath).replace(".", "").toLowerCase();
   const mimeMap: Record<string, string> = {
-    jpg: "image/jpeg",
-    jpeg: "image/jpeg",
-    png: "image/png",
-    webp: "image/webp",
-    gif: "image/gif",
+    jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", webp: "image/webp", gif: "image/gif",
   };
   const mimeType = mimeMap[ext] ?? "image/jpeg";
-  const stream = fs.createReadStream(localPath);
-  const asset = await client.assets.upload("image", stream, {
-    filename: path.basename(imagePath),
-    contentType: mimeType,
-  });
-  console.log(`  ✓ Uploaded image: ${path.basename(imagePath)}`);
-  return { _type: "reference", _ref: asset._id };
+  const filename = path.basename(imagePath);
+
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const stream = fs.createReadStream(localPath);
+      const asset = await client.assets.upload("image", stream, { filename, contentType: mimeType });
+      console.log(`  ✓ Uploaded image: ${filename}`);
+      return { _type: "reference", _ref: asset._id };
+    } catch (err: unknown) {
+      const status = (err as { statusCode?: number }).statusCode;
+      if (attempt < 3 && (status === 502 || status === 503 || status === 429)) {
+        const delay = attempt * 2000;
+        console.warn(`  ⚠ Upload failed (${status}), retrying in ${delay / 1000}s… (attempt ${attempt}/3)`);
+        await new Promise((r) => setTimeout(r, delay));
+      } else {
+        throw err;
+      }
+    }
+  }
+  return null;
 }
 
 // ── 1. Job Roles ──────────────────────────────────────────────────────────────
