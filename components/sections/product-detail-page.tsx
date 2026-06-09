@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { ProductDetail as SanityProductDetail } from "@/lib/queries/products";
 import { Badge } from "@/components/shared/badge";
 import { Container } from "@/components/shared/container";
 import { Eyebrow } from "@/components/shared/eyebrow";
@@ -7,8 +8,9 @@ import { FeatureGrid } from "@/components/shared/feature-grid";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 
-type ProductDetailStrings = Dictionary["productDetails"]["akienipay"];
-type Pill = ProductDetailStrings["hero"]["pills"][number];
+type DictProductDetail = Dictionary["productDetails"]["akienipay"];
+type ProductDetailStrings = DictProductDetail | SanityProductDetail;
+type Pill = DictProductDetail["hero"]["pills"][number];
 
 const PILL_DOT: Record<string, string> = {
   default: "bg-cyan-teal",

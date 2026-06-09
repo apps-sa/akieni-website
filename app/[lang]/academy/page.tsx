@@ -6,8 +6,11 @@ import { AcademyCurriculum } from "@/components/sections/academy/curriculum";
 import { AcademyTaas } from "@/components/sections/academy/taas";
 import { Cta } from "@/components/sections/cta";
 import { PageHero } from "@/components/shared/page-hero";
+import { getCohorts } from "@/lib/queries/academy";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
+
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,
@@ -28,7 +31,10 @@ export default async function AcademyPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, cohorts] = await Promise.all([
+    getDictionary(lang),
+    getCohorts(lang),
+  ]);
   const t = dict.academy;
 
   return (
@@ -51,7 +57,7 @@ export default async function AcademyPage({
       />
       <AcademyBento strings={t.bento} />
       <AcademyCurriculum strings={t.curriculum} />
-      <AcademyCohorts lang={lang} strings={t.cohorts} />
+      <AcademyCohorts lang={lang} strings={t.cohorts} items={cohorts} />
       <AcademyTaas strings={t.taas} />
       <Cta
         lang={lang}

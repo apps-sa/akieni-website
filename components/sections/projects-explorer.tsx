@@ -10,17 +10,48 @@ export type ProjectsExplorerStrings = {
   items: ReadonlyArray<Project & { categories: ReadonlyArray<string> }>;
 };
 
+export type SanityProjectItem = {
+  slug: string;
+  categories: string[];
+  client: string;
+  title: string;
+  desc: string;
+  tags: string[];
+  years: string;
+  statusLabel: string;
+  imageUrl: string | null;
+  mediaLabel: string;
+};
+
 export function ProjectsExplorer({
   lang,
   strings,
-}: Readonly<{ lang: string; strings: ProjectsExplorerStrings }>) {
+  sanityItems,
+}: Readonly<{ lang: string; strings: ProjectsExplorerStrings; sanityItems?: SanityProjectItem[] }>) {
   const [active, setActive] = useState("all");
+
+  const baseItems: ReadonlyArray<Project & { categories: ReadonlyArray<string> }> =
+    sanityItems && sanityItems.length > 0
+      ? sanityItems.map((p) => ({
+          slug: p.slug,
+          categories: p.categories,
+          client: p.client,
+          title: p.title,
+          desc: p.desc,
+          tags: p.tags,
+          years: p.years,
+          statusLabel: p.statusLabel,
+          image: p.imageUrl ?? undefined,
+          mediaLabel: p.mediaLabel,
+        }))
+      : strings.items;
 
   const filtered =
     active === "all"
-      ? strings.items
-      : strings.items.filter((it) => it.categories.includes(active));
+      ? baseItems
+      : baseItems.filter((it) => it.categories.includes(active));
   const count = String(filtered.length).padStart(2, "0");
+
 
   return (
     <Section variant="paper">

@@ -5,10 +5,22 @@ import { SectionHead } from "@/components/shared/section-head";
 
 type CohortsStrings = Dictionary["academy"]["cohorts"];
 
+export type CohortRow = {
+  year: string;
+  num: string;
+  numAccent: boolean;
+  title: string;
+  desc: string;
+  link: string;
+};
+
 export function AcademyCohorts({
   lang,
   strings,
-}: Readonly<{ lang: string; strings: CohortsStrings }>) {
+  items,
+}: Readonly<{ lang: string; strings: CohortsStrings; items?: CohortRow[] }>) {
+  const cohorts: CohortRow[] = items && items.length > 0 ? items : strings.items;
+
   return (
     <Section variant="dark">
       <SectionHead
@@ -19,7 +31,7 @@ export function AcademyCohorts({
         variant="dark"
       />
       <div className="grid grid-cols-1 gap-s5 min-[721px]:grid-cols-2">
-        {strings.items.map((cohort) => (
+        {cohorts.map((cohort) => (
           <div
             key={cohort.year}
             className="flex flex-col gap-[0.8rem] border border-line bg-ink-2 p-[2rem]"

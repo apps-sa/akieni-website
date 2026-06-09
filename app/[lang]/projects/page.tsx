@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 import { Cta } from "@/components/sections/cta";
 import { ProjectsExplorer } from "@/components/sections/projects-explorer";
 import { PageHero } from "@/components/shared/page-hero";
+import { getAllProjects } from "@/lib/queries/projects";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
+
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,
@@ -25,7 +28,10 @@ export default async function ProjectsPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, sanityProjects] = await Promise.all([
+    getDictionary(lang),
+    getAllProjects(lang),
+  ]);
   const t = dict.projects;
 
   return (
@@ -39,7 +45,7 @@ export default async function ProjectsPage({
         titleAccent={t.hero.titleAccent}
         lede={t.hero.lede}
       />
-      <ProjectsExplorer lang={lang} strings={t.explorer} />
+      <ProjectsExplorer lang={lang} strings={t.explorer} sanityItems={sanityProjects} />
       <Cta
         lang={lang}
         strings={{

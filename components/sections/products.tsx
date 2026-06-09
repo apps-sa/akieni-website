@@ -25,6 +25,7 @@ export type ProductsStrings = {
     mark: string;
     mediaLabel: string;
     image?: string;
+    imageUrl?: string | null;
     learnMore: string;
   }>;
 };
@@ -81,10 +82,10 @@ export function Products({
                 " ",
               )}
             >
-              {item.image ? (
+              {(item.imageUrl ?? item.image) ? (
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <BlurImage
-                    src={item.image}
+                    src={(item.imageUrl ?? item.image)!}
                     alt={item.mediaLabel}
                     fill
                     className="object-cover"

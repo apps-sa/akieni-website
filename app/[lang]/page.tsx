@@ -10,8 +10,12 @@ import { Products } from "@/components/sections/products";
 import { Services } from "@/components/sections/services";
 import { Stats } from "@/components/sections/stats";
 import { HomeJsonLd } from "@/components/shared/home-json-ld";
+import { getHomeCredo } from "@/lib/queries/home";
+import { getAllProducts } from "@/lib/queries/products";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "./dictionaries";
+
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,
@@ -34,7 +38,11 @@ export default async function Home({
 }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, credoData, sanityProducts] = await Promise.all([
+    getDictionary(lang),
+    getHomeCredo(lang),
+    getAllProducts(lang),
+  ]);
 
   return (
     <>
@@ -45,11 +53,16 @@ export default async function Home({
       <FeaturedProjects lang={lang} strings={dict.home.featuredProjects} />
       <Products
         lang={lang}
-        strings={dict.home.products}
+        strings={{
+          ...dict.home.products,
+          items: sanityProducts.length > 0
+            ? sanityProducts
+            : dict.home.products.items,
+        }}
         link={{ label: dict.home.products.all, href: `/${lang}/products` }}
       />
       <Stats strings={dict.home.stats} />
-      <Credo strings={dict.home.credo} />
+      <Credo strings={dict.home.credo} data={credoData} />
       <Approach strings={dict.home.approach} />
       <Cta lang={lang} strings={dict.home.cta} />
     </>

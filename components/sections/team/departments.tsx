@@ -1,4 +1,5 @@
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { DepartmentData } from "@/lib/queries/siteSettings";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 
@@ -28,7 +29,18 @@ function OrgNode({
 
 export function TeamDepartments({
   strings,
-}: Readonly<{ strings: DepartmentsStrings }>) {
+  departments,
+  orgRoot,
+}: Readonly<{
+  strings: DepartmentsStrings;
+  departments?: DepartmentData[];
+  orgRoot?: { name: string; role: string };
+}>) {
+  const items = departments ?? strings.items;
+  const root = orgRoot ?? strings.org.root;
+  const nodes = departments
+    ? departments.map((d) => ({ name: d.lead, role: d.name }))
+    : strings.org.nodes;
   return (
     <Section variant="dark">
       <SectionHead
@@ -46,7 +58,7 @@ export function TeamDepartments({
       />
 
       <div className="grid grid-cols-1 gap-0 border-y border-line min-[721px]:grid-cols-2 lg:grid-cols-4">
-        {strings.items.map((d, i) => {
+        {items.map((d, i) => {
           const isLastCol = (i + 1) % 4 === 0;
           return (
             <div
@@ -76,14 +88,10 @@ export function TeamDepartments({
       </div>
 
       <div className="flex flex-col items-center gap-s4 py-s7">
-        <OrgNode
-          name={strings.org.root.name}
-          role={strings.org.root.role}
-          root
-        />
+        <OrgNode name={root.name} role={root.role} root />
         <div className="h-7 w-px bg-line" />
         <div className="flex flex-wrap justify-center gap-s3">
-          {strings.org.nodes.map((n) => (
+          {nodes.map((n) => (
             <OrgNode key={n.name} name={n.name} role={n.role} />
           ))}
         </div>
