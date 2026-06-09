@@ -47,13 +47,13 @@ export function ApplicationsTable({ rows }: Readonly<{ rows: Row[] }>) {
           {filtered.length} application{filtered.length === 1 ? "" : "s"}
           {query.trim() && ` matching “${query.trim()}”`}.
         </p>
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex items-center gap-2">
           <input
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search by role…"
-            className="w-full max-w-xs border border-line bg-ink-2 px-3 py-2 text-sm text-white outline-none transition-colors duration-1 ease-akieni placeholder:text-muted-2 focus:border-cyan-teal"
+            className="w-56 border border-line bg-ink-2 px-3 py-2 text-sm text-white outline-none transition-colors duration-1 ease-akieni placeholder:text-muted-2 focus:border-cyan-teal"
           />
           <ExportButtons rows={exportRows} filename="applications" />
         </div>

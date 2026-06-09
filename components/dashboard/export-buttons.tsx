@@ -30,11 +30,21 @@ export function ExportButtons({
     "border border-line bg-ink-2 px-3 py-2 text-xs font-mono uppercase tracking-[0.14em] text-white/80 transition-colors duration-1 ease-akieni hover:border-cyan-teal hover:text-cyan-teal disabled:cursor-not-allowed disabled:opacity-40";
 
   return (
-    <div className="flex gap-2">
-      <button type="button" onClick={() => download("csv")} disabled={disabled} className={cls}>
+    <div className="flex flex-none gap-2">
+      <button
+        type="button"
+        onClick={() => download("csv")}
+        disabled={disabled}
+        className={`${cls} whitespace-nowrap`}
+      >
         Export CSV
       </button>
-      <button type="button" onClick={() => download("xlsx")} disabled={disabled} className={cls}>
+      <button
+        type="button"
+        onClick={() => download("xlsx")}
+        disabled={disabled}
+        className={`${cls} whitespace-nowrap`}
+      >
         Export Excel
       </button>
     </div>
