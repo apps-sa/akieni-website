@@ -81,6 +81,14 @@ export function Footer({
                 {item.label}
               </Link>
             ))}
+            {/* Admin lives outside [lang] — plain /dashboard, never withLang(). */}
+            <Link
+              href="/dashboard"
+              rel="nofollow"
+              className="text-muted-2 transition-colors duration-1 ease-akieni hover:text-white"
+            >
+              Admin
+            </Link>
           </div>
           <div className="flex gap-[1rem]">
             {strings.bottom.social.map((item) => (
