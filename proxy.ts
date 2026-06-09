@@ -31,6 +31,7 @@ export function proxy(req: NextRequest) {
 }
 
 export const config = {
-  // Exclude: _next assets, studio, api, files with extensions, and special Next.js paths
-  matcher: ["/((?!_next|studio|api|favicon\\.ico|manifest\\.webmanifest|robots\\.txt|sitemap\\.xml|.*\\..*).*)" ],
+  // Exclude: _next assets, studio, api, dashboard (lives outside [lang]), files
+  // with extensions, and special Next.js paths
+  matcher: ["/((?!_next|studio|api|dashboard|favicon\\.ico|manifest\\.webmanifest|robots\\.txt|sitemap\\.xml|.*\\..*).*)" ],
 };
