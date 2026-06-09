@@ -28,9 +28,10 @@ function List({
 export function RoleDetail({
   lang,
   role,
+  slug,
   shared,
   form,
-}: Readonly<{ lang: string; role: Role; shared: Shared; form: FormStrings }>) {
+}: Readonly<{ lang: string; role: Role; slug: string; shared: Shared; form: FormStrings }>) {
   return (
     <>
       {/* Header */}
@@ -162,7 +163,7 @@ export function RoleDetail({
             {shared.applyTitle}
           </h2>
         </div>
-        <ApplicationForm strings={form} roleTitle={role.title} />
+        <ApplicationForm strings={form} roleTitle={role.title} roleSlug={slug} />
       </Section>
     </>
   );
