@@ -115,6 +115,7 @@ export function ShowcaseCard({
           ].join(" ")}
         >
           <span className="truncate">{hostnameOf(item.link)}</span>
+          <span className="sr-only"> (opens in a new tab)</span>
           <span
             aria-hidden
             className="ml-2 shrink-0 text-cyan-teal transition-transform duration-2 ease-akieni group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
