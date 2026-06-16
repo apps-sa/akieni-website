@@ -11,6 +11,7 @@ import { SiteJsonLd } from "@/components/shared/site-json-ld";
 import { getSiteSettings } from "@/lib/queries/siteSettings";
 import { SITE } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "./dictionaries";
+import { Analytics } from "@vercel/analytics/react";
 
 export const revalidate = 60;
 
@@ -75,6 +76,7 @@ export default async function LangLayout({
           <PageTransition>{children}</PageTransition>
           <Footer lang={lang} strings={dict.footer} siteSettings={siteSettings} />
         </LazyMotionProvider>
+        <Analytics />
       </body>
     </html>
   );
