@@ -13,15 +13,44 @@ export function ContactForm({
   strings,
 }: Readonly<{ strings: FormStrings }>) {
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (submitting || sent) return;
+    const form = e.currentTarget;
+    setError(false);
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/submit/contact", {
+        method: "POST",
+        body: new FormData(form),
+      });
+      if (!res.ok) throw new Error("request failed");
+      form.reset();
+      setSent(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <form
       className="grid grid-cols-1 gap-[1.2rem] min-[601px]:grid-cols-2"
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSent(true);
-      }}
+      onSubmit={handleSubmit}
     >
+      {/* Honeypot — hidden from real users */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+        className="hidden"
+      />
       <div className="flex flex-col gap-[0.4rem]">
         <label htmlFor="name" className={FIELD_LABEL}>
           {strings.name}
@@ -85,15 +114,15 @@ export function ContactForm({
       </div>
       <div className="flex flex-wrap items-center justify-between gap-s4 min-[601px]:col-span-2">
         <span className="font-mono text-xs tracking-[0.14em] text-muted">
-          {strings.note}
+          {error ? strings.error : strings.note}
         </span>
         <button
           type="submit"
-          disabled={sent}
+          disabled={sent || submitting}
           className="group inline-flex items-center gap-[0.65rem] border border-black bg-black px-[1.7rem] py-[1.1rem] text-base font-semibold uppercase tracking-[0.02em] text-white transition-[background-color,border-color,color] duration-3 ease-akieni hover:border-ink hover:bg-ink hover:text-cyan-teal disabled:cursor-default disabled:border-cyan-teal disabled:bg-cyan-teal disabled:text-black"
         >
-          {sent ? strings.sent : strings.submit}
-          {!sent && (
+          {sent ? strings.sent : submitting ? strings.sending : strings.submit}
+          {!sent && !submitting && (
             <span
               aria-hidden
               className="inline-block transition-transform duration-3 ease-akieni group-hover:translate-x-1"

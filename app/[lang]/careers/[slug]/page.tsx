@@ -47,6 +47,7 @@ export default async function RoleDetailRoute({
     <RoleDetail
       lang={lang}
       role={role}
+      slug={slug}
       shared={dict.roles.shared}
       form={dict.roles.form}
     />

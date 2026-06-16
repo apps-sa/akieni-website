@@ -37,15 +37,61 @@ Visiting `/` redirects to `/en` (or `/fr` if your browser prefers French).
 
 ## Environment variables
 
-Copy [`.env.example`](.env.example) to `.env.local` and fill in the values. All variables are `NEXT_PUBLIC_*`, so they are inlined at build time — rebuild after changing them.
+Copy [`.env.example`](.env.example) to `.env.local` and fill in the values. Variables prefixed `NEXT_PUBLIC_*` are inlined into the client bundle at build time (rebuild after changing them); all others are **server-only** and must never be exposed to the browser.
 
-| Variable                             | Required | Purpose                                                                                   |
-| ------------------------------------ | -------- | ----------------------------------------------------------------------------------------- |
-| `NEXT_PUBLIC_SITE_URL`               | No       | Canonical production origin (no trailing slash). Used for canonical URLs, sitemap, robots, OpenGraph and JSON-LD. Defaults to `https://www.akieni.com`. |
-| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No     | Google Search Console ownership-verification token. Renders the `<meta name="google-site-verification">` tag. |
-| `NEXT_PUBLIC_BING_SITE_VERIFICATION`   | No     | Bing Webmaster Tools ownership-verification token. Renders the `<meta name="msvalidate.01">` tag. |
+> ⚠️ **`SUPABASE_SERVICE_ROLE_KEY`, `DATABASE_URL`, `SMTP_PASS`, `GOOGLE_CLIENT_SECRET`, and `BETTER_AUTH_SECRET` are secrets.** Keep them in `.env.local` (gitignored) only. Never give any of them the `NEXT_PUBLIC_` prefix.
 
-The verification tokens are optional — leave them blank for local development. They only matter for the production deployment when you want to prove domain ownership to each search engine. Paste **only the token value**, not the surrounding `<meta ...>` tag.
+### Site / SEO
+
+| Variable                               | Required | Purpose                                                                                                          |
+| -------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`                 | No       | Canonical production origin (no trailing slash). Used for canonical URLs, sitemap, robots, OpenGraph, JSON-LD. Defaults to `https://www.akieni.com`. |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No       | Google Search Console ownership-verification token. Renders `<meta name="google-site-verification">`.           |
+| `NEXT_PUBLIC_BING_SITE_VERIFICATION`   | No       | Bing Webmaster Tools ownership-verification token. Renders `<meta name="msvalidate.01">`.                       |
+
+### Sanity CMS (editorial content)
+
+| Variable                        | Required | Purpose                                                                                          |
+| ------------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` | **Yes**  | Sanity project ID. The site throws `Configuration must contain projectId` without it.            |
+| `NEXT_PUBLIC_SANITY_DATASET`    | **Yes**  | Sanity dataset name (e.g. `development` / `production`). Defaults to `production` if unset.       |
+| `SANITY_API_WRITE_TOKEN`        | No       | Editor token used **only** by `pnpm seed` (`scripts/seed-sanity.ts`). Not needed to run the site. Mint at sanity.io/manage → API → Tokens. |
+
+### Supabase (form submissions + admin dashboard)
+
+| Variable                     | Required | Purpose                                                                                                                                   |
+| ---------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SUPABASE_URL`   | **Yes**  | Supabase project URL, e.g. `https://xxxx.supabase.co`.                                                                                     |
+| `SUPABASE_SERVICE_ROLE_KEY`  | **Yes**  | **service_role** secret (Project Settings → API). Bypasses RLS for server inserts/reads/signed URLs. **Not** the `anon`/publishable key — that key can read but inserts/uploads fail with RLS error `42501`. |
+| `DATABASE_URL`               | **Yes**  | Postgres connection string for BetterAuth's tables. Use the Supabase **Session pooler** host (`aws-0-<region>.pooler.supabase.com:5432`, username `postgres.<project-ref>`) and append `?sslmode=no-verify` — the direct `db.<ref>.supabase.co` host does not resolve over IPv4, and `require` fails cert verification. |
+
+### BetterAuth (Google login for `/dashboard`)
+
+| Variable               | Required | Purpose                                                                                                       |
+| ---------------------- | -------- | ------------------------------------------------------------------------------------------------------------ |
+| `BETTER_AUTH_SECRET`   | **Yes**  | Session-signing secret. Generate with `openssl rand -base64 32`.                                             |
+| `BETTER_AUTH_URL`      | **Yes**  | Base URL of this app (no trailing slash). `http://localhost:3000` in dev; the deployed origin in production. |
+| `GOOGLE_CLIENT_ID`     | **Yes**  | Google OAuth client ID (Google Cloud Console → Credentials → OAuth client, type "Web application").          |
+| `GOOGLE_CLIENT_SECRET` | **Yes**  | Google OAuth client secret.                                                                                  |
+| `ADMIN_EMAILS`         | **Yes**  | Comma-separated allowlist of Google accounts permitted into `/dashboard`. Any login outside it is rejected. |
+
+> Google OAuth authorized **redirect URI** must be exactly `${BETTER_AUTH_URL}/api/auth/callback/google`, and the **JavaScript origin** must be `${BETTER_AUTH_URL}`. Add a second pair for the production domain when you deploy.
+
+### Email notifications (SMTP)
+
+These are **optional / placeholder**. Until `SMTP_HOST` (and `MAIL_TO`) are set, form submissions still succeed and notification email is skipped (logged, not sent). Fill these in to start sending — no code change required.
+
+| Variable      | Required | Purpose                                                                          |
+| ------------- | -------- | -------------------------------------------------------------------------------- |
+| `SMTP_HOST`   | No       | SMTP server hostname. Sending is disabled while this is blank.                   |
+| `SMTP_PORT`   | No       | SMTP port. Defaults to `587`.                                                    |
+| `SMTP_SECURE` | No       | `true` for port 465 (implicit SSL), `false` for 587 (STARTTLS). Defaults `false`. |
+| `SMTP_USER`   | No       | SMTP username.                                                                   |
+| `SMTP_PASS`   | No       | SMTP password (secret).                                                          |
+| `MAIL_FROM`   | No       | `From:` address on outgoing notifications. Defaults to `SMTP_USER`.              |
+| `MAIL_TO`     | No       | Inbox that receives new contact/application notifications. Required for sending. |
+
+The SEO verification tokens above are optional — leave them blank for local development. Paste **only the token value**, not the surrounding `<meta ...>` tag.
 
 ### Getting `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`
 
@@ -71,6 +117,24 @@ The verification tokens are optional — leave them blank for local development.
 
 The tags are wired up in [`app/[lang]/layout.tsx`](app/%5Blang%5D/layout.tsx) via the Next.js `metadata.verification` field — when a token env var is empty, the corresponding tag is simply omitted.
 
+## Admin dashboard
+
+The public site is content-only, so contact messages and job applications are captured server-side and reviewed in an internal dashboard at **`/dashboard`** (English-only, outside the `[lang]` segment, `noindex`, excluded from the locale proxy/robots/sitemap). It is protected by **Google login via BetterAuth**, gated by the `ADMIN_EMAILS` allowlist. There is a low-key **Admin** link in the site footer.
+
+- **Public submit endpoints:** [`app/api/submit/contact/route.ts`](app/api/submit/contact/route.ts), [`app/api/submit/application/route.ts`](app/api/submit/application/route.ts) — zod-validated, honeypot-protected, insert via the service-role client; applications upload the CV to a private `cvs` Storage bucket.
+- **Dashboard pages:** overview, Contacts (+ detail), Applications (+ detail, with role-search and signed CV download links) under [`app/dashboard/`](app/dashboard/).
+- **Auth:** [`lib/auth.ts`](lib/auth.ts) (server), [`lib/auth-client.ts`](lib/auth-client.ts) (client), handler at [`app/api/auth/[...all]/route.ts`](app/api/auth/%5B...all%5D/route.ts).
+- **Email:** [`lib/email.ts`](lib/email.ts) sends a notification to `MAIL_TO` on each submission (placeholder until SMTP is configured).
+
+### One-time setup
+
+1. **Fill the Supabase, BetterAuth, and (optionally) SMTP env vars** above in `.env.local`.
+2. **Apply the database schema** — run both SQL files against your Supabase Postgres (SQL Editor or `psql`):
+   - [`supabase/migrations/0001_submissions.sql`](supabase/migrations/0001_submissions.sql) — `contacts` + `applications` tables (RLS on, no policies) and the private `cvs` Storage bucket.
+   - The BetterAuth tables — generate the SQL with `pnpm dlx @better-auth/cli generate` (writes to `better-auth_migrations/`, does **not** apply it), then run that file too. It creates `user` / `session` / `account` / `verification`.
+3. **Configure Google OAuth** — create a "Web application" OAuth client; set the redirect URI to `${BETTER_AUTH_URL}/api/auth/callback/google` and JS origin to `${BETTER_AUTH_URL}`. If the consent screen is in *Testing*, add your admin emails as test users.
+4. Restart the dev/prod server (env is read at process start) and visit `/dashboard`.
+
 ## Directory layout
 
 ```
@@ -78,25 +142,39 @@ akieni-website/
 ├── app/
 │   ├── globals.css                 # Tailwind 4 @theme + base layer + reveal animation tokens
 │   ├── favicon.ico
-│   └── [lang]/                     # Locale segment — only routing root
-│       ├── layout.tsx              # <html lang>, Header, MobileMenu, Footer
-│       ├── page.tsx                # Home (placeholder pending the index.html port)
-│       ├── dictionaries.ts         # server-only getDictionary + Dictionary type
-│       └── dictionaries/
-│           ├── en.json             # Source of truth for the Dictionary type
-│           └── fr.json             # Must match en.json's shape (TS-enforced)
+│   ├── [lang]/                     # Locale segment — public site routing root
+│   │   ├── layout.tsx              # <html lang>, Header, MobileMenu, Footer
+│   │   ├── page.tsx                # Home
+│   │   ├── dictionaries.ts         # server-only getDictionary + Dictionary type
+│   │   └── dictionaries/
+│   │       ├── en.json             # Source of truth for the Dictionary type
+│   │       └── fr.json             # Must match en.json's shape (TS-enforced)
+│   ├── dashboard/                  # Admin dashboard — own <html>/<body>, outside [lang]
+│   │   ├── layout.tsx              # Session guard + sidebar (or sign-in screen)
+│   │   ├── page.tsx                # Overview
+│   │   ├── contacts/{page,[id]}    # Contact list + detail
+│   │   └── applications/{page,[id]}# Application list + detail
+│   └── api/
+│       ├── auth/[...all]/route.ts  # BetterAuth handler (Google OAuth)
+│       └── submit/                 # Public form POST endpoints (contact, application)
 ├── components/
-│   ├── shared/
-│   │   ├── container.tsx           # max-w-page + px-gutter wrapper (legacy .container)
-│   │   ├── header.tsx              # Fixed nav, scroll-state, light variant detection
-│   │   ├── mobile-menu.tsx         # Full-screen overlay, hamburger morph, fade animation
-│   │   ├── language-switcher.tsx   # EN | FR pill, router.replace, cookie persistence
-│   │   └── footer.tsx              # 5-column link grid, social row, dynamic copyright year
+│   ├── shared/                     # Header, MobileMenu, Footer, LanguageSwitcher, Container, ...
+│   ├── forms/                      # contact-form.tsx, application-form.tsx (POST to /api/submit)
+│   ├── dashboard/                  # Sidebar, data-table, stat-card, sign-in, applications-table
 │   └── ui/                         # (reserved — empty)
+├── lib/
+│   ├── auth.ts / auth-client.ts    # BetterAuth (server / client)
+│   ├── admin.ts                    # ADMIN_EMAILS allowlist helper
+│   ├── dashboard.ts                # Server data + session helpers for /dashboard
+│   ├── email.ts                    # SMTP notifications (nodemailer)
+│   ├── supabase/server.ts          # Service-role Supabase client (server only)
+│   ├── sanity.ts                   # Sanity client
+│   └── queries/                    # Sanity GROQ queries
+├── supabase/migrations/            # SQL for contacts/applications + cvs bucket
 ├── public/
 │   ├── images/                     # Brand logos (akieni-logo.png, akieni-logo-white.png, ...)
 │   └── uploads/                    # Editorial content images
-├── proxy.ts                        # Next 16 middleware (locale negotiation + redirect)
+├── proxy.ts                        # Next 16 middleware (locale negotiation; excludes /dashboard)
 ├── eslint.config.mjs
 ├── next.config.ts
 ├── postcss.config.mjs
@@ -130,6 +208,15 @@ akieni-website/
 /{en|fr}/privacy
 /{en|fr}/terms
 /{en|fr}/cookies
+
+/dashboard                          → admin overview (Google login, outside [lang])
+/dashboard/contacts                 → contact submissions
+/dashboard/contacts/[id]            → contact detail
+/dashboard/applications             → job applications (role search)
+/dashboard/applications/[id]        → application detail + job role
+/api/submit/contact                 → contact form POST
+/api/submit/application             → application form POST (multipart, CV upload)
+/api/auth/[...all]                  → BetterAuth (Google OAuth)
 ```
 
 The four pages with a light hero (`/contact`, `/privacy`, `/terms`, `/cookies`) get the `nav--light` variant automatically — Header reads `usePathname()` and flips text color + logo `invert()`.

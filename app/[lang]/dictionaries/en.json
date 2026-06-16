@@ -1197,7 +1197,9 @@
       "sourceOptions": ["Referral", "Akieni Academy", "Web search", "Other"],
       "legal": "I consent to Akieni processing my data for recruitment purposes (see our privacy policy).",
       "submit": "Send my application →",
-      "sent": "Sent ✓"
+      "sending": "Sending…",
+      "sent": "Sent ✓",
+      "error": "Something went wrong. Please try again."
     },
     "items": {
       "senior-backend-go": {
@@ -2821,7 +2823,9 @@
       "messagePlaceholder": "A few lines on the mandate, timeline, and stakeholders.",
       "note": "RESPONSE WITHIN 2 BUSINESS DAYS",
       "submit": "Send message",
-      "sent": "Sent ✓"
+      "sending": "Sending…",
+      "sent": "Sent ✓",
+      "error": "Something went wrong. Please try again."
     },
     "info": {
       "items": [

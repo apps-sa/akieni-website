@@ -1207,7 +1207,9 @@
       ],
       "legal": "J'accepte qu'Akieni traite mes données dans le cadre du recrutement (voir notre politique de confidentialité).",
       "submit": "Envoyer ma candidature →",
-      "sent": "Envoyé ✓"
+      "sending": "Envoi…",
+      "sent": "Envoyé ✓",
+      "error": "Une erreur est survenue. Veuillez réessayer."
     },
     "items": {
       "senior-backend-go": {
@@ -2843,7 +2845,9 @@
       "messagePlaceholder": "Quelques lignes sur le mandat, le calendrier et les parties prenantes.",
       "note": "RÉPONSE SOUS 2 JOURS OUVRÉS",
       "submit": "Envoyer le message",
-      "sent": "Envoyé ✓"
+      "sending": "Envoi…",
+      "sent": "Envoyé ✓",
+      "error": "Une erreur est survenue. Veuillez réessayer."
     },
     "info": {
       "items": [
