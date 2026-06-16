@@ -1,0 +1,238 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Akieni accueil" [ref=e4] [cursor=pointer]:
+        - /url: /fr
+        - img "Akieni" [ref=e5]
+      - navigation "Principale" [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: /fr
+        - link "Services" [ref=e8] [cursor=pointer]:
+          - /url: /fr/services
+        - link "Produits" [ref=e9] [cursor=pointer]:
+          - /url: /fr/products
+        - link "Projets" [ref=e10] [cursor=pointer]:
+          - /url: /fr/projects
+        - link "À propos" [ref=e11] [cursor=pointer]:
+          - /url: /fr/about
+        - link "Académie" [ref=e12] [cursor=pointer]:
+          - /url: /fr/academy
+        - link "Carrières" [ref=e13] [cursor=pointer]:
+          - /url: /fr/careers
+        - generic [ref=e14]:
+          - button "Switch language to EN" [ref=e15] [cursor=pointer]: EN
+          - button "Switch language to FR" [pressed] [ref=e16] [cursor=pointer]: FR
+        - link "Nous contacter" [ref=e17] [cursor=pointer]:
+          - /url: /fr/contact
+          - text: Nous contacter
+          - generic [ref=e18]: →
+  - main [ref=e19]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: À propos d'Akieni
+        - generic [ref=e25]: 02 / Entreprise
+      - heading "Qui nous sommes, et ce que nous construisons." [level=1] [ref=e26]:
+        - text: Qui nous sommes,
+        - text: et ce que nous construisons.
+      - paragraph [ref=e28]: Une firme d'ingénierie et de livraison de 45 personnes à Brazzaville, qui construit des technologies à l'échelle nationale pour l'Afrique centrale.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: Notre histoire
+        - heading "D'un petit bureau à un mandat national." [level=2] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: "Akieni a été fondée avec une seule conviction : la prochaine décennie de l'Afrique centrale dépend d'une infrastructure numérique construite localement et crédible à l'international · et le talent pour la bâtir est déjà ici."
+        - paragraph [ref=e38]: "Nous sommes passés à une équipe de 45 personnes réparties entre Ingénierie, Livraison, Administration et RH, et avons livré en production trois des plateformes les plus critiques du pays : SFEC pour le Ministère des Finances, CAMU pour la couverture santé universelle, et CNSS pour la sécurité sociale. Chacune a été livrée aux normes équivalentes à ce que l'on trouve à Paris ou à Lagos · par une équipe 100 % africaine, sur les rives du fleuve Congo."
+        - generic [ref=e39]:
+          - img "Bureau · Brazzaville" [ref=e41]
+          - img "Plateau d'ingénierie" [ref=e43]
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Mission
+        - heading "Combler la fracture numérique." [level=2] [ref=e50]
+        - paragraph [ref=e51]: Par des solutions technologiques innovantes et à fort impact, nous rendons les institutions d'Afrique centrale aussi capables, transparentes et efficaces que leurs pairs mondiaux.
+      - generic [ref=e52]:
+        - generic [ref=e53]: Vision
+        - heading "La référence technologique pour l'Afrique centrale." [level=2] [ref=e54]
+        - paragraph [ref=e55]: Une firme régionale à qui l'on confie la conception, la construction et l'exploitation du socle numérique des gouvernements, régulateurs et opérateurs · créateur de valeur économique mesurable.
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Ce que nous défendons
+          - heading "Trois valeurs, répétées chaque jour." [level=2] [ref=e62]:
+            - text: Trois valeurs,
+            - text: répétées chaque jour.
+        - paragraph [ref=e64]: Les outils, frameworks et clients changent · pas elles. Chaque recrutement, chaque revue d'architecture, chaque feuille de route passe par leur filtre.
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]: "01"
+          - heading "Dynamique & innovante" [level=3] [ref=e68]
+          - paragraph [ref=e69]: Nous choisissons la bonne technologie pour le problème, pas la confortable · et nous livrons.
+        - generic [ref=e70]:
+          - generic [ref=e71]: "02"
+          - heading "Tournée vers l'avenir" [level=3] [ref=e72]
+          - paragraph [ref=e73]: Chaque système que nous construisons est conçu pour durer une décennie · pas un cycle de démo.
+        - generic [ref=e74]:
+          - generic [ref=e75]: "03"
+          - heading "Tech-savvy, pilotée par l'humain" [level=3] [ref=e76]
+          - paragraph [ref=e77]: Le logiciel est le levier. Les personnes · clients, citoyens, coéquipiers · sont la finalité.
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]: Reçu
+          - heading "Akieni est. Akieni n'est pas." [level=2] [ref=e84]
+        - paragraph [ref=e86]: Une liste franche et utile · pour que clients, candidats et partenaires sachent à quoi s'attendre.
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - paragraph [ref=e89]: Est
+          - list [ref=e90]:
+            - listitem [ref=e91]: Dynamique & innovante
+            - listitem [ref=e93]: Tournée vers l'avenir
+            - listitem [ref=e95]: Tech-savvy / digital-native
+            - listitem [ref=e97]: Propre & sophistiquée
+            - listitem [ref=e99]: Équilibre humain + technologie
+            - listitem [ref=e101]: Ancrée dans le réel
+        - generic [ref=e103]:
+          - paragraph [ref=e104]: N'est pas
+          - list [ref=e105]:
+            - listitem [ref=e106]: Suiveuse de tendances
+            - listitem [ref=e108]: Robotique ou froide
+            - listitem [ref=e110]: Sur-animée
+            - listitem [ref=e112]: Tape-à-l'œil sans substance
+            - listitem [ref=e114]: « Startup mignonne »
+            - listitem [ref=e116]: Déconnectée du contexte local
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: Trajectoire
+          - heading "Quatre jalons, et ça continue." [level=2] [ref=e124]:
+            - text: Quatre jalons,
+            - text: et ça continue.
+        - paragraph [ref=e126]: De la fondation au déploiement à l'échelle nationale · sans perdre la discipline qui nous a menés ici.
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]: "2023"
+          - heading "Fondation à Brazzaville" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Premiers contrats signés. Pratiques Ingénierie et Livraison établies.
+        - generic [ref=e132]:
+          - generic [ref=e133]: "2024"
+          - heading "Mandats nationaux" [level=3] [ref=e134]
+          - paragraph [ref=e135]: Les programmes SFEC, CAMU et CNSS démarrent en parallèle. L'équipe dépasse 25 personnes.
+        - generic [ref=e136]:
+          - generic [ref=e137]: "2025"
+          - heading "Académie, Cohorte 1" [level=3] [ref=e138]
+          - paragraph [ref=e139]: 11 diplômés intégrés comme ingénieurs à temps plein. L'équipe atteint 45+.
+        - generic [ref=e140]:
+          - generic [ref=e141]: "2026"
+          - heading "Expansion régionale" [level=3] [ref=e142]
+          - paragraph [ref=e143]: Déploiements en production à l'échelle nationale. Académie Cohorte 2 lancée.
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - generic [ref=e149]: Direction
+        - heading "Les personnes derrière la plateforme." [level=2] [ref=e150]
+      - generic [ref=e151]:
+        - paragraph [ref=e152]: Cinq leads, quatre départements, une seule culture de livraison. Rencontrez l'équipe qui fait tourner Akieni au quotidien.
+        - link "Rencontrer l'équipe" [ref=e154] [cursor=pointer]:
+          - /url: /fr/about/team
+          - text: Rencontrer l'équipe
+          - generic [ref=e155]: →
+  - contentinfo [ref=e156]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - link "Akieni accueil" [ref=e160] [cursor=pointer]:
+            - /url: /fr
+            - img "Akieni" [ref=e161]
+          - paragraph [ref=e162]: Transformation numérique pour l'Afrique. Brazzaville, République du Congo.
+          - link "CONTACT@AKIENI.COM" [ref=e163] [cursor=pointer]:
+            - /url: mailto:contact@akieni.com
+        - generic [ref=e164]:
+          - heading "Société" [level=4] [ref=e165]
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "À propos" [ref=e168] [cursor=pointer]:
+                - /url: /fr/about
+            - listitem [ref=e169]:
+              - link "Équipe" [ref=e170] [cursor=pointer]:
+                - /url: /fr/about/team
+            - listitem [ref=e171]:
+              - link "Carrières" [ref=e172] [cursor=pointer]:
+                - /url: /fr/careers
+            - listitem [ref=e173]:
+              - link "Contact" [ref=e174] [cursor=pointer]:
+                - /url: /fr/contact
+        - generic [ref=e175]:
+          - heading "Services" [level=4] [ref=e176]
+          - list [ref=e177]:
+            - listitem [ref=e178]:
+              - link "Transformation numérique" [ref=e179] [cursor=pointer]:
+                - /url: /fr/services/digital-transformation
+            - listitem [ref=e180]:
+              - link "Développement logiciel" [ref=e181] [cursor=pointer]:
+                - /url: /fr/services/software-development
+            - listitem [ref=e182]:
+              - link "Intégration" [ref=e183] [cursor=pointer]:
+                - /url: /fr/services/integration
+            - listitem [ref=e184]:
+              - link "Conseil" [ref=e185] [cursor=pointer]:
+                - /url: /fr/services/consulting
+        - generic [ref=e186]:
+          - heading "Projets" [level=4] [ref=e187]
+          - list [ref=e188]:
+            - listitem [ref=e189]:
+              - link "SFEC" [ref=e190] [cursor=pointer]:
+                - /url: /fr/projects/sfec
+            - listitem [ref=e191]:
+              - link "CAMU" [ref=e192] [cursor=pointer]:
+                - /url: /fr/projects/camu
+            - listitem [ref=e193]:
+              - link "CNSS" [ref=e194] [cursor=pointer]:
+                - /url: /fr/projects/cnss
+            - listitem [ref=e195]:
+              - link "Tous les projets" [ref=e196] [cursor=pointer]:
+                - /url: /fr/projects
+        - generic [ref=e197]:
+          - heading "Produits" [level=4] [ref=e198]
+          - list [ref=e199]:
+            - listitem [ref=e200]:
+              - link "AkieniPay" [ref=e201] [cursor=pointer]:
+                - /url: /fr/products/akienipay
+            - listitem [ref=e202]:
+              - link "CarTracking" [ref=e203] [cursor=pointer]:
+                - /url: /fr/products/cartracking
+            - listitem [ref=e204]:
+              - link "Biometrie" [ref=e205] [cursor=pointer]:
+                - /url: /fr/products/biometrie
+            - listitem [ref=e206]:
+              - link "Tous les produits" [ref=e207] [cursor=pointer]:
+                - /url: /fr/products
+        - generic [ref=e208]:
+          - heading "Ressources" [level=4] [ref=e209]
+          - list [ref=e210]:
+            - listitem [ref=e211]:
+              - link "Académie" [ref=e212] [cursor=pointer]:
+                - /url: /fr/academy
+            - listitem [ref=e213]:
+              - link "Analyses" [ref=e214] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e215]:
+              - link "Kit presse" [ref=e216] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e217]:
+        - generic [ref=e218]: © 2026 Akieni. Transformation numérique pour l'Afrique.
+        - generic [ref=e219]:
+          - link "Confidentialité" [ref=e220] [cursor=pointer]:
+            - /url: /fr/privacy
+          - link "Conditions" [ref=e221] [cursor=pointer]:
+            - /url: /fr/terms
+          - link "Cookies" [ref=e222] [cursor=pointer]:
+            - /url: /fr/cookies
+        - generic [ref=e223]:
+          - link "LinkedIn" [ref=e224] [cursor=pointer]:
+            - /url: "#"
+          - link "Twitter" [ref=e225] [cursor=pointer]:
+            - /url: "#"
+          - link "GitHub" [ref=e226] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e232] [cursor=pointer]:
+    - img [ref=e233]
+  - alert [ref=e236]

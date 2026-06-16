@@ -1,4 +1,37 @@
 {
+  "showcase": {
+    "meta": {
+      "title": "Showcase · Akieni",
+      "description": "A working catalogue of Akieni's live products and R&D builds, each with a direct link."
+    },
+    "hero": {
+      "eyebrow": "Showcase",
+      "caption": "Unlisted · Internal",
+      "titleLine1": "What we've",
+      "titleLine2": "shipped, and what we're ",
+      "titleAccent": "building next.",
+      "lede": "One place to see every Akieni product and project — live platforms, betas and R&D — each with a link to try it."
+    },
+    "explorer": {
+      "counterSuffix": "items",
+      "allLabel": "All",
+      "stageLabels": { "live": "Live", "beta": "Beta", "rnd": "R&D", "internal": "Internal" },
+      "emptyLabel": "Nothing here yet."
+    },
+    "items": [
+      { "id": "akienipay", "title": "AkieniPay", "brief": "Mobile money, card and cash payments with automatic reconciliation — live across the Congo.", "link": "https://www.akieni.com/en/products/akienipay", "stage": "live", "categories": ["Fintech", "Payments"], "image": "", "mediaLabel": "AkieniPay" },
+      { "id": "cartracking", "title": "CarTracking", "brief": "Real-time fleet tracking — GPS, geofencing and driver behaviour for corporate and public fleets.", "link": "https://www.akieni.com/en/products/cartracking", "stage": "live", "categories": ["IoT", "Logistics"], "image": "", "mediaLabel": "CarTracking" },
+      { "id": "biometrie", "title": "Biometrie", "brief": "Multi-modal biometric identification — fingerprint, face and iris — to ANSSI / ICAO grade.", "link": "https://www.akieni.com/en/products/biometrie", "stage": "live", "categories": ["Identity", "Security"], "image": "", "mediaLabel": "Biometrie" },
+      { "id": "ged", "title": "GED — Document Management", "brief": "Electronic document management and archival for public administrations. In private beta.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": "", "mediaLabel": "GED" },
+      { "id": "ai-assistant", "title": "Service Assistant", "brief": "An AI assistant for citizen services, grounded in public-sector knowledge. Early research prototype.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["AI", "Public services"], "image": "", "mediaLabel": "Service Assistant" }
+    ],
+    "cta": {
+      "primary": "Get in touch",
+      "titleLine1": "Want a closer",
+      "titleLine2": "look at any of ",
+      "titleAccent": "these?"
+    }
+  },
   "header": {
     "ariaPrimary": "Primary",
     "ariaBrand": "Akieni home",
@@ -6,7 +39,6 @@
     "ariaCloseMenu": "Close menu",
     "cta": "Get in touch",
     "location": "Brazzaville · Republic of Congo",
-    "est": "EST. 2023",
     "languageLabel": "Language",
     "nav": {
       "home": "Home",
@@ -26,7 +58,7 @@
     },
     "hero": {
       "eyebrow": "Brazzaville · Republic of Congo",
-      "version": "EST. 2023 · V. 26.05",
+      "version": "V. 26.05",
       "titleLine1": "Digital",
       "titleLine2": "transformation",
       "titleAccent": "for Africa.",
@@ -197,10 +229,9 @@
       ]
     },
     "stats": {
-      "title": "A young firm with national footprint.",
+      "title": "A firm with national footprint.",
       "eyebrow": "Snapshot · 2026",
       "items": [
-        { "label": "Since 2023", "value": 2, "suffix": "", "accent": "/yrs" },
         { "label": "Employees", "value": 45, "suffix": "+", "accent": "" },
         { "label": "African team", "value": 100, "suffix": "%", "accent": "" },
         { "label": "Departments", "value": 4, "suffix": "", "accent": "" }
@@ -649,7 +680,7 @@
   "about": {
     "meta": {
       "title": "About · Akieni",
-      "description": "Founded in 2023, Akieni is a 45+ person digital transformation firm based in Brazzaville, building critical national infrastructure across Central Africa."
+      "description": "Akieni is a 45+ person digital transformation firm based in Brazzaville, building critical national infrastructure across Central Africa."
     },
     "hero": {
       "eyebrow": "About Akieni",
@@ -657,14 +688,14 @@
       "titleLine1": "Who we are,",
       "titleLine2": "and what we're ",
       "titleAccent": "building.",
-      "lede": "A 45-person engineering and delivery firm in Brazzaville, founded in 2023, building national-scale technology for Central Africa."
+      "lede": "A 45-person engineering and delivery firm in Brazzaville, building national-scale technology for Central Africa."
     },
     "story": {
       "eyebrow": "Our story",
       "title": "From a small office, a national mandate.",
       "paragraphs": [
-        "Akieni was founded in 2023 with a single conviction: that Central Africa's next decade depends on locally-built, internationally-credible digital infrastructure · and that the talent to build it is already here.",
-        "In two years we have grown to a 45-person team across Engineering, Delivery, Administration and HR, and shipped into production three of the country's most critical platforms: SFEC for the Ministry of Finance, CAMU for universal health coverage, and CNSS for social security. Each was delivered to standards equal to anything you would find in Paris or Lagos · by a team that is 100% African, based on the banks of the Congo river."
+        "Akieni was founded with a single conviction: that Central Africa's next decade depends on locally-built, internationally-credible digital infrastructure · and that the talent to build it is already here.",
+        "We have grown to a 45-person team across Engineering, Delivery, Administration and HR, and shipped into production three of the country's most critical platforms: SFEC for the Ministry of Finance, CAMU for universal health coverage, and CNSS for social security. Each was delivered to standards equal to anything you would find in Paris or Lagos · by a team that is 100% African, based on the banks of the Congo river."
       ],
       "tiles": [
         { "label": "Office · Brazzaville" },
@@ -735,8 +766,8 @@
     },
     "timeline": {
       "eyebrow": "Trajectory",
-      "titleLine1": "Two years,",
-      "titleLine2": "four milestones.",
+      "titleLine1": "Four milestones,",
+      "titleLine2": "and counting.",
       "lede": "From founding to national-scale deployment · without losing the discipline that got us here.",
       "items": [
         {

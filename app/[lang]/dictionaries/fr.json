@@ -1,4 +1,37 @@
 {
+  "showcase": {
+    "meta": {
+      "title": "Vitrine · Akieni",
+      "description": "Un catalogue vivant des produits en production et des travaux de R&D d'Akieni, chacun avec un lien direct."
+    },
+    "hero": {
+      "eyebrow": "Vitrine",
+      "caption": "Non répertorié · Interne",
+      "titleLine1": "Ce que nous avons",
+      "titleLine2": "livré, et ce que nous ",
+      "titleAccent": "construisons.",
+      "lede": "Un seul endroit pour voir chaque produit et projet Akieni — plateformes en production, bêtas et R&D — chacun avec un lien pour l'essayer."
+    },
+    "explorer": {
+      "counterSuffix": "éléments",
+      "allLabel": "Tous",
+      "stageLabels": { "live": "En production", "beta": "Bêta", "rnd": "R&D", "internal": "Interne" },
+      "emptyLabel": "Rien ici pour l'instant."
+    },
+    "items": [
+      { "id": "akienipay", "title": "AkieniPay", "brief": "Paiements mobile money, carte et espèces avec réconciliation automatique — en production à travers le Congo.", "link": "https://www.akieni.com/fr/products/akienipay", "stage": "live", "categories": ["Fintech", "Paiements"], "image": "", "mediaLabel": "AkieniPay" },
+      { "id": "cartracking", "title": "CarTracking", "brief": "Suivi de flotte en temps réel — GPS, géorepérage et comportement de conduite pour flottes publiques et privées.", "link": "https://www.akieni.com/fr/products/cartracking", "stage": "live", "categories": ["IoT", "Logistique"], "image": "", "mediaLabel": "CarTracking" },
+      { "id": "biometrie", "title": "Biometrie", "brief": "Identification biométrique multimodale — empreinte, visage et iris — aux normes ANSSI / ICAO.", "link": "https://www.akieni.com/fr/products/biometrie", "stage": "live", "categories": ["Identité", "Sécurité"], "image": "", "mediaLabel": "Biometrie" },
+      { "id": "ged", "title": "GED — Gestion documentaire", "brief": "Gestion électronique et archivage de documents pour les administrations publiques. En bêta privée.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": "", "mediaLabel": "GED" },
+      { "id": "ai-assistant", "title": "Assistant de service", "brief": "Un assistant IA pour les services aux citoyens, ancré dans la connaissance du secteur public. Prototype de recherche.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["IA", "Services publics"], "image": "", "mediaLabel": "Assistant de service" }
+    ],
+    "cta": {
+      "primary": "Nous contacter",
+      "titleLine1": "Envie d'un",
+      "titleLine2": "aperçu plus proche de ",
+      "titleAccent": "l'un d'eux ?"
+    }
+  },
   "header": {
     "ariaPrimary": "Principale",
     "ariaBrand": "Akieni accueil",
@@ -6,7 +39,6 @@
     "ariaCloseMenu": "Fermer le menu",
     "cta": "Nous contacter",
     "location": "Brazzaville · République du Congo",
-    "est": "EST. 2023",
     "languageLabel": "Langue",
     "nav": {
       "home": "Accueil",
@@ -26,7 +58,7 @@
     },
     "hero": {
       "eyebrow": "Brazzaville · République du Congo",
-      "version": "EST. 2023 · V. 26.05",
+      "version": "V. 26.05",
       "titleLine1": "Transformation",
       "titleLine2": "numérique",
       "titleAccent": "pour l’Afrique.",
@@ -197,10 +229,9 @@
       ]
     },
     "stats": {
-      "title": "Une jeune entreprise au rayonnement national.",
+      "title": "Une entreprise au rayonnement national.",
       "eyebrow": "Instantané · 2026",
       "items": [
-        { "label": "Depuis 2023", "value": 2, "suffix": "", "accent": "/ans" },
         { "label": "Employés", "value": 45, "suffix": "+", "accent": "" },
         {
           "label": "Équipe africaine",
@@ -654,7 +685,7 @@
   "about": {
     "meta": {
       "title": "À propos · Akieni",
-      "description": "Fondée en 2023, Akieni est une firme de transformation numérique de 45+ personnes basée à Brazzaville, construisant des infrastructures nationales critiques à travers l'Afrique centrale."
+      "description": "Akieni est une firme de transformation numérique de 45+ personnes basée à Brazzaville, construisant des infrastructures nationales critiques à travers l'Afrique centrale."
     },
     "hero": {
       "eyebrow": "À propos d'Akieni",
@@ -662,14 +693,14 @@
       "titleLine1": "Qui nous sommes,",
       "titleLine2": "et ce que nous ",
       "titleAccent": "construisons.",
-      "lede": "Une firme d'ingénierie et de livraison de 45 personnes à Brazzaville, fondée en 2023, qui construit des technologies à l'échelle nationale pour l'Afrique centrale."
+      "lede": "Une firme d'ingénierie et de livraison de 45 personnes à Brazzaville, qui construit des technologies à l'échelle nationale pour l'Afrique centrale."
     },
     "story": {
       "eyebrow": "Notre histoire",
       "title": "D'un petit bureau à un mandat national.",
       "paragraphs": [
-        "Akieni a été fondée en 2023 avec une seule conviction : la prochaine décennie de l'Afrique centrale dépend d'une infrastructure numérique construite localement et crédible à l'international · et le talent pour la bâtir est déjà ici.",
-        "En deux ans, nous sommes passés à une équipe de 45 personnes réparties entre Ingénierie, Livraison, Administration et RH, et avons livré en production trois des plateformes les plus critiques du pays : SFEC pour le Ministère des Finances, CAMU pour la couverture santé universelle, et CNSS pour la sécurité sociale. Chacune a été livrée aux normes équivalentes à ce que l'on trouve à Paris ou à Lagos · par une équipe 100 % africaine, sur les rives du fleuve Congo."
+        "Akieni a été fondée avec une seule conviction : la prochaine décennie de l'Afrique centrale dépend d'une infrastructure numérique construite localement et crédible à l'international · et le talent pour la bâtir est déjà ici.",
+        "Nous sommes passés à une équipe de 45 personnes réparties entre Ingénierie, Livraison, Administration et RH, et avons livré en production trois des plateformes les plus critiques du pays : SFEC pour le Ministère des Finances, CAMU pour la couverture santé universelle, et CNSS pour la sécurité sociale. Chacune a été livrée aux normes équivalentes à ce que l'on trouve à Paris ou à Lagos · par une équipe 100 % africaine, sur les rives du fleuve Congo."
       ],
       "tiles": [
         { "label": "Bureau · Brazzaville" },
@@ -740,8 +771,8 @@
     },
     "timeline": {
       "eyebrow": "Trajectoire",
-      "titleLine1": "Deux ans,",
-      "titleLine2": "quatre jalons.",
+      "titleLine1": "Quatre jalons,",
+      "titleLine2": "et ça continue.",
       "lede": "De la fondation au déploiement à l'échelle nationale · sans perdre la discipline qui nous a menés ici.",
       "items": [
         {

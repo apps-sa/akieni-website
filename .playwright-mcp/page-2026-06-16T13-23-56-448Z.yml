@@ -1,0 +1,421 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Akieni accueil" [ref=e4] [cursor=pointer]:
+        - /url: /fr
+        - img "Akieni" [ref=e5]
+      - navigation "Principale" [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: /fr
+        - link "Services" [ref=e8] [cursor=pointer]:
+          - /url: /fr/services
+        - link "Produits" [ref=e9] [cursor=pointer]:
+          - /url: /fr/products
+        - link "Projets" [ref=e10] [cursor=pointer]:
+          - /url: /fr/projects
+        - link "À propos" [ref=e11] [cursor=pointer]:
+          - /url: /fr/about
+        - link "Académie" [ref=e12] [cursor=pointer]:
+          - /url: /fr/academy
+        - link "Carrières" [ref=e13] [cursor=pointer]:
+          - /url: /fr/careers
+        - generic [ref=e14]:
+          - button "Switch language to EN" [ref=e15] [cursor=pointer]: EN
+          - button "Switch language to FR" [pressed] [ref=e16] [cursor=pointer]: FR
+        - link "Nous contacter" [ref=e17] [cursor=pointer]:
+          - /url: /fr/contact
+          - text: Nous contacter
+          - generic [ref=e18]: →
+  - main [ref=e19]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Brazzaville · République du Congo
+        - generic [ref=e25]: V. 26.05
+      - heading "Transformation numérique pour l’Afrique." [level=1] [ref=e26]:
+        - text: Transformation
+        - text: numérique
+        - text: pour l’Afrique.
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Nous construisons des plateformes à l’échelle nationale · fiscale, santé, sécurité sociale · conçues aux normes internationales par une équipe 100 % africaine basée à Brazzaville.
+        - generic [ref=e29]:
+          - link "Découvrir nos services →" [ref=e30] [cursor=pointer]:
+            - /url: /fr/services
+            - text: Découvrir nos services
+            - generic [ref=e31]: →
+          - link "Voir nos projets" [ref=e32] [cursor=pointer]:
+            - /url: /fr/projects
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: En déploiement
+          - generic [ref=e36]: Infrastructure fiscale SFEC, couverture santé universelle CAMU, biométrie & ePaiement CNSS.
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: PROJETS
+            - generic [ref=e40]: 12+
+          - generic [ref=e41]:
+            - generic [ref=e42]: ÉQUIPE
+            - generic [ref=e43]: 45+
+          - generic [ref=e44]:
+            - generic [ref=e45]: SECTEURS
+            - generic [ref=e46]: "4"
+    - generic [ref=e48]:
+      - generic [ref=e49]: Ministère des Finances · DGID ◆
+      - generic [ref=e50]: Gouvernement du Congo · CAMU ◆
+      - generic [ref=e51]: Caisse Nationale de Sécurité Sociale ◆
+      - generic [ref=e52]: Infrastructure fiscale nationale ◆
+      - generic [ref=e53]: Couverture santé universelle ◆
+      - generic [ref=e54]: Identification biométrique ◆
+      - generic [ref=e55]: Ministère des Finances · DGID ◆
+      - generic [ref=e56]: Gouvernement du Congo · CAMU ◆
+      - generic [ref=e57]: Caisse Nationale de Sécurité Sociale ◆
+      - generic [ref=e58]: Infrastructure fiscale nationale ◆
+      - generic [ref=e59]: Couverture santé universelle ◆
+      - generic [ref=e60]: Identification biométrique ◆
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: Ce que nous faisons
+          - heading "Quatre pratiques, un seul mandat." [level=2] [ref=e67]:
+            - text: Quatre pratiques,
+            - text: un seul mandat.
+        - generic [ref=e68]:
+          - paragraph [ref=e69]: De la stratégie au déploiement, nous livrons des logiciels à l’échelle nationale. Chaque pratique est portée par des talents locaux seniors aux normes internationales.
+          - link "Tous les services" [ref=e70] [cursor=pointer]:
+            - /url: /fr/services
+            - text: Tous les services
+            - generic [ref=e71]: →
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: 01 / Pratique
+            - generic [ref=e76]: ◆
+          - heading "Transformation numérique" [level=3] [ref=e77]
+          - paragraph [ref=e78]: Stratégie, mise en œuvre et conduite du changement de bout en bout pour les organisations qui se modernisent à grande échelle.
+          - generic [ref=e79]:
+            - generic [ref=e80]: Stratégie
+            - generic [ref=e81]: Mise en œuvre
+            - generic [ref=e82]: Changement
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: 02 / Pratique
+            - generic [ref=e86]: ◆
+          - heading "Développement logiciel" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Des plateformes sur mesure conçues aux normes internationales par des équipes seniors basées à Brazzaville.
+          - generic [ref=e89]:
+            - generic [ref=e90]: Backend
+            - generic [ref=e91]: Frontend
+            - generic [ref=e92]: Plateformes
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]: 03 / Pratique
+            - generic [ref=e96]: ◆
+          - heading "Intégration logicielle" [level=3] [ref=e97]
+          - paragraph [ref=e98]: Relier des systèmes fragmentés en flux de données unifiés et observables · biométrie, paiements, ERP, GED.
+          - generic [ref=e99]:
+            - generic [ref=e100]: Systèmes
+            - generic [ref=e101]: APIs
+            - generic [ref=e102]: ETL
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]: 04 / Pratique
+            - generic [ref=e106]: ◆
+          - heading "Conseil & PM" [level=3] [ref=e107]
+          - paragraph [ref=e108]: Conseil stratégique, gestion de programmes et expertise technique intégrés à votre équipe.
+          - generic [ref=e109]:
+            - generic [ref=e110]: Conseil
+            - generic [ref=e111]: PMO
+            - generic [ref=e112]: Audit
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]: Réalisations sélectionnées
+          - heading "Construire la stack nationale." [level=2] [ref=e119]:
+            - text: Construire la
+            - text: stack nationale.
+        - generic [ref=e120]:
+          - paragraph [ref=e121]: Trois programmes d’envergure dans la finance, la santé et la sécurité sociale · chacun déployé en production à l’échelle du pays.
+          - link "Tous les projets" [ref=e122] [cursor=pointer]:
+            - /url: /fr/projects
+            - text: Tous les projets
+            - generic [ref=e123]: →
+      - generic [ref=e124]:
+        - link "SFEC · Plateforme fiscale · Capture Ministère des Finances · DGID SFEC · Système de Facturation Électronique Certifié Gouvernement PKI Go Kubernetes 2024 · 2026" [ref=e126] [cursor=pointer]:
+          - /url: /fr/projects/sfec
+          - img "SFEC · Plateforme fiscale · Capture" [ref=e128]
+          - generic [ref=e129]:
+            - generic [ref=e130]: Ministère des Finances · DGID
+            - heading "SFEC · Système de Facturation Électronique Certifié" [level=3] [ref=e131]
+            - generic [ref=e132]:
+              - generic [ref=e133]: Gouvernement
+              - generic [ref=e134]: PKI
+              - generic [ref=e135]: Go
+              - generic [ref=e136]: Kubernetes
+          - generic [ref=e138]: 2024 · 2026
+        - link "CAMU · Plateforme santé · Capture Gouvernement du Congo CAMU · Couverture santé universelle Santé Laravel React 2024 · 2026" [ref=e140] [cursor=pointer]:
+          - /url: /fr/projects/camu
+          - img "CAMU · Plateforme santé · Capture" [ref=e142]
+          - generic [ref=e143]:
+            - generic [ref=e144]: Gouvernement du Congo
+            - heading "CAMU · Couverture santé universelle" [level=3] [ref=e145]
+            - generic [ref=e146]:
+              - generic [ref=e147]: Santé
+              - generic [ref=e148]: Laravel
+              - generic [ref=e149]: React
+          - generic [ref=e151]: 2024 · 2026
+        - link "CNSS · Sécurité sociale · Visuel large CNSS · Caisse Nationale de Sécurité Sociale Gestion documentaire, biométrie et ePaiement pour la sécurité sociale. GED ABIS Odoo Kubernetes" [ref=e153] [cursor=pointer]:
+          - /url: /fr/projects/cnss
+          - img "CNSS · Sécurité sociale · Visuel large" [ref=e155]
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e159]: CNSS · Caisse Nationale de Sécurité Sociale
+              - heading "Gestion documentaire, biométrie et ePaiement pour la sécurité sociale." [level=3] [ref=e160]
+            - generic [ref=e162]:
+              - generic [ref=e163]: GED
+              - generic [ref=e164]: ABIS
+              - generic [ref=e165]: Odoo
+              - generic [ref=e166]: Kubernetes
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - generic [ref=e172]: Nos produits
+          - heading "Des logiciels que nous exploitons nous-mêmes." [level=2] [ref=e173]:
+            - text: Des logiciels que nous
+            - text: exploitons nous-mêmes.
+        - generic [ref=e174]:
+          - paragraph [ref=e175]: Trois produits Akieni · paiements, suivi de flotte, identification biométrique · livrés en SaaS ou sur votre propre infrastructure.
+          - link "Tous les produits" [ref=e176] [cursor=pointer]:
+            - /url: /fr/products
+            - text: Tous les produits
+            - generic [ref=e177]: →
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - generic [ref=e181]:
+            - img "AkieniPay · Console" [ref=e182]
+            - generic [ref=e183]: Live
+          - generic [ref=e185]:
+            - generic [ref=e186]: 01 / Product
+            - heading "AkieniPay v2" [level=3] [ref=e187]:
+              - text: AkieniPay
+              - generic [ref=e188]: v2
+            - paragraph [ref=e189]: Plateforme de paiement et de collecte · agrège Mobile Money, cartes, virements et points cash avec rapprochement automatique.
+            - list [ref=e190]:
+              - listitem [ref=e191]:
+                - generic [ref=e192]: +
+                - text: API REST + webhooks idempotents
+              - listitem [ref=e193]:
+                - generic [ref=e194]: +
+                - text: Console marchand & tableaux de bord
+              - listitem [ref=e195]:
+                - generic [ref=e196]: +
+                - text: Conforme PCI-DSS / BEAC
+          - generic [ref=e197]:
+            - link "En savoir plus →" [ref=e198] [cursor=pointer]:
+              - /url: /fr/products/akienipay
+            - generic [ref=e199]: SaaS · 2024 →
+        - generic [ref=e200]:
+          - generic [ref=e202]:
+            - img "CarTracking · Map view" [ref=e203]
+            - generic [ref=e204]: Live
+          - generic [ref=e206]:
+            - generic [ref=e207]: 02 / Product
+            - heading "CarTracking" [level=3] [ref=e208]
+            - paragraph [ref=e209]: Suivi de flotte en temps réel pour entreprises et flottes publiques · GPS, géorepérage, comportement conducteur, alertes vol.
+            - list [ref=e210]:
+              - listitem [ref=e211]:
+                - generic [ref=e212]: +
+                - text: Boîtier OBD-II & traceur GPS dédié
+              - listitem [ref=e213]:
+                - generic [ref=e214]: +
+                - text: Géorepérages illimités & alertes SMS
+              - listitem [ref=e215]:
+                - generic [ref=e216]: +
+                - text: Rapports carburant & conduite
+          - generic [ref=e217]:
+            - link "En savoir plus →" [ref=e218] [cursor=pointer]:
+              - /url: /fr/products/cartracking
+            - generic [ref=e219]: SaaS · 2023 →
+        - generic [ref=e220]:
+          - generic [ref=e222]:
+            - img "Biometrie · Capture" [ref=e223]
+            - generic [ref=e224]: Preview
+          - generic [ref=e226]:
+            - generic [ref=e227]: 03 / Product
+            - heading "Biometrie" [level=3] [ref=e228]
+            - paragraph [ref=e229]: Identification biométrique multimodale · empreinte, visage et iris, conforme OACI, soutenue par un ABIS de niveau ANSSI.
+            - list [ref=e230]:
+              - listitem [ref=e231]:
+                - generic [ref=e232]: +
+                - text: Capture mobile & kiosques fixes
+              - listitem [ref=e233]:
+                - generic [ref=e234]: +
+                - text: Correspondance 1:1 & 1:N à grande échelle
+              - listitem [ref=e235]:
+                - generic [ref=e236]: +
+                - text: On-prem · données souveraines
+          - generic [ref=e237]:
+            - link "En savoir plus →" [ref=e238] [cursor=pointer]:
+              - /url: /fr/products/biometrie
+            - generic [ref=e239]: On-prem · 2025 →
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - heading "Une entreprise au rayonnement national." [level=2] [ref=e244]
+        - generic [ref=e245]: Instantané · 2026
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - generic [ref=e249]: 0+
+          - generic [ref=e250]: Employés
+        - generic [ref=e251]:
+          - generic [ref=e253]: 0%
+          - generic [ref=e254]: Équipe africaine
+        - generic [ref=e255]:
+          - generic [ref=e256]: "0"
+          - generic [ref=e257]: Départements
+    - generic [ref=e261]:
+      - generic [ref=e262]:
+        - generic [ref=e263]: Notre credo
+        - generic [ref=e264]: Frédéric Nzé, CEO
+      - blockquote [ref=e265]:
+        - text: Nous livrons des solutions à fort impact qui créent de la
+        - emphasis [ref=e266]: valeur économique
+        - text: ", pas seulement du logiciel."
+    - generic [ref=e269]:
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - generic [ref=e272]: Notre méthode
+          - heading "Du mandat au déploiement." [level=2] [ref=e273]:
+            - text: Du mandat
+            - text: au déploiement.
+        - paragraph [ref=e275]: Un processus reproductible en quatre étapes, affiné sur trois programmes d’envergure nationale. Pas de surprises, pas d’effets de manche · une livraison disciplinée.
+      - generic [ref=e276]:
+        - generic [ref=e277]:
+          - generic [ref=e278]: 01 / Découvrir
+          - heading "Audit & cadrage." [level=3] [ref=e279]
+          - paragraph [ref=e280]: "Nous cartographions le système existant, le contexte réglementaire et les contraintes. Résultat : une problématique précise."
+        - generic [ref=e281]:
+          - generic [ref=e282]: 02 / Concevoir
+          - heading "Architecturer & spécifier." [level=3] [ref=e283]
+          - paragraph [ref=e284]: Ingénieurs seniors et PMs co-écrivent l’architecture, avec des choix technologiques défendus face aux alternatives.
+        - generic [ref=e285]:
+          - generic [ref=e286]: 03 / Livrer
+          - heading "Construire par sprints." [level=3] [ref=e287]
+          - paragraph [ref=e288]: Livraison incrémentale par cycles courts, avec revues hebdomadaires et un pipeline CI de production dès le premier jour.
+        - generic [ref=e289]:
+          - generic [ref=e290]: 04 / Déployer
+          - heading "Exploiter en production." [level=3] [ref=e291]
+          - paragraph [ref=e292]: On-prem ou cloud, nous opérons ce que nous construisons · SLA, observabilité, formation et transfert.
+    - generic [ref=e295]:
+      - generic [ref=e296]:
+        - generic [ref=e297]:
+          - generic [ref=e298]: Lancer un projet
+          - heading "Un programme qui compte ?" [level=2] [ref=e299]
+        - generic [ref=e300]:
+          - paragraph [ref=e301]: Parlez-nous de votre mandat · ministères, régulateurs, opérateurs et organisations en croissance de la région nous confient leurs plateformes critiques.
+          - generic [ref=e302]:
+            - link "Discutons" [ref=e303] [cursor=pointer]:
+              - /url: /fr/contact
+              - text: Discutons
+              - generic [ref=e304]: →
+            - link "contact@akieni.com" [ref=e305] [cursor=pointer]:
+              - /url: mailto:contact@akieni.com
+      - generic: AKIENI
+  - contentinfo [ref=e306]:
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - link "Akieni accueil" [ref=e310] [cursor=pointer]:
+            - /url: /fr
+            - img "Akieni" [ref=e311]
+          - paragraph [ref=e312]: Transformation numérique pour l'Afrique. Brazzaville, République du Congo.
+          - link "CONTACT@AKIENI.COM" [ref=e313] [cursor=pointer]:
+            - /url: mailto:contact@akieni.com
+        - generic [ref=e314]:
+          - heading "Société" [level=4] [ref=e315]
+          - list [ref=e316]:
+            - listitem [ref=e317]:
+              - link "À propos" [ref=e318] [cursor=pointer]:
+                - /url: /fr/about
+            - listitem [ref=e319]:
+              - link "Équipe" [ref=e320] [cursor=pointer]:
+                - /url: /fr/about/team
+            - listitem [ref=e321]:
+              - link "Carrières" [ref=e322] [cursor=pointer]:
+                - /url: /fr/careers
+            - listitem [ref=e323]:
+              - link "Contact" [ref=e324] [cursor=pointer]:
+                - /url: /fr/contact
+        - generic [ref=e325]:
+          - heading "Services" [level=4] [ref=e326]
+          - list [ref=e327]:
+            - listitem [ref=e328]:
+              - link "Transformation numérique" [ref=e329] [cursor=pointer]:
+                - /url: /fr/services/digital-transformation
+            - listitem [ref=e330]:
+              - link "Développement logiciel" [ref=e331] [cursor=pointer]:
+                - /url: /fr/services/software-development
+            - listitem [ref=e332]:
+              - link "Intégration" [ref=e333] [cursor=pointer]:
+                - /url: /fr/services/integration
+            - listitem [ref=e334]:
+              - link "Conseil" [ref=e335] [cursor=pointer]:
+                - /url: /fr/services/consulting
+        - generic [ref=e336]:
+          - heading "Projets" [level=4] [ref=e337]
+          - list [ref=e338]:
+            - listitem [ref=e339]:
+              - link "SFEC" [ref=e340] [cursor=pointer]:
+                - /url: /fr/projects/sfec
+            - listitem [ref=e341]:
+              - link "CAMU" [ref=e342] [cursor=pointer]:
+                - /url: /fr/projects/camu
+            - listitem [ref=e343]:
+              - link "CNSS" [ref=e344] [cursor=pointer]:
+                - /url: /fr/projects/cnss
+            - listitem [ref=e345]:
+              - link "Tous les projets" [ref=e346] [cursor=pointer]:
+                - /url: /fr/projects
+        - generic [ref=e347]:
+          - heading "Produits" [level=4] [ref=e348]
+          - list [ref=e349]:
+            - listitem [ref=e350]:
+              - link "AkieniPay" [ref=e351] [cursor=pointer]:
+                - /url: /fr/products/akienipay
+            - listitem [ref=e352]:
+              - link "CarTracking" [ref=e353] [cursor=pointer]:
+                - /url: /fr/products/cartracking
+            - listitem [ref=e354]:
+              - link "Biometrie" [ref=e355] [cursor=pointer]:
+                - /url: /fr/products/biometrie
+            - listitem [ref=e356]:
+              - link "Tous les produits" [ref=e357] [cursor=pointer]:
+                - /url: /fr/products
+        - generic [ref=e358]:
+          - heading "Ressources" [level=4] [ref=e359]
+          - list [ref=e360]:
+            - listitem [ref=e361]:
+              - link "Académie" [ref=e362] [cursor=pointer]:
+                - /url: /fr/academy
+            - listitem [ref=e363]:
+              - link "Analyses" [ref=e364] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e365]:
+              - link "Kit presse" [ref=e366] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e367]:
+        - generic [ref=e368]: © 2026 Akieni. Transformation numérique pour l'Afrique.
+        - generic [ref=e369]:
+          - link "Confidentialité" [ref=e370] [cursor=pointer]:
+            - /url: /fr/privacy
+          - link "Conditions" [ref=e371] [cursor=pointer]:
+            - /url: /fr/terms
+          - link "Cookies" [ref=e372] [cursor=pointer]:
+            - /url: /fr/cookies
+        - generic [ref=e373]:
+          - link "LinkedIn" [ref=e374] [cursor=pointer]:
+            - /url: "#"
+          - link "Twitter" [ref=e375] [cursor=pointer]:
+            - /url: "#"
+          - link "GitHub" [ref=e376] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e382] [cursor=pointer]:
+    - img [ref=e383]
+  - alert [ref=e386]
