@@ -197,7 +197,7 @@
       ]
     },
     "stats": {
-      "title": "Une jeune entreprise à l’empreinte nationale.",
+      "title": "Une jeune entreprise au rayonnement national.",
       "eyebrow": "Instantané · 2026",
       "items": [
         { "label": "Depuis 2023", "value": 2, "suffix": "", "accent": "/ans" },
@@ -356,7 +356,7 @@
     "stack": {
       "eyebrow": "Stack technique",
       "title": "Une boîte à outils ciblée.",
-      "lede": "Nous standardisons sur un petit ensemble de technologies à fort effet de levier · choisies pour leur longévité, leur sécurité et leur exploitabilité · et nous allons en profondeur sur chacune.",
+      "lede": "Nous nous appuyons sur un petit ensemble de technologies à fort levier · choisies pour leur longévité, leur sécurité et leur exploitabilité · et nous les maîtrisons en profondeur.",
       "groups": [
         {
           "heading": "Langages",
@@ -385,7 +385,7 @@
         {
           "number": "02",
           "title": "Finance",
-          "desc": "Paiements, conformité, rails ePaiement."
+          "desc": "Paiements, conformité, infrastructures ePaiement."
         },
         {
           "number": "03",
@@ -395,13 +395,13 @@
         {
           "number": "04",
           "title": "Éducation",
-          "desc": "Plateformes de main-d’œuvre, l’Académie Akieni."
+          "desc": "Plateformes RH et de compétences, l’Académie Akieni."
         }
       ]
     },
     "cta": {
       "eyebrow": "Lancer un projet",
-      "title": "Un mandat qui colle ?",
+      "title": "Un mandat à votre mesure ?",
       "primary": "Démarrer votre projet",
       "secondary": "Voir nos projets",
       "secondaryHref": "/projects"
@@ -427,7 +427,7 @@
       "eyebrow": "Catalogue",
       "titleLine1": "Trois produits.",
       "titleLine2": "Une même rigueur de livraison.",
-      "lede": "Chaque produit Akieni est construit par la même équipe sénior, sur le même socle PKI et opéré avec la même discipline que nos plateformes nationales.",
+      "lede": "Chaque produit Akieni est construit par la même équipe senior, sur le même socle PKI et opéré avec la même discipline que nos plateformes nationales.",
       "items": [
         {
           "slug": "akienipay",
@@ -611,7 +611,7 @@
           "categories": ["government", "health"],
           "client": "Gouvernement du Congo",
           "title": "CAMU · Couverture santé universelle",
-          "desc": "Enrôlement citoyen, réseau de prestataires, sinistres et analyses · pour des millions de bénéficiaires.",
+          "desc": "Enrôlement citoyen, réseau de prestataires, remboursements et analyses · pour des millions de bénéficiaires.",
           "tags": ["Santé", "Laravel", "React", "AWS"],
           "years": "2024 · 2026",
           "statusLabel": "Livraison avancée",
@@ -623,7 +623,7 @@
           "categories": ["social", "government"],
           "client": "CNSS · Sécurité Sociale",
           "title": "CNSS · Gestion documentaire, biométrie & ePaiement",
-          "desc": "GED, biométrie ABIS, rails ePaiement et ERP Odoo pour une sécurité sociale moderne.",
+          "desc": "GED, biométrie ABIS, canaux ePaiement et ERP Odoo pour une sécurité sociale moderne.",
           "tags": ["Social", "GED", "ABIS", "Odoo"],
           "years": "2024 · 2026",
           "statusLabel": "Bientôt terminé",
@@ -645,7 +645,7 @@
       ]
     },
     "cta": {
-      "titleLine1": "Partenons sur",
+      "titleLine1": "Construisons",
       "titleLine2": "la ",
       "titleAccent": "suite.",
       "primary": "Discutons"
@@ -666,9 +666,9 @@
     },
     "story": {
       "eyebrow": "Notre histoire",
-      "title": "D'un petit bureau, un mandat national.",
+      "title": "D'un petit bureau à un mandat national.",
       "paragraphs": [
-        "Akieni a été fondée en 2023 avec une conviction unique : la prochaine décennie de l'Afrique centrale dépend d'une infrastructure numérique construite localement et crédible à l'international · et le talent pour la construire est déjà ici.",
+        "Akieni a été fondée en 2023 avec une seule conviction : la prochaine décennie de l'Afrique centrale dépend d'une infrastructure numérique construite localement et crédible à l'international · et le talent pour la bâtir est déjà ici.",
         "En deux ans, nous sommes passés à une équipe de 45 personnes réparties entre Ingénierie, Livraison, Administration et RH, et avons livré en production trois des plateformes les plus critiques du pays : SFEC pour le Ministère des Finances, CAMU pour la couverture santé universelle, et CNSS pour la sécurité sociale. Chacune a été livrée aux normes équivalentes à ce que l'on trouve à Paris ou à Lagos · par une équipe 100 % africaine, sur les rives du fleuve Congo."
       ],
       "tiles": [
@@ -692,7 +692,7 @@
       "eyebrow": "Ce que nous défendons",
       "titleLine1": "Trois valeurs,",
       "titleLine2": "répétées chaque jour.",
-      "lede": "Les outils, frameworks et clients changent · pas elles. Chaque recrutement, chaque revue d'architecture, chaque feuille de route est filtré à travers elles.",
+      "lede": "Les outils, frameworks et clients changent · pas elles. Chaque recrutement, chaque revue d'architecture, chaque feuille de route passe par leur filtre.",
       "items": [
         {
           "number": "01",
@@ -706,7 +706,7 @@
         },
         {
           "number": "03",
-          "title": "Tech-savvy, portée humain",
+          "title": "Tech-savvy, pilotée par l'humain",
           "desc": "Le logiciel est le levier. Les personnes · clients, citoyens, coéquipiers · sont la finalité."
         }
       ]
@@ -785,7 +785,7 @@
       "titleLine1": "Cinq leads,",
       "titleLine2": "une seule ",
       "titleAccent": "culture de livraison.",
-      "lede": "Une équipe de 45 personnes répartie entre Ingénierie, Livraison, Administration & Finance et Ressources Humaines · pilotée par des opérateurs séniors avec des décennies d'expérience cumulée en livraison de systèmes critiques."
+      "lede": "Une équipe de 45 personnes répartie entre Ingénierie, Livraison, Administration & Finance et Ressources Humaines · pilotée par des opérateurs seniors avec des décennies d'expérience cumulée en livraison de systèmes critiques."
     },
     "leadership": {
       "eyebrow": "Direction",
@@ -807,7 +807,7 @@
         {
           "name": "Sonia Nzimbou",
           "role": "Directrice des Ressources Humaines",
-          "bio": "Possède le tunnel de recrutement, l'entrée à l'Académie, et la culture qui soude l'équipe.",
+          "bio": "Pilote le tunnel de recrutement, l'admission à l'Académie et la culture qui soude l'équipe.",
           "photoLabel": "Sonia Nzimbou · portrait"
         },
         {
@@ -828,7 +828,7 @@
       "eyebrow": "Départements",
       "titleLine1": "Quatre pratiques,",
       "titleLine2": "une seule équipe.",
-      "lede": "Légère, à dominante sénior, et conçue pour la livraison en parallèle sur des mandats à l'échelle nationale.",
+      "lede": "Légère, à dominante senior, et conçue pour la livraison en parallèle sur des mandats à l'échelle nationale.",
       "items": [
         {
           "number": "DÉPT · 01",
@@ -897,13 +897,13 @@
     },
     "bento": {
       "eyebrow": "Mission & vision",
-      "titleLine1": "Le talent",
-      "titleLine2": "en service.",
+      "titleLine1": "Le talent,",
+      "titleLine2": "à la demande.",
       "lede": "Cohorte après cohorte, nous construisons un vivier d'ingénieurs africains opérant aux normes internationales · et nous exportons ce talent régionalement et mondialement via notre modèle Talent-as-a-Service.",
       "mission": {
         "label": "MISSION",
         "title": "Combler le déficit de talents tech en Afrique centrale via des programmes de formation intensifs et orientés production.",
-        "desc": "Nous formons les ingénieurs comme nous aurions voulu l'être · en livrant de vrais systèmes, supervisés par des ingénieurs séniors, aux normes internationales."
+        "desc": "Nous formons les ingénieurs comme nous aurions voulu l'être · en livrant de vrais systèmes, supervisés par des ingénieurs seniors, aux normes internationales."
       },
       "highlight": {
         "label": "COHORTE 1 · 2025",
@@ -935,7 +935,7 @@
       "eyebrow": "Curriculum",
       "titleLine1": "Neuf mois,",
       "titleLine2": "trois phases.",
-      "lede": "Chaque phase est ancrée par un vrai projet livré à un vrai client. Pas d'exercices jouets, pas de capstone théorique · de la production dès la première semaine.",
+      "lede": "Chaque phase est ancrée par un vrai projet livré à un vrai client. Pas d'exercices factices, pas de projet de fin d'études théorique · de la production dès la première semaine.",
       "phases": [
         {
           "phase": "PHASE 01 · MOIS 1–3",
@@ -953,7 +953,7 @@
           "title": "Pratique",
           "items": [
             "Observation de bases de code en prod",
-            "Pair-programming avec des séniors",
+            "Pair-programming avec des seniors",
             "Vrais tickets, vraies PRs",
             "Astreinte (lecture seule)",
             "Séminaires d'architecture"
@@ -1011,7 +1011,7 @@
   "careers": {
     "meta": {
       "title": "Carrières · Akieni",
-      "description": "Construisez des systèmes à l'échelle nationale avec des ingénieurs séniors dans une petite équipe à Brazzaville. Six postes ouverts en Ingénierie, Livraison et Opérations."
+      "description": "Construisez des systèmes à l'échelle nationale avec des ingénieurs seniors dans une petite équipe à Brazzaville. Six postes ouverts en Ingénierie, Livraison et Opérations."
     },
     "hero": {
       "eyebrow": "Carrières",
@@ -1019,14 +1019,14 @@
       "titleLine1": "Construire ce",
       "titleLine2": "qui ",
       "titleAccent": "tourne vraiment.",
-      "lede": "Travaillez sur des systèmes à l'échelle nationale avec des ingénieurs séniors, dans une petite équipe où votre travail est visible et vos décisions comptent.",
+      "lede": "Travaillez sur des systèmes à l'échelle nationale avec des ingénieurs seniors, dans une petite équipe où votre travail est visible et vos décisions comptent.",
       "ctaPrimary": "Voir les postes ouverts",
       "ctaSecondary": "Ou postuler à l'Académie"
     },
     "why": {
       "eyebrow": "Pourquoi Akieni",
       "title": "Trois raisons de rester.",
-      "lede": "Une petite équipe à dominante sénior, travaillant sur des programmes à impact national, depuis une ville dont la plupart de nos collaborateurs sont originaires.",
+      "lede": "Une petite équipe à dominante senior, travaillant sur des programmes à impact national, depuis une ville dont la plupart de nos collaborateurs sont originaires.",
       "items": [
         {
           "number": "01 / IMPACT",
@@ -1035,7 +1035,7 @@
         },
         {
           "number": "02 / MÉTIER",
-          "title": "Équipe à dominante sénior.",
+          "title": "Équipe à dominante senior.",
           "desc": "Des PRs revues par des gens qui ont livré des plateformes nationales. De vraies revues de code. De vraies discussions d'architecture."
         },
         {
@@ -1051,12 +1051,12 @@
         {
           "number": "05 / LIEU",
           "title": "Construit à Brazzaville.",
-          "desc": "Un bureau d'ingénierie moderne sur les rives du Congo. Pas de théâtre de relocalisation · la plupart de nos collaborateurs sont d'ici."
+          "desc": "Un bureau d'ingénierie moderne sur les rives du Congo. Pas de relocalisation compliquée · la plupart de nos collaborateurs sont d'ici."
         },
         {
           "number": "06 / PORTÉE",
           "title": "Régional & international.",
-          "desc": "Le Talent-as-a-Service place des ingénieurs séniors sur des missions internationales sans les déraciner."
+          "desc": "Le Talent-as-a-Service place des ingénieurs seniors sur des missions internationales sans les déraciner."
         }
       ]
     },
@@ -1067,14 +1067,14 @@
       "items": [
         {
           "dept": "INGÉNIERIE",
-          "title": "Ingénieur Backend Sénior · Go",
+          "title": "Ingénieur Backend Senior · Go",
           "loc": "Brazzaville · Sur site",
           "type": "Temps plein",
           "href": "/careers/senior-backend-go"
         },
         {
           "dept": "INGÉNIERIE",
-          "title": "Ingénieur Frontend Sénior · React / TS",
+          "title": "Ingénieur Frontend Senior · React / TS",
           "loc": "Brazzaville · Hybride",
           "type": "Temps plein",
           "href": "/careers/senior-frontend-react"
@@ -1095,7 +1095,7 @@
         },
         {
           "dept": "LIVRAISON",
-          "title": "Chef de Programme Sénior",
+          "title": "Chef de Programme Senior",
           "loc": "Brazzaville · Sur site",
           "type": "Temps plein",
           "href": "/careers/programme-manager"
@@ -1165,14 +1165,14 @@
       "missionLabel": "La mission",
       "responsibilitiesLabel": "Responsabilités",
       "profileLabel": "Votre profil",
-      "stackLabel": "Ce que vous toucherez",
+      "stackLabel": "Votre stack au quotidien",
       "benefitsLabel": "Avantages",
       "benefits": [
-        "Rémunération top-of-market à Brazzaville · grilles transparentes.",
+        "Rémunération au sommet du marché à Brazzaville · grilles transparentes.",
         "Couverture santé pour vous et vos proches.",
         "Budget formation annuel · accès à l'Académie Akieni.",
         "Bureau moderne sur les rives du Congo.",
-        "Pas de course folle · semaines de 40 h, équipe sénior."
+        "Pas de course folle · semaines de 40 h, équipe senior."
       ],
       "applyEyebrow": "Postuler",
       "applyTitle": "Envoyez votre candidature.",
@@ -1214,8 +1214,8 @@
         "dept": "Ingénierie",
         "type": "Temps plein",
         "status": "Recrutement actif",
-        "title": "Ingénieur Backend Sénior · Go",
-        "tagline": "Concevez les systèmes qui font tourner les plateformes nationales (fiscalité, santé, sécurité sociale) · en Go, à l'échelle, avec des pairs séniors.",
+        "title": "Ingénieur Backend Senior · Go",
+        "tagline": "Concevez les systèmes qui font tourner les plateformes nationales (fiscalité, santé, sécurité sociale) · en Go, à l'échelle, avec des pairs seniors.",
         "team": "Ingénierie · Backend",
         "loc": "Brazzaville · Sur site",
         "contract": "Temps plein · CDI",
@@ -1250,7 +1250,7 @@
         "dept": "Ingénierie",
         "type": "Temps plein",
         "status": "Recrutement actif",
-        "title": "Ingénieur Frontend Sénior · React / TS",
+        "title": "Ingénieur Frontend Senior · React / TS",
         "tagline": "Concevez et livrez les front-ends React utilisés par les ministères, régulateurs et des millions de citoyens.",
         "team": "Ingénierie · Frontend",
         "loc": "Brazzaville · Hybride",
@@ -1292,10 +1292,10 @@
         "loc": "Brazzaville · Sur site",
         "contract": "Temps plein · CDI",
         "start": "ASAP · 2026",
-        "mission": "Nous opérons notre propre Kubernetes sur bare metal et sur cloud · avec PKI, GitOps, observabilité et sécurité intégrées. Vous posséderez la plateforme sur laquelle tourne chaque service Akieni.",
+        "mission": "Nous opérons notre propre Kubernetes sur bare metal et sur cloud · avec PKI, GitOps, observabilité et sécurité intégrées. Vous serez responsable de la plateforme sur laquelle tourne chaque service Akieni.",
         "responsibilities": [
           "Opérer et durcir des clusters Kubernetes auto-hébergés en production.",
-          "Posséder le GitOps, les pipelines CI/CD et la plateforme développeur interne.",
+          "Prendre en charge le GitOps, les pipelines CI/CD et la plateforme développeur interne.",
           "Construire l'observabilité, l'alerting et les pratiques de réponse à incident.",
           "Gérer les secrets, la PKI et la politique réseau sur tout le parc.",
           "Maintenir des plateformes nationales disponibles et récupérables."
@@ -1323,14 +1323,14 @@
         "type": "Temps plein",
         "status": "Recrutement actif",
         "title": "Ingénieur Sécurité · PKI / mTLS",
-        "tagline": "Possédez le socle cryptographique des plateformes nationales · autorité de certification, mTLS, sécurité du code et de l'infra.",
+        "tagline": "Pilotez le socle cryptographique des plateformes nationales · autorité de certification, mTLS, sécurité du code et de l'infra.",
         "team": "Ingénierie · Sécurité",
         "loc": "Brazzaville · Sur site",
         "contract": "Temps plein · CDI",
         "start": "ASAP · 2026",
-        "mission": "Akieni exploite une PKI en production pour les opérateurs publics. Vous posséderez les hiérarchies de CA, le déploiement mTLS, la gestion des clés et la posture de sécurité de plateformes qui traitent les données fiscales, de santé et d'identité d'un pays.",
+        "mission": "Akieni exploite une PKI en production pour les opérateurs publics. Vous serez responsable des hiérarchies de CA, du déploiement mTLS, de la gestion des clés et de la posture de sécurité de plateformes qui traitent les données fiscales, de santé et d'identité d'un pays.",
         "responsibilities": [
-          "Posséder la hiérarchie d'autorité de certification et le mTLS sur tous les services.",
+          "Prendre en charge la hiérarchie d'autorité de certification et le mTLS sur tous les services.",
           "Gérer la gestion des clés, l'intégration HSM et la rotation des secrets.",
           "Piloter le threat modelling, les revues de sécurité et la réponse à incident.",
           "Définir et faire appliquer des conventions de plateforme sécurisées par défaut.",
@@ -1357,17 +1357,17 @@
         "dept": "Livraison",
         "type": "Temps plein",
         "status": "Recrutement actif",
-        "title": "Chef de Programme Sénior",
-        "tagline": "Pilotez des programmes à l'échelle nationale du kick-off au transfert · avec des ingénieurs séniors et des parties prenantes ministérielles.",
+        "title": "Chef de Programme Senior",
+        "tagline": "Pilotez des programmes à l'échelle nationale du kick-off au transfert · avec des ingénieurs seniors et des parties prenantes ministérielles.",
         "team": "Livraison",
         "loc": "Brazzaville · Sur site",
         "contract": "Temps plein · CDI",
         "start": "ASAP · 2026",
-        "mission": "Les programmes d'Akieni ont des parties prenantes ministérielles, des budgets fixes et des échéances immuables. Vous posséderez la livraison de bout en bout · comités de pilotage, fournisseurs, risques et la vérité hebdomadaire qui fait avancer tout le monde.",
+        "mission": "Les programmes d'Akieni ont des parties prenantes ministérielles, des budgets fixes et des échéances immuables. Vous piloterez la livraison de bout en bout · comités de pilotage, fournisseurs, risques et le point de vérité hebdomadaire qui fait avancer tout le monde.",
         "responsibilities": [
           "Piloter les programmes du kick-off jusqu'au go-live et au transfert.",
           "Présider les comités de pilotage et gérer les parties prenantes ministérielles.",
-          "Posséder le périmètre, le budget, le registre des risques et le plan de livraison.",
+          "Maîtriser le périmètre, le budget, le registre des risques et le plan de livraison.",
           "Coordonner ingénieurs, fournisseurs et équipes client vers une seule échéance.",
           "Produire le reporting hebdomadaire qui maintient l'alignement."
         ],
@@ -1399,7 +1399,7 @@
         "start": "ASAP · 2026",
         "mission": "La qualité n'est pas une phase chez Akieni · c'est une pratique continue. Vous la piloterez sur les plateformes · stratégie d'automatisation, tests de performance, et le process qualité auquel chaque équipe travaille.",
         "responsibilities": [
-          "Définir et posséder la stratégie qualité sur tous les programmes.",
+          "Définir et porter la stratégie qualité sur tous les programmes.",
           "Construire des suites de tests automatisés et des harnais de tests de performance.",
           "Intégrer des portes qualité dans le pipeline CI/CD.",
           "Coacher ingénieurs et diplômés de l'Académie sur la pratique des tests.",
@@ -1483,7 +1483,7 @@
         "eyebrow": "Stack technique",
         "titleLine1": "Conçu pour une décennie",
         "titleLine2": "d'exploitation.",
-        "lede": "Les choix technologiques ont été faits sur l'exploitabilité et la longévité · Go pour les chemins chauds backend, Postgres pour l'état, Kubernetes pour l'orchestration, clés matérielles pour la PKI.",
+        "lede": "Les choix technologiques ont été faits sur l'exploitabilité et la longévité · Go pour les chemins critiques du backend, Postgres pour l'état, Kubernetes pour l'orchestration, clés matérielles pour la PKI.",
         "groups": [
           {
             "heading": "Backend & données",
@@ -1512,7 +1512,7 @@
           },
           {
             "num": "↓ fraude",
-            "desc": "Réductions matérielles de la fraude et des fuites de recettes."
+            "desc": "Réductions significatives de la fraude et des fuites de recettes."
           }
         ]
       },
@@ -1551,8 +1551,8 @@
         "eyebrow": "Défi",
         "title": "Couverture universelle, de l'enrôlement au remboursement.",
         "paragraphs": [
-          "Étendre la couverture santé à des millions de personnes implique de gérer l'enrôlement citoyen, un réseau de prestataires, les sinistres et les paiements · le tout à l'échelle nationale, auditable, en temps réel.",
-          "La plateforme devait intégrer des citoyens n'ayant jamais eu de dossier de santé numérique, tout en offrant à l'État un pipeline de sinistres défendable et résistant à la fraude dès le premier jour."
+          "Étendre la couverture santé à des millions de personnes implique de gérer l'enrôlement citoyen, un réseau de prestataires, les remboursements et les paiements · le tout à l'échelle nationale, auditable, en temps réel.",
+          "La plateforme devait intégrer des citoyens n'ayant jamais eu de dossier de santé numérique, tout en offrant à l'État un circuit de remboursement défendable et résistant à la fraude dès le premier jour."
         ]
       },
       "solution": {
@@ -1562,7 +1562,7 @@
         "items": [
           "Enrôlement citoyen & identité",
           "Gestion du réseau de prestataires de santé",
-          "Traitement et arbitrage des sinistres",
+          "Traitement et instruction des remboursements",
           "Systèmes de paiement & rapprochement",
           "Reporting, analytics & signaux de fraude"
         ],
@@ -1576,7 +1576,7 @@
             "image": "/images/african-american-nurse-using-digital-tablet-treatment-black-medical-assistant-looking-screen-device-while-wearing-uniform-stethoscope-doctors-office-healthcare.jpg"
           },
           {
-            "label": "Pipeline de sinistres",
+            "label": "Circuit de remboursement",
             "image": "/images/african-nurse-surgeon-doctor-medical-uniform-analyzing-illness-symptom-working-hospital-ward.jpg"
           }
         ]
@@ -1610,11 +1610,11 @@
           },
           {
             "num": "Temps réel",
-            "desc": "Arbitrage des sinistres et règlement des prestataires."
+            "desc": "Instruction des remboursements et règlement des prestataires."
           },
           {
             "num": "↓ fraude",
-            "desc": "Signaux de fraude intégrés au pipeline de sinistres dès le départ."
+            "desc": "Signaux de fraude intégrés au circuit de remboursement dès le départ."
           }
         ]
       },
@@ -1663,7 +1663,7 @@
       "solution": {
         "eyebrow": "Solution",
         "title": "Cinq systèmes, un programme.",
-        "lede": "Nous avons intégré des systèmes best-of-breed en une pile de sécurité sociale unique et observable.",
+        "lede": "Nous avons intégré les meilleurs produits du marché en une plateforme de sécurité sociale unique et observable.",
         "items": [
           "GED · gestion électronique de documents",
           "Identification biométrique (ABIS) des cotisants",
@@ -1690,7 +1690,7 @@
         "eyebrow": "Stack technique",
         "titleLine1": "Best-of-breed,",
         "titleLine2": "intégré.",
-        "lede": "Là où des produits matures battent le sur-mesure, nous avons intégré · GED, un ABIS, des rails ePaiement et Odoo · derrière un seul socle observable et sécurisé.",
+        "lede": "Là où des produits matures l'emportent sur le développement sur-mesure, nous avons intégré · GED, un ABIS, des canaux ePaiement et Odoo · derrière un seul socle observable et sécurisé.",
         "groups": [
           {
             "heading": "Intégration & données",
@@ -1884,7 +1884,7 @@
       },
       "features": {
         "eyebrow": "Fonctionnalités",
-        "title": "Ce qui est inclus dans la box.",
+        "title": "Ce que contient la solution.",
         "lede": "Pas seulement un agrégateur : tout ce qu'il faut pour piloter, rapprocher et auditer vos encaissements à grande échelle.",
         "items": [
           {
@@ -2069,7 +2069,7 @@
       },
       "features": {
         "eyebrow": "Fonctionnalités",
-        "title": "Ce qui est inclus dans la box.",
+        "title": "Ce que contient la solution.",
         "lede": "Pas juste des points sur une carte : la boîte à outils complète pour gérer une flotte en sécurité, à moindre coût et de façon responsable.",
         "items": [
           {
@@ -2107,7 +2107,7 @@
       "flow": {
         "eyebrow": "Fonctionnement",
         "title": "De l'installation à l'analyse.",
-        "lede": "Nous posons le matériel, vous regardez la console. Tout est diffusé en direct et atterrit dans vos rapports.",
+        "lede": "Nous posons le matériel, vous regardez la console. Tout est diffusé en direct et se retrouve dans vos rapports.",
         "steps": [
           {
             "num": "01 / POSE",
@@ -2178,7 +2178,7 @@
       "related": {
         "eyebrow": "Autres produits",
         "title": "Explorez le catalogue Akieni.",
-        "lede": "CarTracking partage les mêmes APIs, le même SSO et la même coque de console que le reste du catalogue.",
+        "lede": "CarTracking partage les mêmes APIs, le même SSO et la même interface de console que le reste du catalogue.",
         "items": [
           {
             "slug": "akienipay",
@@ -2254,7 +2254,7 @@
       },
       "features": {
         "eyebrow": "Fonctionnalités",
-        "title": "Ce qui est inclus dans la box.",
+        "title": "Ce que contient la solution.",
         "lede": "Une pile d'identité de bout en bout · capturer, matcher, stocker et auditer · conçue pour des déploiements réglementés et souverains.",
         "items": [
           {
@@ -2404,7 +2404,7 @@
         { "label": "Pratique", "value": "01 sur 04" },
         {
           "label": "Modèle de livraison",
-          "value": "Intégré · Piloté par des séniors"
+          "value": "Intégré · Piloté par des seniors"
         },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
@@ -2412,7 +2412,7 @@
         "eyebrow": "Ce que nous faisons",
         "title": "Un mandat clair.",
         "paragraphs": [
-          "Nous travaillons aux côtés de votre direction pour concevoir et exécuter une transformation qui aboutit réellement en production · pas dans un classeur. Chaque mission part du modèle opérationnel et se termine par un système en production, doté en personnel et adopté."
+          "Nous travaillons aux côtés de votre direction pour concevoir et exécuter une transformation qui aboutit réellement en production · pas dans un classeur. Chaque mission part du modèle opérationnel et se termine par un système en production, opéré par ses équipes et réellement adopté."
         ]
       },
       "benefits": {
@@ -2427,7 +2427,7 @@
           },
           {
             "num": "02",
-            "title": "Continuité sénior",
+            "title": "Continuité senior",
             "desc": "Les consultants leads rencontrés au jour un sont les mêmes au jour 365."
           },
           {
@@ -2499,17 +2499,17 @@
     "software-development": {
       "meta": {
         "title": "Développement logiciel · Akieni",
-        "description": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs séniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes."
+        "description": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs seniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes."
       },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 02 / 04",
       "title": "Développement logiciel.",
-      "lede": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs séniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes · pour des systèmes qui doivent tourner.",
+      "lede": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs seniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes · pour des systèmes qui doivent tourner.",
       "overview": [
         { "label": "Pratique", "value": "02 sur 04" },
         {
           "label": "Modèle de livraison",
-          "value": "Intégré · Piloté par des séniors"
+          "value": "Intégré · Piloté par des seniors"
         },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
@@ -2532,13 +2532,13 @@
           },
           {
             "num": "02",
-            "title": "Ingénierie sénior",
-            "desc": "La plupart des missions comptent au moins un sénior Akieni sur l'architecture et un sur les opérations."
+            "title": "Ingénierie senior",
+            "desc": "La plupart des missions comptent au moins un senior Akieni sur l'architecture et un sur les opérations."
           },
           {
             "num": "03",
             "title": "Normes internationales",
-            "desc": "PKI, mTLS, HSM, logs structurés, OpenAPI, traçabilité · ce sont des défauts, pas des extras."
+            "desc": "PKI, mTLS, HSM, logs structurés, OpenAPI, traçabilité · c'est la norme par défaut, pas une option."
           },
           {
             "num": "04",
@@ -2614,7 +2614,7 @@
         { "label": "Pratique", "value": "03 sur 04" },
         {
           "label": "Modèle de livraison",
-          "value": "Intégré · Piloté par des séniors"
+          "value": "Intégré · Piloté par des seniors"
         },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
@@ -2622,8 +2622,8 @@
         "eyebrow": "Ce que nous faisons",
         "title": "Un mandat clair.",
         "paragraphs": [
-          "L'essentiel de la douleur des entreprises ne se trouve pas dans un seul système · mais dans les coutures entre eux. Nous nous spécialisons dans ces coutures : identité, paiements, gestion documentaire, ERP, et les pipelines de données qui les lient.",
-          "Là où le meilleur du marché bat le sur-mesure, nous intégrons. Là où la couture elle-même est le produit, nous la concevons nous-mêmes."
+          "L'essentiel des difficultés des entreprises ne vient pas d'un seul système · mais des jonctions entre eux. Nous nous spécialisons dans ces jonctions : identité, paiements, gestion documentaire, ERP, et les pipelines de données qui les relient.",
+          "Là où le meilleur du marché l'emporte sur le sur-mesure, nous intégrons. Là où la jonction elle-même est le produit, nous la concevons nous-mêmes."
         ]
       },
       "benefits": {
@@ -2639,7 +2639,7 @@
           {
             "num": "02",
             "title": "Idempotence par défaut",
-            "desc": "Replays, retries et rapprochements font partie du contrat, pas d'une réflexion après coup."
+            "desc": "Replays, retries et rapprochements font partie du contrat, pas d'un ajout de dernière minute."
           },
           {
             "num": "03",
@@ -2710,17 +2710,17 @@
     "consulting": {
       "meta": {
         "title": "Conseil & PM · Akieni",
-        "description": "Conseil sénior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu et multi-parties prenantes."
+        "description": "Conseil senior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu et multi-parties prenantes."
       },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 04 / 04",
       "title": "Conseil & PM.",
-      "lede": "Conseil sénior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu, multi-parties prenantes, qui demandent une main ferme.",
+      "lede": "Conseil senior et gestion de programmes intégrés à votre équipe · pour les mandats à fort enjeu, multi-parties prenantes, qui demandent une main ferme.",
       "overview": [
         { "label": "Pratique", "value": "04 sur 04" },
         {
           "label": "Modèle de livraison",
-          "value": "Intégré · Piloté par des séniors"
+          "value": "Intégré · Piloté par des seniors"
         },
         { "label": "Langues", "value": "Français · Anglais" }
       ],
@@ -2738,7 +2738,7 @@
         "items": [
           {
             "num": "01",
-            "title": "Séniors uniquement",
+            "title": "Seniors uniquement",
             "desc": "Pas de consultants juniors. Le lead nommé est celui présent en réunion."
           },
           {
@@ -2748,7 +2748,7 @@
           },
           {
             "num": "03",
-            "title": "Ancré sur les résultats",
+            "title": "Ancré dans les résultats",
             "desc": "Chaque mission a un résultat mesurable dès le jour zéro."
           },
           {
@@ -2777,7 +2777,7 @@
           {
             "num": "03 / Piloter",
             "title": "Piloter.",
-            "desc": "Présidence du comité de pilotage, gestion des fournisseurs, comm hebdomadaire."
+            "desc": "Présidence du comité de pilotage, gestion des fournisseurs, communication hebdomadaire."
           },
           {
             "num": "04 / Transférer",
@@ -2816,13 +2816,13 @@
   "contact": {
     "meta": {
       "title": "Contact · Akieni",
-      "description": "Parlez-nous de votre programme. Nous répondons sous deux jours ouvrés, en français ou en anglais, et orientons les demandes sérieuses directement vers un lead sénior."
+      "description": "Parlez-nous de votre programme. Nous répondons sous deux jours ouvrés, en français ou en anglais, et orientons les demandes sérieuses directement vers un lead senior."
     },
     "eyebrow": "Contact",
     "caption": "05 / NOUS CONTACTER",
     "titleLead": "Entrons en ",
     "titleAccent": "contact.",
-    "lede": "Parlez-nous de votre programme. Nous répondons sous deux jours ouvrés, en français ou en anglais, et orientons les demandes sérieuses directement vers un lead sénior.",
+    "lede": "Parlez-nous de votre programme. Nous répondons sous deux jours ouvrés, en français ou en anglais, et orientons les demandes sérieuses directement vers un lead senior.",
     "form": {
       "name": "Nom",
       "namePlaceholder": "Nom complet",
