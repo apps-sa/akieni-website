@@ -16,14 +16,15 @@
       "counterSuffix": "éléments",
       "allLabel": "Tous",
       "stageLabels": { "live": "En production", "beta": "Bêta", "rnd": "R&D", "internal": "Interne" },
-      "emptyLabel": "Rien ici pour l'instant."
+      "emptyLabel": "Rien ici pour l'instant.",
+      "linkLabel": "Ouvrir"
     },
     "items": [
-      { "id": "akienipay", "title": "AkieniPay", "brief": "Paiements mobile money, carte et espèces avec réconciliation automatique — en production à travers le Congo.", "link": "https://www.akieni.com/fr/products/akienipay", "stage": "live", "categories": ["Fintech", "Paiements"], "image": null, "mediaLabel": "AkieniPay" },
-      { "id": "cartracking", "title": "CarTracking", "brief": "Suivi de flotte en temps réel — GPS, géorepérage et comportement de conduite pour flottes publiques et privées.", "link": "https://www.akieni.com/fr/products/cartracking", "stage": "live", "categories": ["IoT", "Logistique"], "image": null, "mediaLabel": "CarTracking" },
-      { "id": "biometrie", "title": "Biometrie", "brief": "Identification biométrique multimodale — empreinte, visage et iris — aux normes ANSSI / ICAO.", "link": "https://www.akieni.com/fr/products/biometrie", "stage": "live", "categories": ["Identité", "Sécurité"], "image": null, "mediaLabel": "Biometrie" },
-      { "id": "ged", "title": "GED — Gestion documentaire", "brief": "Gestion électronique et archivage de documents pour les administrations publiques. En bêta privée.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": null, "mediaLabel": "GED" },
-      { "id": "ai-assistant", "title": "Assistant de service", "brief": "Un assistant IA pour les services aux citoyens, ancré dans la connaissance du secteur public. Prototype de recherche.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["IA", "Services publics"], "image": null, "mediaLabel": "Assistant de service" }
+      { "id": "akienipay", "title": "AkieniPay", "brief": "Paiements mobile money, carte et espèces avec réconciliation automatique — en production à travers le Congo. Une seule intégration pour les encaissements, les versements et le règlement, sécurisée aux normes PCI-DSS.", "link": "https://www.akieni.com/fr/products/akienipay", "stage": "live", "categories": ["Fintech", "Paiements"], "image": null, "mediaLabel": "AkieniPay" },
+      { "id": "cartracking", "title": "CarTracking", "brief": "Suivi de flotte en temps réel avec GPS, géorepérage et score de conduite pour flottes publiques et privées. Cartes en direct, historique des trajets et alertes instantanées, déployés à l'échelle nationale.", "link": "https://www.akieni.com/fr/products/cartracking", "stage": "live", "categories": ["IoT", "Logistique"], "image": null, "mediaLabel": "CarTracking" },
+      { "id": "biometrie", "title": "Biometrie", "brief": "Identification biométrique multimodale — empreinte, visage et iris — aux normes ANSSI / ICAO. Enrôlement, déduplication et correspondance 1:N pour les programmes d'identité à l'échelle nationale.", "link": "https://www.akieni.com/fr/products/biometrie", "stage": "live", "categories": ["Identité", "Sécurité"], "image": null, "mediaLabel": "Biometrie" },
+      { "id": "ged", "title": "GED — Gestion documentaire", "brief": "Gestion électronique et archivage de documents pour les administrations publiques : capture, classement, recherche et conservation à grande échelle. Actuellement en bêta privée avec des ministères pilotes.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": null, "mediaLabel": "GED" },
+      { "id": "ai-assistant", "title": "Assistant de service", "brief": "Un assistant IA pour les services aux citoyens, ancré dans une connaissance vérifiée du secteur public. Un prototype de recherche explorant la recherche d'information, les réponses multilingues et la supervision humaine.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["IA", "Services publics"], "image": null, "mediaLabel": "Assistant de service" }
     ],
     "cta": {
       "primary": "Nous contacter",

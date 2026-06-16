@@ -1,6 +1,4 @@
 import { MotionCard } from "@/components/motion/primitives";
-import { BlurImage } from "@/components/shared/blur-image";
-import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Tag } from "@/components/shared/tag";
 import type { ShowcaseItem } from "@/lib/queries/showcaseItems";
 
@@ -43,10 +41,12 @@ function hostnameOf(url: string): string {
 export function ShowcaseCard({
   item,
   stageLabel,
+  linkLabel,
   surface = "paper",
 }: Readonly<{
   item: ShowcaseItem;
   stageLabel: string;
+  linkLabel: string;
   surface?: "paper" | "dark";
 }>) {
   const isDark = surface === "dark";
@@ -58,7 +58,9 @@ export function ShowcaseCard({
       : "bg-white border-line-light text-black hover:border-black",
   ].join(" ");
 
-  const briefCls = isDark ? "text-md text-muted-2" : "text-md text-muted";
+  const briefCls = isDark
+    ? "text-md leading-relaxed text-muted-2"
+    : "text-md leading-relaxed text-muted";
   const footBorderCls = isDark ? "border-line" : "border-line-light";
   const footTextCls = isDark ? "text-muted-2" : "text-muted";
 
@@ -70,34 +72,18 @@ export function ShowcaseCard({
         rel="noopener noreferrer"
         className="flex flex-1 flex-col"
       >
-        {item.image ? (
-          <div className="relative aspect-[4/3] w-full overflow-hidden">
-            <BlurImage
-              src={item.image}
-              alt={item.mediaLabel ?? item.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-        ) : (
-          <PlaceholderMedia
-            aspect="4/3"
-            surface={isDark ? "dark" : "light"}
-            label={item.mediaLabel ?? item.title}
-          />
-        )}
+        <div className="flex flex-1 flex-col gap-s4 p-[1.8rem]">
+          <StagePill stage={item.stage} label={stageLabel} isDark={isDark} />
 
-        <div className="flex flex-1 flex-col gap-s3 p-[1.6rem_1.6rem_1.8rem]">
-          <div className="flex items-start justify-between gap-s4">
-            <h3 className="text-2xl font-bold leading-[1.05] tracking-[-0.02em]">
+          <div className="flex flex-col gap-s3">
+            <h3 className="text-[1.6rem] font-bold leading-[1.1] tracking-[-0.02em]">
               {item.title}
             </h3>
-            <StagePill stage={item.stage} label={stageLabel} isDark={isDark} />
+            {item.brief && <p className={briefCls}>{item.brief}</p>}
           </div>
-          {item.brief && <p className={briefCls}>{item.brief}</p>}
+
           {item.categories.length > 0 && (
-            <div className="flex flex-wrap gap-[0.4rem]">
+            <div className="mt-auto flex flex-wrap gap-[0.4rem]">
               {item.categories.map((c) => (
                 <Tag key={c} surface={isDark ? "dark" : "light"}>
                   {c}
@@ -109,18 +95,16 @@ export function ShowcaseCard({
 
         <div
           className={[
-            "flex items-center justify-between border-t px-[1.6rem] py-[1rem] font-mono text-xs uppercase tracking-[0.12em]",
+            "flex items-center justify-between border-t px-[1.8rem] py-[1rem] font-mono text-xs uppercase tracking-[0.12em]",
             footBorderCls,
             footTextCls,
           ].join(" ")}
         >
           <span className="truncate">{hostnameOf(item.link)}</span>
-          <span className="sr-only"> (opens in a new tab)</span>
-          <span
-            aria-hidden
-            className="ml-2 shrink-0 text-cyan-teal transition-transform duration-2 ease-akieni group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-          >
-            ↗
+          <span className="ml-2 flex shrink-0 items-center gap-[0.35rem] text-cyan-teal transition-transform duration-2 ease-akieni group-hover:translate-x-0.5">
+            {linkLabel}
+            <span aria-hidden>↗</span>
+            <span className="sr-only"> (opens in a new tab)</span>
           </span>
         </div>
       </a>

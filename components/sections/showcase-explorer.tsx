@@ -10,6 +10,7 @@ export type ShowcaseExplorerStrings = {
   allLabel: string;
   stageLabels: Record<string, string>;
   emptyLabel: string;
+  linkLabel: string;
 };
 
 // Tab order; only stages actually present in the data are shown.
@@ -82,6 +83,7 @@ export function ShowcaseExplorer({
               key={item.id}
               item={item}
               stageLabel={strings.stageLabels[item.stage] ?? item.stage}
+              linkLabel={strings.linkLabel}
               surface="paper"
             />
           ))}

@@ -16,14 +16,15 @@
       "counterSuffix": "items",
       "allLabel": "All",
       "stageLabels": { "live": "Live", "beta": "Beta", "rnd": "R&D", "internal": "Internal" },
-      "emptyLabel": "Nothing here yet."
+      "emptyLabel": "Nothing here yet.",
+      "linkLabel": "Open"
     },
     "items": [
-      { "id": "akienipay", "title": "AkieniPay", "brief": "Mobile money, card and cash payments with automatic reconciliation — live across the Congo.", "link": "https://www.akieni.com/en/products/akienipay", "stage": "live", "categories": ["Fintech", "Payments"], "image": null, "mediaLabel": "AkieniPay" },
-      { "id": "cartracking", "title": "CarTracking", "brief": "Real-time fleet tracking — GPS, geofencing and driver behaviour for corporate and public fleets.", "link": "https://www.akieni.com/en/products/cartracking", "stage": "live", "categories": ["IoT", "Logistics"], "image": null, "mediaLabel": "CarTracking" },
-      { "id": "biometrie", "title": "Biometrie", "brief": "Multi-modal biometric identification — fingerprint, face and iris — to ANSSI / ICAO grade.", "link": "https://www.akieni.com/en/products/biometrie", "stage": "live", "categories": ["Identity", "Security"], "image": null, "mediaLabel": "Biometrie" },
-      { "id": "ged", "title": "GED — Document Management", "brief": "Electronic document management and archival for public administrations. In private beta.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": null, "mediaLabel": "GED" },
-      { "id": "ai-assistant", "title": "Service Assistant", "brief": "An AI assistant for citizen services, grounded in public-sector knowledge. Early research prototype.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["AI", "Public services"], "image": null, "mediaLabel": "Service Assistant" }
+      { "id": "akienipay", "title": "AkieniPay", "brief": "Mobile money, card and cash payments with automatic reconciliation — live across the Congo. One integration covers collections, payouts and settlement, secured to PCI-DSS standards.", "link": "https://www.akieni.com/en/products/akienipay", "stage": "live", "categories": ["Fintech", "Payments"], "image": null, "mediaLabel": "AkieniPay" },
+      { "id": "cartracking", "title": "CarTracking", "brief": "Real-time fleet tracking with GPS, geofencing and driver-behaviour scoring for corporate and public fleets. Live maps, trip history and instant alerts, deployed nationwide.", "link": "https://www.akieni.com/en/products/cartracking", "stage": "live", "categories": ["IoT", "Logistics"], "image": null, "mediaLabel": "CarTracking" },
+      { "id": "biometrie", "title": "Biometrie", "brief": "Multi-modal biometric identification — fingerprint, face and iris — built to ANSSI / ICAO grade. Enrolment, deduplication and 1:N matching for national-scale identity programmes.", "link": "https://www.akieni.com/en/products/biometrie", "stage": "live", "categories": ["Identity", "Security"], "image": null, "mediaLabel": "Biometrie" },
+      { "id": "ged", "title": "GED — Document Management", "brief": "Electronic document management and archival for public administrations: capture, classify, search and retain at scale. Currently in private beta with pilot ministries.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": null, "mediaLabel": "GED" },
+      { "id": "ai-assistant", "title": "Service Assistant", "brief": "An AI assistant for citizen services, grounded in verified public-sector knowledge. An early research prototype exploring retrieval, multilingual answers and human-in-the-loop review.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["AI", "Public services"], "image": null, "mediaLabel": "Service Assistant" }
     ],
     "cta": {
       "primary": "Get in touch",
