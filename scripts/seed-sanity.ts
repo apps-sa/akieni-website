@@ -521,6 +521,41 @@ async function seedHomeCredo() {
   console.log(`  ✓ homeCredo (${enCredo.attribution})`);
 }
 
+// ── 9. Showcase items ─────────────────────────────────────────────────────────
+
+async function seedShowcaseItems() {
+  console.log("\n✨ Seeding showcase items...");
+  const enItems: Array<{
+    id: string; title: string; brief: string; link: string;
+    stage: string; categories: string[]; image?: string; mediaLabel?: string;
+  }> = en.showcase?.items ?? [];
+  const frItems: typeof enItems = fr.showcase?.items ?? [];
+
+  for (let i = 0; i < enItems.length; i++) {
+    const e = enItems[i];
+    const f = frItems[i] ?? ({} as typeof e);
+
+    let imageRef = null;
+    if (e.image) imageRef = await uploadImage(e.image);
+
+    const doc = {
+      _id: `showcaseItem-${e.id}`,
+      _type: "showcaseItem",
+      title: localeStr(e.title, f.title ?? e.title),
+      brief: localeStr(e.brief, f.brief ?? e.brief),
+      link: e.link,
+      stage: e.stage,
+      categories: e.categories ?? [],
+      image: imageRef ? { _type: "image", asset: imageRef, alt: e.mediaLabel ?? e.title } : undefined,
+      isPublished: true,
+      order: i + 1,
+    };
+
+    await client.createOrReplace(doc);
+    console.log(`  ✓ ${e.id}`);
+  }
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -545,6 +580,7 @@ async function main() {
   await seedDepartments();
   await seedSiteSettings();
   await seedHomeCredo();
+  await seedShowcaseItems();
 
   console.log("\n✅ Seed complete! Open your Sanity studio to verify the data.");
   console.log("   Remember to remove SANITY_API_WRITE_TOKEN from .env.local after seeding.");

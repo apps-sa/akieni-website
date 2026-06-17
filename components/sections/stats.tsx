@@ -16,9 +16,9 @@ export function Stats({
         </h2>
         <Eyebrow>{strings.eyebrow}</Eyebrow>
       </div>
-      <div className="grid grid-cols-2 gap-0 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-0 lg:grid-cols-3">
         {strings.items.map((item, i) => {
-          const isLastCol = (i + 1) % 4 === 0;
+          const isLastCol = (i + 1) % 3 === 0;
           return (
             <div
               key={item.label}

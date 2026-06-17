@@ -105,12 +105,14 @@ export function buildMetadata({
   title,
   description,
   keywords,
+  robots,
 }: {
   lang: Locale;
   pathWithoutLocale: string;
   title: string;
   description: string;
   keywords?: string[];
+  robots?: Metadata["robots"];
 }): Metadata {
   const clean = pathWithoutLocale === "/" ? "" : pathWithoutLocale;
   const canonical = `${SITE.url}/${lang}${clean}`;
@@ -137,5 +139,6 @@ export function buildMetadata({
       title,
       description,
     },
+    ...(robots && { robots }),
   };
 }

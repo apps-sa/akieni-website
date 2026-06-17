@@ -127,7 +127,6 @@ export function MobileMenu({
         <div className="mt-auto flex flex-col gap-s4 pt-s6">
           <div className="flex items-center justify-between gap-s3 font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
             <span>{strings.location}</span>
-            <span>{strings.est}</span>
           </div>
           <div className="flex items-center justify-between gap-s3 font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
             <span>{strings.languageLabel}</span>
