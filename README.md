@@ -277,6 +277,7 @@ That's the whole pipeline.
 The shared chrome (Header + MobileMenu + Footer + LanguageSwitcher + i18n plumbing) is complete. Page ports are in progress — each legacy `.html` is being rewritten as an idiomatic Server Component under `app/[lang]/`.
 
 
+
 ## License
 
 © Akieni. All rights reserved.
