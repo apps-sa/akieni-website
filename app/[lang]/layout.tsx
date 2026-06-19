@@ -12,6 +12,7 @@ import { getSiteSettings } from "@/lib/queries/siteSettings";
 import { SITE } from "@/lib/seo";
 import { getDictionary, hasLocale, LOCALES } from "./dictionaries";
 import { Analytics } from "@vercel/analytics/react";
+import { Matomo } from "@/components/analytics/matomo";
 
 export const revalidate = 60;
 
@@ -77,6 +78,7 @@ export default async function LangLayout({
           <Footer lang={lang} strings={dict.footer} siteSettings={siteSettings} />
         </LazyMotionProvider>
         <Analytics />
+        <Matomo />
       </body>
     </html>
   );
