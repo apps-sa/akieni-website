@@ -3248,9 +3248,9 @@
         { "label": "Cookies", "href": "/cookies" }
       ],
       "social": [
-        { "label": "LinkedIn", "href": "#" },
-        { "label": "Twitter", "href": "#" },
-        { "label": "GitHub", "href": "#" }
+        { "label": "LinkedIn", "href": "https://www.linkedin.com/company/akienilog" },
+        { "label": "Facebook", "href": "https://www.facebook.com/akieniofficiel" },
+        { "label": "Instagram", "href": "https://www.instagram.com/akien.i/" }
       ]
     }
   }
