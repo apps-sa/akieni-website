@@ -70,7 +70,7 @@
       "deployingText": "Infrastructure fiscale SFEC, couverture santé universelle CAMU, biométrie & ePaiement CNSS.",
       "stats": {
         "projects": { "label": "PROJETS", "value": "12+" },
-        "team": { "label": "ÉQUIPE", "value": "45+" },
+        "team": { "label": "ÉQUIPE", "value": "50+" },
         "sectors": { "label": "SECTEURS", "value": "4" }
       }
     },
@@ -88,7 +88,7 @@
       "eyebrow": "Ce que nous faisons",
       "titleLine1": "Quatre pratiques,",
       "titleLine2": "un seul mandat.",
-      "lede": "De la stratégie au déploiement, nous livrons des logiciels à l’échelle nationale. Chaque pratique est portée par des talents locaux seniors aux normes internationales.",
+      "lede": "De la stratégie au déploiement, nous livrons des logiciels à l’échelle nationale. Chaque pratique est portée par des talents locaux seniors, aux normes internationales.",
       "all": "Tous les services",
       "items": [
         {
@@ -106,7 +106,7 @@
           "tags": ["Backend", "Frontend", "Plateformes"]
         },
         {
-          "id": "integration",
+          "id": "software-integration",
           "number": "03 / Pratique",
           "title": "Intégration logicielle",
           "desc": "Relier des systèmes fragmentés en flux de données unifiés et observables · biométrie, paiements, ERP, GED.",
@@ -144,7 +144,7 @@
           "size": "sm",
           "client": "Gouvernement du Congo",
           "title": "CAMU · Couverture santé universelle",
-          "tags": ["Santé", "Laravel", "React"],
+          "tags": ["Santé", "Python", "React"],
           "years": "2024 · 2026",
           "statusLabel": "Livraison avancée",
           "mediaLabel": "CAMU · Plateforme santé · Capture",
@@ -157,10 +157,24 @@
           "title": "Gestion documentaire, biométrie et ePaiement pour la sécurité sociale.",
           "tags": ["GED", "ABIS", "Odoo", "Kubernetes"],
           "years": "",
-          "statusLabel": "Bientôt terminé",
+          "statusLabel": "En voie d'achèvement",
           "mediaLabel": "CNSS · Sécurité sociale · Visuel large",
           "image": "/images/medium-shot-students-library.jpg"
         }
+      ]
+    },
+    "clients": {
+      "eyebrow": "Ils nous font confiance",
+      "title": "Les institutions au cœur de l'Afrique centrale nous font confiance.",
+      "items": [
+        { "name": "CNSS", "tag": "Sécurité sociale", "image": null, "website": null },
+        { "name": "ARPCE", "tag": "Rég. télécom", "image": null, "website": null },
+        { "name": "DGDDI", "tag": "Douanes", "image": null, "website": null },
+        { "name": "Trésor", "tag": "Trésorerie", "image": null, "website": null },
+        { "name": "ANINF", "tag": "Agence numérique", "image": null, "website": null },
+        { "name": "CNAMGS", "tag": "Ass. maladie", "image": null, "website": null },
+        { "name": "Gabon Télécom", "tag": "Opérateur", "image": null, "website": null },
+        { "name": "Min. Intérieur", "tag": "Ministère", "image": null, "website": null }
       ]
     },
     "products": {
@@ -182,7 +196,7 @@
             "Conforme PCI-DSS / BEAC"
           ],
           "model": "SaaS · 2024 →",
-          "chip": "En production",
+          "chip": "",
           "chipVariant": "default",
           "mark": "A·PAY",
           "mediaLabel": "AkieniPay · Console",
@@ -201,7 +215,7 @@
             "Rapports carburant & conduite"
           ],
           "model": "SaaS · 2023 →",
-          "chip": "En production",
+          "chip": "",
           "chipVariant": "green",
           "mark": "CAR·",
           "mediaLabel": "CarTracking · Vue carte",
@@ -220,7 +234,7 @@
             "On-prem · données souveraines"
           ],
           "model": "On-prem · 2025 →",
-          "chip": "Aperçu",
+          "chip": "",
           "chipVariant": "blue",
           "mark": "BIO·",
           "mediaLabel": "Biometrie · Capture",
@@ -233,13 +247,9 @@
       "title": "Une entreprise au rayonnement national.",
       "eyebrow": "Instantané · 2026",
       "items": [
-        { "label": "Employés", "value": 45, "suffix": "+", "accent": "" },
-        {
-          "label": "Équipe africaine",
-          "value": 100,
-          "suffix": "%",
-          "accent": ""
-        },
+        { "label": "Depuis 2023", "value": 2, "suffix": "", "accent": "/ans" },
+        { "label": "Employés", "value": 50, "suffix": "+", "accent": "" },
+        { "label": "Équipe africaine", "value": 100, "suffix": "%", "accent": "" },
         { "label": "Départements", "value": 4, "suffix": "", "accent": "" }
       ]
     },
@@ -324,14 +334,14 @@
           "title": "Développement logiciel",
           "desc": "Plateformes sur mesure conçues aux normes internationales · des services backend et APIs aux front-ends React, sur une infrastructure Kubernetes.",
           "bullets": [
-            "Systèmes backend (Go, Laravel, Node)",
+            "Systèmes backend (Go, Python, Node)",
             "Front-ends (React, TypeScript)",
             "Ingénierie plateforme & DevOps",
             "Sécurité & PKI"
           ]
         },
         {
-          "slug": "integration",
+          "slug": "software-integration",
           "number": "03 / Pratique",
           "title": "Intégration logicielle",
           "desc": "Nous transformons des systèmes fragmentés en flux de données unifiés · paiements, biométrie, GED, ERP · avec l’observabilité dont les opérateurs ont besoin.",
@@ -392,7 +402,7 @@
       "groups": [
         {
           "heading": "Langages",
-          "items": ["Go", "TypeScript", "PHP / Laravel", "Python", "SQL"]
+          "items": ["Go", "TypeScript", "Python", "SQL"]
         },
         {
           "heading": "Plateforme",
@@ -459,7 +469,7 @@
       "eyebrow": "Catalogue",
       "titleLine1": "Trois produits.",
       "titleLine2": "Une même rigueur de livraison.",
-      "lede": "Chaque produit Akieni est construit par la même équipe senior, sur le même socle PKI et opéré avec la même discipline que nos plateformes nationales.",
+      "lede": "Chaque produit Akieni est construit par la même équipe senior, sur le même socle PKI, et opéré avec la même discipline que nos plateformes nationales.",
       "items": [
         {
           "slug": "akienipay",
@@ -473,7 +483,7 @@
             "Conforme PCI-DSS / BEAC"
           ],
           "model": "SaaS · 2024 →",
-          "chip": "En production",
+          "chip": "",
           "chipVariant": "default",
           "mark": "A·PAY",
           "mediaLabel": "AkieniPay · Console",
@@ -492,7 +502,7 @@
             "Rapports carburant & conduite"
           ],
           "model": "SaaS · 2023 →",
-          "chip": "En production",
+          "chip": "",
           "chipVariant": "green",
           "mark": "CAR·",
           "mediaLabel": "CarTracking · Vue carte",
@@ -511,7 +521,7 @@
             "On-prem · données souveraines"
           ],
           "model": "On-prem · 2025 →",
-          "chip": "Aperçu",
+          "chip": "",
           "chipVariant": "blue",
           "mark": "BIO·",
           "mediaLabel": "Biometrie · Capture",
@@ -614,7 +624,7 @@
       "titleLine1": "Des programmes,",
       "titleLine2": "pas des ",
       "titleAccent": "démos.",
-      "lede": "Chaque projet que nous livrons tourne en production à l'échelle nationale, avec des clients nommés, des deadlines fermes et un impact mesurable. Sélection de travaux récents ci-dessous."
+      "lede": "Chaque projet que nous livrons tourne en production à l'échelle nationale, avec des clients identifiés, des échéances fermes et un impact mesurable. Sélection de travaux récents ci-dessous."
     },
     "explorer": {
       "counterSuffix": "PROJETS · 2024 · 2026",
@@ -644,7 +654,7 @@
           "client": "Gouvernement du Congo",
           "title": "CAMU · Couverture santé universelle",
           "desc": "Enrôlement citoyen, réseau de prestataires, remboursements et analyses · pour des millions de bénéficiaires.",
-          "tags": ["Santé", "Laravel", "React", "AWS"],
+          "tags": ["Santé", "Python", "React", "AWS"],
           "years": "2024 · 2026",
           "statusLabel": "Livraison avancée",
           "mediaLabel": "CAMU · Santé · visuel",
@@ -658,7 +668,7 @@
           "desc": "GED, biométrie ABIS, canaux ePaiement et ERP Odoo pour une sécurité sociale moderne.",
           "tags": ["Social", "GED", "ABIS", "Odoo"],
           "years": "2024 · 2026",
-          "statusLabel": "Bientôt terminé",
+          "statusLabel": "En voie d'achèvement",
           "mediaLabel": "CNSS · Sécurité sociale · visuel",
           "image": "/images/PHOTO-2025-04-03-10-25-30.jpg"
         },
@@ -686,7 +696,7 @@
   "about": {
     "meta": {
       "title": "À propos · Akieni",
-      "description": "Akieni est une firme de transformation numérique de 45+ personnes basée à Brazzaville, construisant des infrastructures nationales critiques à travers l'Afrique centrale."
+      "description": "Akieni est une firme de transformation numérique de 50+ personnes basée à Brazzaville, construisant des infrastructures nationales critiques à travers l'Afrique centrale."
     },
     "hero": {
       "eyebrow": "À propos d'Akieni",
@@ -694,14 +704,14 @@
       "titleLine1": "Qui nous sommes,",
       "titleLine2": "et ce que nous ",
       "titleAccent": "construisons.",
-      "lede": "Une firme d'ingénierie et de livraison de 45 personnes à Brazzaville, qui construit des technologies à l'échelle nationale pour l'Afrique centrale."
+      "lede": "Une firme d'ingénierie et de livraison de 50 personnes à Brazzaville, qui construit des technologies à l'échelle nationale pour l'Afrique centrale."
     },
     "story": {
       "eyebrow": "Notre histoire",
       "title": "D'un petit bureau à un mandat national.",
       "paragraphs": [
         "Akieni a été fondée avec une seule conviction : la prochaine décennie de l'Afrique centrale dépend d'une infrastructure numérique construite localement et crédible à l'international · et le talent pour la bâtir est déjà ici.",
-        "Nous sommes passés à une équipe de 45 personnes réparties entre Ingénierie, Livraison, Administration et RH, et avons livré en production trois des plateformes les plus critiques du pays : SFEC pour le Ministère des Finances, CAMU pour la couverture santé universelle, et CNSS pour la sécurité sociale. Chacune a été livrée aux normes équivalentes à ce que l'on trouve à Paris ou à Lagos · par une équipe 100 % africaine, sur les rives du fleuve Congo."
+        "Nous sommes passés à une équipe de 50 personnes réparties entre Ingénierie, Livraison, Administration et RH, et avons livré en production trois des plateformes les plus critiques du pays : SFEC pour le Ministère des Finances, CAMU pour la couverture santé universelle, et CNSS pour la sécurité sociale. Chacune a été livrée aux normes équivalentes à ce que l'on trouve à Paris ou à Lagos · par une équipe 100 % africaine, sur les rives du fleuve Congo."
       ],
       "tiles": [
         { "label": "Bureau · Brazzaville" },
@@ -717,7 +727,7 @@
       "vision": {
         "eyebrow": "Vision",
         "title": "La référence technologique pour l'Afrique centrale.",
-        "lede": "Une firme régionale à qui l'on confie la conception, la construction et l'exploitation du socle numérique des gouvernements, régulateurs et opérateurs · créateur de valeur économique mesurable."
+        "lede": "Une firme régionale à qui l'on confie la conception, la construction et l'exploitation du socle numérique des gouvernements, régulateurs et opérateurs · créatrice de valeur économique mesurable."
       }
     },
     "values": {
@@ -789,7 +799,7 @@
         {
           "year": "2025",
           "title": "Académie, Cohorte 1",
-          "desc": "11 diplômés intégrés comme ingénieurs à temps plein. L'équipe atteint 45+."
+          "desc": "11 diplômés intégrés comme ingénieurs à temps plein. L'équipe atteint 50+."
         },
         {
           "year": "2026",
@@ -809,7 +819,7 @@
   "team": {
     "meta": {
       "title": "Équipe · Akieni",
-      "description": "Cinq leaders, quatre départements, une seule culture de livraison — l'équipe de 45 personnes derrière chaque programme Akieni."
+      "description": "Cinq leaders, quatre départements, une seule culture de livraison — l'équipe de 50 personnes derrière chaque programme Akieni."
     },
     "hero": {
       "eyebrow": "Équipe & direction",
@@ -817,7 +827,7 @@
       "titleLine1": "Cinq leads,",
       "titleLine2": "une seule ",
       "titleAccent": "culture de livraison.",
-      "lede": "Une équipe de 45 personnes répartie entre Ingénierie, Livraison, Administration & Finance et Ressources Humaines · pilotée par des opérateurs seniors avec des décennies d'expérience cumulée en livraison de systèmes critiques."
+      "lede": "Une équipe de 50 personnes répartie entre Ingénierie, Livraison, Administration & Finance et Ressources Humaines · pilotée par des opérateurs seniors avec des décennies d'expérience cumulée en livraison de systèmes critiques."
     },
     "leadership": {
       "eyebrow": "Direction",
@@ -973,7 +983,7 @@
           "phase": "PHASE 01 · MOIS 1–3",
           "title": "Fondations",
           "items": [
-            "Remise à niveau fondamentaux info",
+            "Remise à niveau : fondamentaux informatiques",
             "Git, CI / CD, revue de code",
             "Go, TypeScript, SQL",
             "Tests & observabilité",
@@ -984,7 +994,7 @@
           "phase": "PHASE 02 · MOIS 4–6",
           "title": "Pratique",
           "items": [
-            "Observation de bases de code en prod",
+            "Observation de bases de code en production",
             "Pair-programming avec des seniors",
             "Vrais tickets, vraies PRs",
             "Astreinte (lecture seule)",
@@ -1078,12 +1088,12 @@
         {
           "number": "04 / RÉMU",
           "title": "Rémunération compétitive.",
-          "desc": "Rémunération locale au top du marché, grilles transparentes, et equity pour les collaborateurs confirmés."
+          "desc": "Rémunération locale au meilleur du marché, grilles transparentes et participation pour les collaborateurs confirmés."
         },
         {
           "number": "05 / LIEU",
           "title": "Construit à Brazzaville.",
-          "desc": "Un bureau d'ingénierie moderne sur les rives du Congo. Pas de relocalisation compliquée · la plupart de nos collaborateurs sont d'ici."
+          "desc": "Un bureau d'ingénierie moderne sur les rives du Congo. Pas de scénario de relocalisation · la plupart de nos collaborateurs sont d'ici."
         },
         {
           "number": "06 / PORTÉE",
@@ -1167,7 +1177,7 @@
         {
           "number": "03 / PRATIQUE",
           "title": "Take-home + pairing",
-          "desc": "Un petit exercice rémunéré · puis on pair dessus."
+          "desc": "Un petit exercice rémunéré · puis une session de pair-programming dessus."
         },
         {
           "number": "04 / OFFRE",
@@ -1290,7 +1300,7 @@
         "loc": "Brazzaville · Hybride",
         "contract": "Temps plein · CDI",
         "start": "ASAP · 2026",
-        "mission": "Vous posséderez les surfaces visibles des plateformes qui servent de vrais workflows institutionnels et citoyens · consoles d'admin, portails citoyens, tableaux de bord opérateurs. Vous fixez le niveau en accessibilité, performance et soin.",
+        "mission": "Vous serez responsable des interfaces visibles des plateformes qui servent de vrais workflows institutionnels et citoyens · consoles d'admin, portails citoyens, tableaux de bord opérateurs. Vous fixez le niveau en accessibilité, performance et soin.",
         "responsibilities": [
           "Construire et posséder des front-ends React / TypeScript en production.",
           "Transformer des workflows institutionnels complexes en interfaces claires et rapides.",
@@ -1365,7 +1375,7 @@
         "mission": "Akieni exploite une PKI en production pour les opérateurs publics. Vous serez responsable des hiérarchies de CA, du déploiement mTLS, de la gestion des clés et de la posture de sécurité de plateformes qui traitent les données fiscales, de santé et d'identité d'un pays.",
         "responsibilities": [
           "Prendre en charge la hiérarchie d'autorité de certification et le mTLS sur tous les services.",
-          "Gérer la gestion des clés, l'intégration HSM et la rotation des secrets.",
+          "Assurer la gestion des clés, l'intégration HSM et la rotation des secrets.",
           "Piloter le threat modelling, les revues de sécurité et la réponse à incident.",
           "Définir et faire appliquer des conventions de plateforme sécurisées par défaut.",
           "Collaborer avec les régulateurs sur les preuves d'audit et de conformité."
@@ -1488,7 +1498,7 @@
       },
       "solution": {
         "eyebrow": "Solution",
-        "title": "SFEC, de bas en haut.",
+        "title": "SFEC, de bout en bout.",
         "lede": "Nous avons conçu et construit SFEC comme une plateforme unique et défendable · chaque couche conçue par l'équipe Akieni, de la PKI à l'UI.",
         "items": [
           "Infrastructure PKI avec notre propre autorité de certification",
@@ -1619,11 +1629,11 @@
         "eyebrow": "Stack technique",
         "titleLine1": "Une stack pragmatique",
         "titleLine2": "pour l'échelle.",
-        "lede": "Laravel et React pour la vélocité, Postgres pour l'état, AWS pour l'échelle élastique, le tout derrière la même discipline de sécurité et d'observabilité que nos autres plateformes nationales.",
+        "lede": "Python et React pour la vélocité, Postgres pour l'état, AWS pour l'échelle élastique, le tout derrière la même discipline de sécurité et d'observabilité que nos autres plateformes nationales.",
         "groups": [
           {
             "heading": "Backend & données",
-            "items": ["Laravel", "PostgreSQL", "Redis"]
+            "items": ["Python", "PostgreSQL", "Redis"]
           },
           { "heading": "Frontend", "items": ["React", "TypeScript"] },
           {
@@ -1684,7 +1694,7 @@
         },
         { "label": "Secteur", "value": "Sécurité sociale" },
         { "label": "Calendrier", "value": "2024 · 2026" },
-        { "label": "Statut", "value": "Bientôt terminé", "accent": true }
+        { "label": "Statut", "value": "En voie d'achèvement", "accent": true }
       ],
       "challenge": {
         "eyebrow": "Défi",
@@ -1903,7 +1913,7 @@
       "overview": {
         "eyebrow": "Aperçu",
         "title": "Un seul connecteur. Tous les canaux.",
-        "lede": "Dans la région, encaisser veut dire intégrer 6 à 10 fournisseurs (MTN, Airtel, Visa, MasterCard, virements XAF, caisses physiques…). AkieniPay vous donne une API, un dashboard et une équipe support unique.",
+        "lede": "Dans la région, encaisser veut dire intégrer 6 à 10 fournisseurs (MTN, Airtel, Visa, MasterCard, virements XAF, caisses physiques…). AkieniPay vous donne une API, un tableau de bord et une équipe support unique.",
         "feats": [
           {
             "key": "Canaux Mobile Money",
@@ -1992,7 +2002,7 @@
           },
           {
             "icon": "⌂",
-            "title": "Factures utilities",
+            "title": "Factures services publics",
             "desc": "Eau, électricité, télécom · paiement de factures en agence, sur web ou par USSD, avec rapprochement bancaire automatique."
           },
           {
@@ -2250,7 +2260,7 @@
         "lede": "Biometrie est notre plateforme d'identification multi-modale · empreintes, visage, iris · conforme ICAO et adossée à un ABIS souverain. Conçue pour les opérateurs publics, régulateurs et institutions financières.",
         "pills": [
           { "label": "03 / Produit", "variant": "default" },
-          { "label": "Aperçu fermé", "variant": "blue" },
+          { "label": "Accès restreint", "variant": "blue" },
           { "label": "On-prem · 2025 →", "variant": "default" }
         ],
         "ctaPrimary": "Demander un accès →",
@@ -2533,12 +2543,12 @@
     "software-development": {
       "meta": {
         "title": "Développement logiciel · Akieni",
-        "description": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs seniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes."
+        "description": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs seniors à Brazzaville · Go, TypeScript, Python, Kubernetes."
       },
       "backLabel": "Tous les services",
       "practiceCaption": "PRATIQUE · 02 / 04",
       "title": "Développement logiciel.",
-      "lede": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs seniors à Brazzaville · Go, TypeScript, Laravel, Kubernetes · pour des systèmes qui doivent tourner.",
+      "lede": "Plateformes sur mesure conçues aux normes internationales par des ingénieurs seniors à Brazzaville · Go, TypeScript, Python, Kubernetes · pour des systèmes qui doivent tourner.",
       "overview": [
         { "label": "Pratique", "value": "02 sur 04" },
         {
@@ -2632,10 +2642,10 @@
         "title": "Discutons de vos besoins.",
         "primary": "Démarrer une conversation",
         "secondary": "Suivant : Intégration logicielle",
-        "secondaryHref": "/services/integration"
+        "secondaryHref": "/services/software-integration"
       }
     },
-    "integration": {
+    "software-integration": {
       "meta": {
         "title": "Intégration logicielle · Akieni",
         "description": "Nous transformons des systèmes fragmentés en flux de données unifiés · paiements, biométrie, GED, ERP · avec l'observabilité dont les opérateurs ont besoin."
@@ -2777,7 +2787,7 @@
           },
           {
             "num": "02",
-            "title": "Neutre vis-à-vis des fournisseurs",
+            "title": "Indépendant des fournisseurs",
             "desc": "Nous n'avons aucun intérêt à vous vendre un produit particulier."
           },
           {
@@ -3115,7 +3125,7 @@
             "label": "Développement logiciel",
             "href": "/services/software-development"
           },
-          { "label": "Intégration", "href": "/services/integration" },
+          { "label": "Intégration", "href": "/services/software-integration" },
           { "label": "Conseil", "href": "/services/consulting" }
         ]
       },
@@ -3147,7 +3157,7 @@
       }
     },
     "bottom": {
-      "copyright": "© {year} Akieni. Transformation numérique pour l'Afrique.",
+      "copyright": "© {year} Akieni.",
       "legal": [
         { "label": "Confidentialité", "href": "/privacy" },
         { "label": "Conditions", "href": "/terms" },
