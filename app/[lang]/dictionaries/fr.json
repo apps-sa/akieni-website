@@ -2531,12 +2531,14 @@
             "slug": "camu",
             "client": "CAMU",
             "title": "Couverture santé universelle",
+            "desc": "Enrôlement des citoyens, réseau de prestataires, remboursements et analytique · pour des millions de bénéficiaires.",
             "mediaLabel": "CAMU · visuel"
           },
           {
             "slug": "cnss",
             "client": "CNSS",
             "title": "Modernisation de la sécurité sociale",
+            "desc": "GED, biométrie ABIS, canaux ePaiement et ERP Odoo pour une sécurité sociale modernisée.",
             "mediaLabel": "CNSS · visuel"
           }
         ]
@@ -2636,12 +2638,14 @@
             "slug": "sfec",
             "client": "SFEC",
             "title": "Infrastructure fiscale nationale",
+            "desc": "Plateforme de facturation électronique certifiée avec PKI, mTLS et conformité en temps réel.",
             "mediaLabel": "SFEC · visuel"
           },
           {
             "slug": "cnss",
             "client": "CNSS",
             "title": "Modernisation de la sécurité sociale",
+            "desc": "GED, biométrie ABIS, canaux ePaiement et ERP Odoo pour une sécurité sociale modernisée.",
             "mediaLabel": "CNSS · visuel"
           }
         ]
@@ -2742,12 +2746,14 @@
             "slug": "cnss",
             "client": "CNSS",
             "title": "GED + ABIS + ePaiement + Odoo",
+            "desc": "GED, biométrie ABIS, canaux ePaiement et ERP Odoo pour une sécurité sociale modernisée.",
             "mediaLabel": "CNSS · visuel"
           },
           {
             "slug": "sfec",
             "client": "SFEC",
             "title": "PKI + terminaux + pipelines fiscaux",
+            "desc": "Plateforme de facturation électronique certifiée avec PKI, mTLS et conformité en temps réel.",
             "mediaLabel": "SFEC · visuel"
           }
         ]
@@ -2847,12 +2853,14 @@
             "slug": "sfec",
             "client": "SFEC",
             "title": "Co-direction de programme avec la DGID",
+            "desc": "Plateforme de facturation électronique certifiée avec PKI, mTLS et conformité en temps réel.",
             "mediaLabel": "SFEC · visuel"
           },
           {
             "slug": "camu",
             "client": "CAMU",
             "title": "Livraison de plateforme santé multi-fournisseurs",
+            "desc": "Enrôlement des citoyens, réseau de prestataires, remboursements et analytique · pour des millions de bénéficiaires.",
             "mediaLabel": "CAMU · visuel"
           }
         ]

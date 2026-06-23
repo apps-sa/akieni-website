@@ -2609,6 +2609,7 @@
             "slug": "camu",
             "client": "CAMU",
             "title": "Universal health coverage",
+            "desc": "Citizen enrolment, provider network, claims, and analytics · for millions of beneficiaries.",
             "mediaLabel": "CAMU · visual"
           },
           {
@@ -2711,12 +2712,14 @@
             "slug": "sfec",
             "client": "SFEC",
             "title": "National fiscal infrastructure",
+            "desc": "Certified electronic invoicing platform with PKI, mTLS and real-time compliance.",
             "mediaLabel": "SFEC · visual"
           },
           {
             "slug": "cnss",
             "client": "CNSS",
             "title": "Social security modernisation",
+            "desc": "GED, ABIS biometrics, ePayment rails and Odoo ERP for modern social security operations.",
             "mediaLabel": "CNSS · visual"
           }
         ]
@@ -2814,12 +2817,14 @@
             "slug": "cnss",
             "client": "CNSS",
             "title": "GED + ABIS + ePayment + Odoo",
+            "desc": "GED, ABIS biometrics, ePayment rails and Odoo ERP for modern social security operations.",
             "mediaLabel": "CNSS · visual"
           },
           {
             "slug": "sfec",
             "client": "SFEC",
             "title": "PKI + terminals + fiscal pipelines",
+            "desc": "Certified electronic invoicing platform with PKI, mTLS and real-time compliance.",
             "mediaLabel": "SFEC · visual"
           }
         ]
@@ -2916,12 +2921,14 @@
             "slug": "sfec",
             "client": "SFEC",
             "title": "Programme co-direction with DGID",
+            "desc": "Certified electronic invoicing platform with PKI, mTLS and real-time compliance.",
             "mediaLabel": "SFEC · visual"
           },
           {
             "slug": "camu",
             "client": "CAMU",
             "title": "Multi-vendor health-platform delivery",
+            "desc": "Citizen enrolment, provider network, claims, and analytics · for millions of beneficiaries.",
             "mediaLabel": "CAMU · visual"
           }
         ]

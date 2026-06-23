@@ -164,6 +164,11 @@ export function ServiceDetail({
                 <h3 className="text-xl tracking-[-0.02em] font-bold">
                   {proj.title}
                 </h3>
+                {proj.desc && (
+                  <p className="text-sm leading-relaxed text-muted line-clamp-2">
+                    {proj.desc}
+                  </p>
+                )}
               </div>
             </Link>
           ))}
