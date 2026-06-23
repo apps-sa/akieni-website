@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { AboutIso } from "@/components/sections/about/iso";
 import { AboutMissionVision } from "@/components/sections/about/mission-vision";
 import { AboutStory } from "@/components/sections/about/story";
 import { AboutTimeline } from "@/components/sections/about/timeline";
 import { AboutValues } from "@/components/sections/about/values";
-import { Cta } from "@/components/sections/cta";
+import { TeamLeadership } from "@/components/sections/team/leadership";
 import { PageHero } from "@/components/shared/page-hero";
+import { getLeadership } from "@/lib/queries/team";
 import { buildMetadata } from "@/lib/seo";
 import { getDictionary, hasLocale } from "../dictionaries";
+
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -29,7 +31,10 @@ export default async function AboutPage({
 }: Readonly<{ params: Promise<{ lang: string }> }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const dict = await getDictionary(lang);
+  const [dict, leaders] = await Promise.all([
+    getDictionary(lang),
+    getLeadership(lang),
+  ]);
   const t = dict.about;
 
   return (
@@ -47,21 +52,8 @@ export default async function AboutPage({
       <AboutStory strings={t.story} />
       <AboutMissionVision strings={t.missionVision} />
       <AboutValues strings={t.values} />
-      <AboutIso strings={t.iso} />
       <AboutTimeline strings={t.timeline} />
-      <Cta
-        lang={lang}
-        strings={{
-          eyebrow: t.teamCta.eyebrow,
-          title: t.teamCta.title,
-          lede: t.teamCta.lede,
-          primary: t.teamCta.primary,
-        }}
-        theme="default-bg"
-        buttonStyle="dark"
-        buttonSize="lg"
-        primaryHref={t.teamCta.primaryHref}
-      />
+      <TeamLeadership strings={dict.team.leadership} members={leaders} />
     </>
   );
 }

@@ -107,8 +107,8 @@ async function seedJobRoles() {
       order: i + 1,
     };
 
-    await client.createOrReplace(doc);
-    console.log(`  ✓ ${slug}`);
+    const result = await client.createIfNotExists(doc);
+    console.log(result._createdAt === result._updatedAt ? `  ✓ ${slug}` : `  ⏭ ${slug} (already exists, skipped)`);
   }
 }
 
@@ -136,8 +136,8 @@ async function seedTeamMembers() {
       order: i + 1,
     };
 
-    await client.createOrReplace(doc);
-    console.log(`  ✓ ${e.name}`);
+    const result = await client.createIfNotExists(doc);
+    console.log(result._createdAt === result._updatedAt ? `  ✓ ${e.name}` : `  ⏭ ${e.name} (already exists, skipped)`);
   }
 }
 
@@ -165,8 +165,8 @@ async function seedCohorts() {
       order: i + 1,
     };
 
-    await client.createOrReplace(doc);
-    console.log(`  ✓ Cohort ${i + 1}: ${e.year}`);
+    const result = await client.createIfNotExists(doc);
+    console.log(result._createdAt === result._updatedAt ? `  ✓ Cohort ${i + 1}: ${e.year}` : `  ⏭ Cohort ${i + 1}: ${e.year} (already exists, skipped)`);
   }
 }
 
@@ -302,8 +302,8 @@ async function seedProjects() {
       order: i + 1,
     };
 
-    await client.createOrReplace(doc);
-    console.log(`  ✓ ${slug}`);
+    const result = await client.createIfNotExists(doc);
+    console.log(result._createdAt === result._updatedAt ? `  ✓ ${slug}` : `  ⏭ ${slug} (already exists, skipped)`);
   }
 }
 
@@ -441,8 +441,8 @@ async function seedProducts() {
       order: i + 1,
     };
 
-    await client.createOrReplace(doc);
-    console.log(`  ✓ ${slug}`);
+    const result = await client.createOrReplace(doc);
+    console.log(`  ✓ ${slug} (upserted)`);
   }
 }
 
@@ -467,8 +467,8 @@ async function seedDepartments() {
       desc: localeStr(e.desc, (f as typeof e).desc ?? e.desc),
       order: i + 1,
     };
-    await client.createOrReplace(doc);
-    console.log(`  ✓ ${e.number} – ${e.name}`);
+    const result = await client.createIfNotExists(doc);
+    console.log(result._createdAt === result._updatedAt ? `  ✓ ${e.number} – ${e.name}` : `  ⏭ ${e.number} – ${e.name} (already exists, skipped)`);
   }
 }
 
@@ -495,8 +495,8 @@ async function seedSiteSettings() {
     orgRootName: enOrg?.name ?? "",
     orgRootRole: localeStr(enOrg?.role ?? "", frOrg?.role ?? enOrg?.role ?? ""),
   };
-  await client.createOrReplace(doc);
-  console.log(`  ✓ siteSettings (${doc.email})`);
+  const result = await client.createIfNotExists(doc);
+  console.log(result._createdAt === result._updatedAt ? `  ✓ siteSettings (${doc.email})` : `  ⏭ siteSettings (already exists, skipped)`);
 }
 
 // ── 6. Home Credo ─────────────────────────────────────────────────────────────
@@ -517,8 +517,8 @@ async function seedHomeCredo() {
     quoteAccent: localeStr(enCredo.quoteAccent, frCredo?.quoteAccent ?? enCredo.quoteAccent),
     quoteLine2: localeStr(enCredo.quoteLine2, frCredo?.quoteLine2 ?? enCredo.quoteLine2),
   };
-  await client.createOrReplace(doc);
-  console.log(`  ✓ homeCredo (${enCredo.attribution})`);
+  const result = await client.createIfNotExists(doc);
+  console.log(result._createdAt === result._updatedAt ? `  ✓ homeCredo (${enCredo.attribution})` : `  ⏭ homeCredo (already exists, skipped)`);
 }
 
 // ── 9. Showcase items ─────────────────────────────────────────────────────────
@@ -551,8 +551,36 @@ async function seedShowcaseItems() {
       order: i + 1,
     };
 
-    await client.createOrReplace(doc);
-    console.log(`  ✓ ${e.id}`);
+    const result = await client.createIfNotExists(doc);
+    console.log(result._createdAt === result._updatedAt ? `  ✓ ${e.id}` : `  ⏭ ${e.id} (already exists, skipped)`);
+  }
+}
+
+// ── 10. Clients ───────────────────────────────────────────────────────────────
+
+async function seedClients() {
+  console.log("\n🏢 Seeding clients...");
+  const items: Array<{ name: string; image: string | null; website: string | null }> =
+    en.home?.clients?.items ?? [];
+
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const id = `client-${item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
+    let imageRef = null;
+    if (item.image) imageRef = await uploadImage(item.image);
+
+    const doc: Record<string, unknown> = {
+      _id: id,
+      _type: "client",
+      name: item.name,
+      website: item.website ?? undefined,
+      logo: imageRef ? { _type: "image", asset: imageRef, alt: item.name } : undefined,
+      order: i + 1,
+    };
+
+    await client.createIfNotExists(doc as Parameters<typeof client.createIfNotExists>[0]);
+    console.log(`  ✓ ${item.name}`);
   }
 }
 
@@ -581,6 +609,7 @@ async function main() {
   await seedSiteSettings();
   await seedHomeCredo();
   await seedShowcaseItems();
+  await seedClients();
 
   console.log("\n✅ Seed complete! Open your Sanity studio to verify the data.");
   console.log("   Remember to remove SANITY_API_WRITE_TOKEN from .env.local after seeding.");

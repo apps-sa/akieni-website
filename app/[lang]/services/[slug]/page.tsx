@@ -7,7 +7,7 @@ import { getDictionary, hasLocale, LOCALES } from "../../dictionaries";
 const SLUGS = [
   "digital-transformation",
   "software-development",
-  "integration",
+  "software-integration",
   "consulting",
 ] as const;
 type Slug = (typeof SLUGS)[number];

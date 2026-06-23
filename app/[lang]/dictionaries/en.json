@@ -482,15 +482,23 @@
       "groups": [
         {
           "heading": "Languages",
-          "items": ["Go", "TypeScript", "Python", "SQL"]
+          "items": ["Go", "Rust", "TypeScript", "Python", "Java", "C#", "SQL"]
         },
         {
-          "heading": "Platform",
-          "items": ["Kubernetes", "PostgreSQL", "Redis", "AWS", "On-prem"]
+          "heading": "Frontend & mobile",
+          "items": ["React", "Next.js", "Flutter", "React Native", "Tailwind CSS", "PWA"]
+        },
+        {
+          "heading": "Backend & data",
+          "items": ["Spring Boot", "Node.js", "GraphQL", "gRPC", "PostgreSQL", "Redis", "NATS"]
+        },
+        {
+          "heading": "DevOps & platform",
+          "items": ["Kubernetes", "Docker", "GitHub Actions", "Argo CD", "Terraform", "Prometheus / Grafana", "AWS", "On-prem"]
         },
         {
           "heading": "Security & specialty",
-          "items": ["PKI / mTLS", "HSM", "ABIS", "OpenKM / GED", "Odoo"]
+          "items": ["PKI / mTLS", "JWT / OAuth 2.0", "HSM", "OWASP", "SIEM", "ABIS", "OpenKM / GED", "Vault", "Odoo"]
         }
       ]
     },
