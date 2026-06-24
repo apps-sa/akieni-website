@@ -7,7 +7,8 @@ import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 
-type ServiceDetailStrings = Dictionary["serviceDetails"]["software-integration"];
+type ServiceDetailStrings =
+  Dictionary["serviceDetails"][keyof Dictionary["serviceDetails"]];
 
 export function ServiceDetail({
   lang,

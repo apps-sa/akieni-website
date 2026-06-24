@@ -40,6 +40,7 @@ export function PageHero({
   lede?: string;
   actions?: PageHeroAction[];
   minHeight?: string;
+  caption?: string;
 }>) {
   return (
     <section
@@ -73,8 +74,13 @@ export function PageHero({
 
       <Container className="relative z-2 w-full">
         <RevealGroup className="grid grid-cols-1 gap-s7" stagger={0.12}>
-        <RevealItem>
+        <RevealItem className="flex flex-wrap items-start justify-between gap-s4">
           <Eyebrow accent={eyebrowAccent}>{eyebrow}</Eyebrow>
+          {caption && (
+            <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
+              {caption}
+            </span>
+          )}
         </RevealItem>
 
         <RevealItem

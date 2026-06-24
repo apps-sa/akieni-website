@@ -2616,6 +2616,7 @@
             "slug": "cnss",
             "client": "CNSS",
             "title": "Social security modernisation",
+            "desc": "GED, ABIS biometrics, ePayment rails and Odoo ERP for modern social security operations.",
             "mediaLabel": "CNSS · visual"
           }
         ]
