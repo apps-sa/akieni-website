@@ -88,6 +88,8 @@ export function Footer({
                 key={item.label}
                 href={item.href}
                 aria-label={item.label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-2 transition-colors duration-1 ease-akieni hover:text-white"
               >
                 {item.label}

@@ -7,7 +7,7 @@ import { PlaceholderMedia } from "@/components/shared/placeholder-media";
 import { Section } from "@/components/shared/section";
 import { SectionHead } from "@/components/shared/section-head";
 
-type ServiceDetailStrings = Dictionary["serviceDetails"]["integration"];
+type ServiceDetailStrings = Dictionary["serviceDetails"]["software-integration"];
 
 export function ServiceDetail({
   lang,
@@ -33,9 +33,6 @@ export function ServiceDetail({
             >
               <span aria-hidden>←</span> {strings.backLabel}
             </Link>
-            <span className="font-mono text-xs tracking-[0.14em]">
-              {strings.practiceCaption}
-            </span>
           </div>
           <h1 className="text-display font-bold leading-[0.92] tracking-[-0.045em] max-[720px]:text-[clamp(2.25rem,11vw,4rem)]">
             {strings.title}
@@ -167,6 +164,11 @@ export function ServiceDetail({
                 <h3 className="text-xl tracking-[-0.02em] font-bold">
                   {proj.title}
                 </h3>
+                {proj.desc && (
+                  <p className="text-sm leading-relaxed text-muted line-clamp-2">
+                    {proj.desc}
+                  </p>
+                )}
               </div>
             </Link>
           ))}

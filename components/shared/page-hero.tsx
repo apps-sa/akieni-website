@@ -31,7 +31,6 @@ export function PageHero({
 }: Readonly<{
   eyebrow: string;
   eyebrowAccent?: boolean;
-  caption?: string;
   backgroundMark?: string;
   secondGlow?: boolean;
   titleLine1: string;
@@ -74,13 +73,8 @@ export function PageHero({
 
       <Container className="relative z-2 w-full">
         <RevealGroup className="grid grid-cols-1 gap-s7" stagger={0.12}>
-        <RevealItem className="flex flex-wrap items-start justify-between gap-s4">
+        <RevealItem>
           <Eyebrow accent={eyebrowAccent}>{eyebrow}</Eyebrow>
-          {caption && (
-            <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
-              {caption}
-            </span>
-          )}
         </RevealItem>
 
         <RevealItem

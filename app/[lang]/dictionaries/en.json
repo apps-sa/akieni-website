@@ -15,16 +15,66 @@
     "explorer": {
       "counterSuffix": "items",
       "allLabel": "All",
-      "stageLabels": { "live": "Live", "beta": "Beta", "rnd": "R&D", "internal": "Internal" },
+      "stageLabels": {
+        "live": "Live",
+        "beta": "Beta",
+        "rnd": "R&D",
+        "internal": "Internal"
+      },
       "emptyLabel": "Nothing here yet.",
       "linkLabel": "Open"
     },
     "items": [
-      { "id": "akienipay", "title": "AkieniPay", "brief": "Mobile money, card and cash payments with automatic reconciliation — live across the Congo. One integration covers collections, payouts and settlement, secured to PCI-DSS standards.", "link": "https://www.akieni.com/en/products/akienipay", "stage": "live", "categories": ["Fintech", "Payments"], "image": null, "mediaLabel": "AkieniPay" },
-      { "id": "cartracking", "title": "CarTracking", "brief": "Real-time fleet tracking with GPS, geofencing and driver-behaviour scoring for corporate and public fleets. Live maps, trip history and instant alerts, deployed nationwide.", "link": "https://www.akieni.com/en/products/cartracking", "stage": "live", "categories": ["IoT", "Logistics"], "image": null, "mediaLabel": "CarTracking" },
-      { "id": "biometrie", "title": "Biometrie", "brief": "Multi-modal biometric identification — fingerprint, face and iris — built to ANSSI / ICAO grade. Enrolment, deduplication and 1:N matching for national-scale identity programmes.", "link": "https://www.akieni.com/en/products/biometrie", "stage": "live", "categories": ["Identity", "Security"], "image": null, "mediaLabel": "Biometrie" },
-      { "id": "ged", "title": "GED — Document Management", "brief": "Electronic document management and archival for public administrations: capture, classify, search and retain at scale. Currently in private beta with pilot ministries.", "link": "https://example.com/akieni-ged", "stage": "beta", "categories": ["GovTech", "Documents"], "image": null, "mediaLabel": "GED" },
-      { "id": "ai-assistant", "title": "Service Assistant", "brief": "An AI assistant for citizen services, grounded in verified public-sector knowledge. An early research prototype exploring retrieval, multilingual answers and human-in-the-loop review.", "link": "https://example.com/akieni-assistant", "stage": "rnd", "categories": ["AI", "Public services"], "image": null, "mediaLabel": "Service Assistant" }
+      {
+        "id": "akienipay",
+        "title": "AkieniPay",
+        "brief": "Mobile money, card and cash payments with automatic reconciliation — live across the Congo. One integration covers collections, payouts and settlement, secured to PCI-DSS standards.",
+        "link": "https://www.akieni.com/en/products/akienipay",
+        "stage": "live",
+        "categories": ["Fintech", "Payments"],
+        "image": null,
+        "mediaLabel": "AkieniPay"
+      },
+      {
+        "id": "cartracking",
+        "title": "CarTracking",
+        "brief": "Real-time fleet tracking with GPS, geofencing and driver-behaviour scoring for corporate and public fleets. Live maps, trip history and instant alerts, deployed nationwide.",
+        "link": "https://www.akieni.com/en/products/cartracking",
+        "stage": "live",
+        "categories": ["IoT", "Logistics"],
+        "image": null,
+        "mediaLabel": "CarTracking"
+      },
+      {
+        "id": "biometrie",
+        "title": "Biometrie",
+        "brief": "Multi-modal biometric identification — fingerprint, face and iris — built to ANSSI / ICAO grade. Enrolment, deduplication and 1:N matching for national-scale identity programmes.",
+        "link": "https://www.akieni.com/en/products/biometrie",
+        "stage": "live",
+        "categories": ["Identity", "Security"],
+        "image": null,
+        "mediaLabel": "Biometrie"
+      },
+      {
+        "id": "ged",
+        "title": "GED — Document Management",
+        "brief": "Electronic document management and archival for public administrations: capture, classify, search and retain at scale. Currently in private beta with pilot ministries.",
+        "link": "https://example.com/akieni-ged",
+        "stage": "beta",
+        "categories": ["GovTech", "Documents"],
+        "image": null,
+        "mediaLabel": "GED"
+      },
+      {
+        "id": "ai-assistant",
+        "title": "Service Assistant",
+        "brief": "An AI assistant for citizen services, grounded in verified public-sector knowledge. An early research prototype exploring retrieval, multilingual answers and human-in-the-loop review.",
+        "link": "https://example.com/akieni-assistant",
+        "stage": "rnd",
+        "categories": ["AI", "Public services"],
+        "image": null,
+        "mediaLabel": "Service Assistant"
+      }
     ],
     "cta": {
       "primary": "Get in touch",
@@ -70,7 +120,7 @@
       "deployingText": "SFEC fiscal infrastructure, CAMU universal health coverage, CNSS biometrics & ePayment.",
       "stats": {
         "projects": { "label": "PROJECTS", "value": "12+" },
-        "team": { "label": "TEAM", "value": "45+" },
+        "team": { "label": "TEAM", "value": "50+" },
         "sectors": { "label": "SECTORS", "value": "4" }
       }
     },
@@ -88,7 +138,7 @@
       "eyebrow": "What we do",
       "titleLine1": "Four practices,",
       "titleLine2": "one mandate.",
-      "lede": "From strategy to deployment, we deliver software that runs at national scale. Each practice is anchored by senior local talent and international standards.",
+      "lede": "From strategy to deployment, we deliver software that runs at national scale. Each practice is staffed by senior local talent, held to international standards.",
       "all": "All services",
       "items": [
         {
@@ -106,7 +156,7 @@
           "tags": ["Backend", "Frontend", "Platforms"]
         },
         {
-          "id": "integration",
+          "id": "software-integration",
           "number": "03 / Practice",
           "title": "Software Integration",
           "desc": "Connecting fragmented systems into unified, observable data flows · biometrics, payments, ERPs, GED.",
@@ -144,7 +194,7 @@
           "size": "sm",
           "client": "Government of Congo",
           "title": "CAMU · Universal Health Coverage",
-          "tags": ["Health", "Laravel", "React"],
+          "tags": ["Health", "Python", "React"],
           "years": "2024 · 2026",
           "statusLabel": "Advanced delivery",
           "mediaLabel": "CAMU · Health Platform · Screenshot",
@@ -160,6 +210,50 @@
           "statusLabel": "Nearing completion",
           "mediaLabel": "CNSS · Social Security · Wide visual",
           "image": "/images/medium-shot-students-library.jpg"
+        }
+      ]
+    },
+    "clients": {
+      "eyebrow": "They trust us",
+      "title": "Trusted by institutions that run Central Africa.",
+      "items": [
+        {
+          "name": "CNSS",
+          "tag": "Social Security",
+          "image": null,
+          "website": null
+        },
+        {
+          "name": "ARPCE",
+          "tag": "Telecom Reg.",
+          "image": null,
+          "website": null
+        },
+        { "name": "DGDDI", "tag": "Customs", "image": null, "website": null },
+        { "name": "Trésor", "tag": "Treasury", "image": null, "website": null },
+        {
+          "name": "ANINF",
+          "tag": "Digital Agency",
+          "image": null,
+          "website": null
+        },
+        {
+          "name": "CNAMGS",
+          "tag": "Health Ins.",
+          "image": null,
+          "website": null
+        },
+        {
+          "name": "Gabon Télécom",
+          "tag": "Operator",
+          "image": null,
+          "website": null
+        },
+        {
+          "name": "Min. Intérieur",
+          "tag": "Ministry",
+          "image": null,
+          "website": null
         }
       ]
     },
@@ -182,7 +276,7 @@
             "PCI-DSS / BEAC compliant"
           ],
           "model": "SaaS · 2024 →",
-          "chip": "Live",
+          "chip": "",
           "chipVariant": "default",
           "mark": "A·PAY",
           "mediaLabel": "AkieniPay · Console",
@@ -201,7 +295,7 @@
             "Fuel & driving reports"
           ],
           "model": "SaaS · 2023 →",
-          "chip": "Live",
+          "chip": "",
           "chipVariant": "green",
           "mark": "CAR·",
           "mediaLabel": "CarTracking · Map view",
@@ -220,7 +314,7 @@
             "On-prem · sovereign data"
           ],
           "model": "On-prem · 2025 →",
-          "chip": "Preview",
+          "chip": "",
           "chipVariant": "blue",
           "mark": "BIO·",
           "mediaLabel": "Biometrie · Capture",
@@ -233,7 +327,8 @@
       "title": "A firm with national footprint.",
       "eyebrow": "Snapshot · 2026",
       "items": [
-        { "label": "Employees", "value": 45, "suffix": "+", "accent": "" },
+        { "label": "Since 2023", "value": 2, "suffix": "", "accent": "/yrs" },
+        { "label": "Employees", "value": 50, "suffix": "+", "accent": "" },
         { "label": "African team", "value": 100, "suffix": "%", "accent": "" },
         { "label": "Departments", "value": 4, "suffix": "", "accent": "" }
       ]
@@ -319,14 +414,14 @@
           "title": "Software Development",
           "desc": "Bespoke platforms built to international standards · from backend services and APIs to React front-ends, on Kubernetes-grade infrastructure.",
           "bullets": [
-            "Backend systems (Go, Laravel, Node)",
+            "Backend systems (Go, Python, Node)",
             "Front-ends (React, TypeScript)",
             "Platform engineering & DevOps",
             "Security & PKI"
           ]
         },
         {
-          "slug": "integration",
+          "slug": "software-integration",
           "number": "03 / Practice",
           "title": "Software Integration",
           "desc": "We turn fragmented systems into unified data flows · payments, biometrics, GED, ERPs · with the observability operators need.",
@@ -387,15 +482,23 @@
       "groups": [
         {
           "heading": "Languages",
-          "items": ["Go", "TypeScript", "PHP / Laravel", "Python", "SQL"]
+          "items": ["Go", "Rust", "TypeScript", "Python", "Java", "C#", "SQL"]
         },
         {
-          "heading": "Platform",
-          "items": ["Kubernetes", "PostgreSQL", "Redis", "AWS", "On-prem"]
+          "heading": "Frontend & mobile",
+          "items": ["React", "Next.js", "Flutter", "React Native", "Tailwind CSS", "PWA"]
+        },
+        {
+          "heading": "Backend & data",
+          "items": ["Spring Boot", "Node.js", "GraphQL", "gRPC", "PostgreSQL", "Redis", "NATS"]
+        },
+        {
+          "heading": "DevOps & platform",
+          "items": ["Kubernetes", "Docker", "GitHub Actions", "Argo CD", "Terraform", "Prometheus / Grafana", "AWS", "On-prem"]
         },
         {
           "heading": "Security & specialty",
-          "items": ["PKI / mTLS", "HSM", "ABIS", "OpenKM / GED", "Odoo"]
+          "items": ["PKI / mTLS", "JWT / OAuth 2.0", "HSM", "OWASP", "SIEM", "ABIS", "OpenKM / GED", "Vault", "Odoo"]
         }
       ]
     },
@@ -468,7 +571,7 @@
             "PCI-DSS / BEAC compliant"
           ],
           "model": "SaaS · 2024 →",
-          "chip": "Live",
+          "chip": "",
           "chipVariant": "default",
           "mark": "A·PAY",
           "mediaLabel": "AkieniPay · Console",
@@ -487,7 +590,7 @@
             "Fuel & driving reports"
           ],
           "model": "SaaS · 2023 →",
-          "chip": "Live",
+          "chip": "",
           "chipVariant": "green",
           "mark": "CAR·",
           "mediaLabel": "CarTracking · Map view",
@@ -506,7 +609,7 @@
             "On-prem · sovereign data"
           ],
           "model": "On-prem · 2025 →",
-          "chip": "Preview",
+          "chip": "",
           "chipVariant": "blue",
           "mark": "BIO·",
           "mediaLabel": "Biometrie · Capture",
@@ -639,7 +742,7 @@
           "client": "Government of Congo",
           "title": "CAMU · Universal health coverage",
           "desc": "Citizen enrolment, provider network, claims, and analytics · for millions of beneficiaries.",
-          "tags": ["Health", "Laravel", "React", "AWS"],
+          "tags": ["Health", "Python", "React", "AWS"],
           "years": "2024 · 2026",
           "statusLabel": "Advanced delivery",
           "mediaLabel": "CAMU · Health · visual",
@@ -681,7 +784,7 @@
   "about": {
     "meta": {
       "title": "About · Akieni",
-      "description": "Akieni is a 45+ person digital transformation firm based in Brazzaville, building critical national infrastructure across Central Africa."
+      "description": "Akieni is a 50+ person digital transformation firm based in Brazzaville, building critical national infrastructure across Central Africa."
     },
     "hero": {
       "eyebrow": "About Akieni",
@@ -689,14 +792,14 @@
       "titleLine1": "Who we are,",
       "titleLine2": "and what we're ",
       "titleAccent": "building.",
-      "lede": "A 45-person engineering and delivery firm in Brazzaville, building national-scale technology for Central Africa."
+      "lede": "A 50-person engineering and delivery firm in Brazzaville, building national-scale technology for Central Africa."
     },
     "story": {
       "eyebrow": "Our story",
       "title": "From a small office, a national mandate.",
       "paragraphs": [
         "Akieni was founded with a single conviction: that Central Africa's next decade depends on locally-built, internationally-credible digital infrastructure · and that the talent to build it is already here.",
-        "We have grown to a 45-person team across Engineering, Delivery, Administration and HR, and shipped into production three of the country's most critical platforms: SFEC for the Ministry of Finance, CAMU for universal health coverage, and CNSS for social security. Each was delivered to standards equal to anything you would find in Paris or Lagos · by a team that is 100% African, based on the banks of the Congo river."
+        "We have grown to a 50-person team across Engineering, Delivery, Administration and HR, and shipped into production three of the country's most critical platforms: SFEC for the Ministry of Finance, CAMU for universal health coverage, and CNSS for social security. Each was delivered to standards equal to anything you would find in Paris or Lagos · by a team that is 100% African, working from the banks of the Congo River."
       ],
       "tiles": [
         { "label": "Office · Brazzaville" },
@@ -784,7 +887,7 @@
         {
           "year": "2025",
           "title": "Academy, Cohort 1",
-          "desc": "11 graduates integrated as full-time engineers. Team reaches 45+."
+          "desc": "11 graduates integrated as full-time engineers. Team reaches 50+."
         },
         {
           "year": "2026",
@@ -804,7 +907,7 @@
   "team": {
     "meta": {
       "title": "Team · Akieni",
-      "description": "Five leaders, four departments, one delivery culture — the 45-person team behind every Akieni programme."
+      "description": "Five leaders, four departments, one delivery culture — the 50-person team behind every Akieni programme."
     },
     "hero": {
       "eyebrow": "Team & Leadership",
@@ -812,7 +915,7 @@
       "titleLine1": "Five leads,",
       "titleLine2": "one ",
       "titleAccent": "delivery culture.",
-      "lede": "A 45-person team across Engineering, Delivery, Administration & Finance, and Human Resources · led by senior operators with decades of combined experience in critical-systems delivery."
+      "lede": "A 50-person team across Engineering, Delivery, Administration & Finance, and Human Resources · led by senior operators with decades of combined experience in critical-systems delivery."
     },
     "leadership": {
       "eyebrow": "Leadership",
@@ -1609,11 +1712,11 @@
         "eyebrow": "Tech stack",
         "titleLine1": "A pragmatic stack",
         "titleLine2": "for scale.",
-        "lede": "Laravel and React for velocity, Postgres for state, AWS for elastic scale, all behind the same security and observability discipline as our other national platforms.",
+        "lede": "Python and React for velocity, Postgres for state, AWS for elastic scale, all behind the same security and observability discipline as our other national platforms.",
         "groups": [
           {
             "heading": "Backend & data",
-            "items": ["Laravel", "PostgreSQL", "Redis"]
+            "items": ["Python", "PostgreSQL", "Redis"]
           },
           { "heading": "Frontend", "items": ["React", "TypeScript"] },
           {
@@ -1837,8 +1940,14 @@
         "lede": "Both programmes target the same rigour of impact measurement Akieni applies to all its national mandates.",
         "cells": [
           { "num": "2", "desc": "New national programmes launching Q3 2026." },
-          { "num": "TBD", "desc": "Citizens served once both programmes go live." },
-          { "num": "100%", "desc": "Delivery transparency with weekly client demos." }
+          {
+            "num": "TBD",
+            "desc": "Citizens served once both programmes go live."
+          },
+          {
+            "num": "100%",
+            "desc": "Delivery transparency with weekly client demos."
+          }
         ]
       },
       "nav": {
@@ -2113,7 +2222,7 @@
           },
           {
             "num": "04 / THEFT",
-            "title": "Theft & immobilise",
+            "title": "Theft & immobilisation",
             "desc": "Movement alerts outside hours, remote immobilisation on supported boxes."
           },
           {
@@ -2500,6 +2609,7 @@
             "slug": "camu",
             "client": "CAMU",
             "title": "Universal health coverage",
+            "desc": "Citizen enrolment, provider network, claims, and analytics · for millions of beneficiaries.",
             "mediaLabel": "CAMU · visual"
           },
           {
@@ -2520,12 +2630,12 @@
     "software-development": {
       "meta": {
         "title": "Software Development · Akieni",
-        "description": "Custom platforms built to international standards by senior engineers in Brazzaville · Go, TypeScript, Laravel, Kubernetes."
+        "description": "Custom platforms built to international standards by senior engineers in Brazzaville · Go, TypeScript, Python, Kubernetes."
       },
       "backLabel": "All services",
       "practiceCaption": "PRACTICE · 02 / 04",
       "title": "Software Development.",
-      "lede": "Custom platforms built to international standards by senior engineers in Brazzaville · Go, TypeScript, Laravel, Kubernetes · for systems that have to run.",
+      "lede": "Custom platforms built to international standards by senior engineers in Brazzaville · Go, TypeScript, Python, Kubernetes · for systems that have to run.",
       "overview": [
         { "label": "Practice", "value": "02 of 04" },
         { "label": "Delivery model", "value": "Embedded · Senior-led" },
@@ -2602,12 +2712,14 @@
             "slug": "sfec",
             "client": "SFEC",
             "title": "National fiscal infrastructure",
+            "desc": "Certified electronic invoicing platform with PKI, mTLS and real-time compliance.",
             "mediaLabel": "SFEC · visual"
           },
           {
             "slug": "cnss",
             "client": "CNSS",
             "title": "Social security modernisation",
+            "desc": "GED, ABIS biometrics, ePayment rails and Odoo ERP for modern social security operations.",
             "mediaLabel": "CNSS · visual"
           }
         ]
@@ -2616,10 +2728,10 @@
         "title": "Discuss your needs.",
         "primary": "Start a conversation",
         "secondary": "Next: Software Integration",
-        "secondaryHref": "/services/integration"
+        "secondaryHref": "/services/software-integration"
       }
     },
-    "integration": {
+    "software-integration": {
       "meta": {
         "title": "Software Integration · Akieni",
         "description": "We turn fragmented systems into unified data flows · payments, biometrics, GED, ERPs · with the observability operators need."
@@ -2705,12 +2817,14 @@
             "slug": "cnss",
             "client": "CNSS",
             "title": "GED + ABIS + ePayment + Odoo",
+            "desc": "GED, ABIS biometrics, ePayment rails and Odoo ERP for modern social security operations.",
             "mediaLabel": "CNSS · visual"
           },
           {
             "slug": "sfec",
             "client": "SFEC",
             "title": "PKI + terminals + fiscal pipelines",
+            "desc": "Certified electronic invoicing platform with PKI, mTLS and real-time compliance.",
             "mediaLabel": "SFEC · visual"
           }
         ]
@@ -2807,12 +2921,14 @@
             "slug": "sfec",
             "client": "SFEC",
             "title": "Programme co-direction with DGID",
+            "desc": "Certified electronic invoicing platform with PKI, mTLS and real-time compliance.",
             "mediaLabel": "SFEC · visual"
           },
           {
             "slug": "camu",
             "client": "CAMU",
             "title": "Multi-vendor health-platform delivery",
+            "desc": "Citizen enrolment, provider network, claims, and analytics · for millions of beneficiaries.",
             "mediaLabel": "CAMU · visual"
           }
         ]
@@ -3093,7 +3209,7 @@
             "label": "Software Development",
             "href": "/services/software-development"
           },
-          { "label": "Integration", "href": "/services/integration" },
+          { "label": "Integration", "href": "/services/software-integration" },
           { "label": "Consulting", "href": "/services/consulting" }
         ]
       },
@@ -3125,16 +3241,16 @@
       }
     },
     "bottom": {
-      "copyright": "© {year} Akieni. Digital Transformation for Africa.",
+      "copyright": "© {year} Akieni.",
       "legal": [
         { "label": "Privacy", "href": "/privacy" },
         { "label": "Terms", "href": "/terms" },
         { "label": "Cookies", "href": "/cookies" }
       ],
       "social": [
-        { "label": "LinkedIn", "href": "#" },
-        { "label": "Twitter", "href": "#" },
-        { "label": "GitHub", "href": "#" }
+        { "label": "LinkedIn", "href": "https://www.linkedin.com/company/akienilog" },
+        { "label": "Facebook", "href": "https://www.facebook.com/akieniofficiel" },
+        { "label": "Instagram", "href": "https://www.instagram.com/akien.i/" }
       ]
     }
   }
