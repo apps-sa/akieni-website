@@ -117,7 +117,7 @@ export function Hero({
   strings,
 }: Readonly<{ lang: string; strings: HeroStrings }>) {
   return (
-    <section className="relative flex min-h-[92vh] items-end overflow-hidden bg-black text-white pb-s9 pt-[calc(var(--nav-h)+2rem)] max-[720px]:min-h-screen max-[720px]:pb-s7">
+    <section className="relative flex min-h-[92vh] items-end overflow-hidden bg-black text-white pb-s9 pt-[calc(var(--nav-h)+6.5rem)] max-[720px]:min-h-screen max-[720px]:pb-s7">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[80px_80px] mask-[radial-gradient(ellipse_80%_60%_at_50%_40%,black,transparent_85%)]"
@@ -160,13 +160,6 @@ export function Hero({
 
       <Container className="relative z-2 w-full">
         <RevealGroup className="grid grid-cols-1 gap-s7" stagger={0.12}>
-        <RevealItem className="flex flex-wrap items-start justify-between gap-s4">
-          <Eyebrow accent>{strings.eyebrow}</Eyebrow>
-          <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted-2">
-            {strings.version}
-          </span>
-        </RevealItem>
-
         <RevealItem
           as="h1"
           className="max-w-[14ch] text-display font-bold leading-[0.92] tracking-[-0.045em] wrap-break-word max-[720px]:max-w-full max-[720px]:text-[clamp(2.25rem,11vw,4rem)]"

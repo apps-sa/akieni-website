@@ -72,7 +72,7 @@ export function Cta({
   return (
     <Section variant={sectionVariant} className="pb-s6">
       <div className="flex flex-wrap items-end justify-between gap-s7">
-        <div className="flex max-w-[34ch] flex-col gap-s3 lg:flex-1 lg:basis-[28rem]">
+        <div className="flex max-w-[52ch] flex-col gap-s3 lg:flex-1 lg:basis-[34rem]">
           {strings.eyebrow && <Eyebrow accent={isDarkBg}>{strings.eyebrow}</Eyebrow>}
           {titleContent && (
             <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-[1.05] tracking-[-0.03em] text-balance">

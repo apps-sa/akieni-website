@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Approach } from "@/components/sections/approach";
+import { Clients } from "@/components/sections/clients";
 import { Cta } from "@/components/sections/cta";
 import { Credo } from "@/components/sections/credo";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
@@ -10,6 +11,7 @@ import { Products } from "@/components/sections/products";
 import { Services } from "@/components/sections/services";
 import { Stats } from "@/components/sections/stats";
 import { HomeJsonLd } from "@/components/shared/home-json-ld";
+import { getAllClients } from "@/lib/queries/clients";
 import { getHomeCredo } from "@/lib/queries/home";
 import { getAllProducts } from "@/lib/queries/products";
 import { buildMetadata } from "@/lib/seo";
@@ -38,10 +40,11 @@ export default async function Home({
 }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const [dict, credoData, sanityProducts] = await Promise.all([
+  const [dict, credoData, sanityProducts, clients] = await Promise.all([
     getDictionary(lang),
     getHomeCredo(lang),
     getAllProducts(lang),
+    getAllClients(),
   ]);
 
   return (
@@ -49,6 +52,7 @@ export default async function Home({
       <HomeJsonLd lang={lang} />
       <Hero lang={lang} strings={dict.home.hero} />
       <Marquee strings={dict.home.marquee} />
+      <Clients strings={dict.home.clients} clients={clients} />
       <Services lang={lang} strings={dict.home.services} />
       <FeaturedProjects lang={lang} strings={dict.home.featuredProjects} />
       <Products

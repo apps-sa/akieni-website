@@ -4,7 +4,7 @@ import { languageAlternates, SITE } from "@/lib/seo";
 const SERVICE_SLUGS = [
   "digital-transformation",
   "software-development",
-  "integration",
+  "software-integration",
   "consulting",
 ];
 const PRODUCT_SLUGS = ["akienipay", "cartracking", "biometrie"];

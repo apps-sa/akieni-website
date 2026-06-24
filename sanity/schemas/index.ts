@@ -1,4 +1,5 @@
 import { academyCohort } from "./academyCohort";
+import { client } from "./client";
 import { department } from "./department";
 import { homeCredo } from "./homeCredo";
 import { jobRole } from "./jobRole";
@@ -8,4 +9,4 @@ import { showcaseItem } from "./showcaseItem";
 import { siteSettings } from "./siteSettings";
 import { teamMember } from "./teamMember";
 
-export const schemaTypes = [siteSettings, jobRole, teamMember, department, academyCohort, project, product, showcaseItem, homeCredo];
+export const schemaTypes = [siteSettings, jobRole, teamMember, department, academyCohort, project, product, showcaseItem, homeCredo, client];
